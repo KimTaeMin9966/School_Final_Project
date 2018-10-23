@@ -42,11 +42,12 @@
 	data-offset="98">
 
 	<!-- LOADER -->
-	<div id="preloader">
+	<!-- <div id="preloader">
 		<div class="preloader pulse">
 			<i class="fa fa-heartbeat" aria-hidden="true"></i>
 		</div>
-	</div><!-- end loader -->
+	</div> -->
+	<!-- end loader -->
 	<!-- END LOADER -->
 
 	<!-- Start header -->
@@ -56,13 +57,6 @@
 				<a class="navbar-brand" href="/">
 					<img src="${pageContext.request.contextPath}/resources/images/logo.jpg" alt="image" />
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbar-wd" aria-controls="navbar-wd"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
 				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
 					<ul class="navbar-nav">
 						<li><a class="nav-link active" href="#home">Home</a></li>
@@ -78,49 +72,3 @@
 		</nav>
 	</header>
 	<!-- End header -->
-
-	<!-- Start Banner -->
-	<div class="ulockd-home-slider">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="pogoSlider" id="js-main-slider">
-					<div class="pogoSlider-slide" data-transition="zipReveal"
-						data-duration="1500"
-						style="background-image:url(${pageContext.request.contextPath}/resources/images/slider-01.jpg);">
-						<div class="lbox-caption">
-							<div class="lbox-details">
-								<h1>#Leida & #Dominic</h1>
-								<h2>We're getting married</h3>
-								<p>Save The Date <strong>20 June 2018</strong></p>
-								<a href="#" class="btn ">Contact</a>
-							</div>
-						</div>
-					</div>
-					<div class="pogoSlider-slide" data-transition="blocksReveal" data-duration="1500"
-						style="background-image:url(${pageContext.request.contextPath}/resources/images/slider-02.jpg);">
-						<div class="lbox-caption">
-							<div class="lbox-details">
-								<h1>#Leida & #Dominic</h1>
-								<h2>We're getting married</h3>
-								<p>Save The Date <strong>20 June 2018</strong></p>
-								<a href="#" class="btn ">Contact</a>
-							</div>
-						</div>
-					</div>
-					<div class="pogoSlider-slide" data-transition="shrinkReveal" data-duration="2000"
-						style="background-image:url(${pageContext.request.contextPath}/resources/images/slider-03.jpg);">
-						<div class="lbox-caption">
-							<div class="lbox-details">
-								<h1>#Leida & #Dominic</h1>
-								<h2>We're getting married</h3>
-								<p>Save The Date <strong>20 June 2018</strong></p>
-								<a href="#" class="btn">Contact</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- .pogoSlider -->
-			</div>
-		</div>
-	</div>
-	<!-- End Banner -->

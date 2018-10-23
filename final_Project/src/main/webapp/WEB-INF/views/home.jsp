@@ -2,6 +2,52 @@
 	pageEncoding="UTF-8"%>
 <%@include file="include/header.jsp"%>
 
+<!-- Start Banner -->
+<div class="ulockd-home-slider">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="pogoSlider" id="js-main-slider">
+				<div class="pogoSlider-slide" data-transition="zipReveal"
+					data-duration="1500"
+					style="background-image:url(${pageContext.request.contextPath}/resources/images/slider-01.jpg);">
+					<div class="lbox-caption">
+						<div class="lbox-details">
+							<h1>#Leida & #Dominic</h1>
+							<h2>We're getting married</h3>
+							<p>Save The Date <strong>20 June 2018</strong></p>
+							<a href="#" class="btn ">Contact</a>
+						</div>
+					</div>
+				</div>
+				<div class="pogoSlider-slide" data-transition="blocksReveal" data-duration="1500"
+					style="background-image:url(${pageContext.request.contextPath}/resources/images/slider-02.jpg);">
+					<div class="lbox-caption">
+						<div class="lbox-details">
+							<h1>#Leida & #Dominic</h1>
+							<h2>We're getting married</h3>
+							<p>Save The Date <strong>20 June 2018</strong></p>
+							<a href="#" class="btn ">Contact</a>
+						</div>
+					</div>
+				</div>
+				<div class="pogoSlider-slide" data-transition="shrinkReveal" data-duration="2000"
+					style="background-image:url(${pageContext.request.contextPath}/resources/images/slider-03.jpg);">
+					<div class="lbox-caption">
+						<div class="lbox-details">
+							<h1>#Leida & #Dominic</h1>
+							<h2>We're getting married</h3>
+							<p>Save The Date <strong>20 June 2018</strong></p>
+							<a href="#" class="btn">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .pogoSlider -->
+		</div>
+	</div>
+</div>
+<!-- End Banner -->
+
 <!-- Start About us -->
 <div id="about" class="about-box">
 	<div class="about-a1">
