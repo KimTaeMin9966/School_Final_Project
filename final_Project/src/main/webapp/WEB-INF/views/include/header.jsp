@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	
 	<!-- Site Metas -->
-	<title>The Real Wedding - Responsive OnePage HTML5 Template</title>
+	<title>Made Wedding - MW</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -54,19 +54,35 @@
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
 			<div class="container">
-				<a class="navbar-brand" href="/">
-					<img src="${pageContext.request.contextPath}/resources/images/logo.jpg" alt="image" />
-				</a>
-				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-					<ul class="navbar-nav">
-						<li><a class="nav-link active" href="#home">Home</a></li>
-						<li><a class="nav-link" href="#about">About Us</a></li>
-						<li><a class="nav-link" href="#story">Story</a></li>
-						<li><a class="nav-link" href="#family">Family</a></li>
-						<li><a class="nav-link" href="#gallery">Gallery</a></li>
-						<li><a class="nav-link" href="#events">Events</a></li>
-						<li><a class="nav-link" href="#contact">Contact</a></li>
-					</ul>
+	    		<div class="row">
+	    			<div class="col-lg-12">
+						<div class="collapse navbar-collapse justify-content-center">
+							<ul class="navbar-nav ">
+								<li><a class="nav-link" href="/">Home</a></li>
+							</ul>
+						</div>
+						<div class="collapse navbar-collapse justify-content-right">
+							<ul class="navbar-nav ">
+								<li><a class="nav-link" href="/">s</a></li>
+							</ul>
+						</div>
+						<div class="collapse navbar-collapse justify-content-right" id="navbar-wd">
+							<ul class="navbar-nav">
+								<li><a class="nav-link active" href="/">Home</a></li>
+							</ul>
+						</div>
+						<div class="collapse navbar-collapse justify-content-center" id="navbar-wd">
+							<ul class="navbar-nav">
+								<li><a class="nav-link active" href="/">Home</a></li>
+								<li><a class="nav-link" href="#about">About Us</a></li>
+								<li><a class="nav-link" href="#story">Story</a></li>
+								<li><a class="nav-link" href="#family">Family</a></li>
+								<li><a class="nav-link" href="#gallery">Gallery</a></li>
+								<li><a class="nav-link" href="#events">Events</a></li>
+								<li><a class="nav-link" href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</nav>
