@@ -54,26 +54,20 @@
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
 			<div class="container">
-	    		<div class="row">
+	    		<div class="row collapse navbar-collapse justify-content">
 	    			<div class="col-lg-12">
 						<div class="collapse navbar-collapse justify-content-center">
-							<ul class="navbar-nav ">
-								<li><a class="nav-link" href="/">Home</a></li>
-							</ul>
-						</div>
-						<div class="collapse navbar-collapse justify-content-right">
-							<ul class="navbar-nav ">
-								<li><a class="nav-link" href="/">s</a></li>
-							</ul>
-						</div>
-						<div class="collapse navbar-collapse justify-content-right" id="navbar-wd">
 							<ul class="navbar-nav">
-								<li><a class="nav-link active" href="/">Home</a></li>
+								<li><a class="nav-link font-weight-bold" href="#">Made Wedding - MW</a></li>
+							</ul>
+							<ul class="navbar-nav ">
+								<li><a class="nav-link " href="#">회원가입</a></li>
+								<li><a class="nav-link " href="#">로그인</a></li>
 							</ul>
 						</div>
 						<div class="collapse navbar-collapse justify-content-center" id="navbar-wd">
 							<ul class="navbar-nav">
-								<li><a class="nav-link active" href="/">Home</a></li>
+								<li><a class="nav-link" href="#">Home</a></li>
 								<li><a class="nav-link" href="#about">About Us</a></li>
 								<li><a class="nav-link" href="#story">Story</a></li>
 								<li><a class="nav-link" href="#family">Family</a></li>
