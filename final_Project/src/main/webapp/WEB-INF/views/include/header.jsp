@@ -33,6 +33,19 @@
 	<!-- Icomoon CSS -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css">
 	
+	<!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="${pageContext.request.contextPath}/resources/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins 
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="${pageContext.request.contextPath}/resources/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- jQuery 2.1.4 -->
+    <script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+	
 	<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -47,20 +60,19 @@
 			<i class="fa fa-heartbeat" aria-hidden="true"></i>
 		</div>
 	</div> -->
-	<!-- end loader -->
 	<!-- END LOADER -->
 
 	<!-- Start header -->
-	<header class="top-header fixed-menu opacity">
-		<nav class="navbar header-nav navbar-expand-sm">
+	<header class="top-header fixed-menu custom-mouseover">
+		<nav class="navbar header-nav navbar-expand-lg">
 			<div class="container">
 	    		<div class="row collapse navbar-collapse justify-content">
-	    			<div class="col-lg-12">
+	    			<div class="col-lg-12 opacity">
 						<div class="collapse navbar-collapse justify-content-center">
 							<ul class="navbar-nav">
 								<li><a class="nav-link font-weight-bold" href="/">Made Wedding - MW</a></li>
 							</ul>
-							<ul class="navbar-nav justify-content-right">
+							<ul class="navbar-nav custom-right">
 								<li><a class="nav-link " href="/member/register">회원가입</a></li>
 								<li><a class="nav-link " href="/member/login">로그인</a></li>
 							</ul>

@@ -1,9 +1,23 @@
-
 /** ADD YOUR AWESOME CODES HERE **/
-.opacity {
-	opacity: 0;
+#home {
+	margin: 20px 20px;
+	border: 1px solid gray;
 }
 
-.opacity:hover {
-	opacity: 1;
+header {
+	margin-bottom: 10px;
+}
+
+header:hover {
+	
+}
+
+.custom {
+	width: 100%;
+	position: fixed;
+	top: 0; left: 0;
+}
+
+.custom-right {
+	text-align: right;
 }
