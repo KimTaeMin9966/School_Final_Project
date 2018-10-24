@@ -73,6 +73,7 @@
 								<li><a class="nav-link" href="/wedding/studio">스튜디오</a></li>
 								<li><a class="nav-link" href="/wedding/list">체크리스트</a></li>
 								<li><a class="nav-link" href="/wedding/send">청첩장</a></li>
+								<li><a class="nav-link" href="/wedding/milo">Milo</a></li>
 							</ul>
 						</div>
 					</div>
