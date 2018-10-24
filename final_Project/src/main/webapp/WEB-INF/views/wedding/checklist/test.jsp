@@ -12,7 +12,13 @@
 		<input type="checkbox" name="test" value=test5>이쁜동생<br/>
 		
 		<input type="submit" name="button" value="다음">
+	
 	 </div>
+	 
+	 <%
+	 	String value = request.getParameter("test");
+	 	out.print(value);
+	 %>
 </body>
 
 
