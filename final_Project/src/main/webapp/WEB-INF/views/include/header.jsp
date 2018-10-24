@@ -58,22 +58,21 @@
 	    			<div class="col-lg-12">
 						<div class="collapse navbar-collapse justify-content-center">
 							<ul class="navbar-nav">
-								<li><a class="nav-link font-weight-bold" href="#">Made Wedding - MW</a></li>
+								<li><a class="nav-link font-weight-bold" href="/">Made Wedding - MW</a></li>
 							</ul>
-							<ul class="navbar-nav ">
-								<li><a class="nav-link " href="#">회원가입</a></li>
-								<li><a class="nav-link " href="#">로그인</a></li>
+							<ul class="navbar-nav justify-content-right">
+								<li><a class="nav-link " href="/member/register">회원가입</a></li>
+								<li><a class="nav-link " href="/member/login">로그인</a></li>
 							</ul>
 						</div>
 						<div class="collapse navbar-collapse justify-content-center" id="navbar-wd">
 							<ul class="navbar-nav">
-								<li><a class="nav-link" href="#">Home</a></li>
-								<li><a class="nav-link" href="#about">About Us</a></li>
-								<li><a class="nav-link" href="#story">Story</a></li>
-								<li><a class="nav-link" href="#family">Family</a></li>
-								<li><a class="nav-link" href="#gallery">Gallery</a></li>
-								<li><a class="nav-link" href="#events">Events</a></li>
-								<li><a class="nav-link" href="#contact">Contact</a></li>
+								<li><a class="nav-link" href="/wedding/radey">준비</a></li>
+								<li><a class="nav-link" href="/wedding/consulting">컨설팅</a></li>
+								<li><a class="nav-link" href="/wedding/hall">웨딩홀</a></li>
+								<li><a class="nav-link" href="/wedding/studio">스튜디오</a></li>
+								<li><a class="nav-link" href="/wedding/list">체크리스트</a></li>
+								<li><a class="nav-link" href="/wedding/send">청첩장</a></li>
 							</ul>
 						</div>
 					</div>
