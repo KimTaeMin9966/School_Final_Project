@@ -11,6 +11,10 @@ public class WeddingController {
 		System.out.println("send접속완료");
 	}
 	
+	@RequestMapping(value="/milo")
+	public void milo() {
+		System.out.println("Milo접속완료");
+	}
 }
 
 
