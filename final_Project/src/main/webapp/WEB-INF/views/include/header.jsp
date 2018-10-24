@@ -51,8 +51,8 @@
 	<!-- END LOADER -->
 
 	<!-- Start header -->
-	<header class="top-header">
-		<nav class="navbar header-nav navbar-expand-lg">
+	<header class="top-header fixed-menu opacity">
+		<nav class="navbar header-nav navbar-expand-sm">
 			<div class="container">
 	    		<div class="row collapse navbar-collapse justify-content">
 	    			<div class="col-lg-12">
