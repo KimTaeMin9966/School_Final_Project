@@ -39,9 +39,8 @@
 <script type="text/javascript">
 	var message = '${message}';
 
-	if (message != null && message != '') {
-		alert(message);
-	}
+	if (message != 'FAIL') { alert("로그인에 성공하셨습니다."); }
+	else { alert("로그인에 실패하셨습니다."); }
 </script>
 <!-- jQuery 2.1.4 -->
 <script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>

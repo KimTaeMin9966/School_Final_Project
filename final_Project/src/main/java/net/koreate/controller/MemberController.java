@@ -5,10 +5,12 @@ import javax.inject.Inject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import net.koreate.service.MemberService;
+import net.koreate.vo.MemberVo;
 
 @Controller
 @RequestMapping("/member/*")
@@ -39,8 +41,15 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public void registerPOST() throws Exception {
+	public String registerPOST(MemberVo vo, Model model) throws Exception {
 		logger.info("registerPOST Called!!!");
+		
+		String result = service.register(vo);
+		
+		if(result != "FAIL") { model.addAttribute("result", result); return "redirect:/member/register"; }
+		
+		model.addAttribute("result", result);
+		return "redirect:/member/login";
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -49,7 +58,13 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public void loginPOST() throws Exception {
+	public String loginPOST(MemberVo vo, Model model) throws Exception {
 		logger.info("loginPOST Called!!!");
+		String result = service.login(vo);
+		
+		if(result != "FAIL") { model.addAttribute("result", result); return "redirect:/member/login"; }
+		
+		model.addAttribute("result", result);
+		return "redirect:/";
 	}
 }
