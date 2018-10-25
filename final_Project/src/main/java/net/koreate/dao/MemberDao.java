@@ -1,5 +1,6 @@
 package net.koreate.dao;
 
+import net.koreate.dto.LoginDto;
 import net.koreate.vo.MemberVo;
 
 public interface MemberDao {
@@ -9,5 +10,11 @@ public interface MemberDao {
 	void register(MemberVo vo) throws Exception;
 
 	MemberVo login(MemberVo vo) throws Exception;
+
+	MemberVo getUserByUNO(int uno) throws Exception;
+
+	MemberVo signIn(LoginDto dto) throws Exception;
+
+	MemberVo getUserByID(String uid) throws Exception;
 
 }
