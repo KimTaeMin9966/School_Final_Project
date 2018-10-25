@@ -9,140 +9,125 @@
 
 				<div class="row">
 					<div class="col-md-6">
-
+		
+		
+				<!--1.준비 페이지-->
 						<article class="card mb-4">
 							<header class="card-header">
-								<div class="card-meta">
-									<a href="https://milo.bootlab.io/home-twocolumn.html#"><time
-											class="timeago" datetime="2017-10-26 20:00" data-tid="1">11
-											months ago</time></a> in <a
-										href="https://milo.bootlab.io/page-category.html">Journey</a>
-								</div>
-								<a href="https://milo.bootlab.io/post-image.html">
-									<h4 class="card-title">How can we sing about love?</h4>
-								</a>
-							</header>
-							<a href="https://milo.bootlab.io/post-image.html"> <img
-								class="card-img" src="./22.jpg" alt="">
-							</a>
+							
+									<div class="card-meta">
+											<a href=/wedding/ready>
+											<time class="timeago" datetime="2017-10-26 20:00" data-tid="1"> WHY? </time></a> 준비페이지 입니다. 
+										</div>
+											<a href="https://milo.bootlab.io/post-image.html">
+											<h4>How can we sing about love?</h4>
+											</a>
+										</header>
+							<a href=/wedding/ready> <img class="card-img" src="/resources/images/22.jpg" alt=""></a>
 							<div class="card-body">
 								<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
 									eget condimentum rhoncus, sem quam semper libero, sit amet
 									adipiscing sem neque sed ipsum.</p>
-							</div>
-						</article>
-						<!-- /.card -->
-
+								</div>
+							</article>
+				<!--1.준비 페이지-->
+						
+						
+						
+				<!--3.웨딩홀 페이지 -->
 						<article class="card mb-4">
 							<header class="card-header">
 								<div class="card-meta">
-									<a href="https://milo.bootlab.io/home-twocolumn.html#"><time
-											class="timeago" datetime="2017-10-03 20:00" data-tid="2">1
-											year ago</time></a> in <a
-										href="https://milo.bootlab.io/page-category.html">Lifestyle</a>
+									<a href=/wedding/consulting><time class="timeago" datetime="2017-10-03 20:00" data-tid="2">
+									웨딩홀 페이지 입니다.</time></a> in <a href=/wedding/hasll>웨딩홀 페이지 입니다.</a>
 								</div>
-								<a href="https://milo.bootlab.io/post-image.html">
-									<h4 class="card-title">Oh, I guess they have the blues</h4>
-								</a>
+								<a href=/wedding/hall> <h4 class="card-title">Oh, I guess they have the blues</h4></a>
 							</header>
-							<a href="https://milo.bootlab.io/post-image.html"> <img
-								class="card-img" src="./18.jpg" alt="">
-							</a>
+							<a href=/wedding/hall> <img class="card-img" src="/resources/images/18.jpg" alt=""> </a>
 							<div class="card-body">
 								<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
 									eget condimentum rhoncus, sem quam semper libero, sit amet
 									adipiscing sem neque sed ipsum.</p>
-							</div>
+								</div>
 						</article>
-						<!-- /.card -->
-
+				<!--3.웨딩홀 페이지 -->
+					
+					
+				<!--5. 청첩장 -->
 						<article class="card mb-4">
 							<header class="card-header">
 								<div class="card-meta">
-									<a href="https://milo.bootlab.io/home-twocolumn.html#"><time
-											class="timeago" datetime="2017-07-16 20:00" data-tid="3">1
-											year ago</time></a> in <a
-										href="https://milo.bootlab.io/page-category.html">Work</a>
+									<a href=/wedding/send>
+									<time class="timeago" datetime="2017-07-16 20:00" data-tid="3">청첩장 페이지 입니다.</time></a> in <a
+										href="https://milo.bootlab.io/page-category.html">청첩장 페이지 입니다.</a>
 								</div>
-								<a href="https://milo.bootlab.io/post-image.html">
-									<h4 class="card-title">How can we, how can we sing about
-										ourselves?</h4>
-								</a>
+								<a href=/wedding/send>
+									<h4 class="card-title">How can we, how can we sing about ourselves?</h4> </a>
 							</header>
-							<a href="https://milo.bootlab.io/post-image.html"> <img
-								class="card-img" src="./12.jpg" alt="">
-							</a>
+							<a href=/wedding/send> <img class="card-img" src="/resources/images/12.jpg" alt=""></a>
 							<div class="card-body">
 								<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
 									eget condimentum rhoncus, sem quam semper libero, sit amet
 									adipiscing sem neque sed ipsum.</p>
-							</div>
+								</div>
 						</article>
-						<!-- /.card -->
-
+				<!--5. 청첩장페이지 -->
 					</div>
+					
+					
+				<!-- 4. 스튜디오페이지 입니다. -->
 					<div class="col-md-6">
 
 						<article class="card mb-4">
 							<header class="card-header">
 								<div class="card-meta">
-									<a href="https://milo.bootlab.io/home-twocolumn.html#"><time
-											class="timeago" datetime="2017-10-15 20:00" data-tid="4">1
-											year ago</time></a> in <a
-										href="https://milo.bootlab.io/page-category.html">Lifestyle</a>
+									<a href=/wedding/sutdio><time
+											class="timeago" datetime="2017-10-15 20:00" data-tid="4">스튜디오 페이지 입니다.</time></a> in 
+											<a	href=/wedding/sutdio>스튜디오 페이지 입니다.</a>
 								</div>
-								<a href="https://milo.bootlab.io/post-image.html">
-									<h4 class="card-title">The king is made of paper</h4>
-								</a>
+								<a href=/wedding/sutdio> <h4 class="card-title">The king is made of paper</h4></a>
 							</header>
-							<a href="https://milo.bootlab.io/post-image.html"> <img
-								class="card-img" src="./5.jpg" alt="">
-							</a>
+							<a href=/wedding/studio> <img class="card-img" src="/resources/images/5.jpg" alt=""></a>
 							<div class="card-body">
 								<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
 									eget condimentum rhoncus, sem quam semper libero, sit amet
 									adipiscing sem neque sed ipsum.</p>
 							</div>
 						</article>
-						<!-- /.card -->
+					<!-- 4. 스튜디오페이지 입니다. -->
 
+
+					<!-- 5. 체크리스트 페이지입니다. -->
 						<article class="card mb-4">
 							<header class="card-header">
 								<div class="card-meta">
-									<a href="https://milo.bootlab.io/home-twocolumn.html#"><time
-											class="timeago" datetime="2017-08-24 20:00" data-tid="5">1
-											year ago</time></a> in <a
-										href="https://milo.bootlab.io/page-category.html">Work</a>
-								</div>
-								<a href="https://milo.bootlab.io/post-image.html">
-									<h4 class="card-title">Crying on the news</h4>
-								</a>
+									<a href=/wedding/checklist/test><time
+											class="timeago" datetime="2017-08-24 20:00" data-tid="5">체크리스트 페이지 입니다.</time></a> in 
+											<a href=/wedding/checklist/test>체크리스트 페이지 입니다.</a>
+											</div>
+								<a href=/wedding/checklist/test> <h4 class="card-title">Crying on the news</h4></a>
 							</header>
-							<a href="https://milo.bootlab.io/post-image.html"> <img
-								class="card-img" src="./13.jpg" alt="">
-							</a>
-							<div class="card-body">
+								<a href=/wedding/checklist/test> <img class="card-img" src="/resources/images/13.jpg" alt=""> </a>
+								<div class="card-body">
 								<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
 									eget condimentum rhoncus, sem quam semper libero, sit amet
 									adipiscing sem neque sed ipsum.</p>
 							</div>
 						</article>
-						<!-- /.card -->
+					<!-- 5. 체크리스트 페이지입니다. -->
 
 						<article class="card mb-4">
 							<header class="card-header">
 								<div class="card-meta">
-									<a href="https://milo.bootlab.io/home-twocolumn.html#"><time
-											class="timeago" datetime="2017-05-08 20:00" data-tid="6">1
-											year ago</time></a> in <a
-										href="https://milo.bootlab.io/page-category.html">Journey</a>
+									<a href=/wedding/checklist/test><time
+											class="timeago" datetime="2017-05-08 20:00" data-tid="6">체크리스트 페이지 입니다.</time></a> in <a
+										href="https://milo.bootlab.io/page-category.html">체크리스트 페이지 입니다.</a>
 								</div>
-								<a href="https://milo.bootlab.io/post-image.html">
+								<a href=/wedding/checklist/test>
 									<h4 class="card-title">How can you not sing about love?</h4>
 								</a>
 							</header>
-							<a href="https://milo.bootlab.io/post-image.html"> <img
-								class="card-img" src="./1.jpg" alt="">
+							<a href=/wedding/checklist/test> <img class="card-img" src="./1.jpg" alt="">
 							</a>
 							<div class="card-body">
 								<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
@@ -224,7 +209,7 @@
 	<div class="site-newsletter">
 		<div class="container">
 			<div class="text-center">
-				<h3 class="h4 mb-2">Subscribe to our newsletter</h3>
+				<h3 class="h4 mb-2">MadeWEdding to our newsletter</h3>
 				<p class="text-muted">Join our monthly newsletter and never miss
 					out on new stories and promotions.</p>
 
@@ -234,7 +219,8 @@
 							<input type="text" class="form-control"
 								placeholder="Email address" aria-label="Email address">
 							<span class="input-group-btn">
-								<button class="btn btn-secondary" type="button">Subscribe</button>
+								<button id="SENDOK" class="btn btn-secondary" type="button">SEND</button>
+								
 							</span>
 						</div>
 					</div>
@@ -242,7 +228,12 @@
 			</div>
 		</div>
 	</div>
-
+	<script>
+		$('#SENDOK').on('click', function() {
+			alert("aaa");
+		});
+	</script>
+	
 	<div class="site-instagram">
 		<div class="action">
 			<a class="btn btn-light"
