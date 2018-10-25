@@ -17,6 +17,7 @@
 .custom-mouseover {
 	opacity: 0;
 }
+
 .custom-mouseover_active {
 	opacity: 1;
 }
