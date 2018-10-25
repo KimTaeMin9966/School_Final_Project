@@ -210,43 +210,6 @@
 					</div>
 				</div>
 			</div>
-			<%-- 
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="single-team-member">
-					<div class="family-img">
-						<img class="img-fluid" src="${pageContext.request.contextPath}/resources/images/family-03.jpg"
-							alt="" />
-					</div>
-					<div class="family-info">
-						<h4>Mr. Chris Wiles</h4>
-						<p>{ Leida’s Brother }</p>
-					</div>
-				</div>
-			</div> 
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="single-team-member">
-					<div class="family-img">
-						<img class="img-fluid" src="${pageContext.request.contextPath}/resources/images/family-05.jpg"
-							alt="" />
-					</div>
-					<div class="family-info">
-						<h4>Mr. Annetta Wiles</h4>
-						<p>{ Leida’s Sister }</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="single-team-member">
-					<div class="family-img">
-						<img class="img-fluid" src="${pageContext.request.contextPath}/resources/images/family-06.jpg"
-							alt="" />
-					</div> 
-					<div class="family-info">
-						<h4>Mr. Ladonna Wiles</h4>
-						<p>{ Leida’s Sister }</p>
-					</div> --%>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
@@ -333,63 +296,6 @@
 		</div>
 	</div>
 </div>
-<!-- End Gallery -->
-
-<!-- Start Events -->
-<%-- <div id="events" class="events-box">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="title-box">
-					<h2>Events</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="event-inner">
-					<div class="event-img">
-						<img class="img-fluid" src="${pageContext.request.contextPath}/resources/images/event-img-01.jpg"
-							alt="" />
-					</div>
-					<h2>2 June 2018 Engagement</h2>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-					</p>
-					<a href="#">See location ></a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="event-inner">
-					<div class="event-img">
-						<img class="img-fluid" src="${pageContext.request.contextPath}/resources/images/event-img-02.jpg"
-							alt="" />
-					</div>
-					<h2>3 June 2018 Main Ceremony</h2>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-					</p>
-					<a href="#">See location ></a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="event-inner">
-					<div class="event-img">
-						<img class="img-fluid" src="${pageContext.request.contextPath}/resources/images/event-img-03.jpg"
-							alt="" />
-					</div>
-					<h2>4 June 2018 Wedding party</h2>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-					</p>
-					<a href="#">See location ></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
- --%><!-- End Events -->
 
 <!-- Start Contact -->
 <div id="contact" class="contact-box">
@@ -469,6 +375,16 @@
 				</div>
 			</div>
 		</div>
+		<script>
+		<script>
+		$('#submit').on('click', function() { 
+			alert("aaa");
+		});
+	</script>
+		</script>
 	</div><!-- End Container -->
 </div><!-- End Contact -->
+
+
+
 <%@include file="../include/footer.jsp"%>
