@@ -43,17 +43,17 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 			session.setAttribute("userInfo", vo);
 			
 			if(dto.isUseCookie()) {
-				Cookie cookie = new Cookie("signInCookie", String.valueOf(vo.getMwid()));
+				Cookie cookie = new Cookie("LoginCookie", String.valueOf(vo.getMwid()));
 				cookie.setPath("/");
 				cookie.setMaxAge(60 * 60 * 24 * 7);
 				response.addCookie(cookie);
 				
-				System.out.println("uno : " + vo.getMwid());
+				System.out.println("mwid : " + vo.getMwid());
 				System.out.println("Cookie : " + cookie.getValue());
 				System.out.println("쿠키생성 완료");
 			}
 		} else {
-			RequestDispatcher rd = request.getRequestDispatcher("/user/signIn");
+			RequestDispatcher rd = request.getRequestDispatcher("/member/login");
 			request.setAttribute("result", "회원정보가 일치하지 않습니다.");
 			rd.forward(request, response);
 		}
