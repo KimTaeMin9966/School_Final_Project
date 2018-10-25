@@ -1,14 +1,27 @@
 package net.koreate.controller;
 
+import java.util.Arrays;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("wedding/checklist/*")
+@RequestMapping("/wedding/checklist/*")
 public class ChecklistController {
 	
-	@RequestMapping("")
-	public void test() {
+	@RequestMapping("/test")
+	public void checklistTest(HttpServletRequest request, Model model) throws Exception {
+		
+		String[] checklistArr= request.getParameterValues("test");
+		
+		
+		model.addAttribute("checklistArr",checklistArr);
+		
+		System.out.println(Arrays.toString(checklistArr));
 		
 	}
 }
