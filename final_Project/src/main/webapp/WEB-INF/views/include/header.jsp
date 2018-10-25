@@ -66,9 +66,12 @@
 
 	<!-- Start header -->
 	<header class="force-repaint-width move-header-if-lt-ie10 header__bg-transparent" id="header-main">
+		<div class="logo">
+			<a tabindex="5" href="/">Made Wedding - MW</a>
+		</div>
 		<nav id="header-nav" class="header-nav-group">
 			<div id="header-nav-child-main" class="header-nav-child header-nav-drawer">
-				<ul class="header-nav-sections" role="menubar" aria-label="구찌">
+				<ul class="header-nav-sections" role="menubar">
 					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 						<div class="header-nav-section-title">
 							<a data-di-id="runway_1"
@@ -80,46 +83,58 @@
 						<div class="header-nav-section-title">
 							<a data-di-id="runway_1"
 							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-							href="/wedding/consulting" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+							href="/wedding/consulting" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">컨설팅</a>
 						</div>
 					</li>
 					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 						<div class="header-nav-section-title">
 							<a data-di-id="runway_1"
 							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-							href="/wedding/hall" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+							href="/wedding/hall" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">웨딩홀</a>
 						</div>
 					</li>
 					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 						<div class="header-nav-section-title">
 							<a data-di-id="runway_1"
 							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-							href="/wedding/studio" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+							href="/wedding/studio" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">스튜디오</a>
 						</div>
 					</li>
 					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 						<div class="header-nav-section-title">
 							<a data-di-id="runway_1"
 							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-							href="/wedding/list" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+							href="/wedding/list" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">체크리스트</a>
 						</div>
 					</li>
 					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 						<div class="header-nav-section-title">
 							<a data-di-id="runway_1"
 							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-							href="/wedding/send" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+							href="/wedding/send" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">청첩장</a>
 						</div>
 					</li>
 					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 						<div class="header-nav-section-title">
 							<a data-di-id="runway_1"
 							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-							href="/wedding/milo" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+							href="/wedding/milo" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">Milo</a>
 						</div>
 					</li>
 				</ul>
+				<ul class="header-nav-user header-nav-secondary" style="--menu-right-pos: 141px">
+					<li id="header-nav-signin" class="header-nav-group header-nav-group-hover header-nav-sign-in-group">
+						<a id="header-nav-signin-anchor"
+							class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
+							href="/member/register" tabindex="6">회원가입</a>
+					</li>
+				</ul>
 			</div>
+		</nav>
+		<nav id="header-nav-bag-wrapper" class="header-nav-bag-wrapper header-nav-group header-nav-group-hover header-nav-child-bag-empty" data-module="headerUpdate">
+			<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="/member/login" id="header-nav-bag-anchor" aria-expanded="false">
+				<span class="title"><span>로그인</span></span>
+			</a>
 		</nav>
 	</header>
 	<!-- End header -->
