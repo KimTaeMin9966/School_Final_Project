@@ -4,14 +4,6 @@
 	border: 1px solid gray;
 }
 
-header {
-	margin-bottom: 10px;
-}
-
-header:hover {
-	
-}
-
 .custom {
 	width: 100%;
 	position: fixed;
@@ -20,4 +12,11 @@ header:hover {
 
 .custom-right {
 	text-align: right;
+}
+
+.custom-mouseover {
+	opacity: 0;
+}
+.custom-mouseover_active {
+	opacity: 1;
 }

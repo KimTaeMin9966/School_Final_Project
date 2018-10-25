@@ -37,7 +37,7 @@
 	</div>
 </section>
 <script type="text/javascript">
-	var message = '${message}';
+	var message = '${result}';
 
 	if (message != null && message == 'SUCCESS') { alert("로그인에 성공하셨습니다."); }
 </script>

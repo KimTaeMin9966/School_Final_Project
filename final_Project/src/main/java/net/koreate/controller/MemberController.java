@@ -42,12 +42,12 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String registerPOST(MemberVo vo, Model model) throws Exception {
+	public String registerPOST(MemberVo vo, RedirectAttributes rttr) throws Exception {
 		logger.info("registerPOST Called!!!");
 		
 		String result = service.register(vo);
 		
-		model.addAttribute("result", result);
+		rttr.addAttribute("result", result);
 		return "redirect:/member/login";
 	}
 	
@@ -57,12 +57,12 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String loginPOST(MemberVo vo, Model model) throws Exception {
+	public String loginPOST(MemberVo vo, RedirectAttributes rttr) throws Exception {
 		logger.info("loginPOST Called!!!");
 		
 		String result = service.login(vo);
 		
-		model.addAttribute("result", result);
+		rttr.addAttribute("result", result);
 		return "redirect:/";
 	}
 }
