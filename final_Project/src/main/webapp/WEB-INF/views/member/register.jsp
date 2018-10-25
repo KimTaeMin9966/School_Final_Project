@@ -39,8 +39,7 @@
 <script type="text/javascript">
 	var message = '${message}';
 
-	if (message != 'FAIL') { alert("회원가입에 성공하셨습니다."); }
-	else { alert("회원가입에 실패하셨습니다."); }
+	if (message != null && message == 'SUCCESS') { alert("회원가입에 성공하셨습니다."); }
 </script>
 <!-- jQuery 2.1.4 -->
 <script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import net.koreate.service.MemberService;
 import net.koreate.vo.MemberVo;
@@ -46,8 +47,6 @@ public class MemberController {
 		
 		String result = service.register(vo);
 		
-		if(result != "FAIL") { model.addAttribute("result", result); return "redirect:/member/register"; }
-		
 		model.addAttribute("result", result);
 		return "redirect:/member/login";
 	}
@@ -60,9 +59,8 @@ public class MemberController {
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String loginPOST(MemberVo vo, Model model) throws Exception {
 		logger.info("loginPOST Called!!!");
-		String result = service.login(vo);
 		
-		if(result != "FAIL") { model.addAttribute("result", result); return "redirect:/member/login"; }
+		String result = service.login(vo);
 		
 		model.addAttribute("result", result);
 		return "redirect:/";

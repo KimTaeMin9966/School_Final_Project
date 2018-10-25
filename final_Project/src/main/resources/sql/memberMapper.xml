@@ -6,7 +6,7 @@
 <mapper namespace="net.koreate.dao.MemberDao">
 	<select id="registerBefor" resultType="MBVO">
 		SELECT * FROM made_wedding
-		WHWEW mwid = #{mwid}
+		WHERE mwid = #{mwid}
 	</select>
 	<insert id="register">
 		INSERT INTO made_wedding(mwid, mwpw, mwname)
@@ -14,6 +14,6 @@
 	</insert>
 	<select id="login" resultType="MBVO">
 		SELECT * FROM made_wedding
-		WHWEW mwid = #{mwid}
+		WHERE mwid = #{mwid}
 	</select>
 </mapper>
