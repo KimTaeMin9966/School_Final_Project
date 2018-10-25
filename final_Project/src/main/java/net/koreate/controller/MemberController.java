@@ -46,8 +46,13 @@ public class MemberController {
 		
 		String result = service.register(vo);
 		
-		rttr.addAttribute("result", result);
-		return "redirect:/member/login";
+		if (result.equals("SUCCESS")) {
+			rttr.addFlashAttribute("result", result);
+			return "redirect:/member/login";
+		}
+
+		rttr.addFlashAttribute("result", result);
+		return "redirect:/member/register";
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -61,7 +66,12 @@ public class MemberController {
 		
 		String result = service.login(vo);
 		
-		rttr.addAttribute("result", result);
-		return "redirect:/";
+		if (result.equals("SUCCESS")) {
+			rttr.addFlashAttribute("result", result);
+			return "redirect:/";
+		}
+		
+		rttr.addFlashAttribute("result", result);
+		return "redirect:/member/login";
 	}
 }

@@ -22,11 +22,11 @@ public class CheckCookieInterceptor extends HandlerInterceptorAdapter {
 		HttpSession session = request.getSession();
 		if (session.getAttribute("userInfo") != null) return true;
 		
-		Cookie signInCookie = WebUtils.getCookie(request, "signInCookie");
-		if (signInCookie != null) {
-			int uno = Integer.parseInt(signInCookie.getValue());
-			System.out.println("check Cookie uno : " + uno);
-			MemberVo vo = service.getUserByUNO(uno);
+		Cookie loginCookie = WebUtils.getCookie(request, "LoginCookie");
+		if (loginCookie != null) {
+			String mwid = loginCookie.getValue();
+			System.out.println("check Cookie mwid : " + mwid);
+			MemberVo vo = service.getUserByUNO(mwid);
 			if (vo != null) session.setAttribute("userInfo", vo);
 		}
 		return true;

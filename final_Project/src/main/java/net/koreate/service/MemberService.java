@@ -9,7 +9,7 @@ public interface MemberService {
 
 	String login(MemberVo vo) throws Exception;
 
-	MemberVo getUserByUNO(int uno) throws Exception;
+	MemberVo getUserByUNO(String mwid) throws Exception;
 
 	MemberVo signIn(LoginDto dto) throws Exception;
 

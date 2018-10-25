@@ -70,6 +70,7 @@
 	<!-- END LOADER -->
 
 	<!-- Start header -->
+	<div id="page">
 	<header class="force-repaint-width move-header-if-lt-ie10 header__bg-transparent" id="header-main">
 		<div class="logo">
 			<a tabindex="5" href="/">Made Wedding - MW</a>
@@ -141,5 +142,6 @@
 				<span class="title"><span>로그인</span></span>
 			</a>
 		</nav>
-	</header>
+	</header></div>
 	<!-- End header -->
+	<div style="height: 135px;"></div>

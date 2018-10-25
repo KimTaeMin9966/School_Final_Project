@@ -35,6 +35,19 @@
 		$(this).removeClass('_active');
 	});
 	
+	$(window).scroll(function() {
+		var dh = $(document).height();
+		var wt = $(window).scrollTop();
+		var wh = $(window).height();
+		
+		console.log(dh+ " : "+ wt+ " : " + wh);
+		
+		if((wt + wh) > (dh - 10)) {
+			$('#page').addClass('_header-compressed');
+			$('#header-main').addClass('_compressed');
+		}
+	});
+	
 	/* ..............................................
     Gallery
     ................................................. */

@@ -24,9 +24,9 @@ public class RegisterInterceptor extends HandlerInterceptorAdapter {
 		if(vo != null) {
 			System.out.println("Interceptor VO : " + vo);
 		
-			RequestDispatcher rd = request.getRequestDispatcher("/member/register");
+			/*RequestDispatcher rd = request.getRequestDispatcher("/member/register");
 			request.setAttribute("result", mwid + "는 이미 존제하는 아이디 입니다.");
-			rd.forward(request, response);
+			rd.forward(request, response);*/
 			return false;
 		}
 		return true;

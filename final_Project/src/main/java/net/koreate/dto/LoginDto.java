@@ -1,24 +1,24 @@
 package net.koreate.dto;
 
 public class LoginDto {
-	private String uid;
-	private String upw;
+	private String mwid;
+	private String mwpw;
 	private boolean useCookie;
 
-	public String getUid() {
-		return uid;
+	public String getMwid() {
+		return mwid;
 	}
 
-	public void setUid(String uid) {
-		this.uid = uid;
+	public void setMwid(String mwid) {
+		this.mwid = mwid;
 	}
 
-	public String getUpw() {
-		return upw;
+	public String getMwpw() {
+		return mwpw;
 	}
 
-	public void setUpw(String upw) {
-		this.upw = upw;
+	public void setMwpw(String mwpw) {
+		this.mwpw = mwpw;
 	}
 
 	public boolean isUseCookie() {
@@ -28,11 +28,11 @@ public class LoginDto {
 	public void setUseCookie(boolean useCookie) {
 		this.useCookie = useCookie;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "LoginDto { [ uid : " + this.uid
-				+ " ], [ upw : " + this.upw
+		return "LoginDto { [ mwid : " + this.mwid
+				+ " ], [ mwpw : " + this.mwpw
 				+ " ], [ useCookie : " + this.useCookie
 				+ " ] }";
 	}

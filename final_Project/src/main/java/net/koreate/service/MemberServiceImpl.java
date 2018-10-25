@@ -16,13 +16,12 @@ public class MemberServiceImpl implements MemberService {
 	MemberDao dao;
 
 	@Override
-	@Transactional
 	public String register(MemberVo vo) throws Exception {
 		String result = "FAIL";
 		
 		MemberVo voBefor = dao.registerBefor(vo);
 		
-		if(voBefor == null || (voBefor.getMwid() != vo.getMwid())) { dao.register(vo); result = "SUCCESS"; }
+		if(voBefor == null || (!voBefor.getMwid().equals(vo.getMwid()))) { dao.register(vo); result = "SUCCESS"; }
 		
 		return result;
 	}
@@ -39,8 +38,8 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public MemberVo getUserByUNO(int uno) throws Exception {
-		return dao.getUserByUNO(uno);
+	public MemberVo getUserByUNO(String mwid) throws Exception {
+		return dao.getUserByUNO(mwid);
 	}
 
 	@Override
