@@ -16,12 +16,7 @@ public class ChecklistController {
 	@RequestMapping("/test")
 	public void checklistTest(HttpServletRequest request, Model model) throws Exception {
 		
-		String[] checklistArr= request.getParameterValues("test");
 		
-		
-		model.addAttribute("checklistArr",checklistArr);
-		
-		System.out.println(Arrays.toString(checklistArr));
 		
 	}
 }
