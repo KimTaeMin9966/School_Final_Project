@@ -79,7 +79,7 @@
 						</div>
 						<div class="collapse navbar-collapse justify-content-center" id="navbar-wd">
 							<ul class="navbar-nav">
-								<li><a class="nav-link" href="/wedding/radey">준비</a></li>
+								<li><a class="nav-link" href="/wedding/ready">준비</a></li>
 								<li><a class="nav-link" href="/wedding/consulting">컨설팅</a></li>
 								<li><a class="nav-link" href="/wedding/hall">웨딩홀</a></li>
 								<li><a class="nav-link" href="/wedding/studio">스튜디오</a></li>

@@ -15,6 +15,11 @@ public class WeddingController {
 	public void milo() {
 		System.out.println("Milo접속완료");
 	}
+	@RequestMapping(value="/ready")
+	public void rady() {
+		System.out.println("rady접속완료");
+	}
+
 }
 
 
