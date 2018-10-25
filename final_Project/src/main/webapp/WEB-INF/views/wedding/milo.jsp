@@ -1,114 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="../include/header.jsp"%>
-
-
-<!DOCTYPE html>
-<!-- saved from url=(0043)https://milo.bootlab.io/home-twocolumn.html -->
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>Milø</title>
-
-<link href="./milo.css" rel="stylesheet">
-</head>
-<body>
-
-	<header role="banner">
-		<nav
-			class="navbar navbar-expand-md navbar-light bg-white absolute-top">
-			<div class="container">
-
-				<button class="navbar-toggler order-2 order-md-1" type="button"
-					data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse order-3 order-md-2" id="navbar">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item dropdown active"><a
-							class="nav-link dropdown-toggle"
-							href="https://milo.bootlab.io/home-twocolumn.html#"
-							id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false">Home</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown02">
-								<a class="dropdown-item"
-									href="https://milo.bootlab.io/home-onecolumn.html">One
-									column</a> <a class="dropdown-item"
-									href="https://milo.bootlab.io/home-twocolumn.html">Two
-									column</a> <a class="dropdown-item"
-									href="https://milo.bootlab.io/home-threecolumn.html">Three
-									column</a> <a class="dropdown-item"
-									href="https://milo.bootlab.io/home-fourcolumn.html">Four
-									column</a> <a class="dropdown-item"
-									href="https://milo.bootlab.io/home-featured.html">Featured
-									posts</a> <a class="dropdown-item"
-									href="https://milo.bootlab.io/home-fullwidth.html">Full
-									width</a>
-							</div></li>
-						<li class="nav-item dropdown"><a
-							class="nav-link dropdown-toggle"
-							href="https://milo.bootlab.io/home-twocolumn.html#"
-							id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false">Posts</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown02">
-								<a class="dropdown-item"
-									href="https://milo.bootlab.io/post-image.html">Image</a> <a
-									class="dropdown-item"
-									href="https://milo.bootlab.io/post-video.html">Video</a> <a
-									class="dropdown-item"
-									href="https://milo.bootlab.io/post-new.html">New story</a>
-							</div></li>
-						<li class="nav-item dropdown"><a
-							class="nav-link dropdown-toggle"
-							href="https://milo.bootlab.io/home-twocolumn.html#"
-							id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false">Components</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown03">
-								<a class="dropdown-item"
-									href="https://milo.bootlab.io/doc-typography.html">Typography</a>
-								<a class="dropdown-item"
-									href="https://milo.bootlab.io/doc-buttons.html">Buttons</a> <a
-									class="dropdown-item"
-									href="https://milo.bootlab.io/doc-tables.html">Tables</a> <a
-									class="dropdown-item"
-									href="https://milo.bootlab.io/doc-forms.html">Forms</a> <a
-									class="dropdown-item"
-									href="https://milo.bootlab.io/doc-cards.html">Cards</a>
-							</div></li>
-					</ul>
-				</div>
-
-				<a class="navbar-brand mx-auto order-1 order-md-3"
-					href="https://milo.bootlab.io/index.html">Milø</a>
-
-				<div class="collapse navbar-collapse order-4 order-md-4" id="navbar">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link"
-							href="https://milo.bootlab.io/page-about.html">About</a></li>
-						<li class="nav-item"><a class="nav-link"
-							href="https://milo.bootlab.io/page-contact.html">Contact</a></li>
-					</ul>
-					<form class="form-inline" role="search">
-						<input
-							class="search js-search form-control form-control-rounded mr-sm-2"
-							type="text" title="Enter search query here.."
-							placeholder="Search.." aria-label="Search">
-					</form>
-				</div>
-			</div>
-		</nav>
-	</header>
-
-	<main class="main pt-4" role="main">
-
+<section class="content">
 	<div class="container">
 
 		<div class="row">
@@ -415,6 +308,7 @@
 			</div>
 		</div>
 	</div>
+	</section>
 
 	<footer class="site-footer bg-darkest" role="contentinfo">
 		<div class="container">
@@ -439,7 +333,4 @@
 	</footer>
 
 	<script src="./bundle.js.다운로드"></script>
-
-
-</body>
-</html>
+<%@include file="../include/footer.jsp"%>
