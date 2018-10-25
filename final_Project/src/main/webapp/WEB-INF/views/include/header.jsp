@@ -33,6 +33,8 @@
 	<!-- Icomoon CSS -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css">
 	
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css">
+	
 	<!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
@@ -63,11 +65,67 @@
 	<!-- END LOADER -->
 
 	<!-- Start header -->
-	<header class="top-header fixed-menu custom-mouseover">
-		<nav class="navbar header-nav navbar-expand-lg">
-			<div class="container">
-	    		<div class="row collapse navbar-collapse justify-content">
-	    			<div class="col-lg-12 opacity">
+	<header class="force-repaint-width move-header-if-lt-ie10 header__bg-transparent" id="header-main">
+		<nav id="header-nav" class="header-nav-group">
+			<div id="header-nav-child-main" class="header-nav-child header-nav-drawer">
+				<ul class="header-nav-sections" role="menubar" aria-label="구찌">
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+
+	    			<!-- <div class="col-lg-12">
 						<div class="collapse navbar-collapse justify-content-center">
 							<ul class="navbar-nav">
 								<li><a class="nav-link font-weight-bold" href="/">Made Wedding - MW</a></li>
@@ -92,5 +150,5 @@
 				</div>
 			</div>
 		</nav>
-	</header>
+	</header> -->
 	<!-- End header -->

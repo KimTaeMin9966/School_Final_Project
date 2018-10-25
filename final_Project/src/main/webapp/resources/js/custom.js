@@ -27,27 +27,25 @@
     header Bar
     ................................................. */
 	
-	/*$('header').mouseover(function() {
+	/*$('#header-custom').on("mouseover", function() {
 		$(this).css({
-			'position': 'relative',
 			'margin-bottom': '15px'
 		});
 	});
 	
-	$('header').mouseleave(function() {
+	$('#header-custom').on("mouseleave", function() {
 		$(this).css({
-			'position': 'fixed',
 			'margin-bottom': '0'
 		});
 	});*/
 	
-	$('.custom-mouseover').mouseover(function() {
+	/*$('.custom-mouseover').mouseover(function() {
 		$(this).addClass('custom-mouseover_active');
 	});
 	
 	$('.custom-mouseover').mouseleave(function() {
 		$(this).removeClass('custom-mouseover_active');
-	});
+	});*/
 	
 	/* ..............................................
     Gallery
