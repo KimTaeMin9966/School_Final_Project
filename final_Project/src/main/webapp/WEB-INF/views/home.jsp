@@ -6,6 +6,14 @@
 		<section class="product-push homepage" data-module="productpush, view360">
 			<div class="col-md-12">
 				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
+				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
+				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
+				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
+				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
+				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
+				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
+				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
+				<img alt="s" src="${pageContext.request.contextPath}/resources/images/5.jpg" width="100%" height="55%" />
 			</div>
 		</section>
 	</div>

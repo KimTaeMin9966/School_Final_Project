@@ -40,7 +40,7 @@
 		var wt = $(window).scrollTop();
 		var wh = $(window).height();
 		
-		if(wt >= 50) {
+		if(wt >= 625) {
 			$('#page').addClass('_header-compressed');
 			$('#header-main').addClass('_compressed');
 		} else {

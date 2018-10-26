@@ -11,6 +11,8 @@
     		</div>
     	</div>
     </footer>
+    </div>
+    </div>
     <!-- End Footer -->
     
 	<!-- ALL JS FILES -->
