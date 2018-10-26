@@ -12,11 +12,11 @@
 				<div class="box-body">
 					<form method="post">
 						<div class="form-group has-feedback">
-							<input type="text" name="mwid" class="form-control" placeholder="USER ID" />
+							<input type="text" name="mwid" class="form-control" placeholder="USER ID" required />
 							<span class="glypicon glypicon-evenlope form-control-feedback"></span>
 						</div>
 						<div class="form-group has-feedback">
-							<input type="password" name="mwpw" class="form-control" placeholder="USER PW" />
+							<input type="password" name="mwpw" class="form-control" placeholder="USER PW" required />
 						</div>
 						<div class="box-footer">
 							<div class="col-xs-8">
@@ -40,6 +40,7 @@
 	var message = '${result}';
 
 	if (message != null && message == 'SUCCESS') { alert("로그인에 성공하셨습니다."); }
+	else if (message != null && message == 'FAIL') { alert("로그인에 실패하셨습니다."); }
 </script>
 <!-- jQuery 2.1.4 -->
 <script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>

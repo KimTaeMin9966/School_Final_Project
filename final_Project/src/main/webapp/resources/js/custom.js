@@ -27,25 +27,26 @@
     header Bar
     ................................................. */
 	
-	/*$('#header-custom').on("mouseover", function() {
-		$(this).css({
-			'margin-bottom': '15px'
-		});
+	$('#header-main').mouseover(function() {
+		$(this).addClass('_active');
 	});
 	
-	$('#header-custom').on("mouseleave", function() {
-		$(this).css({
-			'margin-bottom': '0'
-		});
-	});*/
-	
-	/*$('.custom-mouseover').mouseover(function() {
-		$(this).addClass('custom-mouseover_active');
+	$('#header-main').mouseleave(function() {
+		$(this).removeClass('_active');
 	});
 	
-	$('.custom-mouseover').mouseleave(function() {
-		$(this).removeClass('custom-mouseover_active');
-	});*/
+	$(window).scroll(function() {
+		var dh = $(document).height();
+		var wt = $(window).scrollTop();
+		var wh = $(window).height();
+		
+		console.log(dh+ " : "+ wt+ " : " + wh);
+		
+		if((wt + wh) > (dh - 10)) {
+			$('#page').addClass('_header-compressed');
+			$('#header-main').addClass('_compressed');
+		}
+	});
 	
 	/* ..............................................
     Gallery
