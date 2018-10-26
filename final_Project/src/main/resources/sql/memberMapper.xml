@@ -16,4 +16,16 @@
 		SELECT * FROM made_wedding
 		WHERE mwid = #{mwid}
 	</select>
+	<select id="getUserByID" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid}
+	</select>
+	<select id="signIn" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<select id="getUserByUNO" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid}
+	</select>
 </mapper>

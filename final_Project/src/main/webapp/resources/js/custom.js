@@ -27,26 +27,26 @@
     header Bar
     ................................................. */
 	
-	/*$('header').mouseover(function() {
-		$(this).css({
-			'position': 'relative',
-			'margin-bottom': '15px'
-		});
+	$('#header-main').mouseover(function() {
+		$(this).addClass('_active');
 	});
 	
-	$('header').mouseleave(function() {
-		$(this).css({
-			'position': 'fixed',
-			'margin-bottom': '0'
-		});
-	});*/
-	
-	$('.custom-mouseover').mouseover(function() {
-		$(this).addClass('custom-mouseover_active');
+	$('#header-main').mouseleave(function() {
+		$(this).removeClass('_active');
 	});
 	
-	$('.custom-mouseover').mouseleave(function() {
-		$(this).removeClass('custom-mouseover_active');
+	$(window).scroll(function() {
+		var dh = $(document).height();
+		var wt = $(window).scrollTop();
+		var wh = $(window).height();
+		
+		if(wt >= 50) {
+			$('#page').addClass('_header-compressed');
+			$('#header-main').addClass('_compressed');
+		} else {
+			$('#page').removeClass('_header-compressed');
+			$('#header-main').removeClass('_compressed');
+		}
 	});
 	
 	/* ..............................................
