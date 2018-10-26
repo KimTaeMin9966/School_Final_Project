@@ -51,5 +51,16 @@ public class MemberServiceImpl implements MemberService {
 	public MemberVo getUserByID(String uid) throws Exception {
 		return dao.getUserByID(uid);
 	}
+
+	// 2018/10/26
+	@Override
+	public MemberVo loginDto(LoginDto dto) throws Exception {
+		return dao.loginDto(dto);
+	}
+
+	@Override
+	public MemberVo memberSearch(LoginDto dto) throws Exception {
+		return dao.memberSearch(dto);
+	}
 	
 }

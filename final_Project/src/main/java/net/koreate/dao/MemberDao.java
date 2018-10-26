@@ -17,4 +17,9 @@ public interface MemberDao {
 
 	MemberVo getUserByID(String uid) throws Exception;
 
+	// 2018/10/26
+	MemberVo loginDto(LoginDto dto) throws Exception;
+
+	MemberVo memberSearch(LoginDto dto) throws Exception;
+
 }
