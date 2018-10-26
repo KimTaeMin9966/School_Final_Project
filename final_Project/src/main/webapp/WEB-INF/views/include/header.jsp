@@ -144,4 +144,4 @@
 		</nav>
 	</header></div>
 	<!-- End header -->
-	<div style="height: 135px;"></div>
+	<div style="height: 20%; width: 100%"></div>

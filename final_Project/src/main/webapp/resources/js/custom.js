@@ -40,11 +40,12 @@
 		var wt = $(window).scrollTop();
 		var wh = $(window).height();
 		
-		console.log(dh+ " : "+ wt+ " : " + wh);
-		
-		if((wt + wh) > (dh - 10)) {
+		if(wt >= 50) {
 			$('#page').addClass('_header-compressed');
 			$('#header-main').addClass('_compressed');
+		} else {
+			$('#page').removeClass('_header-compressed');
+			$('#header-main').removeClass('_compressed');
 		}
 	});
 	
