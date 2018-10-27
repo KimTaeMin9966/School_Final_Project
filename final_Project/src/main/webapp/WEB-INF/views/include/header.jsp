@@ -35,7 +35,6 @@
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/responsive.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css">
 	
 </head>
@@ -172,11 +171,6 @@
 						</div>
 					</div>
 					<!-- main-header-background-center end -->
-					<!-- main-header-background-center-img start -->
-					<div class="hero-diamond">
-						<span class="hero-diamond-icon"></span>
-					</div>
-					<!-- main-header-background-center-img end -->
 				</header>
 				<!-- main-header-background end -->
 				
