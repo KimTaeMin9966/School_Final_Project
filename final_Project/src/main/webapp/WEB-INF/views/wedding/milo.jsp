@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="../include/header.jsp"%>
-<div class="content gutter">
+<div class="content gutter"></div>
 	<section class="product-push homepage" data-module="productpush, view360">
 		<div class="container">
 	
 			<div class="row">
 				<div class="col-md-9">
-	
 					<div class="row">
 						<div class="col-md-6">
 			
@@ -15,7 +14,6 @@
 					<!--1.준비 페이지-->
 							<article class="card mb-4">
 								<header class="card-header">
-								
 										<div class="card-meta">
 												<a href=/wedding/ready>
 												<time class="timeago" datetime="2017-10-26 20:00" data-tid="1"> WHY? </time></a> 준비페이지 입니다. 
