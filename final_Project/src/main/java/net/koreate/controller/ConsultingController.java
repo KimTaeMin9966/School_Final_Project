@@ -26,8 +26,36 @@ public class ConsultingController {
 		logger.info("GET & POST Called!!!");
 	}*/
 	
-	@RequestMapping(value = "/detali1", method = RequestMethod.GET)
-	public void detali1GET() throws Exception {
-		logger.info("detali1GET Called!!!");
+	@RequestMapping(value = "/detail1", method = RequestMethod.GET)
+	public void detail1GET() throws Exception {
+		logger.info("detail1GET Called!!!");
 	}
+	
+
+	@RequestMapping(value = "/detail2", method = RequestMethod.GET)
+	public void detail2GET() throws Exception {
+		logger.info("detail1GET Called!!!");
+	}
+
+	@RequestMapping(value = "/detail3", method = RequestMethod.GET)
+	public void detail3GET() throws Exception {
+		logger.info("detail1GET Called!!!");
+	}
+
+	@RequestMapping(value = "/detail4", method = RequestMethod.GET)
+	public void detail4GET() throws Exception {
+		logger.info("detail1GET Called!!!");
+	}
+
+	@RequestMapping(value = "/detail5", method = RequestMethod.GET)
+	public void detail5GET() throws Exception {
+		logger.info("detail1GET Called!!!");
+	}
+
+	@RequestMapping(value = "/detail6", method = RequestMethod.GET)
+	public void detail6GET() throws Exception {
+		logger.info("detail1GET Called!!!");
+	}
+
+
 }
