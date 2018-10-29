@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/wedding/hall/*")
-public class HallController {
+@RequestMapping("/wedding/studio/*")
+public class StudioController {
 	private static final Logger logger = LoggerFactory.getLogger(ConsultingController.class);
 	
 	@RequestMapping(value = "/detail1", method = RequestMethod.GET)

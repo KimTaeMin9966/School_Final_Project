@@ -54,7 +54,7 @@
 				<!-- main-header start -->
 				<header class="force-repaint-width move-header-if-lt-ie10 header__bg-transparent" id="header-main">
 					<!-- logo -->
-					<div class="logo"><a tabindex="5" href="/">Made Wedding - MW</a></div>
+					<div class="logo"><a tabindex="5" href="/">MAMD WEDDING</a></div>
 					<nav id="header-nav" class="header-nav-group">
 						<div id="header-nav-child-main" class="header-nav-child header-nav-drawer">
 							<!-- nav start -->
@@ -63,49 +63,42 @@
 									<div class="header-nav-section-title">
 										<a data-di-id="runway_1"
 										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/ready" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">준비</a>
+										href="/wedding/ready" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">MAIN</a>
 									</div>
 								</li>
 								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 									<div class="header-nav-section-title">
 										<a data-di-id="runway_1"
 										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/consulting" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">컨설팅</a>
+										href="/wedding/consulting" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">CONSULTING</a>
 									</div>
 								</li>
 								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 									<div class="header-nav-section-title">
 										<a data-di-id="runway_1"
 										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/hall" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">웨딩홀</a>
+										href="/wedding/hall" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">WEDDING HALL</a>
 									</div>
 								</li>
 								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 									<div class="header-nav-section-title">
 										<a data-di-id="runway_1"
 										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/studio" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">스튜디오</a>
+										href="/wedding/studio" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">WEDDING STUDIO</a>
 									</div>
 								</li>
 								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 									<div class="header-nav-section-title">
 										<a data-di-id="runway_1"
 										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/list" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">체크리스트</a>
+										href="/wedding/list" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">CHECK LIST</a>
 									</div>
 								</li>
 								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 									<div class="header-nav-section-title">
 										<a data-di-id="runway_1"
 										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/send" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">청첩장</a>
-									</div>
-								</li>
-								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
-									<div class="header-nav-section-title">
-										<a data-di-id="runway_1"
-										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/milo" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">Milo</a>
+										href="/wedding/send" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">WEDDING LETTER</a>
 									</div>
 								</li>
 							</ul>
@@ -117,12 +110,12 @@
 										<c:when test="${!empty loginYES}">
 											<a id="header-nav-signin-anchor"
 												class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
-												href="/member/logOut" tabindex="6">로그아웃</a>
+												href="/member/logOut" tabindex="6">Sign Out</a>
 										</c:when>
 										<c:otherwise>
 											<a id="header-nav-signin-anchor"
 												class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
-												href="/member/register" tabindex="6">회원가입</a>
+												href="/member/register" tabindex="6">Sign Up</a>
 										</c:otherwise>
 									</c:choose>
 								</li>
@@ -140,7 +133,7 @@
 							</c:when>
 							<c:otherwise>
 								<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="/member/login" id="header-nav-bag-anchor" aria-expanded="false">
-									<span class="title"><span>로그인</span></span>
+									<span class="title"><span>Sign In</span></span>
 								</a>
 							</c:otherwise>
 						</c:choose>
@@ -157,8 +150,8 @@
 					<!-- main-header-background-img start -->
 					<div class="hero-background-image-large-wrapper">
 						<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
-						<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
-						 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/5.jpg">
+						<img width="100%" height="70%" tabindex="-1" data-video-bg-id="5851827842001" 
+						 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/4.png">
 						<picture data-image-type="picture"></picture>
 					</div>
 					<!-- main-header-background-img end -->
