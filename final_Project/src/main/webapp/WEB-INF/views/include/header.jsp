@@ -168,8 +168,65 @@
 							<a data-component-attr-id="url" class="button-gold shop-the-collection"
 								href="/kr/ko/lo/runway/women/cruise-2019-c-runway-women-cruise-2019">여성 컬렉션</a>
 						</div>
+<<<<<<< HEAD
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/wedding/hall" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">웨딩홀</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/wedding/studio" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">스튜디오</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/wedding/list/step1" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">체크리스트</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/wedding/send" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">청첩장</a>
+						</div>
+					</li>
+					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+						<div class="header-nav-section-title">
+							<a data-di-id="runway_1"
+							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+							href="/wedding/milo" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">Milo</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="header-nav-user header-nav-secondary" style="--menu-right-pos: 141px">
+					<li id="header-nav-signin" class="header-nav-group header-nav-group-hover header-nav-sign-in-group">
+						<a id="header-nav-signin-anchor"
+							class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
+							href="/member/register" tabindex="6">회원가입</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="header-nav-bag-wrapper" class="header-nav-bag-wrapper header-nav-group header-nav-group-hover header-nav-child-bag-empty" data-module="headerUpdate">
+			<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="/member/login" id="header-nav-bag-anchor" aria-expanded="false">
+				<span class="title"><span>로그인</span></span>
+			</a>
+		</nav>
+	</header></div>
+	<!-- End header -->
+	<div style="height: 20%; width: 100%"></div>
+=======
 					</div>
 					<!-- main-header-background-center end -->
 				</header>
 				<!-- main-header-background end -->
 				
+>>>>>>> branch 'master' of https://github.com/RachelleVanmeter/School_Final_Project.git
