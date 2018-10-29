@@ -1,17 +1,27 @@
 package net.koreate.controller.hall;
 
+import java.util.List;
+
+import javax.inject.Inject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import net.koreate.controller.MemberController;
+import net.koreate.service.WeddingHallService;
+import net.koreate.vo.MemberVo;
 
 @Controller
 @RequestMapping("/wedding/hall/*")
 public class WeddingHallController {
-	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
+	private static final Logger logger = LoggerFactory.getLogger(WeddingHallController.class);
+	
+	@Inject
+	WeddingHallService service;
 	
 	/*@RequestMapping(value = "/", method = RequestMethod.GET)
 	public void GET() throws Exception {
@@ -29,13 +39,16 @@ public class WeddingHallController {
 	}*/
 	
 	@RequestMapping(value = "/area1", method = RequestMethod.GET)
-	public void area1GET() throws Exception {
-		logger.info("area1GET Called!!!");
+	public void area1GET(MemberVo vo, Model model) throws Exception {
+		logger.info("area1GET Called!!!(부산 진구의 웨딩홀)");
+		List<MemberVo> list = service.SearchArea1(vo);
+		model.addAttribute("list", list);
 	}
 	
 	@RequestMapping(value = "/area2", method = RequestMethod.GET)
 	public void area2GET() throws Exception {
 		logger.info("area2GET Called!!!");
+		
 	}
 	
 	@RequestMapping(value = "/area3", method = RequestMethod.GET)
@@ -71,10 +84,5 @@ public class WeddingHallController {
 	@RequestMapping(value = "/area9", method = RequestMethod.GET)
 	public void area9GET() throws Exception {
 		logger.info("area9GET Called!!!");
-	}
-	
-	@RequestMapping(value = "/area10", method = RequestMethod.GET)
-	public void area10GET() throws Exception {
-		logger.info("area10GET Called!!!");
 	}
 }
