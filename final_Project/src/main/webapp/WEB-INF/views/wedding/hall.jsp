@@ -1,54 +1,243 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="../include/header.jsp"%>
-
-<!-- Start Banner -->
-<div class="ulockd-home-slider">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="pogoSlider" id="js-main-slider">
-				<div style="background-image:url(${pageContext.request.contextPath}/resources/images/slider-01.jpg);">
-					<div class="lbox-caption">
-						<div class="lbox-details">
-							<h3>Leida ♥ Dominic</h1>
-							
-							<p><strong>2018 11. 29</strong></p>
-							<p><strong>우리결혼 합니다. 축하해주세요</strong></p>
-					
+	<div data-component-container="categoryThreeSmallImageComponent"
+		class="category-product-grid category-product-grid-three">
+		<div class="category-product-grid-wrapper">
+		
+		
+			<!-- 홀의 첫번째 페이지 입니다. -->
+			<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/women/womens-accessories/womens-wallets-small-accessories-c-women-accessories-wallets">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614703/CategoryOneThird_5364500YKBT1060_001_Light.jpg">
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614703/CategoryOneThird_5364500YKBT1060_001_Light.jpg">
+							</div> 
 						
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .pogoSlider -->
-		</div>
-	</div>
-</div>
-<!-- End Banner -->
+						<header class="category-grid-item-content">
+							<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">지갑 &amp; 작은 악세사리</font></font>
+								</h2>
+								<p data-component-attr-id="subtitle" class="eyebrow-link">
+								<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font></p>
+							</header></a>
+						</article>
+			
+			
+			<!-- 두번째 페이지 입니다. -->
+			<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/jewelry-watches/fashion-jewellery/for-women-c-jewelry-watches-fashion-jewelry-women">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+				
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614704/CategoryOneThird_549298J16318029_001_Light.jpg">
 
-<!-- Start About us -->
-<div id="about" class="about-box">
-	<div class="about-a1">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Leida <span>&</span> Dominic</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="row align-items-center about-main-info">
-						<div class="col-lg-8 col-md-6 col-sm-12">
-							<h2> <span>Leida</span></h2>
-							<p>
-								Fusce convallis ante id purus sagittis malesuada. Sed
-								erat ipsum, suscipit sit amet auctor quis, vehicula ut leo.
-								Maecenas felis nulla, tincidunt ac blandit a, consectetur quis
-								elit. Nulla ut magna eu purus cursus sagittis. Praesent
-								fermentum tincidunt varius. Proin sit amet tempus magna. Fusce
-								pellentesque vulputate urna.
-							</p>
-						</div>
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614704/CategoryOneThird_549298J16318029_001_Light.jpg">
+					</div> <header class="category-grid-item-content">
+						<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">고급 보석</font></font>
+						</h2>
+						<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font>
+						</p>
+					</header>
+				</a>
+			</article>
+			<!-- third small image component -->
+			<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/women/womens-accessories/womens-eyewear-c-women-accessories-eyewear">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+					</div> <header class="category-grid-item-content">
+						<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">색안경</font></font>
+						</h2>
+						<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font>
+						</p>
+					</header>
+				</a>
+			</article>
+			
+				<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/women/womens-accessories/womens-eyewear-c-women-accessories-eyewear">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+					</div> <header class="category-grid-item-content">
+						<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">색안경</font></font>
+						</h2>
+						<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font>
+						</p>
+					</header>
+				</a>
+			</article>
+			
+				<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/women/womens-accessories/womens-eyewear-c-women-accessories-eyewear">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+					</div> <header class="category-grid-item-content">
+						<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">색안경</font></font>
+						</h2>
+						<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font>
+						</p>
+					</header>
+				</a>
+			</article>
+			
+				<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/women/womens-accessories/womens-eyewear-c-women-accessories-eyewear">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+					</div> <header class="category-grid-item-content">
+						<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">색안경</font></font>
+						</h2>
+						<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font>
+						</p>
+					</header>
+				</a>
+			</article>
+			
+					<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/women/womens-accessories/womens-eyewear-c-women-accessories-eyewear">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+					</div> <header class="category-grid-item-content">
+						<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">색안경</font></font>
+						</h2>
+						<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font>
+						</p>
+					</header>
+				</a>
+			</article>
+			
+					<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/women/womens-accessories/womens-eyewear-c-women-accessories-eyewear">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+					</div> <header class="category-grid-item-content">
+						<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">색안경</font></font>
+						</h2>
+						<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font>
+						</p>
+					</header>
+				</a>
+			</article>
+			
+					<article data-attribute-id="smallImageContainer"
+				class="category-product-grid-item category-product-grid-item-three hover-link">
+				<a data-component-attr-id="url" class="category-product"
+					href="/int/en/ca/women/womens-accessories/womens-eyewear-c-women-accessories-eyewear">
+					<div class="product-image-wrapper">
+						<img alt="" data-component-attr-id="imageDefault"
+							class="product-image _loaded"
+							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+
+						<img alt="" data-component-attr-id="imageDefaultHover"
+							class="product-image hover _loaded"
+							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
+					</div> <header class="category-grid-item-content">
+						<h2 data-component-attr-id="title">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">색안경</font></font>
+						</h2>
+						<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<font style="vertical-align: inherit;"><font
+								style="vertical-align: inherit;">더 발견하다</font></font>
+						</p>
+					</header>
+				</a>
+			</article>
+			
+			
+			
+		</div>
+		<!-- .category-product-grid-wrapper -->
+	</div>
+	<!-- .category-product-grid -->
 <%@include file="../include/footer.jsp"%>

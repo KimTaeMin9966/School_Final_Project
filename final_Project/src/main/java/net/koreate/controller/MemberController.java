@@ -1,6 +1,10 @@
 package net.koreate.controller;
 
 import javax.inject.Inject;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +12,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.util.WebUtils;
 
+import net.koreate.dto.LoginDto;
 import net.koreate.service.MemberService;
 import net.koreate.vo.MemberVo;
 
@@ -61,17 +67,48 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String loginPOST(MemberVo vo, RedirectAttributes rttr) throws Exception {
+	public String loginPOST(LoginDto dto, HttpSession session, HttpServletResponse response, RedirectAttributes rttr) throws Exception {
 		logger.info("loginPOST Called!!!");
 		
-		String result = service.login(vo);
+		//String result = service.login(vo);
+		MemberVo result = service.loginDto(dto);
 		
-		if (result.equals("SUCCESS")) {
+		if (result != null) {
+			MemberVo vo = service.memberSearch(dto);
+			if (dto.isUseCookie()) {
+				Cookie cookie = new Cookie("LoginCookie", String.valueOf(vo.getMwid()));
+				cookie.setPath("/");
+				cookie.setMaxAge(60 * 60 * 24 * 7);
+				response.addCookie(cookie);
+				
+				System.out.println("mwid : " + vo.getMwid());
+				System.out.println("cookie value : "+ cookie.getValue());
+				System.out.println("ÄíÅ° ±Á±â ¿Ï·á");
+			}
+			session.setAttribute("loginYES", vo);
 			rttr.addFlashAttribute("result", result);
 			return "redirect:/";
 		}
 		
 		rttr.addFlashAttribute("result", result);
 		return "redirect:/member/login";
+	}
+	
+	@RequestMapping("/logOut")
+	public String signOut(HttpServletRequest request, HttpSession session, HttpServletResponse response) {
+		Object obj = session.getAttribute("loginYES");
+		
+		if(obj != null) {
+			session.removeAttribute("loginYES");
+			session.invalidate();
+			
+			Cookie loginCookie = WebUtils.getCookie(request, "LoginCookie");
+			if(loginCookie != null) {
+				loginCookie.setPath("/");
+				loginCookie.setMaxAge(0);
+				response.addCookie(loginCookie);
+			}
+		}
+		return "redirect:/";
 	}
 }

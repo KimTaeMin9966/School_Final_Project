@@ -28,4 +28,13 @@
 		SELECT * FROM made_wedding
 		WHERE mwid = #{mwid}
 	</select>
+	<!-- 2018/10/26 -->
+	<select id="loginDto" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<select id="memberSearch" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
 </mapper>
