@@ -40,18 +40,6 @@ public class WeddingController {
 		System.out.println("studio");
 	}
 	
-	@RequestMapping(value="/list")
-	public void list(HttpServletRequest request, Model model) {
-		
-		String[] checklistArr= request.getParameterValues("test");
-	
-	
-	model.addAttribute("checklistArr",checklistArr);
-	
-	System.out.println(Arrays.toString(checklistArr));
-	}
-	
-	
 }
 
 

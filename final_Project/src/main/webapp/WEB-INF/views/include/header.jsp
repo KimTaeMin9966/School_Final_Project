@@ -110,7 +110,7 @@
 						<div class="header-nav-section-title">
 							<a data-di-id="runway_1"
 							class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-							href="/wedding/list" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">체크리스트</a>
+							href="/wedding/list/step1" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">체크리스트</a>
 						</div>
 					</li>
 					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
