@@ -20,14 +20,14 @@ public class CheckCookieInterceptor extends HandlerInterceptorAdapter {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		HttpSession session = request.getSession();
-		if (session.getAttribute("userInfo") != null) return true;
+		if (session.getAttribute("loginYES") != null) return true;
 		
 		Cookie loginCookie = WebUtils.getCookie(request, "LoginCookie");
 		if (loginCookie != null) {
 			String mwid = loginCookie.getValue();
 			System.out.println("check Cookie mwid : " + mwid);
 			MemberVo vo = service.getUserByUNO(mwid);
-			if (vo != null) session.setAttribute("userInfo", vo);
+			if (vo != null) session.setAttribute("loginYES", vo);
 		}
 		return true;
 	}

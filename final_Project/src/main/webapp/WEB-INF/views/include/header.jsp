@@ -101,13 +101,45 @@
 										href="/wedding/send" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">WEDDING LETTER</a>
 									</div>
 								</li>
+								<c:choose>
+									<c:when test="${!empty loginYES && loginYES.mwname eq 'master'}">
+										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+											<div class="header-nav-section-title">
+												<a data-di-id="runway_1"
+												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+												href="/wedding/addConsulting" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">컨설팅 업체 추가</a>
+											</div>
+										</li>
+										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+											<div class="header-nav-section-title">
+												<a data-di-id="runway_1"
+												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+												href="/wedding/addHalls" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">웨딩홀 추가</a>
+											</div>
+										</li>
+										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+											<div class="header-nav-section-title">
+												<a data-di-id="runway_1"
+												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+												href="/wedding/addStudios" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">스튜디오 추가</a>
+											</div>
+										</li>
+										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+											<div class="header-nav-section-title">
+												<a data-di-id="runway_1"
+												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+												href="/member/management" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">관리자 페이지</a>
+											</div>
+										</li>
+									</c:when>
+								</c:choose>
 							</ul>
 							<!-- nav end -->
 							<!-- nav2 start -->
 							<ul class="header-nav-user header-nav-secondary" style="--menu-right-pos: 141px">
 								<li id="header-nav-signin" class="header-nav-group header-nav-group-hover header-nav-sign-in-group">
 									<c:choose>
-										<c:when test="${!empty LoginCookie}">
+										<c:when test="${!empty loginYES}">
 											<a id="header-nav-signin-anchor"
 												class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
 												href="/member/logOut" tabindex="6">Sign Out</a>
@@ -126,8 +158,8 @@
 					<!-- userInfo start -->
 					<nav id="header-nav-bag-wrapper" class="header-nav-bag-wrapper header-nav-group header-nav-group-hover header-nav-child-bag-empty" data-module="headerUpdate">
 						<c:choose>
-							<c:when test="${!empty LoginCookie}">
-								<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="#" id="header-nav-bag-anchor" aria-expanded="false">
+							<c:when test="${!empty loginYES}">
+								<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="/member/myInfo" id="header-nav-bag-anchor" aria-expanded="false">
 									<span class="title"><span>${loginYES.mwname}</span></span>
 								</a>
 							</c:when>
