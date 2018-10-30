@@ -6,7 +6,7 @@ import net.koreate.vo.MemberVo;
 
 public interface WeddingHallDao {
 
-	// 2018/10/29 지역별 홀의 정보검색 메소드 생성(임시)
+	// 2018/10/29
 	List<MemberVo> SearchArea1(MemberVo vo) throws Exception;
 
 }

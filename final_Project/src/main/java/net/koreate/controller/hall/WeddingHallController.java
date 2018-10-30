@@ -40,7 +40,7 @@ public class WeddingHallController {
 	
 	@RequestMapping(value = "/area1", method = RequestMethod.GET)
 	public void area1GET(MemberVo vo, Model model) throws Exception {
-		logger.info("area1GET Called!!!(ºÎ»ê Áø±¸ÀÇ ¿þµùÈ¦)");
+		logger.info("area1GET Called!!!(ë¶€ì‚°ì§„êµ¬)");
 		List<MemberVo> list = service.SearchArea1(vo);
 		model.addAttribute("list", list);
 	}
