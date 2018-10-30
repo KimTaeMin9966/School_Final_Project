@@ -2,11 +2,11 @@ package net.koreate.dao;
 
 import java.util.List;
 
-import net.koreate.vo.MemberVo;
+import net.koreate.vo.WeddingHallVo;
 
 public interface WeddingHallDao {
 
-	// 2018/10/29 지역별 홀의 정보검색 메소드 생성(임시)
-	List<MemberVo> SearchArea1(MemberVo vo) throws Exception;
+	// 2018/10/29
+	List<WeddingHallVo> SearchArea(WeddingHallVo vo) throws Exception;
 
 }

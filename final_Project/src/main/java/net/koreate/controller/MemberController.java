@@ -83,7 +83,7 @@ public class MemberController {
 				
 				System.out.println("mwid : " + vo.getMwid());
 				System.out.println("cookie value : "+ cookie.getValue());
-				System.out.println("ÄíÅ° ±Á±â ¿Ï·á");
+				System.out.println("ì¿ í‚¤êµ½ê¸° ì™„ë£Œ");
 			}
 			session.setAttribute("loginYES", vo);
 			rttr.addFlashAttribute("result", result);

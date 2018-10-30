@@ -1,48 +1,95 @@
 package net.koreate.vo;
 
-import java.util.Date;
-
 public class WeddingHallVo {
-	private String mwid;
-	private String mwpw;
-	private String mwname;
-	private Date mwregdate;
+	private int hall_hno;
+	private String hall_name;
+	private String hall_location;
+	private int hall_person;
+	private int hall_price;
+	private String hall_theme;
+	private String hall_contents;
+	private String hall_link;
+	private int hall_area;
 
-	public String getMwid() {
-		return mwid;
+	public int getHall_hno() {
+		return hall_hno;
 	}
 
-	public void setMwid(String mwid) {
-		this.mwid = mwid;
+	public void setHall_hno(int hall_hno) {
+		this.hall_hno = hall_hno;
+	}
+	
+	public String getHall_name() {
+		return hall_name;
+	}
+	
+	public void setHall_name(String hall_name) {
+		this.hall_name = hall_name;
+	}
+	
+	public String getHall_location() {
+		return hall_location;
 	}
 
-	public String getMwpw() {
-		return mwpw;
+	public void setHall_location(String hall_location) {
+		this.hall_location = hall_location;
 	}
 
-	public void setMwpw(String mwpw) {
-		this.mwpw = mwpw;
+	public int getHall_person() {
+		return hall_person;
 	}
 
-	public String getMwname() {
-		return mwname;
+	public void setHall_person(int hall_person) {
+		this.hall_person = hall_person;
 	}
 
-	public void setMwname(String mwname) {
-		this.mwname = mwname;
+	public int getHall_price() {
+		return hall_price;
 	}
 
-	public Date getMwregdate() {
-		return mwregdate;
+	public void setHall_price(int hall_price) {
+		this.hall_price = hall_price;
 	}
 
-	public void setMwregdate(Date mwregdate) {
-		this.mwregdate = mwregdate;
+	public String getHall_theme() {
+		return hall_theme;
+	}
+
+	public void setHall_theme(String hall_theme) {
+		this.hall_theme = hall_theme;
+	}
+
+	public String getHall_contents() {
+		return hall_contents;
+	}
+
+	public void setHall_contents(String hall_contents) {
+		this.hall_contents = hall_contents;
+	}
+
+	public String getHall_link() {
+		return hall_link;
+	}
+
+	public void setHall_link(String hall_link) {
+		this.hall_link = hall_link;
+	}
+
+	public int getHall_area() {
+		return hall_area;
+	}
+	
+	public void setHall_area(int hall_area) {
+		this.hall_area = hall_area;
 	}
 
 	@Override
 	public String toString() {
-		return "MemberVo [mwid=" + mwid + ", mwpw=" + mwpw + ", mwname=" + mwname + ", mwregdate=" + mwregdate + "]";
+		return "WeddingHallVo [hall_hno=" + hall_hno + ", hall_location=" + hall_location + ", hall_person="
+				+ hall_person + ", hall_price=" + hall_price + ", hall_theme=" + hall_theme + ", hall_contents="
+				+ hall_contents + ", hall_link=" + hall_link + ", hall_area=" + hall_area + "]";
 	}
+	
+	
 
 }

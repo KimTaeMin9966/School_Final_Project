@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 
 import net.koreate.dao.WeddingHallDao;
-import net.koreate.vo.MemberVo;
+import net.koreate.vo.WeddingHallVo;
 
 @Service
 public class WeddingHallServiceImpl implements WeddingHallService {
@@ -16,9 +16,9 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	WeddingHallDao dao;
 
 	@Override
-	public List<MemberVo> SearchArea1(MemberVo vo) throws Exception {
+	public List<WeddingHallVo> SearchArea(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
-		return dao.SearchArea1(vo);
+		return dao.SearchArea(vo);
 	}
 	
 }

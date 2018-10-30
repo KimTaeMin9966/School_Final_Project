@@ -107,7 +107,7 @@
 							<ul class="header-nav-user header-nav-secondary" style="--menu-right-pos: 141px">
 								<li id="header-nav-signin" class="header-nav-group header-nav-group-hover header-nav-sign-in-group">
 									<c:choose>
-										<c:when test="${!empty loginYES}">
+										<c:when test="${!empty LoginCookie}">
 											<a id="header-nav-signin-anchor"
 												class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
 												href="/member/logOut" tabindex="6">Sign Out</a>
@@ -126,7 +126,7 @@
 					<!-- userInfo start -->
 					<nav id="header-nav-bag-wrapper" class="header-nav-bag-wrapper header-nav-group header-nav-group-hover header-nav-child-bag-empty" data-module="headerUpdate">
 						<c:choose>
-							<c:when test="${!empty loginYES}">
+							<c:when test="${!empty LoginCookie}">
 								<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="#" id="header-nav-bag-anchor" aria-expanded="false">
 									<span class="title"><span>${loginYES.mwname}</span></span>
 								</a>
@@ -151,7 +151,7 @@
 					<div class="hero-background-image-large-wrapper">
 						<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
 						<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
-						 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/5.jpg">
+						 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/5.png">
 						<picture data-image-type="picture"></picture>
 					</div>
 					<!-- main-header-background-img end -->

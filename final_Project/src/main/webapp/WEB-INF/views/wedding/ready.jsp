@@ -15,10 +15,10 @@
 							<article class="card mb-4">
 								<header class="card-header">
 										<div class="card-meta">
-												<a href=/wedding/ready>
-												<time class="timeago" datetime="2017-10-26 20:00" data-tid="1"> WHY? </time></a> 준비페이지 입니다. 
+												<a href=/wedding/hall>
+												<time class="timeago" datetime="2017-10-26 20:00" data-tid="1"> WEDDING HALL </time></a> NEWS 
 											</div>
-												<a href="https://milo.bootlab.io/post-image.html">
+												<a href=/wedding/hall>
 												<h4>How can we sing about love?</h4>
 												</a>
 											</header>
