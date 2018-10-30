@@ -39,7 +39,8 @@
 	</select>
 	<!-- 2018/10/30 -->
 	<update id="edit">
-		UPTADE  made_wedding
+		UPDATE made_wedding
+		SET mwpw = #{mwpw}, mwname = #{mwname}
 		WHERE mwid = #{mwid}
 	</update>
 </mapper>
