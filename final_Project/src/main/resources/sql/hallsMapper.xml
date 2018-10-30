@@ -4,7 +4,8 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="net.koreate.dao.WeddingHallDao">
-	<select id="SearchArea1" resultType="WDHVO">
-		SELECT * FROM made_wedding
+	<select id="SearchArea" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_area = #{hall_area}
 	</select>
 </mapper>

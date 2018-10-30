@@ -11,9 +11,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import net.koreate.controller.MemberController;
 import net.koreate.service.WeddingHallService;
-import net.koreate.vo.MemberVo;
+import net.koreate.vo.WeddingHallVo;
 
 @Controller
 @RequestMapping("/wedding/hall/*")
@@ -39,50 +38,52 @@ public class WeddingHallController {
 	}*/
 	
 	@RequestMapping(value = "/area1", method = RequestMethod.GET)
-	public void area1GET(MemberVo vo, Model model) throws Exception {
+	public void area1GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("area1GET Called!!!(부산진구)");
-		List<MemberVo> list = service.SearchArea1(vo);
+		vo.setHall_area(1);
+		List<WeddingHallVo> list = service.SearchArea(vo);
 		model.addAttribute("list", list);
 	}
 	
 	@RequestMapping(value = "/area2", method = RequestMethod.GET)
-	public void area2GET() throws Exception {
+	public void area2GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("area2GET Called!!!");
+		vo.setHall_area(2);
+		List<WeddingHallVo> list = service.SearchArea(vo);
+		model.addAttribute("list", list);
 		
 	}
 	
 	@RequestMapping(value = "/area3", method = RequestMethod.GET)
-	public void area3GET() throws Exception {
+	public void area3GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("area3GET Called!!!");
+		vo.setHall_area(3);
+		List<WeddingHallVo> list = service.SearchArea(vo);
+		model.addAttribute("list", list);
 	}
 	
 	@RequestMapping(value = "/area4", method = RequestMethod.GET)
-	public void area4GET() throws Exception {
+	public void area4GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("area4GET Called!!!");
+		vo.setHall_area(4);
+		List<WeddingHallVo> list = service.SearchArea(vo);
+		model.addAttribute("list", list);
 	}
 	
 	@RequestMapping(value = "/area5", method = RequestMethod.GET)
-	public void area5GET() throws Exception {
+	public void area5GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("area5GET Called!!!");
+		vo.setHall_area(5);
+		List<WeddingHallVo> list = service.SearchArea(vo);
+		model.addAttribute("list", list);
 	}
 	
 	@RequestMapping(value = "/area6", method = RequestMethod.GET)
-	public void area6GET() throws Exception {
+	public void area6GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("area6GET Called!!!");
+		vo.setHall_area(6);
+		List<WeddingHallVo> list = service.SearchArea(vo);
+		model.addAttribute("list", list);
 	}
 	
-	@RequestMapping(value = "/area7", method = RequestMethod.GET)
-	public void area7GET() throws Exception {
-		logger.info("area7GET Called!!!");
-	}
-	
-	@RequestMapping(value = "/area8", method = RequestMethod.GET)
-	public void area8GET() throws Exception {
-		logger.info("area8GET Called!!!");
-	}
-	
-	@RequestMapping(value = "/area9", method = RequestMethod.GET)
-	public void area9GET() throws Exception {
-		logger.info("area9GET Called!!!");
-	}
 }
