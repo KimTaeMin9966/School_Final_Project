@@ -62,5 +62,10 @@ public class MemberServiceImpl implements MemberService {
 	public MemberVo memberSearch(LoginDto dto) throws Exception {
 		return dao.memberSearch(dto);
 	}
+
+	@Override
+	public String edit(MemberVo vo) throws Exception {
+		return dao.edit(vo);
+	}
 	
 }

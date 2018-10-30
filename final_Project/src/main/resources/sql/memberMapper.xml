@@ -37,4 +37,9 @@
 		SELECT * FROM made_wedding
 		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
 	</select>
+	<!-- 2018/10/30 -->
+	<update id="edit">
+		UPTADE  made_wedding
+		WHERE mwid = #{mwid}
+	</update>
 </mapper>

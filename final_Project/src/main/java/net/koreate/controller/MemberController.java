@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -111,4 +112,36 @@ public class MemberController {
 		}
 		return "redirect:/";
 	}
+	
+	@RequestMapping(value = "/myInfo", method = RequestMethod.GET)
+	public void myInfoGET(HttpSession session, Model model) throws Exception {
+		logger.info("myInfoGET Called!!!");
+		Object obj = session.getAttribute("loginYES");
+		
+		model.addAttribute("memberInfo", obj);
+	}
+	
+	@RequestMapping(value = "/editInfo", method = RequestMethod.GET)
+	public void editInfoGET(HttpSession session, Model model) throws Exception {
+		logger.info("editInfoGET Called!!!");
+		Object obj = session.getAttribute("loginYES");
+		
+		model.addAttribute("memberInfo", obj);
+	}
+	
+	@RequestMapping(value = "/editInfo", method = RequestMethod.POST)
+	public String editInfoPOST(MemberVo vo, RedirectAttributes rttr) throws Exception {
+		logger.info("editInfoPOST Called!!!");
+		
+		String result = service.edit(vo);
+		
+		if (result.equals("SUCCESS")) {
+			rttr.addFlashAttribute("result", result);
+			return "redirect:/member/myInfo";
+		}
+
+		rttr.addFlashAttribute("result", result);
+		return "redirect:/member/editInfo";
+	}
+	
 }

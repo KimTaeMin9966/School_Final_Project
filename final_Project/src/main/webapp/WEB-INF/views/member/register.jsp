@@ -42,8 +42,4 @@
 	if (message != null && message == 'SUCCESS') { alert("회원가입에 성공하셨습니다."); }
 	else if (message != null && message == 'FAIL') { alert("회원가입에 실패하셨습니다."); }
 </script>
-<!-- jQuery 2.1.4 -->
-<script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-<!-- Bootstrap 3.3.2 JS -->
-<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js" type="text/javascript"></script>
 <%@include file="../include/footer.jsp"%>

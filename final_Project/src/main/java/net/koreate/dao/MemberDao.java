@@ -22,4 +22,7 @@ public interface MemberDao {
 
 	MemberVo memberSearch(LoginDto dto) throws Exception;
 
+	// 2018/10/30
+	String edit(MemberVo vo) throws Exception;
+
 }
