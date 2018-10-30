@@ -52,27 +52,10 @@
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageMedium"
 							class="product-image _loaded"
-							data-imgformat="imageFormatMappingForCategorySingleImage //media.gucci.com/content/$format$/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src="//media.gucci.com/content/DarkGray_CategorySingle_Small_300x300/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_medium="//media.gucci.com/content/DarkGray_CategorySingle_Medium_390x390/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_medium_retina="//media.gucci.com/content/DarkGray_CategorySingle_Medium_780x780/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_small="//media.gucci.com/content/DarkGray_CategorySingle_Small_300x300/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_small_retina="//media.gucci.com/content/DarkGray_CategorySingle_Standard_600x600/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_standard="//media.gucci.com/content/DarkGray_CategorySingle_Standard_600x600/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_standard_retina="//media.gucci.com/content/DarkGray_CategorySingle_Standard_1200x1200/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							src="//media.gucci.com/content/DarkGray_CategorySingle_Standard_600x600/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg">
-
+							src="${pageContext.request.contextPath}/resources/images/5.png">
 						<img alt="" data-component-attr-id="imageMediumHover"
 							class="product-image hover _loaded"
-							data-imgformat="imageFormatMappingForCategorySingleImageHover //media.gucci.com/content/$format$/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src="//media.gucci.com/content/LightGray_CategorySingle_Small_300x300/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_medium="//media.gucci.com/content/LightGray_CategorySingle_Medium_390x390/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_medium_retina="//media.gucci.com/content/LightGray_CategorySingle_Medium_780x780/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_small="//media.gucci.com/content/LightGray_CategorySingle_Small_300x300/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_small_retina="//media.gucci.com/content/LightGray_CategorySingle_Standard_600x600/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_standard="//media.gucci.com/content/LightGray_CategorySingle_Standard_600x600/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							data-src_standard_retina="//media.gucci.com/content/LightGray_CategorySingle_Standard_1200x1200/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg"
-							src="//media.gucci.com/content/LightGray_CategorySingle_Standard_600x600/1539595809/CategorySingle_5501300V10G6629_001_Light.jpg">
+							src="${pageContext.request.contextPath}/resources/images/5.png">
 					</div> <header class="category-grid-item-content">
 						<h2 data-component-attr-id="title">
 							<font style="vertical-align: inherit;"><font
