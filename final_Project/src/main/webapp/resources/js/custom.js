@@ -13,7 +13,7 @@
 		
 		var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 		var options = { //지도를 생성할 때 필요한 기본 옵션
-			center: new daum.maps.LatLng(35.2075826,129.0701494), //지도의 중심좌표.
+			center: new daum.maps.LatLng('${}','${}'), //지도의 중심좌표.
 			level: 3 //지도의 레벨(확대, 축소 정도)
 		};
 
@@ -48,7 +48,7 @@
 		var wt = $(window).scrollTop();
 		var wh = $(window).height();
 		
-		if(wt >= 625) {
+		if(wt >= 300) {
 			$('#page').addClass('_header-compressed');
 			$('#header-main').addClass('_compressed');
 		} else {

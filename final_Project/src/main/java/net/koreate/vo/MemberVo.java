@@ -3,10 +3,10 @@ package net.koreate.vo;
 import java.util.Date;
 
 public class MemberVo {
-	private String mwid;
-	private String mwpw;
-	private String mwname;
-	private Date mwregdate;
+	private String mwid="id001";
+	private String mwpw="0000";
+	private String mwname="000";
+	private Date mwregdate = new Date();
 
 	public String getMwid() {
 		return mwid;
