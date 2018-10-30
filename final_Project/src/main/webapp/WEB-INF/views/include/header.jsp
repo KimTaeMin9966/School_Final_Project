@@ -102,7 +102,7 @@
 									</div>
 								</li>
 								<c:choose>
-									<c:when test="${!empty loginYES && loginYES.mwname eq 'master'}">
+									<c:when test="${!empty loginYES && (loginYES.mwname eq 'master' || loginYES.mwname eq '마스터') }">
 										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 											<div class="header-nav-section-title">
 												<a data-di-id="runway_1"
