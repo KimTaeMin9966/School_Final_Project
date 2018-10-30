@@ -1,303 +1,119 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="../include/header.jsp"%>
-<div class="content gutter"></div>
-	<section class="product-push homepage" data-module="productpush, view360">
-		<div class="container">
-	
-			<div class="row">
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-md-6">
-			
-			
-					<!--1.준비 페이지-->
-							<article class="card mb-4">
-								<header class="card-header">
-										<div class="card-meta">
-												<a href=/wedding/hall>
-												<time class="timeago" datetime="2017-10-26 20:00" data-tid="1"> WEDDING HALL </time></a> NEWS 
-											</div>
-												<a href=/wedding/hall>
-												<h4>How can we sing about love?</h4>
-												</a>
-											</header>
-								<a href=/wedding/ready> <img class="card-img" src="/resources/images/22.jpg" alt=""></a>
-								<div class="card-body">
-									<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
-										eget condimentum rhoncus, sem quam semper libero, sit amet
-										adipiscing sem neque sed ipsum.</p>
-									</div>
-								</article>
-					<!--1.준비 페이지-->
-							
-							
-							
-					<!--3.웨딩홀 페이지 -->
-							<article class="card mb-4">
-								<header class="card-header">
-									<div class="card-meta">
-										<a href=/wedding/consulting><time class="timeago" datetime="2017-10-03 20:00" data-tid="2">
-										웨딩홀 페이지 입니다.</time></a> in <a href=/wedding/hasll>웨딩홀 페이지 입니다.</a>
-									</div>
-									<a href=/wedding/hall> <h4 class="card-title">Oh, I guess they have the blues</h4></a>
-								</header>
-								<a href=/wedding/hall> <img class="card-img" src="/resources/images/18.jpg" alt=""> </a>
-								<div class="card-body">
-									<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
-										eget condimentum rhoncus, sem quam semper libero, sit amet
-										adipiscing sem neque sed ipsum.</p>
-									</div>
-							</article>
-					<!--3.웨딩홀 페이지 -->
-						
-						
-					<!--5. 청첩장 -->
-							<article class="card mb-4">
-								<header class="card-header">
-									<div class="card-meta">
-										<a href=/wedding/send>
-										<time class="timeago" datetime="2017-07-16 20:00" data-tid="3">청첩장 페이지 입니다.</time></a> in <a
-											href="https://milo.bootlab.io/page-category.html">청첩장 페이지 입니다.</a>
-									</div>
-									<a href=/wedding/send>
-										<h4 class="card-title">How can we, how can we sing about ourselves?</h4> </a>
-								</header>
-								<a href=/wedding/send> <img class="card-img" src="/resources/images/12.jpg" alt=""></a>
-								<div class="card-body">
-									<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
-										eget condimentum rhoncus, sem quam semper libero, sit amet
-										adipiscing sem neque sed ipsum.</p>
-									</div>
-							</article>
-					<!--5. 청첩장페이지 -->
-						</div>
-						
-						
-					<!-- 4. 스튜디오페이지 입니다. -->
-						<div class="col-md-6">
-	
-							<article class="card mb-4">
-								<header class="card-header">
-									<div class="card-meta">
-										<a href=/wedding/sutdio><time
-												class="timeago" datetime="2017-10-15 20:00" data-tid="4">스튜디오 페이지 입니다.</time></a> in 
-												<a	href=/wedding/sutdio>스튜디오 페이지 입니다.</a>
-									</div>
-									<a href=/wedding/sutdio> <h4 class="card-title">The king is made of paper</h4></a>
-								</header>
-								<a href=/wedding/studio> <img class="card-img" src="/resources/images/5.jpg" alt=""></a>
-								<div class="card-body">
-									<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
-										eget condimentum rhoncus, sem quam semper libero, sit amet
-										adipiscing sem neque sed ipsum.</p>
-								</div>
-							</article>
-						<!-- 4. 스튜디오페이지 입니다. -->
-	
-	
-						<!-- 5. 체크리스트 페이지입니다. -->
-							<article class="card mb-4">
-								<header class="card-header">
-									<div class="card-meta">
-										<a href=/wedding/checklist/test><time
-												class="timeago" datetime="2017-08-24 20:00" data-tid="5">체크리스트 페이지 입니다.</time></a> in 
-												<a href=/wedding/checklist/test>체크리스트 페이지 입니다.</a>
-												</div>
-									<a href=/wedding/checklist/test> <h4 class="card-title">Crying on the news</h4></a>
-								</header>
-									<a href=/wedding/checklist/test> <img class="card-img" src="/resources/images/13.jpg" alt=""> </a>
-									<div class="card-body">
-									<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
-										eget condimentum rhoncus, sem quam semper libero, sit amet
-										adipiscing sem neque sed ipsum.</p>
-								</div>
-							</article>
-						<!-- 5. 체크리스트 페이지입니다. -->
-	
-							<article class="card mb-4">
-								<header class="card-header">
-									<div class="card-meta">
-										<a href=/wedding/checklist/test><time
-												class="timeago" datetime="2017-05-08 20:00" data-tid="6">체크리스트 페이지 입니다.</time></a> in <a
-											href="https://milo.bootlab.io/page-category.html">체크리스트 페이지 입니다.</a>
-									</div>
-									<a href=/wedding/checklist/test>
-										<h4 class="card-title">How can you not sing about love?</h4>
-									</a>
-								</header>
-								<a href=/wedding/checklist/test> <img class="card-img" src="./1.jpg" alt="">
-								</a>
-								<div class="card-body">
-									<p class="card-text">Etiam rhoncus. Maecenas tempus, tellus
-										eget condimentum rhoncus, sem quam semper libero, sit amet
-										adipiscing sem neque sed ipsum.</p>
-								</div>
-							</article>
-							<!-- /.card -->
-	
+<div data-component-container="categoryThreeImageComponent" class="category-product-grid category-product-grid-three-left">
+	<div class="category-product-grid-wrapper">
+
+	<section class="style-news">
+			<div class="style-news-content-wrapper">
+				<header class="style-news-header">
+					<p class="eyebrow"></p>
+					<h2 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이야기</font></font></h2>
+					<p class="eyebrow"></p>
+				</header>
+
+				<section class="style-news-content">
+
+					<div class="items-wrapper">
+
+						<!-- Checks on visibility and video repeated here (and not inside the sub-component) because of the dynamic position class "even" / "odd" -->
+						<!-- See GUCUAT-2445 and GUCUAT-2447 -->
+
+						<!-- Homepage Style and News (Normal) - Even -->
+						<div class="style-news-item normal-item even">
+									<div class="item-inner-wrapper">
+					<div class="image-wrapper">
+						<a href="/int/en/st/stories/article/spring-summer-2019-le-palace-magazine-fanzine">
+									<img alt="" data-story-image="" data-imgformat="imageFormatMappingForStyleNews //media.gucci.com/content/$format$/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" data-src_small="//media.gucci.com/content/StyleNewsSingle_Small_131x78/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" data-src_small_retina="//media.gucci.com/content/StyleNewsSingle_Small_262x156/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" data-src_medium="//media.gucci.com/content/StyleNewsSingle_Medium_209x124/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" data-src_medium_retina="//media.gucci.com/content/StyleNewsSingle_Medium_418x248/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" data-src_standard="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" data-src_standard_retina="//media.gucci.com/content/StyleNewsSingle_Standard_680x404/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" data-src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1538143205/StyleNewsSingle_S91-FS-LePalace-magazine_001_Default.jpg" class="_loaded">
+										</a>
+							</div>
+					<h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Le Palace Magazine</font></font></h3>
+
+					<div class="link">
+							<a data-story-link="" href="/int/en/st/stories/article/spring-summer-2019-le-palace-magazine-fanzine" target="_top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">구찌 SS19를위한 팬케이크</font></font></a>
 						</div>
 					</div>
-	
-				</div>
-				<div class="col-md-3 ml-auto">
-	
-					<aside class="sidebar">
-						<div class="card mb-4">
-							<div class="card-body">
-								<h4 class="card-title">About</h4>
-								<p class="card-text">
-									Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
-									sem quam <a href="https://milo.bootlab.io/home-twocolumn.html#">semper
-										libero</a>, sit amet adipiscing sem neque sed ipsum.
-								</p>
-							</div>
-						</div>
-						<!-- /.card -->
-					</aside>
-	
-					<aside class="sidebar sidebar-sticky">
-						<div class="card mb-4">
-							<div class="card-body">
-								<h4 class="card-title">Tags</h4>
-								<a class="btn btn-light btn-sm mb-1"
-									href="https://milo.bootlab.io/page-category.html">Journey</a> <a
-									class="btn btn-light btn-sm mb-1"
-									href="https://milo.bootlab.io/page-category.html">Work</a> <a
-									class="btn btn-light btn-sm mb-1"
-									href="https://milo.bootlab.io/page-category.html">Lifestype</a>
-								<a class="btn btn-light btn-sm mb-1"
-									href="https://milo.bootlab.io/page-category.html">Photography</a>
-								<a class="btn btn-light btn-sm mb-1"
-									href="https://milo.bootlab.io/page-category.html">Food &amp;
-									Drinks</a>
-							</div>
-						</div>
-						<!-- /.card -->
-						<div class="card mb-4">
-							<div class="card-body">
-								<h4 class="card-title">Popular stories</h4>
-	
-								<a href="https://milo.bootlab.io/post-image.html"
-									class="d-inline-block">
-									<h4 class="h6">The blind man</h4> <img class="card-img"
-									src="./2.jpg" alt="">
-								</a>
-								<time class="timeago" datetime="2017-10-03 20:00" data-tid="7">1
-									year ago</time>
-								in Lifestyle <a href="https://milo.bootlab.io/post-image.html"
-									class="d-inline-block mt-3">
-									<h4 class="h6">Crying on the news</h4> <img class="card-img"
-									src="./3.jpg" alt="">
-								</a>
-								<time class="timeago" datetime="2017-07-16 20:00" data-tid="8">1
-									year ago</time>
-								in Work
-	
-							</div>
-						</div>
-						<!-- /.card -->
-					</aside>
-	
-				</div>
+
 			</div>
+							<!-- Homepage Style and News (Video) - 1st -->
+						<div class="style-news-item normal-item odd">
+									<div class="item-inner-wrapper">
+					<div class="image-wrapper">
+						<a href="/int/en/st/stories/article-category-beauty/article/spring-summer-2019-beauty-faces">
+									<img alt="" data-story-image="" data-imgformat="imageFormatMappingForStyleNews //media.gucci.com/content/$format$/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" data-src_small="//media.gucci.com/content/StyleNewsSingle_Small_131x78/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" data-src_small_retina="//media.gucci.com/content/StyleNewsSingle_Small_262x156/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" data-src_medium="//media.gucci.com/content/StyleNewsSingle_Medium_209x124/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" data-src_medium_retina="//media.gucci.com/content/StyleNewsSingle_Medium_418x248/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" data-src_standard="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" data-src_standard_retina="//media.gucci.com/content/StyleNewsSingle_Standard_680x404/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" data-src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537866914/StyleNewsSingle_S91-FS-SS-BEAUTY_001_Default.jpg" class="_loaded">
+										</a>
+							</div>
+					<h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">봄 여름 2019의 얼굴들</font></font></h3>
+
+					<div class="link">
+							<a data-story-link="" href="/int/en/st/stories/article-category-beauty/article/spring-summer-2019-beauty-faces" target="_top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">런웨이에서 미녀를 보아라.</font></font></a>
+						</div>
+					</div>
+
+			</div>
+							<!-- Homepage Style and News (Featured) - Central big sub component -->
+						<div class="style-news-item featured-item proportional-height">
+			<div class="item-inner-wrapper">
+				<div class="image-wrapper-proportional-height">
+					<div class="image-wrapper">
+						<a href="/int/en/st/stories/runway/article/spring-summer-2019-looks-gallery">
+									<img data-story-image="" alt="" data-imgformat="imageFormatMappingForStyleNewsVertical //media.gucci.com/content/$format$/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" data-src_small="//media.gucci.com/content/StyleNewsDoubleVertical_Small_293x518/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" data-src_small_retina="//media.gucci.com/content/StyleNewsDoubleVertical_Small_586x1036/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" data-src_medium="//media.gucci.com/content/StyleNewsDoubleVertical_Medium_203x360/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" data-src_medium_retina="//media.gucci.com/content/StyleNewsDoubleVertical_Medium_406x720/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" data-src_standard="//media.gucci.com/content/StyleNewsDoubleVertical_Standard_340x602/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" data-src_standard_retina="//media.gucci.com/content/StyleNewsDoubleVertical_Standard_680x1204/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" data-src="//media.gucci.com/content/StyleNewsDoubleVertical_Standard_340x602/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" src="//media.gucci.com/content/StyleNewsDoubleVertical_Standard_340x602/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg" class="_loaded">
+										</a>
+							</div>
+				</div>
+				<h3 data-attribute-id="title" class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2019 년 봄 여름 패션쇼 </font></font></h3>
+
+				<div class="link">
+						<a data-story-link="" href="/int/en/st/stories/runway/article/spring-summer-2019-looks-gallery" target="_top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">활주로가 보인다. </font></font></a>
+					</div>
+				</div>
 		</div>
-	
-		</main>
-	
-		<div class="site-newsletter">
-			<div class="container">
-				<div class="text-center">
-					<h3 class="h4 mb-2">MadeWEdding to our newsletter</h3>
-					<p class="text-muted">Join our monthly newsletter and never miss
-						out on new stories and promotions.</p>
-	
-					<div class="row">
-						<div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 ml-auto mr-auto">
-							<div class="input-group mb-3 mt-3">
-								<input type="text" class="form-control"
-									placeholder="Email address" aria-label="Email address">
-								<span class="input-group-btn">
-									<button id="SENDOK" class="btn btn-secondary" type="button">SEND</button>
-									
-								</span>
+
+	<!-- Homepage Style and News (Normal) - Even -->
+						<div class="style-news-item normal-item even">
+									<div class="item-inner-wrapper">
+					<div class="image-wrapper">
+						<a href="/int/en/st/stories/runway/article/spring-summer-2019-video">
+									<img alt="" data-story-image="" data-imgformat="imageFormatMappingForStyleNews //media.gucci.com/content/$format$/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" data-src_small="//media.gucci.com/content/StyleNewsSingle_Small_131x78/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" data-src_small_retina="//media.gucci.com/content/StyleNewsSingle_Small_262x156/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" data-src_medium="//media.gucci.com/content/StyleNewsSingle_Medium_209x124/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" data-src_medium_retina="//media.gucci.com/content/StyleNewsSingle_Medium_418x248/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" data-src_standard="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" data-src_standard_retina="//media.gucci.com/content/StyleNewsSingle_Standard_680x404/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" data-src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg" class="_loaded">
+										</a>
 							</div>
+					<h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">봄 여름 2019 년 모션</font></font></h3>
+
+					<div class="link">
+							<a data-story-link="" href="/int/en/st/stories/runway/article/spring-summer-2019-video" target="_top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">활주로에 살다. </font></font></a>
 						</div>
 					</div>
-				</div>
+
 			</div>
-		</div>
-		<script>
-			$('#SENDOK').on('click', function() {
-				alert("aaa");
-			});
-		</script>
-		
-		<div class="site-instagram">
-			<div class="action">
-				<a class="btn btn-light"
-					href="https://milo.bootlab.io/home-twocolumn.html#"> Follow us @
-					Instagram </a>
-			</div>
-			<div class="row no-gutters">
-				<div class="col-sm-6">
-					<div class="row no-gutters">
-						<div class="col-3">
-							<a class="photo"
-								href="https://milo.bootlab.io/home-twocolumn.html#"> <img
-								class="img-fluid" src="./1(1).jpg" alt="">
-							</a>
-						</div>
-						<div class="col-3">
-							<a class="photo"
-								href="https://milo.bootlab.io/home-twocolumn.html#"> <img
-								class="img-fluid" src="./2(1).jpg" alt="">
-							</a>
-						</div>
-						<div class="col-3">
-							<a class="photo"
-								href="https://milo.bootlab.io/home-twocolumn.html#"> <img
-								class="img-fluid" src="./3(1).jpg" alt="">
-							</a>
-						</div>
-						<div class="col-3">
-							<a class="photo"
-								href="https://milo.bootlab.io/home-twocolumn.html#"> <img
-								class="img-fluid" src="./4.jpg" alt="">
-							</a>
+							<!-- Homepage Style and News (Video) - 2nd -->
+						<div class="style-news-item normal-item odd">
+									<div class="item-inner-wrapper">
+					<div class="image-wrapper">
+						<a href="/int/en/st/stories/article/spring-summer-2019-celebrities-gallery">
+									<img alt="" data-story-image="" data-imgformat="imageFormatMappingForStyleNews //media.gucci.com/content/$format$/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" data-src_small="//media.gucci.com/content/StyleNewsSingle_Small_131x78/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" data-src_small_retina="//media.gucci.com/content/StyleNewsSingle_Small_262x156/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" data-src_medium="//media.gucci.com/content/StyleNewsSingle_Medium_209x124/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" data-src_medium_retina="//media.gucci.com/content/StyleNewsSingle_Medium_418x248/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" data-src_standard="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" data-src_standard_retina="//media.gucci.com/content/StyleNewsSingle_Standard_680x404/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" data-src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537968605/StyleNewsSingle_S91-FS-CELEBS-01_001_Default.jpg" class="_loaded">
+										</a>
+							</div>
+					<h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2019 년 봄 여름 쇼의 최전선</font></font></h3>
+
+					<div class="link">
+							<a data-story-link="" href="/int/en/st/stories/article/spring-summer-2019-celebrities-gallery" target="_top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">파리의 손님들 </font></font></a>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="row no-gutters">
-						<div class="col-3">
-							<a class="photo"
-								href="https://milo.bootlab.io/home-twocolumn.html#"> <img
-								class="img-fluid" src="./5(1).jpg" alt="">
-							</a>
-						</div>
-						<div class="col-3">
-							<a class="photo"
-								href="https://milo.bootlab.io/home-twocolumn.html#"> <img
-								class="img-fluid" src="./6.jpg" alt="">
-							</a>
-						</div>
-						<div class="col-3">
-							<a class="photo"
-								href="https://milo.bootlab.io/home-twocolumn.html#"> <img
-								class="img-fluid" src="./7.jpg" alt="">
-							</a>
-						</div>
-						<div class="col-3">
-							<a class="photo"
-								href="https://milo.bootlab.io/home-twocolumn.html#"> <img
-								class="img-fluid" src="./8.jpg" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
+
 			</div>
-		</div>
-	</section>
-</div>
+							</div>
+				</section><!-- .style-news-content -->
+
+				<!-- Style and News fotter with View All Button -->
+				<footer class="style-news-footer">
+					<div class="view-all">
+							<a data-stories-button-text="view all stories" data-stories-button-link="/int/en/st/stories" href="/int/en/st/stories" target="_top" class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">모든 보기</font></font></a>
+						</div>
+					</footer>
+
+			</div><!-- .style-news-content-wrapper -->
+		</section><!-- .style-news -->
+	<input id="numberOfComponents" type="hidden" value="6">
+	</div>
+
 <%@include file="../include/footer.jsp"%>
