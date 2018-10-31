@@ -50,7 +50,7 @@
 		
 		$.ajax({
 			type : 'PATCH',
-			url : '/member/infoEdit',
+			url : '/management/infoEdit',
 			headers : {
 				"Content-Type" : "application/json",
 				"X-HTTP-Method-Override" : "PATCH"

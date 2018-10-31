@@ -6,6 +6,7 @@
 	<typeAliases>
 		<typeAlias alias="MBVO" type="net.koreate.vo.MemberVo" />
 		<typeAlias alias="WDHVO" type="net.koreate.vo.WeddingHallVo" />
+		<typeAlias alias="WDSVO" type="net.koreate.vo.WeddingStudioVo" />
 	</typeAliases>
 	
 	<mappers>

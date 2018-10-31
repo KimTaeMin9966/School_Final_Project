@@ -12,11 +12,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.util.WebUtils;
 
@@ -158,35 +155,6 @@ public class MemberController {
 		
 		List<MemberVo> list = service.memberAllSearch();
 		model.addAttribute("memberInfos", list);
-	}
-	
-	@RequestMapping(value = "/infoView", method = RequestMethod.POST)
-	public void infoViewPOST(@RequestParam("mwid") String mwid, Model model) throws Exception {
-		logger.info("infoViewPOST Called!!!");
-		MemberVo vo = service.getUserByID(mwid);
-		model.addAttribute("memberInfo", vo);
-	}
-	
-	@RequestMapping(value = "/infoEdit", method = RequestMethod.POST)
-	public void infoEditPOST(@RequestParam("mwid") String mwid, Model model) throws Exception {
-		logger.info("infoEditPOST Called!!!");
-		MemberVo vo = service.getUserByID(mwid);
-		model.addAttribute("memberInfo", vo);
-	}
-
-	@ResponseBody
-	@RequestMapping(value = "/infoEdit", method = RequestMethod.PATCH)
-	public String infoEditPATCH(@RequestBody MemberVo vo) throws Exception {
-		logger.info("infoEditPATCH Called!!!");
-		service.infoUpdateByVO(vo);
-		return "SUCCESS";
-	}
-	
-	@RequestMapping(value = "/infoDelete", method = RequestMethod.POST)
-	public String infoDeletePOST(@RequestParam("mwid") String mwid) throws Exception {
-		logger.info("infoDeletePOST Called!!!");
-		service.infoDeleteByID(mwid);
-		return "redirect:/member/management";
 	}
 	
 }

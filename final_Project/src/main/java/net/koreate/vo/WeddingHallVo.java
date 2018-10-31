@@ -6,7 +6,7 @@ public class WeddingHallVo {
 	private String hall_location;
 	private int hall_person;
 	private int hall_price;
-	private String hall_theme;
+	private String hall_thema;
 	private String hall_contents;
 	private String hall_link;
 	private int hall_area;
@@ -51,12 +51,12 @@ public class WeddingHallVo {
 		this.hall_price = hall_price;
 	}
 
-	public String getHall_theme() {
-		return hall_theme;
+	public String getHall_thema() {
+		return hall_thema;
 	}
 
-	public void setHall_theme(String hall_theme) {
-		this.hall_theme = hall_theme;
+	public void setHall_thema(String hall_thema) {
+		this.hall_thema = hall_thema;
 	}
 
 	public String getHall_contents() {
@@ -86,7 +86,7 @@ public class WeddingHallVo {
 	@Override
 	public String toString() {
 		return "WeddingHallVo [hall_hno=" + hall_hno + ", hall_location=" + hall_location + ", hall_person="
-				+ hall_person + ", hall_price=" + hall_price + ", hall_theme=" + hall_theme + ", hall_contents="
+				+ hall_person + ", hall_price=" + hall_price + ", hall_thema=" + hall_thema + ", hall_contents="
 				+ hall_contents + ", hall_link=" + hall_link + ", hall_area=" + hall_area + "]";
 	}
 	

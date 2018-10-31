@@ -51,21 +51,6 @@ public class WeddingController {
 		logger.info("sendGET Called!!!");
 	}
 	
-	// 관리자 전용
-	@RequestMapping(value = "/consultingManagement", method = RequestMethod.GET)
-	public void consultingManagementGET() throws Exception {
-		logger.info("consultingManagementGET Called!!!");
-	}
-
-	@RequestMapping(value = "/hallManagement", method = RequestMethod.GET)
-	public void hallManagementGET() throws Exception {
-		logger.info("hallManagementGET Called!!!");
-	}
-	
-	@RequestMapping(value = "/studioManagement", method = RequestMethod.GET)
-	public void studioManagementGET() throws Exception {
-		logger.info("studioManagementGET Called!!!");
-	}
 }
 
 

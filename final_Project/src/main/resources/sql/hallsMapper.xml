@@ -8,4 +8,10 @@
 		SELECT * FROM made_wedding_halls
 		WHERE hall_area = #{hall_area}
 	</select>
+	<select id="SearchAllhall" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+	</select>
+	<select id="SearchAllstudio" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+	</select>
 </mapper>
