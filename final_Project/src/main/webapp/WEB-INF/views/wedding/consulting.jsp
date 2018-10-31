@@ -9,22 +9,20 @@
 				<article data-component-id="halfMediumFirst"
 					class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
 						<a data-component-attr-id="url" class="category-product" href="/wedding/consulting/detail1">
-						<div class="product-image-wrapper">
-							<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded" src="">
-	
-							<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded" src="">
+						<div >
+							<img src="${pageContext.request.contextPath}/resources/images/lotte3.png">
 						</div>
 						<header class="category-grid-item-content">
 							<h2 data-component-attr-id="title">
 								<font style="vertical-align: inherit;">
-									<font style="vertical-align: inherit;">LOTTE WEDDING</font>
+									<font style="vertical-align: inherit;"></font>
 								</font>
 							</h2>
-							<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<!-- <p data-component-attr-id="subtitle" class="eyebrow-link">
 								<font style="vertical-align: inherit;">
-									<font style="vertical-align: inherit;">부산진구 롯데백화점 롯데웨딩</font>
+									<font style="vertical-align: inherit;"></font>
 								</font>
-							</p>
+							</p> -->
 						</header>
 					</a>
 				</article>
@@ -34,22 +32,16 @@
 				<article data-component-id="halfMediumFirst"
 					class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
 						<a data-component-attr-id="url" class="category-product" href="/wedding/consulting/detail2">
-						<div class="product-image-wrapper">
-							<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded" src="">
-	
-							<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded" src="">
+						<div >
+							<img src="${pageContext.request.contextPath}/resources/images/bwcs2.png">
 						</div>
 						<header class="category-grid-item-content">
 							<h2 data-component-attr-id="title">
 								<font style="vertical-align: inherit;">
-									<font style="vertical-align: inherit;">BWC</font>
+									<font style="vertical-align: inherit;"></font>
 								</font>
 							</h2>
-							<p data-component-attr-id="subtitle" class="eyebrow-link">
-								<font style="vertical-align: inherit;">
-									<font style="vertical-align: inherit;">부산해운대구 센텀벡스코 BWC웨딩</font>
-								</font>
-							</p>
+						
 						</header>
 					</a>
 				</article>
@@ -60,22 +52,16 @@
 				<article data-component-id="halfMediumFirst"
 					class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
 						<a data-component-attr-id="url" class="category-product" href="/wedding/consulting/detail3">
-						<div class="product-image-wrapper">
-							<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded" src="">
-	
-							<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded" src="">
+						<div >
+							<img src="${pageContext.request.contextPath}/resources/images/오렌지웨딩2.png">
 						</div>
 						<header class="category-grid-item-content">
 							<h2 data-component-attr-id="title">
 								<font style="vertical-align: inherit;">
-									<font style="vertical-align: inherit;">ORANGE WEDDING</font>
+									<font style="vertical-align: inherit;"></font>
 								</font>
 							</h2>
-							<p data-component-attr-id="subtitle" class="eyebrow-link">
-								<font style="vertical-align: inherit;">
-									<font style="vertical-align: inherit;">부산 수영구 광안동 오렌지웨딩</font>
-								</font>
-							</p>
+							
 						</header>
 					</a>
 				</article>

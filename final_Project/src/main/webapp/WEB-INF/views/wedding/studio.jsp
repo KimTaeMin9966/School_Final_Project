@@ -5,251 +5,108 @@
 		class="category-product-grid category-product-grid-three">
 		<div class="category-product-grid-wrapper">
 		
-		
-		<!-- 스튜디오1페이지 -->	
-			<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area1>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614703/CategoryOneThird_5364500YKBT1060_001_Light.jpg">
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614703/CategoryOneThird_5364500YKBT1060_001_Light.jpg">
-							</div> 
-						
+		<!-- detail1 -->
+				<article data-component-id="halfMediumFirst"
+					class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
+						<a data-component-attr-id="url" class="category-product" href="/wedding/consulting/detail1">
+						<div class="product-image-wrapper">
+							<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded" src="">
+	
+							<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded" src="">
+						</div>
 						<header class="category-grid-item-content">
 							<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">지갑 &amp; 작은 악세사리</font></font>
-								</h2>
-								<p data-component-attr-id="subtitle" class="eyebrow-link">
-								<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font></p>
-							</header></a>
-						</article>	
-		<!-- 스튜디오1페이지 -->		
-		
-		<!-- 스튜디오2페이지 -->	
-			<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product"
-					href=/wedding/studio/area2>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">부산 해운대 스튜디오</font>
+								</font>
+							</h2>
+							<p data-component-attr-id="subtitle" class="eyebrow-link">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">BUSAN HAEUNDAE STUDIO</font>
+								</font>
+							</p>
+						</header>
+					</a>
+				</article>
+			<!-- detail1 -->		
 				
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614704/CategoryOneThird_549298J16318029_001_Light.jpg">
-
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614704/CategoryOneThird_549298J16318029_001_Light.jpg">
-					</div> <header class="category-grid-item-content">
-						<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">고급 보석</font></font>
-						</h2>
-						<p data-component-attr-id="subtitle" class="eyebrow-link">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font>
-						</p>
-					</header>
-				</a>
-			</article>
-		<!-- 스튜디오2페이지 -->	
-		
-		
-		<!-- 스튜디오3페이지 -->
-			<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area3>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-					</div> <header class="category-grid-item-content">
-						<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">색안경</font></font>
-						</h2>
-						<p data-component-attr-id="subtitle" class="eyebrow-link">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font>
-						</p>
-					</header>
-				</a>
-			</article>
-		<!-- 스튜디오3페이지 -->
-			
-		<!-- 스튜디오4페이지 -->
-				<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area4>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-					</div> <header class="category-grid-item-content">
-						<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">색안경</font></font>
-						</h2>
-						<p data-component-attr-id="subtitle" class="eyebrow-link">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font>
-						</p>
-					</header>
-				</a>
-			</article>
-		<!-- 스튜디오4페이지 -->
-			
-		<!-- 스듀디오5페이지 -->
-				<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area5>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-					</div> <header class="category-grid-item-content">
-						<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">색안경</font></font>
-						</h2>
-						<p data-component-attr-id="subtitle" class="eyebrow-link">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font>
-						</p>
-					</header>
-				</a>
-			</article>
-		<!-- 스듀디오5페이지 -->
-		
-		<!-- 스듀디오6페이지 -->
-				<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area6>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-					</div> <header class="category-grid-item-content">
-						<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">색안경</font></font>
-						</h2>
-						<p data-component-attr-id="subtitle" class="eyebrow-link">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font>
-						</p>
-					</header>
-				</a>
-			</article>
-		<!-- 스듀디오6페이지 -->
+			<!-- detail2 -->		
+				<article data-component-id="halfMediumFirst"
+					class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
+						<a data-component-attr-id="url" class="category-product" href="/wedding/consulting/detail2">
+						<div class="product-image-wrapper">
+							<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded" src="">
+	
+							<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded" src="">
+						</div>
+						<header class="category-grid-item-content">
+							<h2 data-component-attr-id="title">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">부산 연제구 스튜디오</font>
+								</font>
+							</h2>
+							<p data-component-attr-id="subtitle" class="eyebrow-link">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">BUSAN YEONJE STUDIO</font>
+								</font>
+							</p>
+						</header>
+					</a>
+				</article>
+			<!-- detail2 -->	
+				
+				
+			<!-- detail3 -->		
+				<article data-component-id="halfMediumFirst"
+					class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
+						<a data-component-attr-id="url" class="category-product" href="/wedding/consulting/detail3">
+						<div class="product-image-wrapper">
+							<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded" src="">
+	
+							<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded" src="">
+						</div>
+						<header class="category-grid-item-content">
+							<h2 data-component-attr-id="title">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">부산 동래 스튜디오</font>
+								</font>
+							</h2>
+							<p data-component-attr-id="subtitle" class="eyebrow-link">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">BUSAN DONGNAE STUDIO</font>
+								</font>
+							</p>
+						</header>
+					</a>
+				</article>
+			<!-- detail3 -->		
 			
 			
-		<!--  스듀디오 7페이지 -->
-					<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area7>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-					</div> <header class="category-grid-item-content">
-						<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">색안경</font></font>
-						</h2>
-						<p data-component-attr-id="subtitle" class="eyebrow-link">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font>
-						</p>
-					</header>
-				</a>
-			</article>
-		<!--  스듀디오 7페이지 -->	
+			<!-- detail4 -->	
+				<article data-component-id="halfMediumFirst"
+					class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
+						<a data-component-attr-id="url" class="category-product" href="/wedding/consulting/detail4">
+						<div class="product-image-wrapper">
+							<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded" src="">
+	
+							<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded" src="">
+						</div>
+						<header class="category-grid-item-content">
+							<h2 data-component-attr-id="title">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">부산 진구,중구,동구 스튜디오</font>
+								</font>
+							</h2>
+							<p data-component-attr-id="subtitle" class="eyebrow-link">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">BUSAN /JIN GU/ DONG GU/ /JUNG GU/ STUDIO</font>
+								</font>
+							</p>
+						</header>
+					</a>
+				</article>	
+			<!-- detail4 -->		
 		
-		
-		
-		<!--  스듀디오 8페이지 -->
-					<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area8>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-					</div> <header class="category-grid-item-content">
-						<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">색안경</font></font>
-						</h2>
-						<p data-component-attr-id="subtitle" class="eyebrow-link">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font>
-						</p>
-					</header>
-				</a>
-			</article>
-		<!--  스듀디오 8페이지 -->	
-		
-		
-		
-		<!--  스듀디오 9 페이지 -->
-					<article data-attribute-id="smallImageContainer"
-				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area9>
-					<div class="product-image-wrapper">
-						<img alt="" data-component-attr-id="imageDefault"
-							class="product-image _loaded"
-							src="//media.gucci.com/content/DarkGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-
-						<img alt="" data-component-attr-id="imageDefaultHover"
-							class="product-image hover _loaded"
-							src="//media.gucci.com/content/LightGray_CategoryOneThird_Standard_400x400/1539614705/CategoryOneThird_558690J07401115_001_Light.jpg">
-					</div> <header class="category-grid-item-content">
-						<h2 data-component-attr-id="title">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">색안경</font></font>
-						</h2>
-						<p data-component-attr-id="subtitle" class="eyebrow-link">
-							<font style="vertical-align: inherit;"><font
-								style="vertical-align: inherit;">더 발견하다</font></font>
-						</p>
-					</header>
-				</a>
-			</article>
-		<!--  스듀디오 9페이지 -->
-			
-			
 		</div>
-		<!-- .category-product-grid-wrapper -->
 	</div>
-	<!-- .category-product-grid -->
 <%@include file="../include/footer.jsp"%>

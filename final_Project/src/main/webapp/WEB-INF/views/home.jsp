@@ -27,7 +27,7 @@
 							<div class="item-inner-wrapper">
 								<div class="image-wrapper">
 									<a
-										href="/int/en/st/stories/article/spring-summer-2019-le-palace-magazine-fanzine">
+										href="/wedding/consulting">
 										<img alt="" data-story-image=""
 										src="${pageContext.request.contextPath}/resources/images/companys.png"
 										class="_loaded">
@@ -53,7 +53,7 @@
 							<div class="item-inner-wrapper">
 								<div class="image-wrapper">
 									<a
-										href="/int/en/st/stories/article-category-beauty/article/spring-summer-2019-beauty-faces">
+										href="/wedding/checklist">
 										<img alt="" data-story-image=""
 										src="${pageContext.request.contextPath}/resources/images/checklist.png"
 										class="_loaded">
@@ -79,9 +79,8 @@
 								<div class="image-wrapper-proportional-height">
 									<div class="image-wrapper">
 										<a
-											href="/int/en/st/stories/runway/article/spring-summer-2019-looks-gallery">
-											<img data-story-image="" alt=""
-											src="//media.gucci.com/content/StyleNewsDoubleVertical_Standard_340x602/1537869890/StyleNewsDoubleVertical_S91-FS-SS-Lineup-1_001_Default.jpg"
+											href="/wedding/hall">
+											<img src="${pageContext.request.contextPath}/resources/images/5555.png"
 											class="_loaded">
 										</a>
 									</div>
@@ -105,9 +104,8 @@
 							<div class="item-inner-wrapper">
 								<div class="image-wrapper">
 									<a
-										href="/int/en/st/stories/runway/article/spring-summer-2019-video">
-										<img alt="" data-story-image=""
-										src="//media.gucci.com/content/StyleNewsSingle_Standard_340x202/1537812163/StyleNewsSingle_S91-FS-SS-Location_001_Default.jpg"
+										href="/wedding/studio">
+										<img src="${pageContext.request.contextPath}/resources/images/44.png"
 										class="_loaded">
 									</a>
 								</div>
@@ -130,9 +128,9 @@
 							<div class="item-inner-wrapper">
 								<div class="image-wrapper">
 									<a
-										href="/int/en/st/stories/article/spring-summer-2019-celebrities-gallery">
+										href="/wedding/send">
 										<img alt="" data-story-image=""
-										src="${pageContext.request.contextPath}/resources/images/LETTER.png"
+										src="${pageContext.request.contextPath}/resources/images/666.png"
 										class="_loaded">
 									</a>
 								</div>
