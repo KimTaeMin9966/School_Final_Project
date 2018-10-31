@@ -1,5 +1,7 @@
 package net.koreate.controller;
 
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -10,8 +12,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.util.WebUtils;
 
@@ -130,18 +135,58 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value = "/editInfo", method = RequestMethod.POST)
-	public String editInfoPOST(MemberVo vo, RedirectAttributes rttr) throws Exception {
+	public String editInfoPOST(MemberVo vo, HttpSession session, RedirectAttributes rttr) throws Exception {
 		logger.info("editInfoPOST Called!!!");
 		
-		String result = service.edit(vo);
+		service.editInfo(vo);
 		
-		if (result.equals("SUCCESS")) {
+		MemberVo result = service.getUserByVO(vo);
+		
+		if (result != null) {
+			session.setAttribute("loginYES", result);
 			rttr.addFlashAttribute("result", result);
 			return "redirect:/member/myInfo";
 		}
 
 		rttr.addFlashAttribute("result", result);
 		return "redirect:/member/editInfo";
+	}
+	
+	@RequestMapping(value = "/management", method = RequestMethod.GET)
+	public void managementGET(Model model) throws Exception {
+		logger.info("managementGET Called!!!");
+		
+		List<MemberVo> list = service.memberAllSearch();
+		model.addAttribute("memberInfos", list);
+	}
+	
+	@RequestMapping(value = "/infoView", method = RequestMethod.POST)
+	public void infoViewPOST(@RequestParam("mwid") String mwid, Model model) throws Exception {
+		logger.info("infoViewPOST Called!!!");
+		MemberVo vo = service.getUserByID(mwid);
+		model.addAttribute("memberInfo", vo);
+	}
+	
+	@RequestMapping(value = "/infoEdit", method = RequestMethod.POST)
+	public void infoEditPOST(@RequestParam("mwid") String mwid, Model model) throws Exception {
+		logger.info("infoEditPOST Called!!!");
+		MemberVo vo = service.getUserByID(mwid);
+		model.addAttribute("memberInfo", vo);
+	}
+
+	@ResponseBody
+	@RequestMapping(value = "/infoEdit", method = RequestMethod.PATCH)
+	public String infoEditPATCH(@RequestBody MemberVo vo) throws Exception {
+		logger.info("infoEditPATCH Called!!!");
+		service.infoUpdateByVO(vo);
+		return "SUCCESS";
+	}
+	
+	@RequestMapping(value = "/infoDelete", method = RequestMethod.POST)
+	public String infoDeletePOST(@RequestParam("mwid") String mwid) throws Exception {
+		logger.info("infoDeletePOST Called!!!");
+		service.infoDeleteByID(mwid);
+		return "redirect:/member/management";
 	}
 	
 }

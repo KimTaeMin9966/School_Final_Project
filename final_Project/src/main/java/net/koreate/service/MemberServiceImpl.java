@@ -1,5 +1,7 @@
 package net.koreate.service;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
@@ -63,8 +65,28 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public String edit(MemberVo vo) throws Exception {
-		return dao.edit(vo);
+	public void editInfo(MemberVo vo) throws Exception {
+		dao.editInfo(vo);
+	}
+
+	@Override
+	public MemberVo getUserByVO(MemberVo vo) throws Exception {
+		return dao.getUserByVO(vo);
+	}
+
+	@Override
+	public List<MemberVo> memberAllSearch() throws Exception {
+		return dao.memberAllSearch();
+	}
+
+	@Override
+	public void infoDeleteByID(String mwid) throws Exception {
+		dao.infoDeleteByID(mwid);
+	}
+
+	@Override
+	public void infoUpdateByVO(MemberVo vo) throws Exception {
+		dao.infoUpdateByVO(vo);
 	}
 	
 }

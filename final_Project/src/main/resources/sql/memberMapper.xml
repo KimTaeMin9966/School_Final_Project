@@ -38,7 +38,22 @@
 		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
 	</select>
 	<!-- 2018/10/30 -->
-	<update id="edit">
+	<update id="editInfo">
+		UPDATE made_wedding
+		SET mwpw = #{mwpw}, mwname = #{mwname}
+		WHERE mwid = #{mwid}
+	</update>
+	<select id="getUserByVO" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<select id="memberAllSearch" resultType="MBVO">
+		SELECT * FROM made_wedding
+	</select>
+	<delete id="infoDeleteByID">
+		DELETE FROM made_wedding WHERE mwid = #{mwid}
+	</delete>
+	<update id="infoUpdateByVO">
 		UPDATE made_wedding
 		SET mwpw = #{mwpw}, mwname = #{mwname}
 		WHERE mwid = #{mwid}
