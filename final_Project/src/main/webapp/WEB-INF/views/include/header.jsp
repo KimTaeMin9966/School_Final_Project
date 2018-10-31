@@ -33,6 +33,7 @@
 	<!-- Offline JS -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/handlebars.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/smoothscroll.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
@@ -40,6 +41,7 @@
 	<!-- Offline CSS -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/magnific-popup.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css">
