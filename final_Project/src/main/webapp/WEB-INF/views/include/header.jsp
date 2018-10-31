@@ -101,21 +101,21 @@
 											<div class="header-nav-section-title">
 												<a data-di-id="runway_1"
 												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-												href="/wedding/addConsulting" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">컨설팅 업체 추가</a>
+												href="/wedding/consultingManagement" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">컨설팅 업체 추가</a>
 											</div>
 										</li>
 										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 											<div class="header-nav-section-title">
 												<a data-di-id="runway_1"
 												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-												href="/wedding/addHalls" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">웨딩홀 추가</a>
+												href="/wedding/hallManagement" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">웨딩홀 추가</a>
 											</div>
 										</li>
 										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 											<div class="header-nav-section-title">
 												<a data-di-id="runway_1"
 												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-												href="/wedding/addStudios" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">스튜디오 추가</a>
+												href="/wedding/studioManagement" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">스튜디오 추가</a>
 											</div>
 										</li>
 										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
@@ -190,9 +190,9 @@
 								<span data-component-attr-id="subtitle"></span>
 							</h1>
 							<a data-component-attr-id="url" class="button-gold shop-the-collection"
-								href="/kr/ko/lo/runway/men/cruise-2019-c-runway-men-cruise-2019">남성 컬렉션</a>
+								href="#">남성 컬렉션</a>
 							<a data-component-attr-id="url" class="button-gold shop-the-collection"
-								href="/kr/ko/lo/runway/women/cruise-2019-c-runway-women-cruise-2019">여성 컬렉션</a>
+								href="#">여성 컬렉션</a>
 						</div>
 					</div>
 					<!-- main-header-background-center end -->
