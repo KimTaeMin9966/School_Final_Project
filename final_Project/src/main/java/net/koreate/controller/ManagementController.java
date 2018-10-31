@@ -46,6 +46,7 @@ public class ManagementController {
 		logger.info("GET & POST Called!!!");
 	}*/
 	
+	// 맴버 관리
 	@RequestMapping(value = "/infoView", method = RequestMethod.POST)
 	public void infoViewPOST(@RequestParam("mwid") String mwid, Model model) throws Exception {
 		logger.info("infoViewPOST Called!!!");
@@ -75,6 +76,7 @@ public class ManagementController {
 		return "redirect:/member/management";
 	}
 	
+	// 목록 보기
 	@RequestMapping(value = "/consulting", method = RequestMethod.GET)
 	public void consultingGET() throws Exception {
 		logger.info("consultingGET Called!!!");
@@ -94,28 +96,114 @@ public class ManagementController {
 		model.addAttribute("studioList", list);
 	}
 	
+	
+	// 컨설팅 업체 추가
 	@RequestMapping(value = "/consulting/add", method = RequestMethod.GET)
 	public void consultingaddGET() throws Exception {
 		logger.info("consultingaddGET Called!!!");
 	}
+	
+	@RequestMapping(value = "/consulting/add", method = RequestMethod.POST)
+	public void consultingaddPOST() throws Exception {
+		logger.info("consultingaddPOST Called!!!");
+	}
 
+	// 홀 업체 추가
 	@RequestMapping(value = "/hall/add", method = RequestMethod.GET)
 	public void halladdGET() throws Exception {
 		logger.info("halladdGET Called!!!");
 	}
 	
 	@RequestMapping(value = "/hall/add", method = RequestMethod.POST)
-	public void halladdPOST(WeddingHallVo vo) throws Exception {
+	public String halladdPOST(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("halladdPOST Called!!!");
+		hService.hallAdd(vo);
+
+		model.addAttribute("result", "SUCCESS");
+		return "redirect:/management/hall";
 	}
-	
+
+	// 스튜디오 업체 추가
 	@RequestMapping(value = "/studio/add", method = RequestMethod.GET)
 	public void studioaddGET() throws Exception {
 		logger.info("studioaddGET Called!!!");
 	}
 	
 	@RequestMapping(value = "/studio/add", method = RequestMethod.POST)
-	public void studioaddPOST(WeddingStudioVo vo) throws Exception {
+	public String studioaddPOST(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("studioaddPOST Called!!!");
+		hService.studioAdd(vo);
+
+		model.addAttribute("result", "SUCCESS");
+		return "redirect:/management/studio";
 	}
+	
+	
+	// 컨설팅 업체 수정
+	@RequestMapping(value = "/consulting/edit", method = RequestMethod.POST)
+	public void consultingeditPOST() throws Exception {
+		logger.info("consultingeditPOST Called!!!");
+	}
+	
+	@RequestMapping(value = "/consulting/edit", method = RequestMethod.PATCH)
+	public void consultingeditPATCH() throws Exception {
+		logger.info("consultingeditPATCH Called!!!");
+	}
+
+	// 홀 업체 수정
+	@RequestMapping(value = "/hall/edit", method = RequestMethod.POST)
+	public void halleditPOST(@RequestParam("hall_hno") int hall_hno, Model model) throws Exception {
+		logger.info("halleditPOST Called!!!");
+		WeddingHallVo vo = hService.getHallByHNO(hall_hno);
+		model.addAttribute("editHall", vo);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/hall/edit", method = RequestMethod.PATCH)
+	public String halleditPATCH(@RequestBody WeddingHallVo vo) throws Exception {
+		logger.info("halleditPATCH Called!!!");
+		System.out.println(vo);
+		hService.hallEdit(vo);
+		return "SUCCESS";
+	}
+
+	// 스튜디오 업체 수정
+	@RequestMapping(value = "/studio/edit", method = RequestMethod.POST)
+	public void studioeditPOST(@RequestParam("studio_hno") int studio_hno, Model model) throws Exception {
+		logger.info("studioeditPOST Called!!!");
+		WeddingStudioVo vo = hService.getStudioByHNO(studio_hno);
+		model.addAttribute("editStudio", vo);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/studio/edit", method = RequestMethod.PATCH)
+	public String studioeditPATCH(@RequestBody WeddingStudioVo vo) throws Exception {
+		logger.info("studioeditPATCH Called!!!");
+		hService.studioEdit(vo);
+		return "SUCCESS";
+	}
+	
+	
+	// 컨설팅 업체 삭제
+	@RequestMapping(value = "/consulting/delete", method = RequestMethod.POST)
+	public void consultingdeletePOST() throws Exception {
+		logger.info("consultingdeletePOST Called!!!");
+	}
+
+	// 홀 업체 삭제
+	@RequestMapping(value = "/hall/delete", method = RequestMethod.POST)
+	public String halldeletePOST(@RequestParam("hall_hno") int hall_hno) throws Exception {
+		logger.info("halldeletePOST Called!!!");
+		hService.hallDeleteByHNO(hall_hno);
+		return "redirect:/management/hall";
+	}
+
+	// 스튜디오 업체 삭제
+	@RequestMapping(value = "/studio/delete", method = RequestMethod.POST)
+	public String studiodeletePOST(@RequestParam("studio_hno") int studio_hno) throws Exception {
+		logger.info("studiodeletePOST Called!!!");
+		hService.studioDeleteByHNO(studio_hno);
+		return "redirect:/management/studio";
+	}
+	
 }

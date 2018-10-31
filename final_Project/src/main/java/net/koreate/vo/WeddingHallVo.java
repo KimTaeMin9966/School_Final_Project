@@ -18,15 +18,15 @@ public class WeddingHallVo {
 	public void setHall_hno(int hall_hno) {
 		this.hall_hno = hall_hno;
 	}
-	
+
 	public String getHall_name() {
 		return hall_name;
 	}
-	
+
 	public void setHall_name(String hall_name) {
 		this.hall_name = hall_name;
 	}
-	
+
 	public String getHall_location() {
 		return hall_location;
 	}
@@ -78,18 +78,16 @@ public class WeddingHallVo {
 	public int getHall_area() {
 		return hall_area;
 	}
-	
+
 	public void setHall_area(int hall_area) {
 		this.hall_area = hall_area;
 	}
 
 	@Override
 	public String toString() {
-		return "WeddingHallVo [hall_hno=" + hall_hno + ", hall_location=" + hall_location + ", hall_person="
-				+ hall_person + ", hall_price=" + hall_price + ", hall_thema=" + hall_thema + ", hall_contents="
-				+ hall_contents + ", hall_link=" + hall_link + ", hall_area=" + hall_area + "]";
+		return "WeddingHallVo [hall_hno=" + hall_hno + ", hall_name=" + hall_name + ", hall_location=" + hall_location
+				+ ", hall_person=" + hall_person + ", hall_price=" + hall_price + ", hall_thema=" + hall_thema
+				+ ", hall_contents=" + hall_contents + ", hall_link=" + hall_link + ", hall_area=" + hall_area + "]";
 	}
-	
-	
 
 }

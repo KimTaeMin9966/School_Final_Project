@@ -15,4 +15,20 @@ public interface WeddingHallService {
 
 	List<WeddingStudioVo> SearchAllstudio(WeddingStudioVo vo) throws Exception;
 
+	void hallAdd(WeddingHallVo vo) throws Exception;
+
+	void studioAdd(WeddingStudioVo vo) throws Exception;
+
+	WeddingHallVo getHallByHNO(int hall_hno) throws Exception;
+
+	WeddingStudioVo getStudioByHNO(int studio_hno) throws Exception;
+
+	void hallEdit(WeddingHallVo vo) throws Exception;
+
+	void studioEdit(WeddingStudioVo vo) throws Exception;
+
+	void hallDeleteByHNO(int hall_hno) throws Exception;
+
+	void studioDeleteByHNO(int studio_hno) throws Exception;
+
 }

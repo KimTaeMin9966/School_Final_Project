@@ -33,5 +33,53 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		// TODO Auto-generated method stub
 		return dao.SearchAllstudio(vo);
 	}
+
+	@Override
+	public void hallAdd(WeddingHallVo vo) throws Exception {
+		// TODO Auto-generated method stub
+		dao.hallAdd(vo);
+	}
+
+	@Override
+	public void studioAdd(WeddingStudioVo vo) throws Exception {
+		// TODO Auto-generated method stub
+		dao.studioAdd(vo);
+	}
+
+	@Override
+	public WeddingHallVo getHallByHNO(int hall_hno) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.getHallByHNO(hall_hno);
+	}
+
+	@Override
+	public WeddingStudioVo getStudioByHNO(int studio_hno) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.getStudioByHNO(studio_hno);
+	}
+
+	@Override
+	public void hallEdit(WeddingHallVo vo) throws Exception {
+		// TODO Auto-generated method stub
+		dao.hallEdit(vo);
+	}
+
+	@Override
+	public void studioEdit(WeddingStudioVo vo) throws Exception {
+		// TODO Auto-generated method stub
+		dao.studioEdit(vo);
+	}
+
+	@Override
+	public void hallDeleteByHNO(int hall_hno) throws Exception {
+		// TODO Auto-generated method stub
+		dao.hallDeleteByHNO(hall_hno);
+	}
+
+	@Override
+	public void studioDeleteByHNO(int studio_hno) throws Exception {
+		// TODO Auto-generated method stub
+		dao.studioDeleteByHNO(studio_hno);
+	}
 	
 }

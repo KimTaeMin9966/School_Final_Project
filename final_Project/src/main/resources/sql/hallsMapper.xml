@@ -14,4 +14,42 @@
 	<select id="SearchAllstudio" resultType="WDSVO">
 		SELECT * FROM made_wedding_studios
 	</select>
+	
+	<!-- 2018/10/30 -->
+	<insert id="hallAdd">
+		INSERT INTO made_wedding_halls(hall_name, hall_location, hall_person, hall_price, hall_thema, hall_contents, hall_link, hall_area)
+		VALUES (#{hall_name}, #{hall_location}, #{hall_person}, #{hall_price}, #{hall_thema}, #{hall_contents}, #{hall_link}, #{hall_area})
+	</insert>
+	<insert id="studioAdd">
+		INSERT INTO made_wedding_studios(studio_name, studio_location, studio_person, studio_price, studio_thema, studio_contents, studio_link, studio_area)
+		VALUES (#{studio_name}, #{studio_location}, #{studio_person}, #{studio_price}, #{studio_thema}, #{studio_contents}, #{studio_link}, #{studio_area})
+	</insert>
+	<select id="getHallByHNO" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_hno = #{hall_hno}
+	</select>
+	<select id="getStudioByHNO" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_hno = #{studio_hno}
+	</select>
+	<update id="hallEdit">
+		UPDATE made_wedding_halls SET hall_name = #{hall_name},
+		hall_location = #{hall_location}, hall_person = #{hall_person},
+		hall_price = #{hall_price}, hall_thema = #{hall_thema},
+		hall_contents = #{hall_contents}, hall_link = #{hall_link},
+		hall_area = #{hall_area} WHERE hall_hno = #{hall_hno}
+	</update>
+	<update id="studioEdit">
+		UPDATE made_wedding_studios SET studio_name = #{studio_name},
+		studio_location = #{studio_location}, studio_person = #{studio_person},
+		studio_price = #{studio_price}, studio_thema = #{studio_thema},
+		studio_contents = #{studio_contents}, studio_link = #{studio_link},
+		studio_area = #{studio_area} WHERE studio_hno = #{studio_hno}
+	</update>
+	<delete id="hallDeleteByHNO">
+		DELETE FROM made_wedding_halls WHERE hall_hno = #{hall_hno}
+	</delete>
+	<delete id="studioDeleteByHNO">
+		DELETE FROM made_wedding_studios WHERE studio_hno = #{studio_hno}
+	</delete>
 </mapper>

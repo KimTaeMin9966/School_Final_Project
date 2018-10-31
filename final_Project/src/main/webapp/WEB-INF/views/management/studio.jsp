@@ -62,13 +62,13 @@
 		location.href = "/management/studio/add";
 	});
 	
-	function hallEdit(studio_hno) {
+	function studioEdit(studio_hno) {
 		$('#studio_hno').val(studio_hno);
 		formObj.attr('action', '/management/studio/edit');
 		formObj.submit();
 	}
 	
-	function hallDelete(studio_hno) {
+	function studioDelete(studio_hno) {
 		$('#studio_hno').val(studio_hno);
 		formObj.attr('action', '/management/studio/delete');
 		formObj.submit();
