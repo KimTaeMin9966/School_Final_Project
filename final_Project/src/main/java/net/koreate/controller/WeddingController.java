@@ -26,11 +26,6 @@ public class WeddingController {
 		logger.info("GET & POST Called!!!");
 	}*/
 	
-	@RequestMapping(value = "/ready", method = RequestMethod.GET)
-	public void readyGET() throws Exception {
-		logger.info("readyGET Called!!!");
-	}
-	
 	@RequestMapping(value = "/consulting", method = RequestMethod.GET)
 	public void consultingGET() throws Exception {
 		logger.info("consultingGET Called!!!");
