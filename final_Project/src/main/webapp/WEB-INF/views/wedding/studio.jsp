@@ -9,7 +9,7 @@
 		<!-- 스튜디오1페이지 -->	
 			<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/detail1>
+				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area1>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"
@@ -35,7 +35,7 @@
 			<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
 				<a data-component-attr-id="url" class="category-product"
-					href=/wedding/studio/detail2>
+					href=/wedding/studio/area2>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"
@@ -63,7 +63,7 @@
 		<!-- 스튜디오3페이지 -->
 			<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/detail3>
+				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area3>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"
@@ -89,7 +89,7 @@
 		<!-- 스튜디오4페이지 -->
 				<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/detail4>
+				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area4>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"
@@ -115,7 +115,7 @@
 		<!-- 스듀디오5페이지 -->
 				<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/detail5>
+				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area5>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"
@@ -141,7 +141,7 @@
 		<!-- 스듀디오6페이지 -->
 				<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/detail6>
+				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area6>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"
@@ -168,7 +168,7 @@
 		<!--  스듀디오 7페이지 -->
 					<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/detail7>
+				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area7>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"
@@ -196,7 +196,7 @@
 		<!--  스듀디오 8페이지 -->
 					<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/detail8>
+				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area8>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"
@@ -224,7 +224,7 @@
 		<!--  스듀디오 9 페이지 -->
 					<article data-attribute-id="smallImageContainer"
 				class="category-product-grid-item category-product-grid-item-three hover-link">
-				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/detail9>
+				<a data-component-attr-id="url" class="category-product" href=/wedding/studio/area9>
 					<div class="product-image-wrapper">
 						<img alt="" data-component-attr-id="imageDefault"
 							class="product-image _loaded"

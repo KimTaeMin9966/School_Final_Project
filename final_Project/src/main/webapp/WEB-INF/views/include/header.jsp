@@ -64,13 +64,6 @@
 									<div class="header-nav-section-title">
 										<a data-di-id="runway_1"
 										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/ready" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">MAIN</a>
-									</div>
-								</li>
-								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
-									<div class="header-nav-section-title">
-										<a data-di-id="runway_1"
-										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
 										href="/wedding/consulting" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">CONSULTING</a>
 									</div>
 								</li>

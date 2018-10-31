@@ -6,9 +6,9 @@
 <%@include file="../../include/header.jsp"%>
 <div class="content search-result new-4-cols-layout">
 	<div class="product-tiles-grid">
-		<c:forEach var="halls" items="${list}">
+		<c:forEach var="studios" items="${list}">
 			<article class="product-tiles-grid-item product-tiles-grid-item-medium product-tiles-grid-item-small hover-link  border-right">
-				<a class="product-tiles-grid-item-link" href="/wedding/hall/area4/${halls.hall_link}">
+				<a class="product-tiles-grid-item-link" href="/wedding/hall/area6/${studios.studio_link}">
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
 							<img alt="" sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px"
@@ -17,7 +17,7 @@
 					</div>
 					<p class="online-exclusive-badge" data-component-attr-id="online-exclusive">
 						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">${halls.hall_name}</font>
+							<font style="vertical-align: inherit;">${studios.studio_name}</font>
 						</font>
 					</p>
 				</a>
@@ -30,9 +30,4 @@
 		</c:forEach>
 	</div>
 </div>
-<%-- <div class="content">
-	<c:forEach var="halls" items="${list}">
-		
-	</c:forEach>
-</div> --%>
 <%@include file="../../include/footer.jsp"%>
