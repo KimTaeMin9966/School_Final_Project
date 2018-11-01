@@ -72,10 +72,8 @@
 				<article data-component-id="halfMediumFirst"
 					class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
 						<a data-component-attr-id="url" class="category-product" href="/wedding/consulting/detail4">
-						<div class="product-image-wrapper">
-							<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded" src="">
-	
-							<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded" src="">
+						<div >
+							<img src="${pageContext.request.contextPath}/resources/images/아르떼.png">
 						</div>
 						<header class="category-grid-item-content">
 							<h2 data-component-attr-id="title">
@@ -83,11 +81,11 @@
 									<font style="vertical-align: inherit;">THE ARTE</font>
 								</font>
 							</h2>
-							<p data-component-attr-id="subtitle" class="eyebrow-link">
+							<!-- <p data-component-attr-id="subtitle" class="eyebrow-link">
 								<font style="vertical-align: inherit;">
-									<font style="vertical-align: inherit;">부산 해운대구 센텀시티 트럼프월드 더아르떼 웨딩</font>
+									<font style="vertical-align: inherit;"></font>
 								</font>
-							</p>
+							</p> -->
 						</header>
 					</a>
 				</article>	
