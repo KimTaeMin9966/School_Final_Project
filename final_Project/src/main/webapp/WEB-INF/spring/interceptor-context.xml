@@ -35,14 +35,7 @@
 		
 		<interceptor>
 			<mapping path="/management/*" />
-			<mapping path="/member/*" />
-			<exclude-mapping path="/member/register" />
-			<exclude-mapping path="/member/registerPost" />
-			<exclude-mapping path="/member/login" />
-			<exclude-mapping path="/member/loginPost" />
-			<exclude-mapping path="/member/logOut" />
-			
-			<exclude-mapping path="/member/myInfo" />
+			<mapping path="/member/management" />
 			<beans:ref bean="authInterceptor" />
 		</interceptor>
 	</interceptors>

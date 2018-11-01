@@ -35,6 +35,7 @@
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/handlebars.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/modal.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/smoothscroll.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
 	
