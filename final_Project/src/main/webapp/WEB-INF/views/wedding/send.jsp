@@ -12,6 +12,7 @@
 						<div class="col-lg-12 col-md-12 col-sm-12">
 							<div class="row align-items-center about-main-info">
 								<div class="col-lg-8 col-md-6 col-sm-12">
+										<h2>Married♥</h2>
 									<h2>
 										<span>Leida</span>
 									</h2>
@@ -64,7 +65,6 @@
 					<div class="col-lg-12">
 						<div class="title-box">
 							<h2>Family</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
 				</div>
@@ -77,8 +77,8 @@
 									alt="" />
 							</div>
 							<div class="family-info">
-								<h4>Mr. Alonso Wiles</h4>
-								<p>{ Leida’s Father }</p>
+								<h4>Father</h4>
+								<p>{ Mr. Alonso Wiles }</p>
 							</div>
 						</div>
 					</div>
@@ -90,8 +90,8 @@
 									alt="" />
 							</div>
 							<div class="family-info">
-								<h4>Mr. Evon Wiles</h4>
-								<p>{ Leida’s Mother }</p>
+								<h4>Mother</h4>
+								<p>{ Mr. Evon Wiles Mother }</p>
 							</div>
 						</div>
 					</div>
@@ -103,8 +103,8 @@
 									alt="" />
 							</div>
 							<div class="family-info">
-								<h4>Mr. Adina Wiles</h4>
-								<p>{ Leida’s Sister }</p>
+								<h4>Sister</h4>
+								<p>{ Mr. Adina Wiles }</p>
 							</div>
 						</div>
 					</div>
@@ -120,7 +120,6 @@
 					<div class="col-lg-12">
 						<div class="title-box">
 							<h2>Gallery</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 					</div>
 				</div>
@@ -149,40 +148,9 @@
 								alt="single image"> <span class="overlay"> <i
 									class="fa fa-heart-o" aria-hidden="true"></i>
 							</span>
+					
 						</a></li>
-						<li><a
-							href="${pageContext.request.contextPath}/resources/images/gallery-04.jpg">
-								<img class="img-fluid"
-								src="${pageContext.request.contextPath}/resources/images/gallery-04.jpg"
-								alt="single image"> <span class="overlay"> <i
-									class="fa fa-heart-o" aria-hidden="true"></i>
-							</span>
-						</a></li>
-						<li><a
-							href="${pageContext.request.contextPath}/resources/images/gallery-05.jpg">
-								<img class="img-fluid"
-								src="${pageContext.request.contextPath}/resources/images/gallery-05.jpg"
-								alt="single image"> <span class="overlay"> <i
-									class="fa fa-heart-o" aria-hidden="true"></i>
-							</span>
-						</a></li>
-						<li><a
-							href="${pageContext.request.contextPath}/resources/images/gallery-06.jpg">
-								<img class="img-fluid"
-								src="${pageContext.request.contextPath}/resources/images/gallery-06.jpg"
-								alt="single image"> <span class="overlay"> <i
-									class="fa fa-heart-o" aria-hidden="true"></i>
-							</span>
-						</a></li>
-						<li><a
-							href="${pageContext.request.contextPath}/resources/images/gallery-07.jpg">
-								<img class="img-fluid"
-								src="${pageContext.request.contextPath}/resources/images/gallery-07.jpg"
-								alt="single image"> <span class="overlay"> <i
-									class="fa fa-heart-o" aria-hidden="true"></i>
-							</span>
-						</a></li>
-						<li><a
+							<li><a
 							href="${pageContext.request.contextPath}/resources/images/gallery-08.jpg">
 								<img class="img-fluid"
 								src="${pageContext.request.contextPath}/resources/images/gallery-08.jpg"
@@ -201,7 +169,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="title-box">
-							<h2>Contact wth us</h2>
+							<h2>Contact Love "Letter" friends</h2>
 							<p>청첩장보내기 기능입니다. 보내실분의 이름과, 휴대폰번호를 입력하여 전송하면 온라인청첩장이 전송됩니다.</p>
 						</div>
 					</div>
@@ -214,33 +182,20 @@
 									<div class="col-md-12">
 										<div class="form-group">
 											<input type="text" class="form-control" id="name" name="name"
-												placeholder="Your Name" required
+												placeholder="Send to Name" required
 												data-error="Please enter your name">
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" placeholder="Your Email" id="email"
+											<input type="text" placeholder="Friend Phone number" id="email"
 												class="form-control" name="name" required
 												data-error="Please enter your email">
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<select class="custom-select d-block form-control" id="guest"
-												required data-error="Please select an item in the list.">
-												<option disabled selected>Number Of Guest*</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
+									
 									<div class="col-md-12">
 										<div class="form-group">
 											<select class="custom-select d-block form-control" id="event"
@@ -275,7 +230,7 @@
 				</div>
 				<script>
 					$('#submit').on('click', function() {
-						alert("aaa");
+						alert("Sending succeeded.");
 					});
 				</script>
 			</div>

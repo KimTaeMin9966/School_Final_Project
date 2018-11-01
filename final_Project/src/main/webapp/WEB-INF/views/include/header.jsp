@@ -191,10 +191,10 @@
 								<span data-component-attr-id="title" class="eyebrow"></span>
 								<span data-component-attr-id="subtitle"></span>
 							</h1>
-							<a data-component-attr-id="url" class="button-gold shop-the-collection"
+							 <a data-component-attr-id="url" class="button-gold shop-the-collection"
 								href="#">남성 컬렉션</a>
 							<a data-component-attr-id="url" class="button-gold shop-the-collection"
-								href="#">여성 컬렉션</a>
+								href="#">여성 컬렉션</a> 
 						</div>
 					</div>
 					<!-- main-header-background-center end -->

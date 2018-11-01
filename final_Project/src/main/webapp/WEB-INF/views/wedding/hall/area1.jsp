@@ -20,6 +20,7 @@
 							<font style="vertical-align: inherit;">${halls.hall_name}</font>
 						</font>
 					</p>
+					
 				</a>
 				<button type="button" class="favorite" title="Save for later">
 					<font style="vertical-align: inherit;">

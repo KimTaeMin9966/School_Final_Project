@@ -9,12 +9,9 @@
 		<article data-component-id="halfMediumFirst"
 			class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
 			<a data-component-attr-id="url" class="category-product" href="/wedding/studio/area1">
-				<div class="product-image-wrapper">
-					<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded"
-						src="">
-					<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded"
-						src="">
-				</div>
+				<div >
+							<img src="${pageContext.request.contextPath}/resources/images/해운대제다.png">
+						</div>
 				<header class="category-grid-item-content">
 					<h2 data-component-attr-id="title">
 						<font style="vertical-align: inherit;">
@@ -35,16 +32,13 @@
 		<article data-component-id="halfMediumFirst"
 			class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
 			<a data-component-attr-id="url" class="category-product" href="/wedding/studio/area2">
-				<div class="product-image-wrapper">
-					<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded"
-						src="">
-					<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded"
-						src="">
-				</div>
+						<div >
+							<img src="${pageContext.request.contextPath}/resources/images/연제베네사.png">
+						</div>
 				<header class="category-grid-item-content">
 					<h2 data-component-attr-id="title">
 						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">부산 연제구 스튜디오</font>
+							<font style="vertical-align: inherit;">부산 연제 스튜디오</font>
 						</font>
 					</h2>
 					<p data-component-attr-id="subtitle" class="eyebrow-link">
@@ -61,12 +55,9 @@
 		<article data-component-id="halfMediumFirst"
 			class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
 			<a data-component-attr-id="url" class="category-product" href="/wedding/studio/area3">
-				<div class="product-image-wrapper">
-					<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded"
-						src="">
-					<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded"
-						src="">
-				</div>
+						<div >
+							<img src="${pageContext.request.contextPath}/resources/images/비비드스윗1.png">
+						</div>
 				<header class="category-grid-item-content">
 					<h2 data-component-attr-id="title">
 						<font style="vertical-align: inherit;">
@@ -87,21 +78,18 @@
 		<article data-component-id="halfMediumFirst"
 			class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
 			<a data-component-attr-id="url" class="category-product" href="/wedding/studio/area4">
-				<div class="product-image-wrapper">
-					<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded"
-						src="">
-					<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded"
-						src="">
-				</div>
+					<div >
+							<img src="${pageContext.request.contextPath}/resources/images/중구웨딩홀.png">
+						</div>
 				<header class="category-grid-item-content">
 					<h2 data-component-attr-id="title">
 						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">부산 진구 스튜디오</font>
+							<font style="vertical-align: inherit;" >부산 진구 스튜디오</font>
 						</font>
 					</h2>
 					<p data-component-attr-id="subtitle" class="eyebrow-link">
 						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">BUSAN JIN GU STUDIO</font>
+							<font style="vertical-align: inherit;">BUSAN JIN GU, DONG GU, JUNG GU  STUDIO</font>
 						</font>
 					</p>
 				</header>
@@ -109,57 +97,7 @@
 		</article>
 		<!-- area4 -->
 
-		<!-- area5 -->
-		<article data-component-id="halfMediumFirst"
-			class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
-			<a data-component-attr-id="url" class="category-product" href="/wedding/studio/area5">
-				<div class="product-image-wrapper">
-					<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded"
-						src="">
-					<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded"
-						src="">
-				</div>
-				<header class="category-grid-item-content">
-					<h2 data-component-attr-id="title">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">부산 중구 스튜디오</font>
-						</font>
-					</h2>
-					<p data-component-attr-id="subtitle" class="eyebrow-link">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">BUSAN JUNG GU STUDIO</font>
-						</font>
-					</p>
-				</header>
-			</a>
-		</article>
-		<!-- area5 -->
 		
-		<!-- area6 -->
-		<article data-component-id="halfMediumFirst"
-			class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
-			<a data-component-attr-id="url" class="category-product" href="/wedding/studio/area6">
-				<div class="product-image-wrapper">
-					<img alt="" data-component-attr-id="imageLarge" class="product-image _loaded"
-						src="">
-					<img alt="" data-component-attr-id="imageLargeHover" class="product-image hover _loaded"
-						src="">
-				</div>
-				<header class="category-grid-item-content">
-					<h2 data-component-attr-id="title">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">부산 동구 스튜디오</font>
-						</font>
-					</h2>
-					<p data-component-attr-id="subtitle" class="eyebrow-link">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">BUSAN DONG GU STUDIO</font>
-						</font>
-					</p>
-				</header>
-			</a>
-		</article>
-		<!-- area6 -->
 	</div>
 </div>
 <%@include file="../include/footer.jsp"%>
