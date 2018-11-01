@@ -52,15 +52,17 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 				System.out.println("Cookie : " + cookie.getValue());
 				System.out.println("쿠키생성 완료");
 			}
+			
+			request.setAttribute("result", "SUCCESS");
 		} else {
 			RequestDispatcher rd = request.getRequestDispatcher("/member/login");
-			request.setAttribute("result", "회원정보가 일치하지 않습니다.");
+			request.setAttribute("result", "FAIL");
 			rd.forward(request, response);
 		}
 		
 		Object dest = session.getAttribute("dest");
 		System.out.println("dest : " + dest);
-		response.sendRedirect((dest != null) ? (String)dest : "/");
+		response.sendRedirect(dest != null ? (String)dest : "/");
 	}
 	
 }

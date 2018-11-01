@@ -37,9 +37,8 @@
 	</div>
 </section>
 <script type="text/javascript">
-	var message = '${result}';
-
-	if (message != null && message == 'SUCCESS') { alert("로그인에 성공하셨습니다."); }
-	else if (message != null && message == 'FAIL') { alert("로그인에 실패하셨습니다."); }
+	var message = '${message}';
+	
+	if (message != null && message != '') { alert(message); }
 </script>
 <%@include file="../include/footer.jsp"%>

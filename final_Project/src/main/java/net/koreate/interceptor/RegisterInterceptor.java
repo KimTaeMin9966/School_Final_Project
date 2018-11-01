@@ -22,13 +22,14 @@ public class RegisterInterceptor extends HandlerInterceptorAdapter {
 		MemberVo vo = service.getUserByID(mwid);
 		
 		if(vo != null) {
-			System.out.println("Interceptor VO : " + vo);
-		
+			System.out.println("RegisterInterceptor VO : " + vo);
+			
 			RequestDispatcher rd = request.getRequestDispatcher("/member/register");
-			request.setAttribute("result", mwid + "는 이미 존제하는 아이디 입니다.");
+			request.setAttribute("result", "FAIL");
 			rd.forward(request, response);
 			return false;
 		}
+		request.setAttribute("result", "SUCCESS");
 		return true;
 	}
 	

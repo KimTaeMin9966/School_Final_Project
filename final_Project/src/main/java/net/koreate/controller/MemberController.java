@@ -49,56 +49,54 @@ public class MemberController {
 		logger.info("registerGET Called!!!");
 	}
 	
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
+	public String registerPOST(HttpServletRequest request, RedirectAttributes rttr) throws Exception {
+		logger.info("registerPOST Called!!!");
+		
+		String result = (String) request.getAttribute("result");
+		
+		if (result.equals("FAIL")) {
+			rttr.addAttribute("message", "해당 아이디는 존재합니다.");
+			return "redirect:/member/register";
+		} else {
+			rttr.addAttribute("message", "회원가입에 성공하셨습니다");
+			return "redirect:/member/login";
+		}
+	}
+	
+	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public void loginGET() throws Exception {
 		logger.info("loginGET Called!!!");
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	public String loginPOST(HttpServletRequest request, RedirectAttributes rttr) throws Exception {
+		logger.info("loginPOST Called!!!");
+		
+		String result = (String) request.getAttribute("result");
+		
+		if (result.equals("FAIL")) {
+			rttr.addAttribute("message", "정보가 일치하지 않습니다");
+			return "redirect:/member/login";
+		} else {
+			rttr.addAttribute("message", "로그인에 성공하셨습니다");
+			return "redirect:/";
+		}
+	}
 
 	@RequestMapping(value = "/registerPost", method = RequestMethod.POST)
-	public String registerPost(MemberVo vo, RedirectAttributes rttr) throws Exception {
+	public void registerPost(MemberVo vo, RedirectAttributes rttr) throws Exception {
 		logger.info("registerPost Called!!!");
 		
-		String result = service.register(vo);
-		
-		if (result.equals("SUCCESS")) {
-			rttr.addFlashAttribute("result", result);
-			return "redirect:/member/login";
-		}
-
-		rttr.addFlashAttribute("result", result);
-		return "redirect:/member/register";
+		service.register(vo);
 	}
 	
 	@RequestMapping(value = "/loginPost", method = RequestMethod.POST)
-	public String loginPost(LoginDto dto, Model model) throws Exception {
+	public void loginPost(LoginDto dto, Model model) throws Exception {
 		logger.info("loginPost Called!!!");
 		
 		model.addAttribute("loginDto", dto);
-		
-		return "home";
-		
-		/*String result = service.login(vo);
-		MemberVo result = service.loginDto(dto);
-		
-		if (result != null) {
-			MemberVo vo = service.memberSearch(dto);
-			if (dto.isUseCookie()) {
-				Cookie cookie = new Cookie("LoginCookie", String.valueOf(vo.getMwid()));
-				cookie.setPath("/");
-				cookie.setMaxAge(60 * 60 * 24 * 7);
-				response.addCookie(cookie);
-				
-				System.out.println("mwid : " + vo.getMwid());
-				System.out.println("cookie value : "+ cookie.getValue());
-				System.out.println("쿠키굽기 완료");
-			}
-			session.setAttribute("loginYES", vo);
-			rttr.addFlashAttribute("result", result);
-			return "redirect:/";
-		}
-		
-		rttr.addFlashAttribute("result", result);
-		return "redirect:/member/login"; */
 	}
 	
 	@RequestMapping("/logOut")
