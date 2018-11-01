@@ -33,7 +33,7 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 			
 			MemberVo isMaster = service.searchByNO(mwno);
 			
-			if (!isMaster.equals(memberVo)) { System.out.println("마스터가 아닙니다."); return true; }
+			if (isMaster.equals(memberVo)) { System.out.println("마스터가 아닙니다."); return true; }
 			else { System.out.println("동일 하지 않습니다."); response.sendRedirect("/"); return false; }
 		}
 	}

@@ -41,6 +41,8 @@
 			<exclude-mapping path="/member/login" />
 			<exclude-mapping path="/member/loginPost" />
 			<exclude-mapping path="/member/logOut" />
+			
+			<exclude-mapping path="/member/myInfo" />
 			<beans:ref bean="authInterceptor" />
 		</interceptor>
 	</interceptors>

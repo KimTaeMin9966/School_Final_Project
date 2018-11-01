@@ -93,10 +93,11 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value = "/loginPost", method = RequestMethod.POST)
-	public void loginPost(LoginDto dto, Model model) throws Exception {
+	public String loginPost(LoginDto dto, Model model) throws Exception {
 		logger.info("loginPost Called!!!");
 		
 		model.addAttribute("loginDto", dto);
+		return "home";
 	}
 	
 	@RequestMapping("/logOut")
