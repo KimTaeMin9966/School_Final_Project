@@ -1,9 +1,10 @@
 package net.koreate.service;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import net.koreate.dao.MemberDao;
 import net.koreate.dto.LoginDto;
@@ -61,6 +62,38 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public MemberVo memberSearch(LoginDto dto) throws Exception {
 		return dao.memberSearch(dto);
+	}
+
+	@Override
+	public void editInfo(MemberVo vo) throws Exception {
+		dao.editInfo(vo);
+	}
+
+	@Override
+	public MemberVo getUserByVO(MemberVo vo) throws Exception {
+		return dao.getUserByVO(vo);
+	}
+
+	@Override
+	public List<MemberVo> memberAllSearch() throws Exception {
+		return dao.memberAllSearch();
+	}
+
+	@Override
+	public void infoDeleteByID(String mwid) throws Exception {
+		dao.infoDeleteByID(mwid);
+	}
+
+	@Override
+	public void infoUpdateByVO(MemberVo vo) throws Exception {
+		dao.infoUpdateByVO(vo);
+	}
+
+	// 2018/11/01
+	@Override
+	public MemberVo searchByNO(int mwno) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.searchByNO(mwno);
 	}
 	
 }

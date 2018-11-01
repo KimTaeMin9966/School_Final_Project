@@ -33,6 +33,7 @@
 	<!-- Offline JS -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/handlebars.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/smoothscroll.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
@@ -40,7 +41,9 @@
 	<!-- Offline CSS -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/magnific-popup.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css">
 	
 </head>
@@ -59,13 +62,6 @@
 						<div id="header-nav-child-main" class="header-nav-child header-nav-drawer">
 							<!-- nav start -->
 							<ul class="header-nav-sections" role="menubar">
-								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
-									<div class="header-nav-section-title">
-										<a data-di-id="runway_1"
-										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/ready" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">MAIN</a>
-									</div>
-								</li>
 								<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
 									<div class="header-nav-section-title">
 										<a data-di-id="runway_1"
@@ -101,13 +97,45 @@
 										href="/wedding/send" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">WEDDING LETTER</a>
 									</div>
 								</li>
+								<c:choose>
+									<c:when test="${!empty loginYES && (loginYES.mwname eq 'master' || loginYES.mwname eq '마스터') }">
+										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+											<div class="header-nav-section-title">
+												<a data-di-id="runway_1"
+												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+												href="/management/consulting" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">컨설팅 업체 관리</a>
+											</div>
+										</li>
+										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+											<div class="header-nav-section-title">
+												<a data-di-id="runway_1"
+												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+												href="/management/hall" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">웨딩홀 관리</a>
+											</div>
+										</li>
+										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+											<div class="header-nav-section-title">
+												<a data-di-id="runway_1"
+												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+												href="/management/studio" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">스튜디오 관리</a>
+											</div>
+										</li>
+										<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
+											<div class="header-nav-section-title">
+												<a data-di-id="runway_1"
+												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
+												href="/member/management" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">관리자 페이지</a>
+											</div>
+										</li>
+									</c:when>
+								</c:choose>
 							</ul>
 							<!-- nav end -->
 							<!-- nav2 start -->
 							<ul class="header-nav-user header-nav-secondary" style="--menu-right-pos: 141px">
 								<li id="header-nav-signin" class="header-nav-group header-nav-group-hover header-nav-sign-in-group">
 									<c:choose>
-										<c:when test="${!empty LoginCookie}">
+										<c:when test="${!empty loginYES}">
 											<a id="header-nav-signin-anchor"
 												class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
 												href="/member/logOut" tabindex="6">Sign Out</a>
@@ -126,8 +154,8 @@
 					<!-- userInfo start -->
 					<nav id="header-nav-bag-wrapper" class="header-nav-bag-wrapper header-nav-group header-nav-group-hover header-nav-child-bag-empty" data-module="headerUpdate">
 						<c:choose>
-							<c:when test="${!empty LoginCookie}">
-								<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="#" id="header-nav-bag-anchor" aria-expanded="false">
+							<c:when test="${!empty loginYES}">
+								<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="/member/myInfo" id="header-nav-bag-anchor" aria-expanded="false">
 									<span class="title"><span>${loginYES.mwname}</span></span>
 								</a>
 							</c:when>
@@ -164,9 +192,9 @@
 								<span data-component-attr-id="subtitle"></span>
 							</h1>
 							<a data-component-attr-id="url" class="button-gold shop-the-collection"
-								href="/kr/ko/lo/runway/men/cruise-2019-c-runway-men-cruise-2019">남성 컬렉션</a>
+								href="#">남성 컬렉션</a>
 							<a data-component-attr-id="url" class="button-gold shop-the-collection"
-								href="/kr/ko/lo/runway/women/cruise-2019-c-runway-women-cruise-2019">여성 컬렉션</a>
+								href="#">여성 컬렉션</a>
 						</div>
 					</div>
 					<!-- main-header-background-center end -->

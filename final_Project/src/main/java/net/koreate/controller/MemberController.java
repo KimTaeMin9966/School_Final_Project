@@ -1,5 +1,7 @@
 package net.koreate.controller;
 
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -9,6 +11,7 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -45,10 +48,15 @@ public class MemberController {
 	public void registerGET() throws Exception {
 		logger.info("registerGET Called!!!");
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public void loginGET() throws Exception {
+		logger.info("loginGET Called!!!");
+	}
 
-	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String registerPOST(MemberVo vo, RedirectAttributes rttr) throws Exception {
-		logger.info("registerPOST Called!!!");
+	@RequestMapping(value = "/registerPost", method = RequestMethod.POST)
+	public String registerPost(MemberVo vo, RedirectAttributes rttr) throws Exception {
+		logger.info("registerPost Called!!!");
 		
 		String result = service.register(vo);
 		
@@ -61,16 +69,15 @@ public class MemberController {
 		return "redirect:/member/register";
 	}
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public void loginGET() throws Exception {
-		logger.info("loginGET Called!!!");
-	}
-
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String loginPOST(LoginDto dto, HttpSession session, HttpServletResponse response, RedirectAttributes rttr) throws Exception {
-		logger.info("loginPOST Called!!!");
+	@RequestMapping(value = "/loginPost", method = RequestMethod.POST)
+	public String loginPost(LoginDto dto, Model model) throws Exception {
+		logger.info("loginPost Called!!!");
 		
-		//String result = service.login(vo);
+		model.addAttribute("loginDto", dto);
+		
+		return "home";
+		
+		/*String result = service.login(vo);
 		MemberVo result = service.loginDto(dto);
 		
 		if (result != null) {
@@ -91,7 +98,7 @@ public class MemberController {
 		}
 		
 		rttr.addFlashAttribute("result", result);
-		return "redirect:/member/login";
+		return "redirect:/member/login"; */
 	}
 	
 	@RequestMapping("/logOut")
@@ -111,4 +118,47 @@ public class MemberController {
 		}
 		return "redirect:/";
 	}
+	
+	@RequestMapping(value = "/myInfo", method = RequestMethod.GET)
+	public void myInfoGET(HttpSession session, Model model) throws Exception {
+		logger.info("myInfoGET Called!!!");
+		Object obj = session.getAttribute("loginYES");
+		
+		model.addAttribute("memberInfo", obj);
+	}
+	
+	@RequestMapping(value = "/editInfo", method = RequestMethod.GET)
+	public void editInfoGET(HttpSession session, Model model) throws Exception {
+		logger.info("editInfoGET Called!!!");
+		Object obj = session.getAttribute("loginYES");
+		
+		model.addAttribute("memberInfo", obj);
+	}
+	
+	@RequestMapping(value = "/editInfo", method = RequestMethod.POST)
+	public String editInfoPOST(MemberVo vo, HttpSession session, RedirectAttributes rttr) throws Exception {
+		logger.info("editInfoPOST Called!!!");
+		
+		service.editInfo(vo);
+		
+		MemberVo result = service.getUserByVO(vo);
+		
+		if (result != null) {
+			session.setAttribute("loginYES", result);
+			rttr.addFlashAttribute("result", result);
+			return "redirect:/member/myInfo";
+		}
+
+		rttr.addFlashAttribute("result", result);
+		return "redirect:/member/editInfo";
+	}
+	
+	@RequestMapping(value = "/management", method = RequestMethod.GET)
+	public void managementGET(Model model) throws Exception {
+		logger.info("managementGET Called!!!");
+		
+		List<MemberVo> list = service.memberAllSearch();
+		model.addAttribute("memberInfos", list);
+	}
+	
 }
