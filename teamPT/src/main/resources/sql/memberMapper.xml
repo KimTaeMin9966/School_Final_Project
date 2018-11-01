@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.koreate.dao.MemberDao">
+	<!-- <select id="registerBefor" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid}
+	</select>
+	<insert id="register">
+		INSERT INTO made_wedding(mwid, mwpw, mwname)
+		VALUES (#{mwid}, #{mwpw}, #{mwname})
+	</insert>
+	<select id="login" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid}
+	</select>
+	<select id="getUserByID" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid}
+	</select>
+	<select id="signIn" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<select id="getUserByUNO" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid}
+	</select>
+	2018/10/26
+	<select id="loginDto" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<select id="memberSearch" resultType="MBVO">
+		SELECT * FROM made_wedding
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select> -->
+</mapper>
