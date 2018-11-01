@@ -23,9 +23,9 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		HttpSession session = request.getSession();
-		if(session.getAttribute("userInfo") != null) {
+		if(session.getAttribute("loginYES") != null) {
 			System.out.println("세션에 정보가 존재합니다.");
-			session.removeAttribute("userInfo");
+			session.removeAttribute("loginYES");
 			session.invalidate();
 		}
 		return true;
@@ -40,7 +40,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 		MemberVo vo = service.signIn(dto);
 		
 		if (vo != null) {
-			session.setAttribute("userInfo", vo);
+			session.setAttribute("loginYES", vo);
 			
 			if(dto.isUseCookie()) {
 				Cookie cookie = new Cookie("LoginCookie", String.valueOf(vo.getMwid()));
@@ -52,15 +52,15 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 				System.out.println("Cookie : " + cookie.getValue());
 				System.out.println("쿠키생성 완료");
 			}
-		}/* else {
+		} else {
 			RequestDispatcher rd = request.getRequestDispatcher("/member/login");
 			request.setAttribute("result", "회원정보가 일치하지 않습니다.");
 			rd.forward(request, response);
-		}*/
+		}
 		
-		/*Object dest = session.getAttribute("dest");
+		Object dest = session.getAttribute("dest");
 		System.out.println("dest : " + dest);
-		response.sendRedirect((dest != null) ? (String)dest : "/");*/
+		response.sendRedirect((dest != null) ? (String)dest : "/");
 	}
 	
 }

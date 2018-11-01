@@ -3,10 +3,19 @@ package net.koreate.vo;
 import java.util.Date;
 
 public class MemberVo {
-	private String mwid="id001";
-	private String mwpw="0000";
-	private String mwname="000";
-	private Date mwregdate = new Date();
+	private int mwno;
+	private String mwid;
+	private String mwpw;
+	private String mwname;
+	private Date mwregdate;
+
+	public int getMwno() {
+		return mwno;
+	}
+
+	public void setMwno(int mwno) {
+		this.mwno = mwno;
+	}
 
 	public String getMwid() {
 		return mwid;
@@ -42,7 +51,8 @@ public class MemberVo {
 
 	@Override
 	public String toString() {
-		return "MemberVo [mwid=" + mwid + ", mwpw=" + mwpw + ", mwname=" + mwname + ", mwregdate=" + mwregdate + "]";
+		return "MemberVo [mwno=" + mwno + ", mwid=" + mwid + ", mwpw=" + mwpw + ", mwname=" + mwname + ", mwregdate="
+				+ mwregdate + "]";
 	}
 
 }

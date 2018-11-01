@@ -35,4 +35,6 @@ public interface MemberDao {
 
 	void infoUpdateByVO(MemberVo vo) throws Exception;
 
+	MemberVo searchByNO(int mwno) throws Exception;
+
 }

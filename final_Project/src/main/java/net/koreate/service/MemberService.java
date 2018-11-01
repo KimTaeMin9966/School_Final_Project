@@ -32,5 +32,8 @@ public interface MemberService {
 	void infoDeleteByID(String mwid) throws Exception;
 
 	void infoUpdateByVO(MemberVo vo) throws Exception;
+
+	// 2018/11/01
+	MemberVo searchByNO(int mwno) throws Exception;
 	
 }

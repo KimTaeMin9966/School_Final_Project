@@ -48,10 +48,15 @@ public class MemberController {
 	public void registerGET() throws Exception {
 		logger.info("registerGET Called!!!");
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public void loginGET() throws Exception {
+		logger.info("loginGET Called!!!");
+	}
 
-	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String registerPOST(MemberVo vo, RedirectAttributes rttr) throws Exception {
-		logger.info("registerPOST Called!!!");
+	@RequestMapping(value = "/registerPost", method = RequestMethod.POST)
+	public String registerPost(MemberVo vo, RedirectAttributes rttr) throws Exception {
+		logger.info("registerPost Called!!!");
 		
 		String result = service.register(vo);
 		
@@ -64,16 +69,15 @@ public class MemberController {
 		return "redirect:/member/register";
 	}
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public void loginGET() throws Exception {
-		logger.info("loginGET Called!!!");
-	}
-
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String loginPOST(LoginDto dto, HttpSession session, HttpServletResponse response, RedirectAttributes rttr) throws Exception {
-		logger.info("loginPOST Called!!!");
+	@RequestMapping(value = "/loginPost", method = RequestMethod.POST)
+	public String loginPost(LoginDto dto, Model model) throws Exception {
+		logger.info("loginPost Called!!!");
 		
-		//String result = service.login(vo);
+		model.addAttribute("loginDto", dto);
+		
+		return "home";
+		
+		/*String result = service.login(vo);
 		MemberVo result = service.loginDto(dto);
 		
 		if (result != null) {
@@ -94,7 +98,7 @@ public class MemberController {
 		}
 		
 		rttr.addFlashAttribute("result", result);
-		return "redirect:/member/login";
+		return "redirect:/member/login"; */
 	}
 	
 	@RequestMapping("/logOut")

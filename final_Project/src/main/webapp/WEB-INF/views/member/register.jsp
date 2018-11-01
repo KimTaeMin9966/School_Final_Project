@@ -10,7 +10,7 @@
 					<h3>회원가입</h3>
 				</div>
 				<div class="box-body">
-					<form method="post">
+					<form action="/member/registerPost" method="post">
 						<div class="form-group has-feedback">
 							<input type="text" name="mwid" class="form-control" placeholder="USER ID" required />
 							<span class="glypicon glypicon-evenlope form-control-feedback"></span>

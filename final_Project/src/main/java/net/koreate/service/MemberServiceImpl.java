@@ -88,5 +88,12 @@ public class MemberServiceImpl implements MemberService {
 	public void infoUpdateByVO(MemberVo vo) throws Exception {
 		dao.infoUpdateByVO(vo);
 	}
+
+	// 2018/11/01
+	@Override
+	public MemberVo searchByNO(int mwno) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.searchByNO(mwno);
+	}
 	
 }

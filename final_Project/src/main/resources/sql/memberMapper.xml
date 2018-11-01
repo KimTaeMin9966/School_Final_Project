@@ -58,4 +58,7 @@
 		SET mwpw = #{mwpw}, mwname = #{mwname}
 		WHERE mwid = #{mwid}
 	</update>
+	<select id="searchByNO" resultType="MBVO">
+		SELECT * FROM made_wedding WHERE mwno = #{mwno}
+	</select>
 </mapper>
