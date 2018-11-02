@@ -22,7 +22,6 @@
 					<div class="form-group has-feedback">
 						<input type="button" id="chList4" class="btn btn-default btn-block" value="컨설팅 체크 하러가기" />
 					</div>
-					<div style="height: 1000px;"></div>
 				</div>
 			</div>
 		</div>
@@ -36,30 +35,39 @@
 					<h3>체크리스트 STEP 1 (상견례 체크)</h3>
 				</div>
 				<div class="box-body">
-					<form action="/wedding/list/step1" method="post">
+					<form id="STEP1_modal_form">
+						<input type="hidden" id="memberID" name="memberID" value="${STEP1.memberID}">
 						<div class="form-group has-feedback">
 							<label>날짜</label>
-							<input type="text" id="list_day" name="list_day" class="form-control" required />
+							<input type="text" id="list_day" name="list_day" class="form-control" value="${STEP1.list_day}" placeholder="EX) 2018/11/02" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>요일</label>
-							<input type="text" id="list_week" name="list_week" class="form-control" required />
+							<input type="text" id="list_week" name="list_week" class="form-control" value="${STEP1.list_week}" placeholder="EX) 금요일" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>장소</label>
-							<input type="text" id="list_area" name="list_area" class="form-control" required />
+							<input type="text" id="list_area" name="list_area" class="form-control" value="${STEP1.list_area}" placeholder="EX) 부산" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>기타</label>
-							<input type="text" id="list_etc" name="list_etc" class="form-control" required />
+							<input type="text" id="list_etc" name="list_etc" class="form-control" value="${STEP1.list_etc}" placeholder="EX) 기타" required />
 						</div>
 						<div class="box-footer">
 							<div class="col-xs-8"></div>
 							<div class="col-xs-4">
-								<input type="button" id="btnSave" class="btn btn-default" value="저장" />
-								<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
-								<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
-								<input type="reset" class="btn btn-default btn-block" value="리셋" />
+								<c:choose>
+									<c:when test="${!empty STEP1}">
+										<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
+										<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
+									</c:when>
+									<c:otherwise>
+										<input type="button" id="btnSave" class="btn btn-default" value="저장" />
+										<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
+										<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
+										<input type="reset" class="btn btn-default btn-block" value="리셋" />
+									</c:otherwise>
+								</c:choose>
 							</div>
 						</div>
 					</form>
@@ -75,30 +83,39 @@
 					<h3>체크리스트 STEP 2 (웨딩홀 & 예약일 체크)</h3>
 				</div>
 				<div class="box-body">
-					<form action="/wedding/list/step1" method="post">
+					<form id="STEP2_modal_form">
+						<input type="hidden" id="memberID" name="memberID" value="${STEP2.memberID}">
 						<div class="form-group has-feedback">
 							<label>날짜</label>
-							<input type="text" id="list_day" name="list_day" class="form-control" required />
+							<input type="text" id="list_day" name="list_day" class="form-control" value="${STEP2.list_day}" placeholder="EX) 2018/11/02" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>요일</label>
-							<input type="text" id="list_week" name="list_week" class="form-control" required />
+							<input type="text" id="list_week" name="list_week" class="form-control" value="${STEP2.list_week}" placeholder="EX) 금요일" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>장소</label>
-							<input type="text" id="list_area" name="list_area" class="form-control" required />
+							<input type="text" id="list_area" name="list_area" class="form-control" value="${STEP2.list_area}" placeholder="EX) 부산" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>기타</label>
-							<input type="text" id="list_etc" name="list_etc" class="form-control" required />
+							<input type="text" id="list_etc" name="list_etc" class="form-control" value="${STEP2.list_etc}" placeholder="EX) 기타" required />
 						</div>
 						<div class="box-footer">
 							<div class="col-xs-8"></div>
 							<div class="col-xs-4">
-								<input type="button" id="btnSave" class="btn btn-default" value="저장" />
-								<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
-								<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
-								<input type="reset" class="btn btn-default btn-block" value="리셋" />
+								<c:choose>
+									<c:when test="${!empty STEP2}">
+										<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
+										<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
+									</c:when>
+									<c:otherwise>
+										<input type="button" id="btnSave" class="btn btn-default" value="저장" />
+										<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
+										<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
+										<input type="reset" class="btn btn-default btn-block" value="리셋" />
+									</c:otherwise>
+								</c:choose>
 							</div>
 						</div>
 					</form>
@@ -114,30 +131,39 @@
 					<h3>체크리스트 STEP 3 (스튜디오 & 예약일 체크)</h3>
 				</div>
 				<div class="box-body">
-					<form action="/wedding/list/step1" method="post">
+					<form id="STEP3_modal_form">
+						<input type="hidden" id="memberID" name="memberID" value="${STEP3.memberID}">
 						<div class="form-group has-feedback">
 							<label>날짜</label>
-							<input type="text" id="list_day" name="list_day" class="form-control" required />
+							<input type="text" id="list_day" name="list_day" class="form-control" value="${STEP3.list_day}" placeholder="EX) 2018/11/02" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>요일</label>
-							<input type="text" id="list_week" name="list_week" class="form-control" required />
+							<input type="text" id="list_week" name="list_week" class="form-control" value="${STEP3.list_week}" placeholder="EX) 금요일" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>장소</label>
-							<input type="text" id="list_area" name="list_area" class="form-control" required />
+							<input type="text" id="list_area" name="list_area" class="form-control" value="${STEP3.list_area}" placeholder="EX) 부산" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>기타</label>
-							<input type="text" id="list_etc" name="list_etc" class="form-control" required />
+							<input type="text" id="list_etc" name="list_etc" class="form-control" value="${STEP3.list_etc}" placeholder="EX) 기타" required />
 						</div>
 						<div class="box-footer">
 							<div class="col-xs-8"></div>
 							<div class="col-xs-4">
-								<input type="button" id="btnSave" class="btn btn-default" value="저장" />
-								<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
-								<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
-								<input type="reset" class="btn btn-default btn-block" value="리셋" />
+								<c:choose>
+									<c:when test="${!empty STEP3}">
+										<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
+										<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
+									</c:when>
+									<c:otherwise>
+										<input type="button" id="btnSave" class="btn btn-default" value="저장" />
+										<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
+										<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
+										<input type="reset" class="btn btn-default btn-block" value="리셋" />
+									</c:otherwise>
+								</c:choose>
 							</div>
 						</div>
 					</form>
@@ -153,30 +179,39 @@
 					<h3>체크리스트 STEP 4 (컨설팅 체크)</h3>
 				</div>
 				<div class="box-body">
-					<form action="/wedding/list/step1" method="post">
+					<form id="STEP4_modal_form">
+						<input type="hidden" id="memberID" name="memberID" value="${STEP4.memberID}">
 						<div class="form-group has-feedback">
 							<label>날짜</label>
-							<input type="text" id="list_day" name="list_day" class="form-control" required />
+							<input type="text" id="list_day" name="list_day" class="form-control" value="${STEP4.list_day}" placeholder="EX) 2018/11/02" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>요일</label>
-							<input type="text" id="list_week" name="list_week" class="form-control" required />
+							<input type="text" id="list_week" name="list_week" class="form-control" value="${STEP4.list_week}" placeholder="EX) 금요일" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>장소</label>
-							<input type="text" id="list_area" name="list_area" class="form-control" required />
+							<input type="text" id="list_area" name="list_area" class="form-control" value="${STEP4.list_area}" placeholder="EX) 부산" required />
 						</div>
 						<div class="form-group has-feedback">
 							<label>기타</label>
-							<input type="text" id="list_etc" name="list_etc" class="form-control" required />
+							<input type="text" id="list_etc" name="list_etc" class="form-control" value="${STEP4.list_etc}" placeholder="EX) 기타" required />
 						</div>
 						<div class="box-footer">
 							<div class="col-xs-8"></div>
 							<div class="col-xs-4">
-								<input type="button" id="btnSave" class="btn btn-default" value="저장" />
-								<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
-								<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
-								<input type="reset" class="btn btn-default btn-block" value="리셋" />
+								<c:choose>
+									<c:when test="${!empty STEP4}">
+										<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
+										<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
+									</c:when>
+									<c:otherwise>
+										<input type="button" id="btnSave" class="btn btn-default" value="저장" />
+										<input type="button" id="btnEdit" class="btn btn-default" value="수정" />
+										<input type="button" id="btnCancel" class="btn btn-default" value="취소" />
+										<input type="reset" class="btn btn-default btn-block" value="리셋" />
+									</c:otherwise>
+								</c:choose>
 							</div>
 						</div>
 					</form>
@@ -187,114 +222,134 @@
 	<!-- 끝 -->
 </section>
 <script type="text/javascript">
-	var step1_modal = new Example.Modal({ id: "STEP1_modal" }); 
-	var step2_modal = new Example.Modal({ id: "STEP2_modal" }); 
-	var step3_modal = new Example.Modal({ id: "STEP3_modal" }); 
-	var step4_modal = new Example.Modal({ id: "STEP4_modal" }); 
+	var step1_modal = new Example.Modal({ id: "STEP1_modal" });
+	var step2_modal = new Example.Modal({ id: "STEP2_modal" });
+	var step3_modal = new Example.Modal({ id: "STEP3_modal" });
+	var step4_modal = new Example.Modal({ id: "STEP4_modal" });
 	
-//저장 버튼 이벤트 
-$("#ck_step1_1_save").click(function() {
-	$("#td_step_1_1").html
-		($("#step1_1text1").val()+'<br/>'
-		+$("#step1_1text2").val()+'<br/>'
-		+$("#step1_1text3").val()+'<br/>'
-		+$("#step1_1text4").val());
-   myModal.hide(); // 모달창 감추기
-   
-   /* 비동기통신 */
-   $.ajax({
-       type : "GET", //전송방식을 지정한다 (POST,GET)
-       url : "/wedding/list/step1",//호출 URL을 설정한다. GET방식일경우 뒤에 파라티터를 붙여서 사용해도된다.
-       dataType : "text",//호출한 페이지의 형식이다. xml,json,html,text등의 여러 방식을 사용할 수 있다.
-       data :{
-       	mwid:"${memberVo.mwid}",
-       	step1_1text1:$("#step1_1text1").val(), 	/* name키값 : val값 */
-       	step1_1text2:$("#step1_1text2").val(),
-       	step1_1text3:$("#step1_1text3").val(),
-       	step1_1text4:$("#step1_1text4").val()
-       },
-       error : function(){
-           alert("Fail");
-       },
-       success : function(Parse_data){
-           alert(Parse_data);
-       }
-        
-   });
-   
-});
-
-//수정 버튼 이벤트 
-$("#ck_step1_1_modify").click(function() {
-		$("#td_step_1_1").html
-			($("#step1_1text1").val()+'<br/>'
-			+$("#step1_1text2").val()+'<br/>'
-			+$("#step1_1text3").val()+'<br/>'
-			+$("#step1_1text4").val());
-		myModal.hide(); // 모달창 감추기
-		
-		/* 비동기통신 */
-		$.ajax({
-		    type : "GET", //전송방식을 지정한다 (POST,GET)
-		    url : "/wedding/list/step1",//호출 URL을 설정한다. GET방식일경우 뒤에 파라티터를 붙여서 사용해도된다.
-		    dataType : "text",//호출한 페이지의 형식이다. xml,json,html,text등의 여러 방식을 사용할 수 있다.
-		    data :{
-		    	mwid:"${memberVo.mwid}",
-		    	step1_1text1:$("#step1_1text1").val(), 	/* name키값 : val값 */
-		    	step1_1text2:$("#step1_1text2").val(),
-		    	step1_1text3:$("#step1_1text3").val(),
-		    	step1_1text4:$("#step1_1text4").val()
-		    },
-		    error : function(){
-		        alert("Fail");
-		    },
-		    success : function(Parse_data){
-		        alert(Parse_data);
-		    }   
-		});
-});
-
-//취소 버튼 이벤트 
-$("#ck_step1_1_cancel").click(function() {
-	myModal.hide();
-});
-
-//초기화 버튼 이벤트   
-$("#ck_step1_1_reset").click(function() {
-	$("#step1_1text1").val("");
-   $("#step1_1text2").val("");
-   $("#step1_1text3").val("");
-   $("#step1_1text4").val("");
-});
-
-//체크박스 선택과 미선택시 알림창 
-$("#ck_step1_1").change(function(){
-	if($("#ck_step1_1").is(":checked")){
-		alert("상견례 체크되었습니다.");
-	}else{
-		alert("체크박스가 해제되었습니다.");
-	}
-});
-</script>
-<script type="text/javascript">
+	/* SHOW */
 	$('#chList1').click(function() {
-		alert('상견례 체크 하러 갑니다.');
 		step1_modal.show();
 	});
 	
 	$('#chList2').click(function() {
-		alert('웨딩홀 & 예약일 체크 하러 갑니다.');
 		step2_modal.show();
 	});
 	
 	$('#chList3').click(function() {
-		alert('스튜디오 & 예약일  체크 하러 갑니다.');
 		step3_modal.show();
 	});
 	
 	$('#chList4').click(function() {
-		alert('컨설팅 체크 하러 갑니다.');
 		step4_modal.show();
+	});
+
+	/* HIDE */
+	$('#STEP1_modal').on('click', '#btnCancel', function() {
+		step1_modal.hide();
+	});
+
+	$('#STEP2_modal').on('click', '#btnCancel', function() {
+		step2_modal.hide();
+	});
+
+	$('#STEP3_modal').on('click', '#btnCancel', function() {
+		step3_modal.hide();
+	});
+
+	$('#STEP4_modal').on('click', '#btnCancel', function() {
+		step4_modal.hide();
+	});
+
+	/* SAVE */
+	$('#STEP1_modal').on('click', '#btnSave', function() {
+		var formObj = $("#STEP1_modal_form");
+		console.log(formObj);
+
+		formObj.attr('action', '/wedding/list/step1Save');
+		formObj.attr('method', 'post');
+		formObj.submit();
+		
+		step1_modal.hide();
+	});
+
+	$('#STEP2_modal').on('click', '#btnSave', function() {
+		var formObj = $("#STEP2_modal_form");
+		console.log(formObj);
+
+		formObj.attr('action', '/wedding/list/step2Save');
+		formObj.attr('method', 'post');
+		formObj.submit();
+		
+		step2_modal.hide();
+	});
+
+	$('#STEP3_modal').on('click', '#btnSave', function() {
+		var formObj = $("#STEP3_modal_form");
+		console.log(formObj);
+
+		formObj.attr('action', '/wedding/list/step3Save');
+		formObj.attr('method', 'post');
+		formObj.submit();
+		
+		step3_modal.hide();
+	});
+
+	$('#STEP4_modal').on('click', '#btnSave', function() {
+		var formObj = $("#STEP4_modal_form");
+		console.log(formObj);
+
+		formObj.attr('action', '/wedding/list/step4Save');
+		formObj.attr('method', 'post');
+		formObj.submit();
+		
+		step4_modal.hide();
+	});
+	
+
+	/* EDIT */
+	$('#STEP1_modal').on('click', '#btnEdit', function() {
+		var formObj = $("#STEP1_modal_form");
+		console.log(formObj);
+
+		formObj.attr('action', '/wedding/list/step1Edit');
+		formObj.attr('method', 'post');
+		formObj.submit();
+		
+		step1_modal.hide();
+	});
+
+	$('#STEP2_modal').on('click', '#btnEdit', function() {
+		var formObj = $("#STEP2_modal_form");
+		console.log(formObj);
+
+		formObj.attr('action', '/wedding/list/step2Edit');
+		formObj.attr('method', 'post');
+		formObj.submit();
+		
+		step2_modal.hide();
+	});
+
+	$('#STEP3_modal').on('click', '#btnEdit', function() {
+		var formObj = $("#STEP3_modal_form");
+		console.log(formObj);
+
+		formObj.attr('action', '/wedding/list/step3Edit');
+		formObj.attr('method', 'post');
+		formObj.submit();
+		
+		step3_modal.hide();
+	});
+
+	$('#STEP4_modal').on('click', '#btnEdit', function() {
+		var formObj = $("#STEP4_modal_form");
+		console.log(formObj);
+
+		formObj.attr('action', '/wedding/list/step4Edit');
+		formObj.attr('method', 'post');
+		formObj.submit();
+		
+		step4_modal.hide();
 	});
 </script>
 <%@include file="../include/footer.jsp"%>

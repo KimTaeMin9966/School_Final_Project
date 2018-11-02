@@ -35,7 +35,6 @@
 		
 		<interceptor>
 			<mapping path="/management/*" />
-			<mapping path="/member/management" />
 			<beans:ref bean="authInterceptor" />
 		</interceptor>
 	</interceptors>

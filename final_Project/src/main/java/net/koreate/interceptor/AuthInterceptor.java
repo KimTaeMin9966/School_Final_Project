@@ -28,13 +28,12 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 			response.sendRedirect("/member/login");
 			return false;
 		} else {
-			MemberVo memberVo = (MemberVo)user; // 현제 유저 정보
-			int mwno = memberVo.getMwno();
+			MemberVo memberVo = (MemberVo)user; int mwno = memberVo.getMwno(); // 현제 로그인된 유저정보의 번호
 			
-			MemberVo isMaster = service.searchByNO(mwno);
+			int isMasterNO = service.isMasterSearch(); // 마스터의 번호를 검색
 			
-			if (isMaster.equals(memberVo)) { System.out.println("마스터가 아닙니다."); return true; }
-			else { System.out.println("동일 하지 않습니다."); response.sendRedirect("/"); return false; }
+			if (mwno == isMasterNO) { System.out.println("마스터 입니다"); return true; } // 로그인된 정보와 마스터의 번호가 같을때 
+			else { System.out.println("마스터가 아닙니다"); response.sendRedirect("/"); return false; } // 다를때
 		}
 	}
 	
