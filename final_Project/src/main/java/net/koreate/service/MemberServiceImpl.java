@@ -95,5 +95,17 @@ public class MemberServiceImpl implements MemberService {
 		// TODO Auto-generated method stub
 		return dao.searchByNO(mwno);
 	}
+
+	@Override
+	public int isMasterSearch() throws Exception {
+		// TODO Auto-generated method stub
+		return dao.isMasterSearch();
+	}
+
+	/*@Override
+	public Object getMember(MemberVo mvo) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.getMember(mvo);
+	}*/
 	
 }

@@ -61,4 +61,11 @@
 	<select id="searchByNO" resultType="MBVO">
 		SELECT * FROM made_wedding WHERE mwno = #{mwno}
 	</select>
+	<!-- 2018/11/02 -->
+	<select id="isMasterSearch" resultType="int">
+		SELECT * FROM made_wedding WHERE mwno = 1
+	</select>
+	<!-- <select id="getMember" resultType="MBVO">
+		SELECT * FROM made_wedding WHERE mwid = #{mwid}
+	</select> -->
 </mapper>

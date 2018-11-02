@@ -1,7 +1,5 @@
 package net.koreate.controller;
 
-import java.util.List;
-
 import javax.inject.Inject;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -93,10 +91,11 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value = "/loginPost", method = RequestMethod.POST)
-	public void loginPost(LoginDto dto, Model model) throws Exception {
+	public String loginPost(LoginDto dto, Model model) throws Exception {
 		logger.info("loginPost Called!!!");
 		
 		model.addAttribute("loginDto", dto);
+		return "home";
 	}
 	
 	@RequestMapping("/logOut")
@@ -149,14 +148,6 @@ public class MemberController {
 
 		rttr.addFlashAttribute("result", result);
 		return "redirect:/member/editInfo";
-	}
-	
-	@RequestMapping(value = "/management", method = RequestMethod.GET)
-	public void managementGET(Model model) throws Exception {
-		logger.info("managementGET Called!!!");
-		
-		List<MemberVo> list = service.memberAllSearch();
-		model.addAttribute("memberInfos", list);
 	}
 	
 }

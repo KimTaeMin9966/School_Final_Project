@@ -75,6 +75,14 @@ public class ManagementController {
 		mService.infoDeleteByID(mwid);
 		return "redirect:/member/management";
 	}
+
+	@RequestMapping(value = "/member", method = RequestMethod.GET)
+	public void memberGET(Model model) throws Exception {
+		logger.info("memberGET Called!!!");
+		
+		List<MemberVo> list = mService.memberAllSearch();
+		model.addAttribute("memberInfos", list);
+	}
 	
 	// 목록 보기
 	@RequestMapping(value = "/consulting", method = RequestMethod.GET)
