@@ -35,6 +35,7 @@
 		
 		<interceptor>
 			<mapping path="/management/*" />
+			<mapping path="/wedding/list" />
 			<beans:ref bean="authInterceptor" />
 		</interceptor>
 	</interceptors>

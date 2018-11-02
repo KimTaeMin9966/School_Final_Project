@@ -22,6 +22,7 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 		System.out.println("requestInfo : " + requestInfo);
 		
 		HttpSession session = request.getSession();
+		session.setAttribute("dest", requestInfo);
 		Object user = session.getAttribute("loginYES");
 		
 		if (user == null) {
@@ -31,6 +32,8 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 			MemberVo memberVo = (MemberVo)user; int mwno = memberVo.getMwno(); // 현제 로그인된 유저정보의 번호
 			
 			int isMasterNO = service.isMasterSearch(); // 마스터의 번호를 검색
+			
+			if (requestInfo.equals("/wedding/list")) { return true; }
 			
 			if (mwno == isMasterNO) { System.out.println("마스터 입니다"); return true; } // 로그인된 정보와 마스터의 번호가 같을때 
 			else { System.out.println("마스터가 아닙니다"); response.sendRedirect("/"); return false; } // 다를때
