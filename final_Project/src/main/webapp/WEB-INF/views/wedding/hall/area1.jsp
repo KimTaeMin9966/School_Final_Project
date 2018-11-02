@@ -27,6 +27,8 @@
 						<font style="vertical-align: inherit;">나중에 저장</font>
 					</font>
 				</button>
+				
+				
 			</article>
 		</c:forEach>
 	</div>

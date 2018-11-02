@@ -179,7 +179,7 @@
 					<div class="hero-background-image-large-wrapper">
 						<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
 						<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
-						 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/5.png">
+						 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/72.png">
 						<picture data-image-type="picture"></picture>
 					</div>
 					<!-- main-header-background-img end -->
@@ -191,10 +191,10 @@
 								<span data-component-attr-id="title" class="eyebrow"></span>
 								<span data-component-attr-id="subtitle"></span>
 							</h1>
-							 <a data-component-attr-id="url" class="button-gold shop-the-collection"
+							<!--  <a data-component-attr-id="url" class="button-gold shop-the-collection"
 								href="#">남성 컬렉션</a>
 							<a data-component-attr-id="url" class="button-gold shop-the-collection"
-								href="#">여성 컬렉션</a> 
+								href="#">여성 컬렉션</a>  -->
 						</div>
 					</div>
 					<!-- main-header-background-center end -->
