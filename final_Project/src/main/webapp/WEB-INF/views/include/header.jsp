@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 <!DOCTYPE html>
@@ -149,64 +149,9 @@
 											href="/member/register" tabindex="6">Sign Up</a>
 									</c:otherwise>
 								</c:choose>
-<<<<<<< HEAD
-							</ul>
-							<!-- nav end -->
-							<!-- nav2 start -->
-							<ul class="header-nav-user header-nav-secondary" style="--menu-right-pos: 141px">
-								<li id="header-nav-signin" class="header-nav-group header-nav-group-hover header-nav-sign-in-group">
-									<c:choose>
-										<c:when test="${!empty loginYES}">
-											<a id="header-nav-signin-anchor"
-												class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
-												href="/member/logOut" tabindex="6">Sign Out</a>
-										</c:when>
-										<c:otherwise>
-											<a id="header-nav-signin-anchor"
-												class="header-nav-parent-account header-nav-anchor header-nav-parent-link-medium header-nav-item"
-												href="/member/register" tabindex="6">Sign Up</a>
-										</c:otherwise>
-									</c:choose>
-								</li>
-							</ul>
-							<!-- nav2 end -->
-						</div>
-					</nav>
-					<!-- userInfo start -->
-					<nav id="header-nav-bag-wrapper" class="header-nav-bag-wrapper header-nav-group header-nav-group-hover header-nav-child-bag-empty" data-module="headerUpdate">
-						<c:choose>
-							<c:when test="${!empty loginYES}">
-								<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="/member/myInfo" id="header-nav-bag-anchor" aria-expanded="false">
-									<span class="title"><span>${loginYES.mwname}</span></span>
-								</a>
-							</c:when>
-							<c:otherwise>
-								<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link header-nav-parent-link-standard" tabindex="8" href="/member/login" id="header-nav-bag-anchor" aria-expanded="false">
-									<span class="title"><span>Sign In</span></span>
-								</a>
-							</c:otherwise>
-						</c:choose>
-					</nav>
-					<!-- userInfo end -->
-				</header>
-				<!-- main-header end -->
-				<!-- main-header-background start -->
-				<header data-component-container="heroComponent" data-hero-layer-opacity="opacity20" data-hero-layer-color="BLACK"
-					data-hero-loop-video-id="5851827842001" data-hero-loop-count=""
-					class="hero hero-large hero-homepage hero--no-audio hero-loop-video   video-parent 0000DBA0_HomepageHeroHeaderStandard_S83-FS-CAMPAIGN-012 hero-cta "
-					data-module="heroLarge, video, vrvideo, heroResize">
-					
-					<!-- main-header-background-img start -->
-					<div class="hero-background-image-large-wrapper">
-						<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
-						<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
-						 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/72.png">
-						<picture data-image-type="picture"></picture>
-=======
 							</li>
 						</ul>
 						<!-- nav2 end -->
->>>>>>> branch 'master' of https://github.com/RachelleVanmeter/School_Final_Project.git
 					</div>
 				</nav>
 				<!-- userInfo start -->
@@ -243,22 +188,8 @@
 				<div class="hero-background-image-large-wrapper">
 					<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
 					<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
-					 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/5.png">
+					 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/72.png">
 					<picture data-image-type="picture"></picture>
-<<<<<<< HEAD
-					<!-- main-header-background-center start -->
-					<div class="hero-content-wrapper hero-large-content-wrapper style-primarycta color-light">
-						<div class="hero-content-centered vr-content">
-							<h1 class="hero-title">
-								<span data-component-attr-id="title" class="eyebrow"></span>
-								<span data-component-attr-id="subtitle"></span>
-							</h1>
-							<!--  <a data-component-attr-id="url" class="button-gold shop-the-collection"
-								href="#">남성 컬렉션</a>
-							<a data-component-attr-id="url" class="button-gold shop-the-collection"
-								href="#">여성 컬렉션</a>  -->
-						</div>
-=======
 				</div>
 				<!-- main-header-background-img end -->
 				<picture data-image-type="picture"></picture>
@@ -273,7 +204,6 @@
 							href="#">남성 컬렉션</a>
 						<a data-component-attr-id="url" class="button-gold shop-the-collection"
 							href="#">여성 컬렉션</a> 
->>>>>>> branch 'master' of https://github.com/RachelleVanmeter/School_Final_Project.git
 					</div>
 				</div>
 				<!-- main-header-background-center end -->
