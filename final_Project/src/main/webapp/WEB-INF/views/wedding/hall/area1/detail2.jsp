@@ -336,10 +336,10 @@
 				<p class="online-exclusive-badge"
 					data-component-attr-id="online-exclusive">
 					<font style="vertical-align: inherit;">
-						<font style="vertical-align: inherit;">W스퀘어 웨딩홀의 특성</font><br/>
-						<font style="vertical-align: inherit;">부산 오랜전통을 자랑하는 웨딩홀로써 단독홀의 특성을 살렸다.</font><br/>
-						<font style="vertical-align: inherit;">동선의 불편함을 없애고 어두운톤의 깔끔한 연출한 웨딩홀이다. </font><br/>
-						<font style="vertical-align: inherit;">주소: 부산진구 신천대로 252 일성인포아파트 주상복합상가</font> <br/>
+					<font style="vertical-align: inherit;">W스퀘어 웨딩홀의 특성</font><br/>
+					<font style="vertical-align: inherit;">부산 오랜전통을 자랑하는 웨딩홀로써 단독홀의 특성을 살렸다.</font><br/>
+					<font style="vertical-align: inherit;">동선의 불편함을 없애고 어두운톤의 깔끔한 연출한 웨딩홀이다. </font><br/>
+					<font style="vertical-align: inherit;">주소: 부산진구 신천대로 252 일성인포아파트 주상복합상가</font> <br/>
 					
 					
 					</font>
@@ -368,7 +368,7 @@
 					<div class="price-column product-int-style-column">
 						<span class="style-number-title-int"><font
 							style="vertical-align: inherit;"> <font
-								style="vertical-align: inherit;">홀컨셉 : 어두운(DARK)</font><BR /> 
+								style="vertical-align: inherit;">홀컨셉 : ???</font><BR /> 
 								<font style="vertical-align: inherit;">홀스타일 : 단독홀(테이블형태)</font><BR /> 
 								<font style="vertical-align: inherit;">홀수용인원 : 200명 </font><BR />
 								<font style="vertical-align: inherit;">대관료 : 850,000원</font><BR /> 
