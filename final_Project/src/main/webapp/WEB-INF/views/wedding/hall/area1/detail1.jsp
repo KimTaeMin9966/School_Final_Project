@@ -368,11 +368,13 @@
 					<div class="price-column product-int-style-column">
 						<span class="style-number-title-int"><font
 							style="vertical-align: inherit;"> <font
-								style="vertical-align: inherit;">홀컨셉 : 어두운(DARK)</font><BR /> <font
-								style="vertical-align: inherit;">홀스타일 : 단독홀</font><BR /> <font
-								style="vertical-align: inherit;">대관료 : 850,000원</font><BR /> <font
-								style="vertical-align: inherit;">식비 : 35,000원</font><BR /> <font
-								style="vertical-align: inherit;">예약 전화번호 : 051-711-0177</font>
+								style="vertical-align: inherit;">홀컨셉 : 어두운(DARK)</font><BR /> 
+								<font style="vertical-align: inherit;">홀스타일 : 단독홀(테이블형태)</font><BR /> 
+								<font style="vertical-align: inherit;">홀수용인원 : 200명 </font><BR />
+								<font style="vertical-align: inherit;">대관료 : 850,000원</font><BR /> 
+								<font style="vertical-align: inherit;">식비 : 35,000원</font><BR />
+								<font style="vertical-align: inherit;">주차 : 500대 </font><BR />  
+								<font style="vertical-align: inherit;">예약 전화번호 : 051-711-0177</font>
 
 
 						</font></span>
