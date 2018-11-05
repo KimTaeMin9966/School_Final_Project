@@ -41,7 +41,7 @@
 
 								<div class="link">
 									<a data-story-link=""
-										href="/int/en/st/stories/article/spring-summer-2019-le-palace-magazine-fanzine"
+										href="/wedding/consulting"
 										target="_top"><font style="vertical-align: inherit;"><font
 											style="vertical-align: inherit;">부산 메이저 웨딩컨설팅 업체 보기</font></font></a>
 								</div>
@@ -53,7 +53,7 @@
 							<div class="item-inner-wrapper">
 								<div class="image-wrapper">
 									<a
-										href="/wedding/checklist">
+										href="/wedding/list">
 										<img alt="" data-story-image=""
 										src="${pageContext.request.contextPath}/resources/images/checklist.png"
 										class="_loaded">
@@ -66,7 +66,7 @@
 
 								<div class="link">
 									<a data-story-link=""
-										href="/int/en/st/stories/article-category-beauty/article/spring-summer-2019-beauty-faces"
+										href="/wedding/list"
 										target="_top"><font style="vertical-align: inherit;"><font
 											style="vertical-align: inherit;">내가 선택한 체크리스트 목록 저장하기</font></font></a>
 								</div>
@@ -92,7 +92,7 @@
 
 								<div class="link">
 									<a data-story-link=""
-										href="/int/en/st/stories/runway/article/spring-summer-2019-looks-gallery"
+										href="/wedding/hall"
 										target="_top"><font style="vertical-align: inherit;"><font
 											style="vertical-align: inherit;">부산 웨딩홀 지역 정보 보기 </font></font></a>
 								</div>
@@ -116,7 +116,7 @@
 
 								<div class="link">
 									<a data-story-link=""
-										href="/int/en/st/stories/runway/article/spring-summer-2019-video"
+										href="/wedding/studio"
 										target="_top"><font style="vertical-align: inherit;"><font
 											style="vertical-align: inherit;">부산 웨딩스튜디오 정보 보기 </font></font></a>
 								</div>
@@ -141,7 +141,7 @@
 
 								<div class="link">
 									<a data-story-link=""
-										href="/int/en/st/stories/article/spring-summer-2019-celebrities-gallery"
+										href="/wedding/send"
 										target="_top"><font style="vertical-align: inherit;"><font
 											style="vertical-align: inherit;"> 친구들에게 온라인 청첩장 보내기 </font></font></a>
 								</div>

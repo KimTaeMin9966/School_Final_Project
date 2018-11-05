@@ -15,7 +15,6 @@
 					data-module="slickCarousel, zoomCarousel"
 					style="height: 7534px; overflow: visible;">
 
-
 					<!-- add the save for later icon-->
 					<div class="save-help">
 						<a class="save main-product" title="나중에 저장" tabindex="-1"
@@ -37,29 +36,7 @@
 							</div>
 							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
 
-							<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1533906912/550130_0V10G_6629_001_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1533906912/550130_0V10G_6629_001_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1533906912/550130_0V10G_6629_001_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906912/550130_0V10G_6629_001_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1533906912/550130_0V10G_6629_001_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="/resources/images/더블유웨딩1.png"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906912/550130_0V10G_6629_001_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Arli 대형 탑 핸들 백"
-								class="item-content product-detail-carousel-image zoom-item"></picture>
+
 						</div>
 						<div
 							class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active"
@@ -67,29 +44,6 @@
 							role="option" aria-describedby="slick-slide01">
 							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
 
-							<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1533906912/550130_0V10G_6629_002_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1533906912/550130_0V10G_6629_002_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1533906912/550130_0V10G_6629_002_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906912/550130_0V10G_6629_002_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1533906912/550130_0V10G_6629_002_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="/resources/images/더블유웨딩2.png"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906912/550130_0V10G_6629_002_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Gucci Arli 대형 탑 핸들 백 상세 정보 2"
-								class="item-content product-detail-carousel-image zoom-item"></picture>
 						</div>
 						<div
 							class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active"
@@ -97,29 +51,6 @@
 							role="option" aria-describedby="slick-slide02">
 							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
 
-							<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1533906912/550130_0V10G_6629_003_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1533906912/550130_0V10G_6629_003_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1533906912/550130_0V10G_6629_003_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906912/550130_0V10G_6629_003_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1533906912/550130_0V10G_6629_003_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="/resources/images/더블유웨딩3.png"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906912/550130_0V10G_6629_003_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Gucci Arli 대형 탑 핸들 가방 디테일 3"
-								class="item-content product-detail-carousel-image zoom-item"></picture>
 						</div>
 						<div
 							class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active"
@@ -127,29 +58,6 @@
 							role="option" aria-describedby="slick-slide03">
 							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
 
-							<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1533906912/550130_0V10G_6629_004_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1533906912/550130_0V10G_6629_004_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1533906912/550130_0V10G_6629_004_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906912/550130_0V10G_6629_004_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1533906912/550130_0V10G_6629_004_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_800x800/1533906912/550130_0V10G_6629_004_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906912/550130_0V10G_6629_004_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Gucci Arli 대형 탑 핸들 가방 디테일 4"
-								class="item-content product-detail-carousel-image zoom-item"></picture>
 						</div>
 						<div
 							class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active"
@@ -157,29 +65,6 @@
 							role="option" aria-describedby="slick-slide04">
 							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
 
-							<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1537950604/550130_0V10G_6629_005_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1537950604/550130_0V10G_6629_005_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1537950604/550130_0V10G_6629_005_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1537950604/550130_0V10G_6629_005_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1537950604/550130_0V10G_6629_005_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_800x800/1537950604/550130_0V10G_6629_005_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1537950604/550130_0V10G_6629_005_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Gucci Arli 대형 탑 핸들 가방 디테일 5"
-								class="item-content product-detail-carousel-image zoom-item"></picture>
 						</div>
 						<div
 							class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active"
@@ -187,29 +72,6 @@
 							role="option" aria-describedby="slick-slide05">
 							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
 
-							<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1533906913/550130_0V10G_6629_006_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1533906913/550130_0V10G_6629_006_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1533906913/550130_0V10G_6629_006_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906913/550130_0V10G_6629_006_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1533906913/550130_0V10G_6629_006_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_800x800/1533906913/550130_0V10G_6629_006_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906913/550130_0V10G_6629_006_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Gucci Arli 대형 탑 핸들 가방 디테일 6"
-								class="item-content product-detail-carousel-image zoom-item"></picture>
 						</div>
 						<div
 							class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active"
@@ -217,110 +79,26 @@
 							role="option" aria-describedby="slick-slide06">
 							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
 
-							<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1533906913/550130_0V10G_6629_007_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1533906913/550130_0V10G_6629_007_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1533906913/550130_0V10G_6629_007_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906913/550130_0V10G_6629_007_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1533906913/550130_0V10G_6629_007_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_800x800/1533906913/550130_0V10G_6629_007_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906913/550130_0V10G_6629_007_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Gucci Arli 대형 탑 핸들 가방 디테일 7"
-								class="item-content product-detail-carousel-image zoom-item"></picture>
 						</div>
 						<div
 							class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active"
 							style="height: 828px;" aria-hidden="true" tabindex="-1"
 							role="option" aria-describedby="slick-slide07">
 							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
-</div>
-							<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1533906913/550130_0V10G_6629_009_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1533906913/550130_0V10G_6629_009_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1533906913/550130_0V10G_6629_009_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906913/550130_0V10G_6629_009_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1533906913/550130_0V10G_6629_009_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_800x800/1533906913/550130_0V10G_6629_009_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1533906913/550130_0V10G_6629_009_075_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Gucci Arli 대형 탑 핸들 백 디테일 8"
-								class="item-content product-detail-carousel-image zoom-item"></picture>
 						</div>
-						<div
-							class="js--zoomcarousel-opener item product-detail-image-slide zoom-in last-item _item-loaded active"
-							style="height: 828px; position: relative; top: 0px;"
-							aria-hidden="true" tabindex="-1" role="option"
-							aria-describedby="slick-slide08">
-							<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
+					</div>
+					<div
+						class="js--zoomcarousel-opener item product-detail-image-slide zoom-in last-item _item-loaded active"
+						style="height: 828px; position: relative; top: 0px;"
+						aria-hidden="true" tabindex="-1" role="option"
+						aria-describedby="slick-slide08">
+						<!-- BUG FIX: GR-963 Arrow to indicate user can move down page -->
 
-					<!-- 		<picture>
-							<source data-image-size="small-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_980x980/1537950605/550130_0V10G_6629_011_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi)">
-							<source data-image-size="medium-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_720x720/1537950605/550130_0V10G_6629_011_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi)">
-							<source data-image-size="standard-retina"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1537950605/550130_0V10G_6629_011_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi)">
-							<source data-image-size="small"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1537950605/550130_0V10G_6629_011_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(max-width: 767px)">
-							<source data-image-size="medium"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_360x360/1537950605/550130_0V10G_6629_011_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 768px) and (max-width: 1023px)">
-							<source data-image-size="standard"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_800x800/1537950605/550130_0V10G_6629_011_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								media="(min-width: 1024px)">
-							<img data-image-type="fallback"
-								srcset="//media.gucci.com/style/DarkGray_Center_0_0_490x490/1537950605/550130_0V10G_6629_011_100_0000_Light-Arli-large-top-handle-bag.jpg"
-								alt="Gucci Arli 대형 탑 핸들 가방 디테일 9"
-								class="item-content product-detail-carousel-image zoom-item"></picture> -->
-						</div>
-					
+					</div>
+
 					<!-- .vertical-carousel-inner -->
 				</div>
 			</section>
-			<!-- Product detail vertical carousel navigation handlebars template -->
-			<script id="product-detail-vertical-carousel-pagination-template"
-				type="text/x-handlebars-template">
-            <ul>
-                {{#each links}}
-                <li>
-                    <a class="carousel-pagination-link" href="#">
-                        <span class="carousel-pagination-link-slide">Slide </span>
-                        <span class="carousel-pagination-link-index">{{this}}</span>
-                    </a>
-                </li>
-                {{/each}}
-            </ul>
-        </script>
-			<!-- End template -->
 		</div>
 		<!-- Product Details Purchase Column - Top/ Right -->
 		<input type="hidden" id="addToCartUrl" name="addToCartUrl"
@@ -335,13 +113,15 @@
 				data-module="productDetail, productDetailScrollSpy, socialZH">
 				<p class="online-exclusive-badge"
 					data-component-attr-id="online-exclusive">
-					<font style="vertical-align: inherit;">
-					<font style="vertical-align: inherit;">W스퀘어 웨딩홀의 특성</font><br/>
-					<font style="vertical-align: inherit;">부산 오랜전통을 자랑하는 웨딩홀로써 단독홀의 특성을 살렸다.</font><br/>
-					<font style="vertical-align: inherit;">동선의 불편함을 없애고 어두운톤의 깔끔한 연출한 웨딩홀이다. </font><br/>
-					<font style="vertical-align: inherit;">주소: 부산진구 신천대로 252 일성인포아파트 주상복합상가</font> <br/>
-					
-					
+					<font style="vertical-align: inherit;"> <font
+						style="vertical-align: inherit;">W스퀘어 웨딩홀의 특성</font><br /> <font
+						style="vertical-align: inherit;">부산 오랜전통을 자랑하는 웨딩홀로써 단독홀의
+							특성을 살렸다.</font><br /> <font style="vertical-align: inherit;">동선의
+							불편함을 없애고 어두운톤의 깔끔한 연출한 웨딩홀이다. </font><br /> <font
+						style="vertical-align: inherit;">주소: 부산진구 신천대로 252 일성인포아파트
+							주상복합상가</font> <br />
+
+
 					</font>
 				</p>
 				<!-- add the save for later icon-->
@@ -445,8 +225,9 @@
 							<!-- #GUC-5273 -->
 						</ul>
 					</div>
-					<a class="shopping-bag-cta" target="_blank" href="http://wweddingsquare.com/">
-						<font style="vertical-align: inherit;"><font
+					<a class="shopping-bag-cta" target="_blank"
+						href="http://wweddingsquare.com/"> <font
+						style="vertical-align: inherit;"><font
 							style="vertical-align: inherit;">W스퀘어 홈페이지 방문</font></font>
 					</a>
 					<div class="product-details-nav">
