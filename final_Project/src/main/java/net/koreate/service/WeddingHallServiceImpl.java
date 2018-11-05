@@ -81,5 +81,11 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		// TODO Auto-generated method stub
 		dao.studioDeleteByHNO(studio_hno);
 	}
+
+	@Override
+	public List<WeddingHallVo> SearchDetail(WeddingHallVo vo) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.SearchDetail(vo);
+	}
 	
 }

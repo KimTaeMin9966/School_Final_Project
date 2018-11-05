@@ -31,4 +31,7 @@ public interface WeddingHallService {
 
 	void studioDeleteByHNO(int studio_hno) throws Exception;
 
+	// 2018/11/05
+	List<WeddingHallVo> SearchDetail(WeddingHallVo vo) throws Exception;
+
 }
