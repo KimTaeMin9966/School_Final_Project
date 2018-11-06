@@ -10,3 +10,9 @@
 	z-Index: 9999;
 	resizeable: true;
 }
+
+.btn-custom {
+    color: #fff;
+    background-color: #efbdc6;
+    border-color: #efbdc6;
+}
