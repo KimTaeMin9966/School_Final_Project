@@ -41,6 +41,9 @@ public interface MemberDao {
 	// 2018/11/02
 	int isMasterSearch() throws Exception;
 
+	// 2018/11/06
+	MemberVo searchID() throws Exception;
+
 	/*Object getMember(MemberVo mvo) throws Exception;*/
 
 }

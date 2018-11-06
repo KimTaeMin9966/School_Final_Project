@@ -43,8 +43,11 @@ public class MemberController {
 	}*/
 	
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
-	public void registerGET() throws Exception {
+	public void registerGET(Model model) throws Exception {
 		logger.info("registerGET Called!!!");
+		MemberVo vo = service.searchID();
+		
+		model.addAttribute("memberIDs", vo);
 	}
 	
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
