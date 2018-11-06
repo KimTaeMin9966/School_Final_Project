@@ -17,7 +17,16 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>홀위치</label>
-							<input type="text" id="hall_location" name="hall_location" class="form-control" value="${editHall.hall_location}" readonly />
+							<select name="hall_location" class="form-control" required>
+							    <optgroup label="홀위치">
+								    <option value="부산 진구" <c:if test="${editHall.hall_location eq '부산 진구'}">selected</c:if>>부산 진구</option>
+								    <option value="부산 동구" <c:if test="${editHall.hall_location eq '부산 동구'}">selected</c:if>>부산 동구</option>
+								    <option value="부산 연제구" <c:if test="${editHall.hall_location eq '부산 연제구'}">selected</c:if>>부산 연제구</option>
+								    <option value="부산 해운대구" <c:if test="${editHall.hall_location eq '부산 해운대구'}">selected</c:if>>부산 해운대구</option>
+								    <option value="부산 동래구" <c:if test="${editHall.hall_location eq '부산 동래구'}">selected</c:if>>부산 동래구</option>
+								    <option value="부산 중구" <c:if test="${editHall.hall_location eq '부산 중구'}">selected</c:if>>부산 중구</option>
+							    </optgroup>
+							</select>
 						</div>
 						<div class="form-group has-feedback">
 							<label>홀수용인원</label>
@@ -37,11 +46,29 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>페이지 전환을 위한 링크</label>
-							<input type="text" id="hall_link" name="hall_link" class="form-control" value="${editHall.hall_link}" readonly />
+							<select name="hall_link" class="form-control" required>
+							    <optgroup label="페이지 전환을 위한 링크">
+								    <option value="detail1" <c:if test="${editHall.hall_link eq 'detail1'}">selected</c:if>>detail1</option>
+								    <option value="detail2" <c:if test="${editHall.hall_link eq 'detail2'}">selected</c:if>>detail2</option>
+								    <option value="detail3" <c:if test="${editHall.hall_link eq 'detail3'}">selected</c:if>>detail3</option>
+								    <option value="detail4" <c:if test="${editHall.hall_link eq 'detail4'}">selected</c:if>>detail4</option>
+								    <option value="detail5" <c:if test="${editHall.hall_link eq 'detail5'}">selected</c:if>>detail5</option>
+								    <option value="detail6" <c:if test="${editHall.hall_link eq 'detail6'}">selected</c:if>>detail6</option>
+							    </optgroup>
+							</select>
 						</div>
 						<div class="form-group has-feedback">
 							<label>지역</label>
-							<input type="text" id="hall_area" name="hall_area" class="form-control" value="${editHall.hall_area}" readonly />
+							<select name="hall_area" class="form-control" required>
+							    <optgroup label="지역">
+								    <option value="1" <c:if test="${editHall.hall_area eq 1}">selected</c:if>>부산 진구</option>
+								    <option value="2" <c:if test="${editHall.hall_area eq 2}">selected</c:if>>부산 동구</option>
+								    <option value="3" <c:if test="${editHall.hall_area eq 3}">selected</c:if>>부산 연제구</option>
+								    <option value="4" <c:if test="${editHall.hall_area eq 4}">selected</c:if>>부산 해운대구</option>
+								    <option value="5" <c:if test="${editHall.hall_area eq 5}">selected</c:if>>부산 동래구</option>
+								    <option value="6" <c:if test="${editHall.hall_area eq 6}">selected</c:if>>부산 중구</option>
+							    </optgroup>
+							</select>
 						</div>
 						<div class="box-footer">
 							<div class="col-xs-8"></div>

@@ -30,9 +30,4 @@
 		</c:forEach>
 	</div>
 </div>
-<%-- <div class="content">
-	<c:forEach var="halls" items="${list}">
-		
-	</c:forEach>
-</div> --%>
 <%@include file="../../include/footer.jsp"%>

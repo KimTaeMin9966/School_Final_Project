@@ -17,31 +17,58 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>스튜디오위치</label>
-							<input type="text" id="studio_location" name="studio_location" class="form-control" value="${editStudio.studio_name}" readonly />
+							<select name="studio_location" class="form-control" required>
+							    <optgroup label="스튜디오위치">
+								    <option value="부산 진구" <c:if test="${editStudio.studio_location eq '부산 진구'}">selected</c:if>>부산 진구</option>
+								    <option value="부산 동구" <c:if test="${editStudio.studio_location eq '부산 동구'}">selected</c:if>>부산 동구</option>
+								    <option value="부산 연제구" <c:if test="${editStudio.studio_location eq '부산 연제구'}">selected</c:if>>부산 연제구</option>
+								    <option value="부산 해운대구" <c:if test="${editStudio.studio_location eq '부산 해운대구'}">selected</c:if>>부산 해운대구</option>
+								    <option value="부산 동래구" <c:if test="${editStudio.studio_location eq '부산 동래구'}">selected</c:if>>부산 동래구</option>
+								    <option value="부산 중구" <c:if test="${editStudio.studio_location eq '부산 중구'}">selected</c:if>>부산 중구</option>
+							    </optgroup>
+							</select>
 						</div>
 						<div class="form-group has-feedback">
 							<label>스튜디오수용인원</label>
-							<input type="text" id="studio_person" name="studio_person" class="form-control" value="${editStudio.studio_name}" />
+							<input type="text" id="studio_person" name="studio_person" class="form-control" value="${editStudio.studio_person}" />
 						</div>
 						<div class="form-group has-feedback">
 							<label>스튜디오가격</label>
-							<input type="text" id="studio_price" name="studio_price" class="form-control" value="${editStudio.studio_name}" />
+							<input type="text" id="studio_price" name="studio_price" class="form-control" value="${editStudio.studio_price}" />
 						</div>
 						<div class="form-group has-feedback">
 							<label>스튜디오테마</label>
-							<input type="text" id="studio_thema" name="studio_thema" class="form-control" value="${editStudio.studio_name}" />
+							<input type="text" id="studio_thema" name="studio_thema" class="form-control" value="${editStudio.studio_thema}" />
 						</div>
 						<div class="form-group has-feedback">
 							<label>스튜디오컨텐츠</label>
-							<input type="text" id="studio_contents" name="studio_contents" class="form-control" value="${editStudio.studio_name}" />
+							<input type="text" id="studio_contents" name="studio_contents" class="form-control" value="${editStudio.studio_contents}" />
 						</div>
 						<div class="form-group has-feedback">
 							<label>페이지 전환을 위한 링크</label>
-							<input type="text" id="studio_link" name="studio_link" class="form-control" value="${editStudio.studio_name}" readonly />
+							<select name="studio_link" class="form-control" required>
+							    <optgroup label="페이지 전환을 위한 링크">
+								    <option value="detail1" <c:if test="${editStudio.studio_link eq 'detail1'}">selected</c:if>>detail1</option>
+								    <option value="detail2" <c:if test="${editStudio.studio_link eq 'detail2'}">selected</c:if>>detail2</option>
+								    <option value="detail3" <c:if test="${editStudio.studio_link eq 'detail3'}">selected</c:if>>detail3</option>
+								    <option value="detail4" <c:if test="${editStudio.studio_link eq 'detail4'}">selected</c:if>>detail4</option>
+								    <option value="detail5" <c:if test="${editStudio.studio_link eq 'detail5'}">selected</c:if>>detail5</option>
+								    <option value="detail6" <c:if test="${editStudio.studio_link eq 'detail6'}">selected</c:if>>detail6</option>
+							    </optgroup>
+							</select>
 						</div>
 						<div class="form-group has-feedback">
 							<label>지역</label>
-							<input type="text" id="studio_area" name="studio_area" class="form-control" value="${editStudio.studio_name}" readonly />
+							<select name="studio_area" class="form-control" required>
+							    <optgroup label="지역">
+								    <option value="1" <c:if test="${editStudio.studio_area eq 1}">selected</c:if>>부산 진구</option>
+								    <option value="2" <c:if test="${editStudio.studio_area eq 2}">selected</c:if>>부산 동구</option>
+								    <option value="3" <c:if test="${editStudio.studio_area eq 3}">selected</c:if>>부산 연제구</option>
+								    <option value="4" <c:if test="${editStudio.studio_area eq 4}">selected</c:if>>부산 해운대구</option>
+								    <option value="5" <c:if test="${editStudio.studio_area eq 5}">selected</c:if>>부산 동래구</option>
+								    <option value="6" <c:if test="${editStudio.studio_area eq 6}">selected</c:if>>부산 중구</option>
+							    </optgroup>
+							</select>
 						</div>
 						<div class="box-footer">
 							<div class="col-xs-8"></div>
