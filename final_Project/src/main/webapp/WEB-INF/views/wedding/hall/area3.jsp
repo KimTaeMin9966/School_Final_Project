@@ -6,7 +6,7 @@
 <%@include file="../../include/header.jsp"%>
 <div class="content search-result new-4-cols-layout">
 	<div class="product-tiles-grid">
-		<c:forEach var="halls" items="${list}">
+		<c:forEach var="halls" items="${area3}">
 			<article class="product-tiles-grid-item product-tiles-grid-item-medium product-tiles-grid-item-small hover-link  border-right">
 				<a class="product-tiles-grid-item-link" href="/wedding/hall/area3/${halls.hall_link}">
 					<div class="product-tiles-grid-item-image-wrapper">

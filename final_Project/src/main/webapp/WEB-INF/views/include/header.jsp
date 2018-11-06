@@ -120,7 +120,7 @@
 										<div class="header-nav-section-title">
 											<a data-di-id="runway_1"
 												class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-												href="/management/member" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">관리자 페이지</a>
+												href="/management/member" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">회원 관리</a>
 										</div>
 									</li>
 								</c:when>

@@ -17,15 +17,13 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>스튜디오위치</label>
-							<select name="studio_location" class="form-control" required>
-							    <optgroup label="스튜디오위치">
-								    <option value="부산 진구" <c:if test="${editStudio.studio_location eq '부산 진구'}">selected</c:if>>부산 진구</option>
-								    <option value="부산 동구" <c:if test="${editStudio.studio_location eq '부산 동구'}">selected</c:if>>부산 동구</option>
-								    <option value="부산 연제구" <c:if test="${editStudio.studio_location eq '부산 연제구'}">selected</c:if>>부산 연제구</option>
-								    <option value="부산 해운대구" <c:if test="${editStudio.studio_location eq '부산 해운대구'}">selected</c:if>>부산 해운대구</option>
-								    <option value="부산 동래구" <c:if test="${editStudio.studio_location eq '부산 동래구'}">selected</c:if>>부산 동래구</option>
-								    <option value="부산 중구" <c:if test="${editStudio.studio_location eq '부산 중구'}">selected</c:if>>부산 중구</option>
-							    </optgroup>
+							<select id="studio_location" name="studio_location" class="form-control" required>
+							    <option value="부산 진구" <c:if test="${editStudio.studio_location eq '부산 진구'}">selected</c:if>>부산 진구</option>
+							    <option value="부산 동구" <c:if test="${editStudio.studio_location eq '부산 동구'}">selected</c:if>>부산 동구</option>
+							    <option value="부산 연제구" <c:if test="${editStudio.studio_location eq '부산 연제구'}">selected</c:if>>부산 연제구</option>
+							    <option value="부산 해운대구" <c:if test="${editStudio.studio_location eq '부산 해운대구'}">selected</c:if>>부산 해운대구</option>
+							    <option value="부산 동래구" <c:if test="${editStudio.studio_location eq '부산 동래구'}">selected</c:if>>부산 동래구</option>
+							    <option value="부산 중구" <c:if test="${editStudio.studio_location eq '부산 중구'}">selected</c:if>>부산 중구</option>
 							</select>
 						</div>
 						<div class="form-group has-feedback">
@@ -46,28 +44,24 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>페이지 전환을 위한 링크</label>
-							<select name="studio_link" class="form-control" required>
-							    <optgroup label="페이지 전환을 위한 링크">
-								    <option value="detail1" <c:if test="${editStudio.studio_link eq 'detail1'}">selected</c:if>>detail1</option>
-								    <option value="detail2" <c:if test="${editStudio.studio_link eq 'detail2'}">selected</c:if>>detail2</option>
-								    <option value="detail3" <c:if test="${editStudio.studio_link eq 'detail3'}">selected</c:if>>detail3</option>
-								    <option value="detail4" <c:if test="${editStudio.studio_link eq 'detail4'}">selected</c:if>>detail4</option>
-								    <option value="detail5" <c:if test="${editStudio.studio_link eq 'detail5'}">selected</c:if>>detail5</option>
-								    <option value="detail6" <c:if test="${editStudio.studio_link eq 'detail6'}">selected</c:if>>detail6</option>
-							    </optgroup>
+							<select id="studio_link" name="studio_link" class="form-control" required>
+							    <option value="detail1" <c:if test="${editStudio.studio_link eq 'detail1'}">selected</c:if>>detail1</option>
+							    <option value="detail2" <c:if test="${editStudio.studio_link eq 'detail2'}">selected</c:if>>detail2</option>
+							    <option value="detail3" <c:if test="${editStudio.studio_link eq 'detail3'}">selected</c:if>>detail3</option>
+							    <option value="detail4" <c:if test="${editStudio.studio_link eq 'detail4'}">selected</c:if>>detail4</option>
+							    <option value="detail5" <c:if test="${editStudio.studio_link eq 'detail5'}">selected</c:if>>detail5</option>
+							    <option value="detail6" <c:if test="${editStudio.studio_link eq 'detail6'}">selected</c:if>>detail6</option>
 							</select>
 						</div>
 						<div class="form-group has-feedback">
 							<label>지역</label>
-							<select name="studio_area" class="form-control" required>
-							    <optgroup label="지역">
-								    <option value="1" <c:if test="${editStudio.studio_area eq 1}">selected</c:if>>부산 진구</option>
-								    <option value="2" <c:if test="${editStudio.studio_area eq 2}">selected</c:if>>부산 동구</option>
-								    <option value="3" <c:if test="${editStudio.studio_area eq 3}">selected</c:if>>부산 연제구</option>
-								    <option value="4" <c:if test="${editStudio.studio_area eq 4}">selected</c:if>>부산 해운대구</option>
-								    <option value="5" <c:if test="${editStudio.studio_area eq 5}">selected</c:if>>부산 동래구</option>
-								    <option value="6" <c:if test="${editStudio.studio_area eq 6}">selected</c:if>>부산 중구</option>
-							    </optgroup>
+							<select id="studio_area" name="studio_area" class="form-control" required>
+							    <option value="1" <c:if test="${editStudio.studio_area eq 1}">selected</c:if>>부산 진구</option>
+							    <option value="2" <c:if test="${editStudio.studio_area eq 2}">selected</c:if>>부산 동구</option>
+							    <option value="3" <c:if test="${editStudio.studio_area eq 3}">selected</c:if>>부산 연제구</option>
+							    <option value="4" <c:if test="${editStudio.studio_area eq 4}">selected</c:if>>부산 해운대구</option>
+							    <option value="5" <c:if test="${editStudio.studio_area eq 5}">selected</c:if>>부산 동래구</option>
+							    <option value="6" <c:if test="${editStudio.studio_area eq 6}">selected</c:if>>부산 중구</option>
 							</select>
 						</div>
 						<div class="box-footer">
@@ -93,13 +87,13 @@
 	$('#ok').click(function() {
 		var studio_hno = $('#studio_hno').val();
 		var studio_name = $('#studio_name').val();
-		var studio_location = $('#studio_location').val();
+		var studio_location = $('#studio_location > option:selected').val();
 		var studio_person = $('#studio_person').val();
 		var studio_price = $('#studio_price').val();
 		var studio_thema = $('#studio_thema').val();
 		var studio_contents = $('#studio_contents').val();
-		var studio_link = $('#studio_link').val();
-		var studio_area = $('#studio_area').val();
+		var studio_link = $('#studio_link > option:selected').val();
+		var studio_area = $('#studio_area > option:selected').val();
 		
 		$.ajax({
 			type : 'PATCH',

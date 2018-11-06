@@ -73,7 +73,7 @@
 		<!-- 홀4 -->
 		<article data-attribute-id="smallImageContainer" class="category-product-grid-item category-product-grid-item-three hover-link">
 			<a data-component-attr-id="url" class="category-product" href="/wedding/hall/area4">
-			<div>
+				<div>
 					<img src="${pageContext.request.contextPath}/resources/images/해운대카카오트리.png">
 				</div>
 				<header class="category-grid-item-content">
@@ -117,7 +117,7 @@
 		<!-- 홀 6 -->
 		<article data-attribute-id="smallImageContainer" class="category-product-grid-item category-product-grid-item-three hover-link">
 			<a data-component-attr-id="url" class="category-product" href="/wedding/hall/area6">
-			<div>
+				<div>
 					<img src="${pageContext.request.contextPath}/resources/images/중구오아제.png">
 				</div>
 				<header class="category-grid-item-content">
@@ -135,5 +135,6 @@
 			</a>
 		</article>
 		<!-- 홀 6 -->
+	</div>
 </div>
 <%@include file="../include/footer.jsp"%>
