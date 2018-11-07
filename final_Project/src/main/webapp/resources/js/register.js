@@ -58,8 +58,6 @@ $(document).ready(function() {
 		$("#" + el).html(html);
 	}
 	
-	//var obj = ${memberIDs};
-	
 	// ---------------------------------------------------------
 	
 	$("#mwid").on("input", function() {
