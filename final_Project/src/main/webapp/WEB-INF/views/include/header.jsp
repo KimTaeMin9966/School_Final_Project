@@ -23,6 +23,7 @@
 	<link rel="apple-touch-icon" href="${pageContext.request.contextPath}/resources/images/apple-touch-icon.png">
 	
 	<!-- Online JS -->
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=22b50259bb16606eb70dbabc94232219"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=22b50259bb16606eb70dbabc94232219&libraries=LIBRARY,services,clusterer,drawing"></script>
 	
@@ -34,9 +35,8 @@
 	<script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/handlebars.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/modal.js"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/smoothscroll.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/upload.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
 	
 	<!-- Offline CSS -->

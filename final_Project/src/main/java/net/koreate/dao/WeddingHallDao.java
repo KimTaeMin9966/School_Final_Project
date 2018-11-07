@@ -1,6 +1,7 @@
 package net.koreate.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import net.koreate.vo.WeddingHallVo;
 import net.koreate.vo.WeddingStudioVo;
@@ -33,5 +34,14 @@ public interface WeddingHallDao {
 	
 	// 2018/11/06
 	WeddingHallVo SearchAreaHallDetail(WeddingHallVo vo) throws Exception;
+
+	// 2018/11/07
+	List<String> getAttachHallImg(Map<String, Object> paramMap) throws Exception;
+
+	List<String> getAttachStudioImg(Map<String, Object> paramMap) throws Exception;
+
+	void addHallAttach(Map<String, Object> paramMap) throws Exception;
+
+	void addStudioAttach(Map<String, Object> paramMap) throws Exception;
 
 }

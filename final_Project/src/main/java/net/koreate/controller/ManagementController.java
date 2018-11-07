@@ -1,21 +1,36 @@
 package net.koreate.controller;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import net.koreate.service.MemberService;
 import net.koreate.service.WeddingHallService;
+import net.koreate.util.MediaUtils;
+import net.koreate.util.UploadFileUtils;
 import net.koreate.vo.MemberVo;
 import net.koreate.vo.WeddingHallVo;
 import net.koreate.vo.WeddingStudioVo;
@@ -30,6 +45,9 @@ public class ManagementController {
 	
 	@Inject
 	WeddingHallService hService;
+	
+	@Resource(name = "uploadPath")
+	String uploadPath;
 	
 	/*@RequestMapping(value = "/", method = RequestMethod.GET)
 	public void GET() throws Exception {
@@ -179,6 +197,134 @@ public class ManagementController {
 		logger.info("studiodeletePOST Called!!!");
 		hService.studioDeleteByHNO(studio_hno);
 		return "redirect:/management/studio";
+	}
+	
+	// 홀 이미지 업로드
+	@ResponseBody
+	@RequestMapping(value = "/uploadHallImg", method = RequestMethod.POST, produces = "text/plain; charset=UTF-8")
+	public ResponseEntity<String> uploadHallImgPOST(MultipartFile file) throws Exception {
+		logger.info("uploadHallImgPOST Called!!!");
+		
+		return new ResponseEntity<String>(
+				UploadFileUtils.uploadFile(file.getOriginalFilename(), uploadPath, file.getBytes()),
+				HttpStatus.CREATED
+		);
+	}
+	
+	// 홀 이미지 삭제
+	@RequestMapping(value = "/deleteHallImg", method = RequestMethod.POST)
+	public ResponseEntity<String> deleteHallImgPOST(String fileName) throws Exception {
+		logger.info("deleteHallImgPOST Called!!!");
+		ResponseEntity<String> entity = null;
+		
+		String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
+		MediaType mType = MediaUtils.getMediaType(formatName);
+		
+		if(mType != null) {
+			String front = fileName.substring(0, 12);
+			String end = fileName.substring(14);
+			new File(uploadPath + (front + end).replace('/', File.separatorChar)).delete();
+		}
+		
+		new File(uploadPath+fileName.replace('/', File.separatorChar)).delete();
+		entity = new ResponseEntity<String>("deleted", HttpStatus.OK);
+		
+		return entity;
+	}
+	
+	// 홀 이미지 불러오기
+	@ResponseBody
+	@RequestMapping(value = "/getAttachHallImg/{hno}/{hall_link}/{hall_area}", method = RequestMethod.GET)
+	public List<String> getAttachHallImgGET(
+			@PathVariable("hno") int hno,
+			@PathVariable("hall_link") String hall_link,
+			@PathVariable("hall_area") int hall_area
+			) throws Exception {
+		logger.info("getAttachHallImgGET Called!!!");
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("hno", hno);
+		paramMap.put("hall_link", hall_link);
+		paramMap.put("hall_area", hall_area);
+		
+		List<String> list = hService.getAttachHallImg(paramMap);
+		return list;
+	}
+	
+	// 스튜디오 이미지 업로드
+	@RequestMapping(value = "/uploadStudioImg", method = RequestMethod.POST, produces = "text/plain; charset=UTF-8")
+	public ResponseEntity<String> uploadStudioImgPOST(MultipartFile file) throws Exception {
+		logger.info("uploadStudioImgPOST Called!!!");
+		
+		return new ResponseEntity<String>(
+				UploadFileUtils.uploadFile(file.getOriginalFilename(), uploadPath, file.getBytes()),
+				HttpStatus.CREATED
+		);
+	}
+
+	// 스튜디오 이미지 삭제
+	@RequestMapping(value = "/deleteStudioImg", method = RequestMethod.POST)
+	public ResponseEntity<String> deleteStudioImgPOST(String fileName) throws Exception {
+		logger.info("deleteStudioImgPOST Called!!!");
+		ResponseEntity<String> entity = null;
+		
+		String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
+		MediaType mType = MediaUtils.getMediaType(formatName);
+		
+		if(mType != null) {
+			String front = fileName.substring(0, 12);
+			String end = fileName.substring(14);
+			new File(uploadPath + (front + end).replace('/', File.separatorChar)).delete();
+		}
+		
+		new File(uploadPath+fileName.replace('/', File.separatorChar)).delete();
+		entity = new ResponseEntity<String>("deleted", HttpStatus.OK);
+		
+		return entity;
+	}
+
+	// 스튜디오 이미지 불러오기
+	@ResponseBody
+	@RequestMapping(value = "/getAttachStudioImg/{hno}/{studio_link}/{studio_area}", method = RequestMethod.GET)
+	public List<String> getAttachStudioImgGET(
+			@PathVariable("hno") int hno,
+			@PathVariable("studio_link") String studio_link,
+			@PathVariable("studio_area") int studio_area
+			) throws Exception {
+		logger.info("getAttachStudioImgGET Called!!!");
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("hno", hno);
+		paramMap.put("studio_link", studio_link);
+		paramMap.put("studio_area", studio_area);
+		
+		List<String> list = hService.getAttachStudioImg(paramMap);
+		return list;
+	}
+	
+	@RequestMapping(value = "/displayFile")
+	public ResponseEntity<byte[]> displayFileGET_POST(String fileName) throws Exception {
+		logger.info("displayFileGET & POST Called!!!"); InputStream in = null;
+		ResponseEntity<byte[]> entity = null; System.out.println(fileName);
+		
+		try {
+			String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
+			MediaType mType  = MediaUtils.getMediaType(formatName);
+			HttpHeaders headers = new HttpHeaders();
+			
+			in = new FileInputStream(uploadPath + fileName);
+			
+			if(mType != null) { headers.setContentType(mType); }
+			else {
+				fileName = fileName.substring(fileName.indexOf("_") + 1);
+				headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+				headers.add("Content-disposition", "attachment;fileName=\""
+						+ new String(fileName.getBytes("UTF-8"), "ISO-8859-1") + "\"");
+			}
+			
+			entity = new ResponseEntity<byte[]>(IOUtils.toByteArray(in),headers,HttpStatus.CREATED);
+		}
+		catch (Exception e) { e.printStackTrace(); }
+		finally { in.close(); }
+		return entity;
 	}
 	
 }

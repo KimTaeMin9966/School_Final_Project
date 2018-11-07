@@ -1,10 +1,13 @@
 package net.koreate.service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import net.koreate.dao.WeddingHallDao;
 import net.koreate.vo.WeddingHallVo;
@@ -35,15 +38,41 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	}
 
 	@Override
+	@Transactional
 	public void hallAdd(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		dao.hallAdd(vo);
+		
+		String[] files = vo.getFiles();
+		
+		if(files == null) return;
+		
+		for(String fullName : files) {
+			Map<String, Object> paramMap = new HashMap<>();
+			paramMap.put("file", fullName);
+			paramMap.put("HallVo", vo);
+			
+			dao.addHallAttach(paramMap);
+		}
 	}
 
 	@Override
+	@Transactional
 	public void studioAdd(WeddingStudioVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		dao.studioAdd(vo);
+		
+		String[] files = vo.getFiles();
+		
+		if(files == null) return;
+		
+		for(String fullName : files) {
+			Map<String, Object> paramMap = new HashMap<>();
+			paramMap.put("file", fullName);
+			paramMap.put("StudioVo", vo);
+			
+			dao.addStudioAttach(paramMap);
+		}
 	}
 
 	@Override
@@ -86,6 +115,18 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	public WeddingHallVo SearchAreaHallDetail(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		return dao.SearchAreaHallDetail(vo);
+	}
+
+	@Override
+	public List<String> getAttachHallImg(Map<String, Object> paramMap) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.getAttachHallImg(paramMap);
+	}
+
+	@Override
+	public List<String> getAttachStudioImg(Map<String, Object> paramMap) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.getAttachStudioImg(paramMap);
 	}
 	
 }

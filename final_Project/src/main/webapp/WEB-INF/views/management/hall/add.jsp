@@ -9,7 +9,7 @@
 					<h3>관리자 페이지(웨딩홀 업체 추가)</h3>
 				</div>
 				<div class="box-body">
-					<form method="post">
+					<form id="addHall" method="post">
 						<div class="form-group has-feedback">
 							<label>홀이름</label>
 							<input type="text" name="hall_name" class="form-control" placeholder="EX) 메리움 웨딩홀" required />
@@ -63,8 +63,13 @@
 							    <option value="6">부산 중구</option>
 							</select>
 						</div>
+						<div class="form-group">
+							<label>FILE DROP HERE</label>
+							<div class="fileDrop"></div>
+						</div>
 						<div class="box-footer">
-							<div class="col-xs-8"></div>
+							<div><hr/></div>
+							<ul class="mailbox-attachments clearfix uploadedList"></ul>
 							<div class="col-xs-4">
 								<input type="submit" class="btn btn-primary btn-block btn-flat" value="홀추가" />
 							</div>
@@ -75,4 +80,78 @@
 		</div>
 	</div>
 </section>
+<script id="template" type="text/x-handlebars-template">
+	<li>
+		<span class="mailbox-attachment-icon has-img">
+			<img src="{{imgsrc}}" alt="attachment" />
+		</span>
+		<div class="mailbox-attachment-info">
+			<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
+			<a href="{{fullName}}" class="btn btn-default btn-xs pull-right delBtn">
+				<i class="fa fa-fw fa-remove"></i>
+			</a>
+		</div>
+	</li>
+</script>
+<script type="text/javascript">
+	var template = Handlebars.compile($("#template").html());
+	
+	$(".fileDrop").on("dragover dragenter", function(event) { event.preventDefault(); });
+	
+	$(".fileDrop").on("drop", function(event) {
+		event.preventDefault();
+		
+		var files = event.originalEvent.dataTransfer.files;
+		
+		var file = files[0];
+		var formData = new FormData();
+		formData.append("file", file);
+		
+		$.ajax({
+			url : '/management/uploadHallImg',
+			data : formData,
+			dataType : "text",
+			processData : false,
+			contentType : false,
+			type : "POST",
+			success : function(result) {
+				alert(result);
+				var fileInfo = getFileInfo(result);
+				var html = template(fileInfo);
+				console.log(html);
+				$(".uploadedList").append(html);
+			}
+		});
+	});
+	
+	$("#addHall").submit(function(event) {
+		event.preventDefault();
+		var target = $(this);
+		
+		var str = "";
+		
+		$(".uploadedList .delBtn").each(function(index) {
+			str += "<input type='hidden' id='files[" + index + "]' name='files[" + index + "]' value='" + $(this).attr("href") + "' />";
+		});
+		
+		target.append(str);
+		target.get(0).submit();
+	});
+	
+	
+	$(".uploadedList").on("click", ".delBtn", function() {
+		event.preventDefault();
+		
+		var target = $(this);
+		$.ajax({
+			url : "/management/deleteHallImg",
+			type : "post",
+			data : { fileName : target.attr("href") },
+			dataType : "text",
+			success : function(result) {
+				if(result == "deleted") { target.closest("li").remove(); }
+			}
+		});
+	});
+</script>
 <%@include file="../../include/footer.jsp"%>

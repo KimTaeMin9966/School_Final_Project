@@ -9,8 +9,8 @@
 					<h3>관리자 페이지(웨딩스튜디오 업체 수정)</h3>
 				</div>
 				<div class="box-body">
-					<form method="post">
-						<input type="text" id="studio_hno" name="studio_hno" class="form-control" value="${editStudio.studio_hno}" />
+					<form id="editStudio" method="post">
+						<input type="hidden" id="studio_hno" name="studio_hno" class="form-control" value="${editStudio.studio_hno}" />
 						<div class="form-group has-feedback">
 							<label>스튜디오이름</label>
 							<input type="text" id="studio_name" name="studio_name" class="form-control" value="${editStudio.studio_name}" />
@@ -64,8 +64,13 @@
 							    <option value="6" <c:if test="${editStudio.studio_area eq 6}">selected</c:if>>부산 중구</option>
 							</select>
 						</div>
+						<div class="form-group">
+							<label>FILE DROP HERE</label>
+							<div class="fileDrop"></div>
+						</div>
 						<div class="box-footer">
-							<div class="col-xs-8"></div>
+							<div><hr/></div>
+							<ul class="mailbox-attachments clearfix uploadedList"></ul>
 							<div class="col-xs-4">
 								<input type="button" id="ok" class="btn btn-primary btn-block btn-flat" value="스튜디오수정" />
 							</div>
@@ -76,13 +81,81 @@
 		</div>
 	</div>
 </section>
-
+<script id="template" type="text/x-handlebars-template">
+	<li>
+		<span class="mailbox-attachment-icon has-img">
+			<img src="{{imgsrc}}" alt="attachment" />
+		</span>
+		<div class="mailbox-attachment-info">
+			<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
+			<a href="{{fullName}}" class="btn btn-default btn-xs pull-right delBtn">
+				<i class="fa fa-fw fa-remove"></i>
+			</a>
+		</div>
+	</li>
+</script>
 <script type="text/javascript">
 	var message = '${result}';
 
 	if (message != null && message == 'SUCCESS') { alert("정보수정에 성공하셨습니다."); }
 	else if (message != null && message == 'FAIL') { alert("정보수정에 실패하셨습니다."); }
 
+	var hno = ${editStudio.studio_hno};
+	var studio_link = '${editStudio.studio_link}';
+	var studio_area = ${editStudio.studio_area};
+	
+	var template = Handlebars.compile($("#template").html());
+
+	$.getJSON("/management/getAttachStudioImg?hno=" + hno + "&studio_link=" + studio_link + "&studio_area=" + studio_area, function(list) {
+		$(list).each(function() {
+			var fileInfo = getFileInfo(this);
+			var html = template(fileInfo);
+			$(".uploadedList").append(html);
+		});
+	});
+
+	$(".fileDrop").on("dragover dragenter", function(event) { event.preventDefault(); } );
+
+	$(".fileDrop").on("drop", function(event) {
+		event.preventDefault();
+		
+		var files = event.originalEvent.dataTransfer.files;
+
+		var file = files[0];
+		var formData = new FormData();
+		formData.append("file", file);
+		
+		$.ajax({
+			url : '/management/uploadStudioImg',
+			data : formData,
+			dataType : "text",
+			processData : false,
+			contentType : false,
+			type : "POST",
+			success : function(result) {
+				alert(result);
+				var fileInfo = getFileInfo(result);
+				var html = template(fileInfo);
+				console.log(html);
+				$(".uploadedList").append(html);
+			}
+		});
+	});
+	
+	$(".uploadedList").on("click", ".delBtn", function(event) {
+		event.preventDefault();
+		
+		var fileLink = $(this).attr("href");
+		var target = $(this);
+		$.ajax({
+			url : "/management/deleteStudioImg",
+			type : "post",
+			data : { fileName : fileLink },
+			dataType : "text",
+			success : function(result) { alert(result); target.closest("li").remove(); }
+		});
+	});
+	
 	
 	$('#ok').click(function() {
 		var studio_hno = $('#studio_hno').val();
@@ -94,6 +167,15 @@
 		var studio_contents = $('#studio_contents').val();
 		var studio_link = $('#studio_link > option:selected').val();
 		var studio_area = $('#studio_area > option:selected').val();
+		
+		var formObj = $("#editStudio");
+		console.log(formObj);
+		
+		$(".uploadedList .delBtn").each(function(index){
+			str += "<input type='hidden' id='files[" + index + "]' name='files[" + index + "]' value='" + $(this).attr("href") + "' />" 
+		});
+		
+		formObj.append(str);
 		
 		$.ajax({
 			type : 'PATCH',

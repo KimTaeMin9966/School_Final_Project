@@ -58,4 +58,22 @@
 		SELECT * FROM made_wedding_halls
 		WHERE hall_area = #{hall_area} AND hall_link = #{hall_link}
 	</select>
+	
+	<!-- 2018/11/07 -->
+	<select id="getAttachHallImg" resultType="string">
+		SELECT fullName FROM made_wedding_halls_img
+		WHERE hno = #{hno} AND area = #{hall_area} AND link = #{hall_link}
+	</select>
+	<select id="getAttachStudioImg" resultType="string">
+		SELECT fullName FROM made_wedding_studios_img
+		WHERE hno = #{hno} AND area = #{studio_link} AND link = #{studio_area}
+	</select>
+	<insert id="addHallAttach">
+		INSERT INTO made_wedding_halls_img(hno, fullName, area, link)
+		VALUES(LAST_INSERT_ID(), #{file}, #{HallVo.hall_area}, #{HallVo.hall_link})
+	</insert>
+	<insert id="addStudioAttach">
+		INSERT INTO made_wedding_studios_img(hno, fullName, area, link)
+		VALUES(LAST_INSERT_ID(), #{file}, #{StudioVo.studio_area}, #{StudioVo.studio_link})
+	</insert>
 </mapper>

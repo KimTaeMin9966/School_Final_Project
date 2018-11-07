@@ -55,6 +55,8 @@
 		var mwid = $('#mwid').val();
 		var mwpw = $('#mwpw').val();
 		var mwname = $('#mwname').val();
+		var mwmobile = $('#mwmobile').val();
+		var mwbirth = $('#mwbirth').val();
 		
 		$.ajax({
 			type : 'PATCH',
@@ -67,12 +69,14 @@
 			data : JSON.stringify({
 				mwid : mwid,
 				mwpw : mwpw,
-				mwname : mwname
+				mwname : mwname,
+				mwmobile : mwmobile,
+				mwbirth : mwbirth
 			}),
 			success : function(result) {
 				if (result == "SUCCESS") {
 					alert("처리 완료");
-					location.href = '/member/management';
+					location.href = '/management/member';
 				}
 			}
 		});

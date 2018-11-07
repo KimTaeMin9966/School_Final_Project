@@ -9,7 +9,7 @@
 					<h3>관리자 페이지(웨딩홀 업체 수정)</h3>
 				</div>
 				<div class="box-body">
-					<form method="post">
+					<form id="editHall" method="post">
 						<input type="hidden" id="hall_hno" name="hall_hno" class="form-control" value="${editHall.hall_hno}" />
 						<div class="form-group has-feedback">
 							<label>홀이름</label>
@@ -64,8 +64,13 @@
 							    <option value="6" <c:if test="${editHall.hall_area eq 6}">selected</c:if>>부산 중구</option>
 							</select>
 						</div>
+						<div class="form-group">
+							<label>FILE DROP HERE</label>
+							<div class="fileDrop"></div>
+						</div>
 						<div class="box-footer">
-							<div class="col-xs-8"></div>
+							<div><hr/></div>
+							<ul class="mailbox-attachments clearfix uploadedList"></ul>
 							<div class="col-xs-4">
 								<input type="button" id="ok" class="btn btn-primary btn-block btn-flat" value="홀수정" />
 							</div>
@@ -76,12 +81,80 @@
 		</div>
 	</div>
 </section>
+<script id="template" type="text/x-handlebars-template">
+	<li>
+		<span class="mailbox-attachment-icon has-img">
+			<img src="{{imgsrc}}" alt="attachment" />
+		</span>
+		<div class="mailbox-attachment-info">
+			<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
+			<a href="{{fullName}}" class="btn btn-default btn-xs pull-right delBtn">
+				<i class="fa fa-fw fa-remove"></i>
+			</a>
+		</div>
+	</li>
+</script>
 <script type="text/javascript">
 	var message = '${result}';
 
 	if (message != null && message == 'SUCCESS') { alert("정보수정에 성공하셨습니다."); }
 	else if (message != null && message == 'FAIL') { alert("정보수정에 실패하셨습니다."); }
 
+	var hno = ${editHall.hall_hno};
+	var hall_link = '${editHall.hall_link}';
+	var hall_area = ${editHall.hall_area};
+
+	var template = Handlebars.compile($("#template").html());
+
+	$.getJSON("/management/getAttachHallImg?hno=" + hno + "&hall_link=" + hall_link + "&hall_area=" + hall_area, function(list) {
+		$(list).each(function() {
+			var fileInfo = getFileInfo(this);
+			var html = template(fileInfo);
+			$(".uploadedList").append(html);
+		});
+	});
+
+	$(".fileDrop").on("dragover dragenter", function(event) { event.preventDefault(); } );
+
+	$(".fileDrop").on("drop", function(event) {
+		event.preventDefault();
+		
+		var files = event.originalEvent.dataTransfer.files;
+
+		var file = files[0];
+		var formData = new FormData();
+		formData.append("file", file);
+		
+		$.ajax({
+			url : '/management/uploadHallImg',
+			data : formData,
+			dataType : "text",
+			processData : false,
+			contentType : false,
+			type : "POST",
+			success : function(result) {
+				alert(result);
+				var fileInfo = getFileInfo(result);
+				var html = template(fileInfo);
+				console.log(html);
+				$(".uploadedList").append(html);
+			}
+		});
+	});
+	
+	$(".uploadedList").on("click", ".delBtn", function(event) {
+		event.preventDefault();
+		
+		var fileLink = $(this).attr("href");
+		var target = $(this);
+		$.ajax({
+			url : "/management/deleteHallImg",
+			type : "post",
+			data : { fileName : fileLink },
+			dataType : "text",
+			success : function(result) { alert(result); target.closest("li").remove(); }
+		});
+	});
 	
 	$('#ok').click(function() {
 		var hall_hno = $('#hall_hno').val();
@@ -93,6 +166,15 @@
 		var hall_contents = $('#hall_contents').val();
 		var hall_link = $('#hall_link > option:selected').val();
 		var hall_area = $('#hall_area > option:selected').val();
+
+		var formObj = $("#editHall");
+		console.log(formObj);
+		
+		$(".uploadedList .delBtn").each(function(index){
+			str += "<input type='hidden' id='files[" + index + "]' name='files[" + index + "]' value='" + $(this).attr("href") + "' />" 
+		});
+		
+		formObj.append(str);
 		
 		$.ajax({
 			type : 'PATCH',

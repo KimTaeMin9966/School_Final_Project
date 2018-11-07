@@ -1,5 +1,7 @@
 package net.koreate.vo;
 
+import java.util.Arrays;
+
 public class WeddingStudioVo {
 	private int studio_hno;
 	private String studio_name;
@@ -10,6 +12,8 @@ public class WeddingStudioVo {
 	private String studio_contents;
 	private String studio_link;
 	private int studio_area;
+
+	private String[] files;
 
 	public int getStudio_hno() {
 		return studio_hno;
@@ -83,12 +87,20 @@ public class WeddingStudioVo {
 		this.studio_area = studio_area;
 	}
 
+	public String[] getFiles() {
+		return files;
+	}
+
+	public void setFiles(String[] files) {
+		this.files = files;
+	}
+
 	@Override
 	public String toString() {
 		return "WeddingStudioVo [studio_hno=" + studio_hno + ", studio_name=" + studio_name + ", studio_location="
 				+ studio_location + ", studio_person=" + studio_person + ", studio_price=" + studio_price
 				+ ", studio_thema=" + studio_thema + ", studio_contents=" + studio_contents + ", studio_link="
-				+ studio_link + ", studio_area=" + studio_area + "]";
+				+ studio_link + ", studio_area=" + studio_area + ", files=" + Arrays.toString(files) + "]";
 	}
 
 }
