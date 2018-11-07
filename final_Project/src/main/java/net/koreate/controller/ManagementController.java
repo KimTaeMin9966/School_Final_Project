@@ -73,7 +73,7 @@ public class ManagementController {
 	public String infoDeletePOST(@RequestParam("mwid") String mwid) throws Exception {
 		logger.info("infoDeletePOST Called!!!");
 		mService.infoDeleteByID(mwid);
-		return "redirect:/member/management";
+		return "redirect:/management/member";
 	}
 
 	@RequestMapping(value = "/member", method = RequestMethod.GET)

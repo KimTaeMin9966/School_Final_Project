@@ -79,16 +79,7 @@ public class MemberController {
 		logger.info("loginPost Called!!!");
 		
 		model.addAttribute("loginDto", dto);
-		
-		String result = (String) request.getAttribute("result");
-		
-		if (result.equals("FAIL")) {
-			model.addAttribute("message", "정보가 일치하지 않습니다.");
-			return "redirect:/member/login";
-		} else {
-			model.addAttribute("message", "로그인 성공.");
-			return "home";
-		}
+		return "home";
 	}
 	
 	@RequestMapping("/logOut")
