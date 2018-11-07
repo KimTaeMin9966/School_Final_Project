@@ -18,12 +18,16 @@
 						<tr>
 							<th>USER ID</th>
 							<th>USER NAME</th>
+							<th>USER MOBILE</th>
+							<th>USER BIRTH</th>
 							<th colspan="2">기타</th>
 						</tr>
 						<c:forEach var="member" items="${memberInfos}">
 							<tr>
 								<td>${member.mwid}</td>
 								<td>${member.mwname}</td>
+								<td>${member.mwmobile}</td>
+								<td>${member.mwbirth}</td>
 								<td>
 									<input type="button" onclick="javascript:infoView('${member.mwid}')" class="btn btn-primary" value="정보 보기" />
 									<input type="button" onclick="javascript:infoEdit('${member.mwid}')" class="btn btn-primary" value="정보수정 하기" />

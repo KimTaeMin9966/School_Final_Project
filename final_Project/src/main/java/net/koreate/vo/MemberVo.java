@@ -7,6 +7,8 @@ public class MemberVo {
 	private String mwid;
 	private String mwpw;
 	private String mwname;
+	private String mwmobile;
+	private String mwbirth;
 	private Date mwregdate;
 
 	public int getMwno() {
@@ -41,6 +43,22 @@ public class MemberVo {
 		this.mwname = mwname;
 	}
 
+	public String getMwmobile() {
+		return mwmobile;
+	}
+
+	public void setMwmobile(String mwmobile) {
+		this.mwmobile = mwmobile;
+	}
+
+	public String getMwbirth() {
+		return mwbirth;
+	}
+
+	public void setMwbirth(String mwbirth) {
+		this.mwbirth = mwbirth;
+	}
+
 	public Date getMwregdate() {
 		return mwregdate;
 	}
@@ -51,8 +69,8 @@ public class MemberVo {
 
 	@Override
 	public String toString() {
-		return "MemberVo [mwno=" + mwno + ", mwid=" + mwid + ", mwpw=" + mwpw + ", mwname=" + mwname + ", mwregdate="
-				+ mwregdate + "]";
+		return "MemberVo [mwno=" + mwno + ", mwid=" + mwid + ", mwpw=" + mwpw + ", mwname=" + mwname + ", mwmobile="
+				+ mwmobile + ", mwbirth=" + mwbirth + ", mwregdate=" + mwregdate + "]";
 	}
 
 }

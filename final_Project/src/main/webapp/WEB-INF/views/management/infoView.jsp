@@ -23,6 +23,14 @@
 						<label>USER NAME</label>
 						<input type="text" name="mwname" class="form-control" value="${memberInfo.mwname}" readonly />
 					</div>
+					<div class="form-group has-feedback">
+						<label>USER MOBILE</label>
+						<input type="text" name="mwmobile" class="form-control" value="${memberInfo.mwmobile}" readonly />
+					</div>
+					<div class="form-group has-feedback">
+						<label>USER BIRTH</label>
+						<input type="text" name="mwbirth" class="form-control" value="${memberInfo.mwbirth}" readonly />
+					</div>
 					<div class="box-footer">
 						<div class="col-xs-8"></div>
 						<div class="col-xs-4">
