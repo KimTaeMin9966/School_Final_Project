@@ -95,14 +95,6 @@ $(document).ready(function() {
 		boolAdmName = booleanGet;
 	});
 
-	$('#mwphone').on('input', function() {
-		var mwphone = $('#mwphone').val();
-		var message = "올바른 형식이 아닙니다.";
-
-		var booleanGet = checkReg('mwphone_result', mwphone, regexPhone, message);
-		boolAdmPhone = booleanGet;
-	});
-
 	$('#mwmobile').on('input', function() {
 		var mwmobile = $('#mwmobile').val();
 		var message = "올바른형식이 아닙니다.";
@@ -131,7 +123,6 @@ $(document).ready(function() {
 		if (!boolAdmID) { alert('아이디(e-mail) 을 확인해주세요'); $('#mwid').focus(); }
 		else if (!boolAdmPass) { alert('비밀번호를 확인해주세요'); $('#mwpw').focus(); }
 		else if (!boolAdmName) { alert('성명을 확인해주세요'); $('#mwname').focus(); }
-		else if (!boolAdmPhone) { alert('전화번호를 확인해주세요'); $('#mwphone').focus(); }
 		else if (!boolAdmMobile) { alert('연락처를 확인해주세요'); $('#mwmobile').focus(); }
 		else if (!boolAdmBirth) { alert('생년월일을 확인해주세요'); $('#mwbirth').focus(); }
 		else if (!boolAdmAccept) { alert('개인정보 수집 및 이용에 동의 해 주세요.'); $('#adm_accept').focus(); }

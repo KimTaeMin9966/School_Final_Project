@@ -31,13 +31,8 @@
 							<div id="mwname_result" class="form-control"></div>
 						</div>
 						<div class="form-group has-feedback">
-							<label>전화번호를 입력 해주세요</label>
-							<input type="text" id="mwphone" name="mwphone" class="form-control" placeholder="Ex) 051-123-4567" />
-							<div id="mwphone_result" class="form-control"></div>
-						</div>
-						<div class="form-group has-feedback">
 							<label>휴대폰 번호를 입력 해주세요</label>
-							<input type="text" id="mwmobile" name="mwmobile" class="form-control" placeholder="Ex) 010-1234-5678" />
+							<input type="text" id="mwmobile" name="mwmobile" class="form-control" placeholder="Ex) 01012345678" />
 							<div id="mwmobile_result" class="form-control"></div>
 						</div>
 						<div class="form-group has-feedback">
