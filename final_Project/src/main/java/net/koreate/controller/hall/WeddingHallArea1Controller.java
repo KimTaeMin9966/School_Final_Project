@@ -1,7 +1,5 @@
 package net.koreate.controller.hall;
 
-import java.util.List;
-
 import javax.inject.Inject;
 
 import org.slf4j.Logger;
@@ -22,49 +20,76 @@ public class WeddingHallArea1Controller {
 	@Inject
 	WeddingHallService service;
 	
-	/*@RequestMapping(value = "/", method = RequestMethod.GET)
-	public void GET() throws Exception {
-		logger.info("GET Called!!!");
-	}
-
-	@RequestMapping(value = "/", method = RequestMethod.POST)
-	public void POST() throws Exception {
-		logger.info("POST Called!!!");
-	}
-
-	@RequestMapping(value = "/")
-	public void GET_POST() throws Exception {
-		logger.info("GET & POST Called!!!");
-	}*/
-	
 	@RequestMapping(value = "/detail1", method = RequestMethod.GET)
-	public void detail1GET() throws Exception {
+	public void detail1GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail1GET Called!!!");
+		
+		vo.setHall_area(1); vo.setHall_link("detail1");
+		WeddingHallVo list = service.SearchAreaHallDetail(vo);
+		model.addAttribute("detail1", list);
 	}
 	
 	@RequestMapping(value = "/detail2", method = RequestMethod.GET)
-	public void detail2GET() throws Exception {
+	public void detail2GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail2GET Called!!!");
+		
+		vo.setHall_area(1); vo.setHall_link("detail2");
+		WeddingHallVo list = service.SearchAreaHallDetail(vo);
+		model.addAttribute("detail2", list);
 	}
 	
 	@RequestMapping(value = "/detail3", method = RequestMethod.GET)
-	public void detail3GET() throws Exception {
+	public void detail3GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail3GET Called!!!");
+		
+		vo.setHall_area(1); vo.setHall_link("detail3");
+		WeddingHallVo list = service.SearchAreaHallDetail(vo);
+		model.addAttribute("detail3", list);
 	}
 	
 	@RequestMapping(value = "/detail4", method = RequestMethod.GET)
-	public void detail4GET() throws Exception {
+	public void detail4GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail4GET Called!!!");
+		
+		vo.setHall_area(1); vo.setHall_link("detail4");
+		WeddingHallVo list = service.SearchAreaHallDetail(vo);
+		model.addAttribute("detail4", list);
 	}
 	
 	@RequestMapping(value = "/detail5", method = RequestMethod.GET)
-	public void detail5GET() throws Exception {
+	public void detail5GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail5GET Called!!!");
+		
+		vo.setHall_area(1); vo.setHall_link("detail5");
+		WeddingHallVo list = service.SearchAreaHallDetail(vo);
+		model.addAttribute("detail5", list);
 	}
-	
+
 	@RequestMapping(value = "/detail6", method = RequestMethod.GET)
-	public void detail6GET() throws Exception {
+	public void detail6GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail6GET Called!!!");
+		
+		vo.setHall_area(1); vo.setHall_link("detail6");
+		WeddingHallVo list = service.SearchAreaHallDetail(vo);
+		model.addAttribute("detail6", list);
+	}
+
+	@RequestMapping(value = "/detail7", method = RequestMethod.GET)
+	public void detail7GET(WeddingHallVo vo, Model model) throws Exception {
+		logger.info("detail7GET Called!!!");
+		
+		vo.setHall_area(1); vo.setHall_link("detail7");
+		WeddingHallVo list = service.SearchAreaHallDetail(vo);
+		model.addAttribute("detail7", list);
+	}
+
+	@RequestMapping(value = "/detail8", method = RequestMethod.GET)
+	public void detail8GET(WeddingHallVo vo, Model model) throws Exception {
+		logger.info("detail8GET Called!!!");
+		
+		vo.setHall_area(1); vo.setHall_link("detail8");
+		WeddingHallVo list = service.SearchAreaHallDetail(vo);
+		model.addAttribute("detail8", list);
 	}
 	
 }

@@ -102,6 +102,13 @@ public class MemberServiceImpl implements MemberService {
 		return dao.isMasterSearch();
 	}
 
+	// 2018/11/06
+	@Override
+	public List<MemberVo> searchID() throws Exception {
+		// TODO Auto-generated method stub
+		return dao.searchID();
+	}
+
 	/*@Override
 	public Object getMember(MemberVo mvo) throws Exception {
 		// TODO Auto-generated method stub

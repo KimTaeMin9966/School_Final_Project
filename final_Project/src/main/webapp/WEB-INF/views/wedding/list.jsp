@@ -23,6 +23,9 @@
 						<input type="button" id="chList4" class="btn btn-default btn-block" value="컨설팅 체크 하러가기" />
 					</div>
 				</div>
+				<div class="box-footer">
+					
+				</div>
 			</div>
 		</div>
 	</div>

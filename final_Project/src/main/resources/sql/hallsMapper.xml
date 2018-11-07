@@ -53,8 +53,8 @@
 		DELETE FROM made_wedding_studios WHERE studio_hno = #{studio_hno}
 	</delete>
 	
-	<!-- 2018/11/05 -->
-	<select id="SearchDetail" resultType="WDHVO">
+	<!-- 2018/11/06 -->
+	<select id="SearchAreaHallDetail" resultType="WDHVO">
 		SELECT * FROM made_wedding_halls
 		WHERE hall_area = #{hall_area} AND hall_link = #{hall_link}
 	</select>

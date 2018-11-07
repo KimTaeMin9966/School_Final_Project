@@ -40,7 +40,6 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 		MemberVo vo = service.signIn(dto);
 		
 		if (vo != null) {
-			System.out.println("AAA");
 			session.setAttribute("loginYES", vo);
 			
 			if(dto.isUseCookie()) {
@@ -61,7 +60,6 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 			System.out.println(dest != null ? (String)dest : "/");
 			response.sendRedirect(dest != null ? (String)dest : "/");
 		} else {
-			System.out.println("BBB");
 			RequestDispatcher rd = request.getRequestDispatcher("/member/login");
 			request.setAttribute("result", "FAIL");
 			rd.forward(request, response);

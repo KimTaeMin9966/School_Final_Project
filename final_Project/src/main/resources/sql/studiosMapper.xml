@@ -8,4 +8,10 @@
 		SELECT * FROM made_wedding_studios
 		WHERE studio_area = #{studio_area}
 	</select>
+	
+	<!-- 2018/11/06 -->
+	<select id="SearchAreaStudioDetail" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_area = #{studio_area} AND studio_link = #{studio_link}
+	</select>
 </mapper>

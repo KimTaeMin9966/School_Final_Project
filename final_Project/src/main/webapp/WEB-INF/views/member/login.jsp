@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@include file="../include/header.jsp"%>
-
 <section class="content">
 	<div class="row">
 		<div class="col-md-12">
@@ -13,7 +12,6 @@
 					<form action="/member/loginPost" method="post">
 						<div class="form-group has-feedback">
 							<input type="text" name="mwid" class="form-control" placeholder="USER ID" required />
-							<span class="glypicon glypicon-evenlope form-control-feedback"></span>
 						</div>
 						<div class="form-group has-feedback">
 							<input type="password" name="mwpw" class="form-control" placeholder="USER PW" required />

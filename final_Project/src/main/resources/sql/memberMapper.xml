@@ -65,6 +65,11 @@
 	<select id="isMasterSearch" resultType="int">
 		SELECT * FROM made_wedding WHERE mwno = 1
 	</select>
+	
+	<!-- 2018/11/06 -->
+	<select id="searchID" resultType="MBVO">
+		SELECT mwid FROM made_wedding
+	</select>
 	<!-- <select id="getMember" resultType="MBVO">
 		SELECT * FROM made_wedding WHERE mwid = #{mwid}
 	</select> -->

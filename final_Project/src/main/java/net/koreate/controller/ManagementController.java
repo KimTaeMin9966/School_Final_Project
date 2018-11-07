@@ -85,11 +85,6 @@ public class ManagementController {
 	}
 	
 	// 목록 보기
-	@RequestMapping(value = "/consulting", method = RequestMethod.GET)
-	public void consultingGET() throws Exception {
-		logger.info("consultingGET Called!!!");
-	}
-
 	@RequestMapping(value = "/hall", method = RequestMethod.GET)
 	public void hallGET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("hallGET Called!!!");
@@ -105,17 +100,6 @@ public class ManagementController {
 	}
 	
 	
-	// 컨설팅 업체 추가
-	@RequestMapping(value = "/consulting/add", method = RequestMethod.GET)
-	public void consultingaddGET() throws Exception {
-		logger.info("consultingaddGET Called!!!");
-	}
-	
-	@RequestMapping(value = "/consulting/add", method = RequestMethod.POST)
-	public void consultingaddPOST() throws Exception {
-		logger.info("consultingaddPOST Called!!!");
-	}
-
 	// 홀 업체 추가
 	@RequestMapping(value = "/hall/add", method = RequestMethod.GET)
 	public void halladdGET() throws Exception {
@@ -147,17 +131,6 @@ public class ManagementController {
 	}
 	
 	
-	// 컨설팅 업체 수정
-	@RequestMapping(value = "/consulting/edit", method = RequestMethod.POST)
-	public void consultingeditPOST() throws Exception {
-		logger.info("consultingeditPOST Called!!!");
-	}
-	
-	@RequestMapping(value = "/consulting/edit", method = RequestMethod.PATCH)
-	public void consultingeditPATCH() throws Exception {
-		logger.info("consultingeditPATCH Called!!!");
-	}
-
 	// 홀 업체 수정
 	@RequestMapping(value = "/hall/edit", method = RequestMethod.POST)
 	public void halleditPOST(@RequestParam("hall_hno") int hall_hno, Model model) throws Exception {
@@ -192,12 +165,6 @@ public class ManagementController {
 	}
 	
 	
-	// 컨설팅 업체 삭제
-	@RequestMapping(value = "/consulting/delete", method = RequestMethod.POST)
-	public void consultingdeletePOST() throws Exception {
-		logger.info("consultingdeletePOST Called!!!");
-	}
-
 	// 홀 업체 삭제
 	@RequestMapping(value = "/hall/delete", method = RequestMethod.POST)
 	public String halldeletePOST(@RequestParam("hall_hno") int hall_hno) throws Exception {

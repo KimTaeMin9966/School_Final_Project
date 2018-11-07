@@ -16,7 +16,14 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>스튜디오위치</label>
-							<input type="text" name="studio_location" class="form-control" placeholder="EX) 부산 진구" required />
+							<select name="studio_location" class="form-control" required>
+							    <option value="부산 진구">부산 진구</option>
+							    <option value="부산 동구">부산 동구</option>
+							    <option value="부산 연제구">부산 연제구</option>
+							    <option value="부산 해운대구">부산 해운대구</option>
+							    <option value="부산 동래구">부산 동래구</option>
+							    <option value="부산 중구">부산 중구</option>
+							</select>
 						</div>
 						<div class="form-group has-feedback">
 							<label>스튜디오수용인원</label>
@@ -36,11 +43,25 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>페이지 전환을 위한 링크</label>
-							<input type="text" name="studio_link" class="form-control" placeholder="EX) detail1" required />
+							<select name="studio_link" class="form-control" required>
+							    <option value="detail1">detail1</option>
+							    <option value="detail2">detail2</option>
+							    <option value="detail3">detail3</option>
+							    <option value="detail4">detail4</option>
+							    <option value="detail5">detail5</option>
+							    <option value="detail6">detail6</option>
+							</select>
 						</div>
 						<div class="form-group has-feedback">
 							<label>지역</label>
-							<input type="text" name="studio_area" class="form-control" placeholder="EX) 1" required />
+							<select name="studio_area" class="form-control" required>
+							    <option value="1">부산 진구</option>
+							    <option value="2">부산 동구</option>
+							    <option value="3">부산 연제구</option>
+							    <option value="4">부산 해운대구</option>
+							    <option value="5">부산 동래구</option>
+							    <option value="6">부산 중구</option>
+							</select>
 						</div>
 						<div class="box-footer">
 							<div class="col-xs-8"></div>
