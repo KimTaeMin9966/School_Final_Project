@@ -1,5 +1,7 @@
 package net.koreate.controller;
 
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -45,60 +47,48 @@ public class MemberController {
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public void registerGET(Model model) throws Exception {
 		logger.info("registerGET Called!!!");
-		MemberVo vo = service.searchID();
+		List<MemberVo> vo = service.searchID();
 		
 		model.addAttribute("memberIDs", vo);
 	}
-	
-	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String registerPOST(HttpServletRequest request, RedirectAttributes rttr) throws Exception {
-		logger.info("registerPOST Called!!!");
-		
-		String result = (String) request.getAttribute("result");
-		
-		if (result.equals("FAIL")) {
-			rttr.addAttribute("message", "해당 아이디는 존재합니다.");
-			return "redirect:/member/register";
-		} else {
-			rttr.addAttribute("message", "회원가입에 성공하셨습니다");
-			return "redirect:/member/login";
-		}
-	}
-	
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public void loginGET() throws Exception {
 		logger.info("loginGET Called!!!");
 	}
 	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String loginPOST(HttpServletRequest request, RedirectAttributes rttr) throws Exception {
-		logger.info("loginPOST Called!!!");
+	@RequestMapping(value = "/registerPost", method = RequestMethod.POST)
+	public String registerPost(MemberVo vo, HttpServletRequest request, Model model) throws Exception {
+		logger.info("registerPost Called!!!");
+		
+		service.register(vo);
 		
 		String result = (String) request.getAttribute("result");
 		
 		if (result.equals("FAIL")) {
-			rttr.addAttribute("message", "정보가 일치하지 않습니다");
-			return "redirect:/member/login";
+			model.addAttribute("message", "해당 아이디는 존재합니다.");
+			return "redirect:/member/register";
 		} else {
-			rttr.addAttribute("message", "로그인에 성공하셨습니다");
-			return "redirect:/";
+			model.addAttribute("message", "회원가입에 성공하셨습니다");
+			return "redirect:/member/login";
 		}
-	}
-
-	@RequestMapping(value = "/registerPost", method = RequestMethod.POST)
-	public void registerPost(MemberVo vo, RedirectAttributes rttr) throws Exception {
-		logger.info("registerPost Called!!!");
-		
-		service.register(vo);
 	}
 	
 	@RequestMapping(value = "/loginPost", method = RequestMethod.POST)
-	public String loginPost(LoginDto dto, Model model) throws Exception {
+	public String loginPost(LoginDto dto, HttpServletRequest request, Model model) throws Exception {
 		logger.info("loginPost Called!!!");
 		
 		model.addAttribute("loginDto", dto);
-		return "home";
+		
+		String result = (String) request.getAttribute("result");
+		
+		if (result.equals("FAIL")) {
+			model.addAttribute("message", "정보가 일치하지 않습니다.");
+			return "redirect:/member/login";
+		} else {
+			model.addAttribute("message", "로그인 성공.");
+			return "home";
+		}
 	}
 	
 	@RequestMapping("/logOut")

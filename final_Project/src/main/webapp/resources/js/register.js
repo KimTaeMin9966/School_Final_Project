@@ -28,7 +28,15 @@ $(document).ready(function() {
 	var regexMobile = /^[0-9]{2,3}?[0-9]{3,4}?[0-9]{4}$/;
 	var regexBirth = /^[0-9]{2}[0-9]{2}[0-9]{2}$/;
 
+	var boolAdmID = false;
 	var boolAdmPass = false;
+	var boolAdmName = false;
+	var boolAdmPhone = false;
+	var boolAdmMobile = false;
+	var boolAdmBirth = false;
+	var boolAdmAddress1 = false;
+	var boolAdmAddress2 = false;
+	var boolAdmAddress3 = false;
 	var boolAdmAccept = false;
 	
 	function checkReg(el, tempVal, reg, message) {
@@ -50,6 +58,8 @@ $(document).ready(function() {
 		$("#" + el).html(html);
 	}
 	
+	//var obj = ${memberIDs};
+	
 	// ---------------------------------------------------------
 	
 	$("#mwid").on("input", function() {
@@ -59,7 +69,8 @@ $(document).ready(function() {
 		}
 
 		var message = "올바른 형식의 ID가 아닙니다.";
-		checkReg('mwid_result', userID, regexID, message);
+		var booleanGet = checkReg('mwid_result', userID, regexID, message);
+		boolAdmID = booleanGet;
 	});
 	
 	$("#mwpw").on("input", function() {
@@ -82,28 +93,32 @@ $(document).ready(function() {
 		var mwname = $('#mwname').val();
 		var message = "6자이내 한글만 가능합니다.";
 		
-		checkReg('mwname_result', mwname, regexName, message);
+		var booleanGet = checkReg('mwname_result', mwname, regexName, message);
+		boolAdmName = booleanGet;
 	});
 
 	$('#mwphone').on('input', function() {
 		var mwphone = $('#mwphone').val();
 		var message = "올바른 형식이 아닙니다.";
 
-		checkReg('mwphone_result', mwphone, regexPhone, message);
+		var booleanGet = checkReg('mwphone_result', mwphone, regexPhone, message);
+		boolAdmPhone = booleanGet;
 	});
 
 	$('#mwmobile').on('input', function() {
 		var mwmobile = $('#mwmobile').val();
 		var message = "올바른형식이 아닙니다.";
 
-		checkReg('mwmobile_result', mwmobile, regexMobile, message);
+		var booleanGet = checkReg('mwmobile_result', mwmobile, regexMobile, message);
+		boolAdmMobile = booleanGet;
 	});
 
 	$('#mwbirth').on('input', function() {
 		var mwbirth = $('#mwbirth').val();
 		var message = "올바른형식이 아닙니다.";
 
-		checkReg('mwbirth_result', mwbirth, regexBirth, message);
+		var booleanGet = checkReg('mwbirth_result', mwbirth, regexBirth, message);
+		boolAdmBirth = booleanGet;
 	});
 
 	$('#adm_accept').click(function() {
@@ -112,5 +127,16 @@ $(document).ready(function() {
 		} else {
 			boolAdmAccept = false;
 		}
+	});
+	
+	$('#CLICK').click(function() {
+		if (!boolAdmID) { alert('아이디(e-mail) 을 확인해주세요'); $('#mwid').focus(); }
+		else if (!boolAdmPass) { alert('비밀번호를 확인해주세요'); $('#mwpw').focus(); }
+		else if (!boolAdmName) { alert('성명을 확인해주세요'); $('#mwname').focus(); }
+		else if (!boolAdmPhone) { alert('전화번호를 확인해주세요'); $('#mwphone').focus(); }
+		else if (!boolAdmMobile) { alert('연락처를 확인해주세요'); $('#mwmobile').focus(); }
+		else if (!boolAdmBirth) { alert('생년월일을 확인해주세요'); $('#mwbirth').focus(); }
+		else if (!boolAdmAccept) { alert('개인정보 수집 및 이용에 동의 해 주세요.'); $('#adm_accept').focus(); }
+		else { $('#registerFROM').submit(); }
 	});
 });

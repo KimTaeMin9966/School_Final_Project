@@ -24,7 +24,7 @@ public class WeddingStudioArea7Controller {
 	public void detail1GET(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("detail1GET Called!!!");
 		
-		vo.setStudio_area(1); vo.setStudio_link("detail1");
+		vo.setStudio_area(7); vo.setStudio_link("detail1");
 		WeddingStudioVo list = service.SearchAreaStudioDetail(vo);
 		model.addAttribute("detail1", list);
 	}
@@ -33,7 +33,7 @@ public class WeddingStudioArea7Controller {
 	public void detail2GET(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("detail2GET Called!!!");
 		
-		vo.setStudio_area(1); vo.setStudio_link("detail2");
+		vo.setStudio_area(7); vo.setStudio_link("detail2");
 		WeddingStudioVo list = service.SearchAreaStudioDetail(vo);
 		model.addAttribute("detail2", list);
 	}
@@ -42,7 +42,7 @@ public class WeddingStudioArea7Controller {
 	public void detail3GET(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("detail3GET Called!!!");
 		
-		vo.setStudio_area(1); vo.setStudio_link("detail3");
+		vo.setStudio_area(7); vo.setStudio_link("detail3");
 		WeddingStudioVo list = service.SearchAreaStudioDetail(vo);
 		model.addAttribute("detail3", list);
 	}
@@ -51,7 +51,7 @@ public class WeddingStudioArea7Controller {
 	public void detail4GET(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("detail4GET Called!!!");
 		
-		vo.setStudio_area(1); vo.setStudio_link("detail4");
+		vo.setStudio_area(7); vo.setStudio_link("detail4");
 		WeddingStudioVo list = service.SearchAreaStudioDetail(vo);
 		model.addAttribute("detail4", list);
 	}
@@ -60,7 +60,7 @@ public class WeddingStudioArea7Controller {
 	public void detail5GET(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("detail5GET Called!!!");
 		
-		vo.setStudio_area(1); vo.setStudio_link("detail5");
+		vo.setStudio_area(7); vo.setStudio_link("detail5");
 		WeddingStudioVo list = service.SearchAreaStudioDetail(vo);
 		model.addAttribute("detail5", list);
 	}
@@ -69,7 +69,7 @@ public class WeddingStudioArea7Controller {
 	public void detail6GET(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("detail6GET Called!!!");
 		
-		vo.setStudio_area(1); vo.setStudio_link("detail6");
+		vo.setStudio_area(7); vo.setStudio_link("detail6");
 		WeddingStudioVo list = service.SearchAreaStudioDetail(vo);
 		model.addAttribute("detail6", list);
 	}
@@ -78,7 +78,7 @@ public class WeddingStudioArea7Controller {
 	public void detail7GET(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("detail7GET Called!!!");
 		
-		vo.setStudio_area(1); vo.setStudio_link("detail7");
+		vo.setStudio_area(7); vo.setStudio_link("detail7");
 		WeddingStudioVo list = service.SearchAreaStudioDetail(vo);
 		model.addAttribute("detail7", list);
 	}
@@ -87,7 +87,7 @@ public class WeddingStudioArea7Controller {
 	public void detail8GET(WeddingStudioVo vo, Model model) throws Exception {
 		logger.info("detail8GET Called!!!");
 		
-		vo.setStudio_area(1); vo.setStudio_link("detail8");
+		vo.setStudio_area(7); vo.setStudio_link("detail8");
 		WeddingStudioVo list = service.SearchAreaStudioDetail(vo);
 		model.addAttribute("detail8", list);
 	}
