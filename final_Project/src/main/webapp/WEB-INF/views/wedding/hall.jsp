@@ -8,7 +8,7 @@
 		<article data-attribute-id="smallImageContainer" class="category-product-grid-item category-product-grid-item-three hover-link">
 			<a data-component-attr-id="url" class="category-product" href="/wedding/hall/area1">
 				<div>
-					<img src="${pageContext.request.contextPath}/resources/images/진구골든듀2.png">
+					<img src="${pageContext.request.contextPath}/resources/images/진구골든듀2.jpg">
 				</div>
 				<header class="category-grid-item-content">
 					<h2 data-component-attr-id="title">
