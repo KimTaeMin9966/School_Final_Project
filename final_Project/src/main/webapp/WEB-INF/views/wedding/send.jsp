@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../include/header.jsp"%>
+<%@include file="../include/sendheader.jsp"%>
 <div class="content">
 	<section class="product-push homepage"
 		data-module="productpush, view360">

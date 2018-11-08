@@ -1,6 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="include/header.jsp"%>
+				<!-- main-header-background-center start -->
+				<div class="hero-content-wrapper hero-large-content-wrapper style-primarycta color-light">
+					<div class="hero-content-centered vr-content">
+						<h1 class="hero-title">
+							<span data-component-attr-id="title" class="eyebrow"></span>
+							<span data-component-attr-id="subtitle"></span>
+						</h1>
+						 <a data-component-attr-id="url" class="button-gold shop-the-collection"
+							href="#">컨셉으로 찾기</a>
+						<a data-component-attr-id="url" class="button-gold shop-the-collection"
+							href="#">금액대로 찾기</a> 
+					</div>
+				</div>
+				<!-- main-header-background-center end -->
+				
 <div data-component-container="categoryThreeImageComponent"
 	class="category-product-grid category-product-grid-three-left">
 	<div class="category-product-grid-wrapper">
@@ -10,11 +25,11 @@
 					<p class="eyebrow"></p>
 					<h2 class="title">
 						<font style="vertical-align: inherit;"><font
-							style="vertical-align: inherit;">STORY</font></font>
+							style="vertical-align: inherit;">PAGE NEWS</font></font>
 					</h2>
 					<p class="eyebrow"></p>
 				</header>
-
+				
 				<section class="style-news-content">
 
 					<div class="items-wrapper">
@@ -43,7 +58,7 @@
 									<a data-story-link=""
 										href="/wedding/consulting"
 										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;">부산 메이저 웨딩컨설팅 업체 보기</font></font></a>
+											style="vertical-align: inherit;">부산 대표컨설팅</font></font></a>
 								</div>
 							</div>
 
@@ -68,7 +83,7 @@
 									<a data-story-link=""
 										href="/wedding/list"
 										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;">내가 선택한 체크리스트 목록 저장하기</font></font></a>
+											style="vertical-align: inherit;">체크리스트</font></font></a>
 								</div>
 							</div>
 
@@ -80,7 +95,7 @@
 									<div class="image-wrapper">
 										<a
 											href="/wedding/hall">
-											<img src="${pageContext.request.contextPath}/resources/images/5555.png"
+											<img src="${pageContext.request.contextPath}/resources/images/메인홀.jpg"
 											class="_loaded">
 										</a>
 									</div>
@@ -94,7 +109,7 @@
 									<a data-story-link=""
 										href="/wedding/hall"
 										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;">부산 웨딩홀 지역 정보 보기 </font></font></a>
+											style="vertical-align: inherit;">웨딩홀  </font></font></a>
 								</div>
 							</div>
 						</div>
@@ -118,7 +133,7 @@
 									<a data-story-link=""
 										href="/wedding/studio"
 										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;">부산 웨딩스튜디오 정보 보기 </font></font></a>
+											style="vertical-align: inherit;">웨딩스튜디오 </font></font></a>
 								</div>
 							</div>
 
@@ -130,7 +145,7 @@
 									<a
 										href="/wedding/send">
 										<img alt="" data-story-image=""
-										src="${pageContext.request.contextPath}/resources/images/666.png"
+										src="${pageContext.request.contextPath}/resources/images/메인청첩장.png"
 										class="_loaded">
 									</a>
 								</div>
@@ -143,13 +158,16 @@
 									<a data-story-link=""
 										href="/wedding/send"
 										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;"> 친구들에게 온라인 청첩장 보내기 </font></font></a>
+											style="vertical-align: inherit;"> 온라인 청첩장 </font></font></a>
 								</div>
 							</div>
 
 						</div>
 					</div>
-				</section>
+				</section> 
+
+
+
 				<!-- .style-news-content -->
 
 				<!-- Style and News fotter with View All Button -->

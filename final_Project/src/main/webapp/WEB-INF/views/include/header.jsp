@@ -176,16 +176,6 @@
 				data-hero-loop-video-id="5851827842001" data-hero-loop-count=""
 				class="hero hero-large hero-homepage hero--no-audio hero-loop-video   video-parent 0000DBA0_HomepageHeroHeaderStandard_S83-FS-CAMPAIGN-012 hero-cta "
 				data-module="heroLarge, video, vrvideo, heroResize">
-				
-				<!-- main-header-background-img start -->
-				<div class="hero-background-image-large-wrapper">
-					<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
-					<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
-					 	alt="이미지입니다." src="${pageContext.request.contextPath}/resources/images/weddingmain.png">
-					<picture data-image-type="picture"></picture>
-				</div>
-				<!-- main-header-background-img end -->
-				<picture data-image-type="picture"></picture>
 				<!-- main-header-background-center start -->
 				<div class="hero-content-wrapper hero-large-content-wrapper style-primarycta color-light">
 					<div class="hero-content-centered vr-content">
@@ -200,6 +190,14 @@
 					</div>
 				</div>
 				<!-- main-header-background-center end -->
+				
+				<!-- main-header-background-img start -->
+				<div class="hero-background-image-large-wrapper">
+					<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
+					<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
+					 	alt="메인 이미지입니다." src="${pageContext.request.contextPath}/resources/images/1.jpg">
+					<picture data-image-type="picture"></picture>
+				</div>
+				<!-- main-header-background-img end -->
 			</header>
 			<!-- main-header-background end -->
-			
