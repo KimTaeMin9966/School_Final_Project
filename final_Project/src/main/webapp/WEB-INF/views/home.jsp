@@ -1,21 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="include/header.jsp"%>
-				<!-- main-header-background-center start -->
-				<div class="hero-content-wrapper hero-large-content-wrapper style-primarycta color-light">
-					<div class="hero-content-centered vr-content">
-						<h1 class="hero-title">
-							<span data-component-attr-id="title" class="eyebrow"></span>
-							<span data-component-attr-id="subtitle"></span>
-						</h1>
-						 <a data-component-attr-id="url" class="button-gold shop-the-collection"
-							href="#">컨셉으로 찾기</a>
-						<a data-component-attr-id="url" class="button-gold shop-the-collection"
-							href="#">금액대로 찾기</a> 
-					</div>
-				</div>
-				<!-- main-header-background-center end -->
-				
 <div data-component-container="categoryThreeImageComponent"
 	class="category-product-grid category-product-grid-three-left">
 	<div class="category-product-grid-wrapper">

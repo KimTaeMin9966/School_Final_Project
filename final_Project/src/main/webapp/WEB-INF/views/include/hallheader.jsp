@@ -50,7 +50,51 @@
 </head>
 <body class="country-INT page-HP-INT-Launch-Cruise-19 pageType-ContentPage template-pages--home-homepage pageLabel-  language-en int nonTransactional hasGiantLookWithManualImage"
 	data-module="keysNavigation,keysNavigationOverlay," data-switchsite="/int/en/ajax/overlay">
-	
+	<div id="mobile-menu" class="mm-menu mm-fullscreen mm-multiline mm-offcanvas mm-top mm-front mm-hasnavbar-top-1 primary-menu-opened mm-current mm-opened">
+		<div class="mm-panels">
+			<div class="mm-panel mm-opened mm-current">
+				<ul class="mmenu-item menu-first-level flex-container mm-listview visible">
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/consulting" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">CONSULTING</span>
+					</li>
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/hall" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">WEDDING HALL</span>
+					</li>
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/studio" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">WEDDING STUDIO</span>
+					</li>
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/list" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">CHECK LIST</span>
+					</li>
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/send" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">>WEDDING LETTER</span>
+					</li>
+					<c:choose>
+						<c:when test="${!empty loginYES && loginYES.mwid eq 'master'}">
+							<li class="item-primary flex-item">
+								<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/management/hall" data-target="#mm-2" data-di-id="runway_1"></a>
+								<span class="flex-item-content" data-di-id="runway_1">웨딩홀 관리</span>
+							</li>
+							<li class="item-primary flex-item">
+								<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/management/studio" data-target="#mm-2" data-di-id="runway_1"></a>
+								<span class="flex-item-content" data-di-id="runway_1">스튜디오 관리</span>
+							</li>
+							<li class="item-primary flex-item">
+								<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/management/member" data-target="#mm-2" data-di-id="runway_1"></a>
+								<span class="flex-item-content" data-di-id="runway_1">회원 관리</span>
+							</li>
+						</c:when>
+					</c:choose>
+				</ul>
+			</div>
+		</div>
+		<a class="mm-close mm-btn btn-close-primary-menu" href="#mm-0"></a>
+	</div>
 	<!-- page start -->
 	<div id="mm-0" class="mm-page mm-slideout">
 		<div id="page" class="_position-special">
@@ -61,6 +105,15 @@
 				<div class="logo">
 					<a tabindex="5" href="/">MADE WEDDING</a>
 				</div>
+				<div class="header-mobile-buttons-wrapper">
+					<a class="header-nav-parent-storelocator" href="/member/logOut" aria-hidden="true">
+						<span class="title">Sign Out</span>
+					</a>
+					<a class="header-nav-parent-search" href="#" aria-hidden="true">
+						<span class="title">Search</span>
+					</a>
+				</div>
+				<a id="header-nav-mobile" class="header-nav-parent-main header-ssa-display-mobile" href="#" data-module="headerUpdate">Menu</a>
 				<nav id="header-nav" class="header-nav-group">
 					<div id="header-nav-child-main" class="header-nav-child header-nav-drawer">
 						<!-- nav start -->
@@ -90,7 +143,7 @@
 								<div class="header-nav-section-title">
 									<a data-di-id="runway_1"
 										class="_gaMenuTracking header-nav-parent header-nav-parent-mutually-exclusive header-nav-parent-link"
-										href="/wedding/list" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">CHECH LIST</a>
+										href="/wedding/list" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="11">CHECK LIST</a>
 								</div>
 							</li>
 							<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
@@ -176,25 +229,10 @@
 				data-hero-loop-video-id="5851827842001" data-hero-loop-count=""
 				class="hero hero-large hero-homepage hero--no-audio hero-loop-video   video-parent 0000DBA0_HomepageHeroHeaderStandard_S83-FS-CAMPAIGN-012 hero-cta "
 				data-module="heroLarge, video, vrvideo, heroResize">
-				<!-- main-header-background-center start -->
-				<div class="hero-content-wrapper hero-large-content-wrapper style-primarycta color-light">
-					<div class="hero-content-centered vr-content">
-						<h1 class="hero-title">
-							<span data-component-attr-id="title" class="eyebrow"></span>
-							<span data-component-attr-id="subtitle"></span>
-						</h1>
-						 <a data-component-attr-id="url" class="button-gold shop-the-collection"
-							href="#">컨셉으로 찾기</a>
-						<a data-component-attr-id="url" class="button-gold shop-the-collection"
-							href="#">금액대로 찾기</a> 
-					</div>
-				</div>
-				<!-- main-header-background-center end -->
-				
 				<!-- main-header-background-img start -->
 				<div class="hero-background-image-large-wrapper">
 					<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
-					<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
+					<img width="100%" height="auto" tabindex="-1" data-video-bg-id="5851827842001" 
 					 	alt="메인 이미지입니다." src="${pageContext.request.contextPath}/resources/images/헤드웨딩홀메인.jpg">
 					<picture data-image-type="picture"></picture>
 				</div>

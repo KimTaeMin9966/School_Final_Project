@@ -1,7 +1,6 @@
 package net.koreate.interceptor;
 
 import javax.inject.Inject;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -51,20 +50,12 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 				System.out.println("mwid : " + vo.getMwid());
 				System.out.println("Cookie : " + cookie.getValue());
 				System.out.println("쿠키생성 완료");
+				
+				Object dest = session.getAttribute("dest");
+				modelAndView.addObject("message", "로그인에 성공 하셨습니다.");
+				response.sendRedirect(dest != null ? (String)dest : "/");
 			}
-			
-			request.setAttribute("result", "SUCCESS");
-			
-			Object dest = session.getAttribute("dest");
-			System.out.println("dest : " + dest);
-			System.out.println(dest != null ? (String)dest : "/");
-			response.sendRedirect(dest != null ? (String)dest : "/");
-		} else {
-			RequestDispatcher rd = request.getRequestDispatcher("/member/login");
-			request.setAttribute("result", "FAIL");
-			rd.forward(request, response);
-		}
-		
+		} else { modelAndView.addObject("message", "로그인에 실패 하셨습니다."); modelAndView.setViewName("/member/login"); }
 	}
 	
 }

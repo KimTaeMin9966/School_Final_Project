@@ -68,6 +68,15 @@ public class WeddingController {
 		logger.info("sendGET Called!!!");
 	}
 	
+	@RequestMapping(value = "/concept", method = RequestMethod.GET)
+	public void conceptGET() throws Exception {
+		logger.info("conceptGET Called!!!");
+	}
+	
+	@RequestMapping(value = "/money", method = RequestMethod.GET)
+	public void moneyGET() throws Exception {
+		logger.info("moneyGET Called!!!");
+	}
 }
 
 

@@ -165,12 +165,14 @@
 
 		<!-- Start Contact -->
 		<div id="contact" class="contact-box">
+			<!-- Start Container -->
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="title-box">
 							<h2>Contact Love "Letter" friends</h2>
-							<p>청첩장보내기 기능입니다. 보내실분의 이름과, 휴대폰번호를 입력하여 전송하면 온라인청첩장이 전송됩니다.</p>
+							<p>온라인 청첩장 보내가 가능합니다.</p> <br/>
+							<p>보내주실분의 "성함" , "휴대폰번호 & E-mail" 입력해주세요♡</p>
 						</div>
 					</div>
 				</div>
@@ -181,44 +183,34 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name"
-												placeholder="Send to Name" required
-												data-error="Please enter your name">
+											<input type="text" class="form-control" id="name" name="name" placeholder="NAME" required data-error="Please enter your name" />
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" placeholder="Friend Phone number" id="email"
-												class="form-control" name="name" required
-												data-error="Please enter your email">
+											<input type="text" placeholder="Friend Phone number" id="email" class="form-control" name="name" required data-error="Please enter your email" />
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
-									
 									<div class="col-md-12">
 										<div class="form-group">
-											<select class="custom-select d-block form-control" id="event"
-												required data-error="Please select an item in the list.">
-												<option disabled selected>I Am Attending*</option>
-												<option value="1">All events</option>
-												<option value="2">Wedding ceremony</option>
-												<option value="3">Reception party</option>
+											<select class="custom-select d-block form-control" id="event" required data-error="Please select an item in the list.">
+												<option disabled selected>click</option>
+												<option value="1">Info : 2018 . 11. 20일 PM 13:00분 부산 부산진구 중앙대로 640 ABL생명빌딩 23층</option>
+												<option value="2"> </option>
+												<option value="3"></option>
 											</select>
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<textarea class="form-control" id="message"
-												placeholder="Your Message" rows="8"
-												data-error="Write your message" required>
-									</textarea>
+											<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
 											<div class="help-block with-errors"></div>
 										</div>
 										<div class="submit-button text-center">
-											<button class="btn btn-common" id="submit" type="submit">
-												Send Message</button>
+											<button class="btn btn-common" id="submit" type="submit">Send Message</button>
 											<div id="msgSubmit" class="h3 text-center hidden"></div>
 											<div class="clearfix"></div>
 										</div>
@@ -230,12 +222,13 @@
 				</div>
 				<script>
 					$('#submit').on('click', function() {
-						alert("Sending succeeded.");
+						alert("온라인 청첩장이 전송되었습니다.");
 					});
 				</script>
 			</div>
 			<!-- End Container -->
 		</div>
+		<!-- End Contact -->
 	</section>
 </div>
 <%@include file="../include/footer.jsp"%>

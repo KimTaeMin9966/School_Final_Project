@@ -5,19 +5,19 @@
 
 <mapper namespace="net.koreate.dao.CheckListDao">
 	<select id="STEP1Search" resultType="WDLVO">
-		SELECT * FROM made_wedding_step1
+		SELECT list_day, list_week, list_area, list_etc FROM made_wedding_step1
 		WHERE memberID = #{mwid}
 	</select>
 	<select id="STEP2Search" resultType="WDLVO">
-		SELECT * FROM made_wedding_step2
+		SELECT list_day, list_week, list_area, list_etc FROM made_wedding_step2
 		WHERE memberID = #{mwid}
 	</select>
 	<select id="STEP3Search" resultType="WDLVO">
-		SELECT * FROM made_wedding_step3
+		SELECT list_day, list_week, list_area, list_etc FROM made_wedding_step3
 		WHERE memberID = #{mwid}
 	</select>
 	<select id="STEP4Search" resultType="WDLVO">
-		SELECT * FROM made_wedding_step4
+		SELECT list_day, list_week, list_area, list_etc FROM made_wedding_step4
 		WHERE memberID = #{mwid}
 	</select>
 	

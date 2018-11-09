@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../include/header.jsp"%>
+<%@include file="../include/consultingheader.jsp"%>
 <div data-component-container="categoryThreeImageComponent" class="category-product-grid category-product-grid-three-left">
 	<div class="category-product-grid-wrapper">
 		<section class="style-news">
@@ -37,7 +37,7 @@
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">
-										<div class="text-right">
+										<div class="text-center">
 											<a href="http://store.lotteshopping.com/handler/Wedding-Start?subBrchCd=001" rel="nofollow" class="btn btn-info btn-sm" role="button">LOTTE</a>
 										</div>
 									</div>
@@ -62,11 +62,11 @@
 									way to the garden terrace. Say your 'I do's' in front of the
 									verdigris wrought iron gazebo or in front of the iron archway.
 									This romantic setting is picture-perfect with plenty of
-									beautiful wedding backdrops throughout the property.</p>
+									beautiful wedding backdrops throughout the </p>
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">
-										<div class="text-right">
+										<div class="text-center">
 											<a href="https://www.sonomaplan.com/"  class="btn btn-info btn-sm" role="button">SONOMA PLAN</a>
 										</div>
 									</div>
@@ -92,7 +92,7 @@
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">
-										<div class="text-right">
+										<div class="text-center">
 											<a href="https://thearte.modoo.at/" rel="nofollow" class="btn btn-info btn-sm" role="button">THE ARTE</a>
 										</div>
 									</div>
@@ -138,11 +138,11 @@
 									in! In the heart of Temecula Wine Country, this venue will
 									amaze you with its stunning blend of rustic history and modern
 									vibrance complete with century-old oak trees, a modernized
-									barn, and a dressing suite you'll want to sign a lease on.</p>
+									barn, and a dressing suite you'll want to sign a</p>
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">
-										<div class="text-right">
+										<div class="text-center">
 											<a href="http://www.orangewedding.co.kr" rel="nofollow" class="btn btn-info btn-sm" role="button"> ORANGE WEDDING </a>
 										</div>
 									</div>
@@ -162,12 +162,11 @@
 									lush garden or Monastery beach for the backdrop of your
 									ceremony, you'll be able to capture spectacular photos by the
 									Pacific Ocean. After you say "I do", you and your guests will
-									dance the night away in our stunning Spanish-style clubhouse
-									with views  </p>
+									dance the night away in our </p>
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">
-										<div class="text-right">
+										<div class="text-center">
 											<a href="http://www.weddingchannel.co.kr/" rel="nofollow" class="btn btn-info btn-sm" role="button">WEDDING CHANNER</a>
 										</div>
 									</div>
@@ -177,126 +176,6 @@
 					</div>
 				</div>
 			</section>
-	
-	<%-- 
-		<!-- 롯데웨딩 -->
-		<article data-component-id="halfMediumFirst" class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
-			<a data-component-attr-id="url" class="category-product" href="http://store.lotteshopping.com/handler/Wedding-Start?subBrchCd=001">
-				<div><img src="${pageContext.request.contextPath}/resources/images/롯데웨딩2.png" /></div>
-				<!-- <header class="category-grid-item-content">
-					<h2 data-component-attr-id="title">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</h2>
-					<p data-component-attr-id="subtitle" class="eyebrow-link">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</p>
-				</header> -->
-			</a>
-		</article>
-		<!-- 롯데웨딩 -->
-		
-		<!-- 소노마플랜-->
-		<article data-component-id="leftImage" class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
-			<a data-component-attr-id="url" class="category-product" target="_blank" href="https://www.sonomaplan.com/">
-				<div><img src="${pageContext.request.contextPath}/resources/images/소노마플랜.png" /></div>
-				<!-- <header class="category-grid-item-content">
-					<h2 data-component-attr-id="title">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</h2>
-					<p data-component-attr-id="subtitle" class="eyebrow-link">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</p>
-				</header> -->
-			</a>
-		</article>
-		<!-- 소노마플랜-->
-		
-		<!-- 아르떼 -->
-		<article data-component-id="halfMediumFirst" class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
-			<a data-component-attr-id="url" class="category-product" href="https://thearte.me/">
-				<div><img src="${pageContext.request.contextPath}/resources/images/아르떼.png" /></div>
-				<!-- <header class="category-grid-item-content">
-					<h2 data-component-attr-id="title">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</h2>
-					<p data-component-attr-id="subtitle" class="eyebrow-link">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</p>
-				</header> -->
-			</a>
-		</article>
-		<!-- 아르떼 -->
-
-		<!-- 루쏘웨딩 -->
-		<article data-component-id="rightImage" class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
-			<a data-component-attr-id="url" class="category-product" href="https://lussowed.modoo.at/?link=l5jjc6sq">
-				<div><img src="${pageContext.request.contextPath}/resources/images/루쏘웨딩.png" /></div>
-				<!-- <header class="category-grid-item-content">
-					<h2 data-component-attr-id="title">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</h2>
-					<p data-component-attr-id="subtitle" class="eyebrow-link">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</p>
-				</header> -->
-			</a>
-		</article>
-		<!--  루쏘웨딩 -->
-		
-		<!-- 웨딩채널 -->
-		<article data-component-id="halfMediumFirst" class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
-			<a data-component-attr-id="url" class="category-product" href="http://www.weddingchannel.co.kr/">
-				<div><img src="${pageContext.request.contextPath}/resources/images/웨딩채널.png" /></div>
-				<!-- <header class="category-grid-item-content">
-					<h2 data-component-attr-id="title">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</h2>
-					<p data-component-attr-id="subtitle" class="eyebrow-link">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</p>
-				</header> -->
-			</a>
-		</article>
-		<!-- 웨딩채널 -->
-		
-		
-		<article data-component-id="halfMediumFirst" class="category-product-grid-item category-product-grid-item-two category-product-grid-item-two-first hover-link">
-			<a data-component-attr-id="url" class="category-product" href="http://www.bexcoweddingfair.co.kr/">
-				<div><img src="${pageContext.request.contextPath}/resources/images/BWC.png" /></div>
-				<!-- <header class="category-grid-item-content">
-					<h2 data-component-attr-id="title">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</h2>
-					<p data-component-attr-id="subtitle" class="eyebrow-link">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;"></font>
-						</font>
-					</p>
-				</header> -->
-			</a>
-		</article> --%>
+ 		</div>
 	</div>
-</div>
 <%@include file="../include/footer.jsp"%>
