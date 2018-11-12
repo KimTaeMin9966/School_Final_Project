@@ -22,7 +22,8 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	@Override
 	public List<WeddingHallVo> SearchArea(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
-		return dao.SearchArea(vo);
+		WeddingHallVo list = dao.SearchArea(vo);
+		return null;
 	}
 
 	@Override
@@ -46,13 +47,19 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
+
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("file", files[0]);
+		paramMap.put("HallVo", vo);
+		
+		dao.hallAddSampleImg(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap = new HashMap<>();
-			paramMap.put("file", fullName);
-			paramMap.put("HallVo", vo);
+			Map<String, Object> paramMap2 = new HashMap<>();
+			paramMap2.put("file", fullName);
+			paramMap2.put("HallVo", vo);
 			
-			dao.addHallAttach(paramMap);
+			dao.addHallAttach(paramMap2);
 		}
 	}
 
@@ -65,13 +72,19 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
+
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("file", files[0]);
+		paramMap.put("StudioVo", vo);
+
+		dao.studioAddSampleImg(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap = new HashMap<>();
-			paramMap.put("file", fullName);
-			paramMap.put("StudioVo", vo);
+			Map<String, Object> paramMap2 = new HashMap<>();
+			paramMap2.put("file", fullName);
+			paramMap2.put("StudioVo", vo);
 			
-			dao.addStudioAttach(paramMap);
+			dao.addStudioAttach(paramMap2);
 		}
 	}
 

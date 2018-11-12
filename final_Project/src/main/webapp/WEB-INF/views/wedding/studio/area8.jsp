@@ -12,7 +12,7 @@
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
 							<img alt="" sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px"
-								src="">
+								src="${studios.fullName}">
 						</div>
 					</div>
 					<p class="online-exclusive-badge" data-component-attr-id="online-exclusive">

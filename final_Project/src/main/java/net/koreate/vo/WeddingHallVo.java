@@ -12,6 +12,7 @@ public class WeddingHallVo {
 	private String hall_contents;
 	private String hall_link;
 	private int hall_area;
+	private String fullName;
 
 	private String[] files;
 
@@ -87,6 +88,14 @@ public class WeddingHallVo {
 		this.hall_area = hall_area;
 	}
 
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
 	public String[] getFiles() {
 		return files;
 	}
@@ -100,7 +109,7 @@ public class WeddingHallVo {
 		return "WeddingHallVo [hall_hno=" + hall_hno + ", hall_name=" + hall_name + ", hall_location=" + hall_location
 				+ ", hall_person=" + hall_person + ", hall_price=" + hall_price + ", hall_thema=" + hall_thema
 				+ ", hall_contents=" + hall_contents + ", hall_link=" + hall_link + ", hall_area=" + hall_area
-				+ ", files=" + Arrays.toString(files) + "]";
+				+ ", fullName=" + fullName + ", files=" + Arrays.toString(files) + "]";
 	}
 
 }

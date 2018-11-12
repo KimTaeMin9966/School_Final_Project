@@ -9,7 +9,7 @@ import net.koreate.vo.WeddingStudioVo;
 public interface WeddingHallDao {
 
 	// 2018/10/29
-	List<WeddingHallVo> SearchArea(WeddingHallVo vo) throws Exception;
+	WeddingHallVo SearchArea(WeddingHallVo vo) throws Exception;
 
 	// 2018/10/30
 	List<WeddingHallVo> SearchAllhall(WeddingHallVo vo) throws Exception;
@@ -50,5 +50,9 @@ public interface WeddingHallDao {
 	void studioDeleteImgByHNO(Map<String, Object> paramMap) throws Exception;
 
 	List<String> SearchHallImg(WeddingHallVo vo) throws Exception;
+
+	void hallAddSampleImg(Map<String, Object> paramMap) throws Exception;
+
+	void studioAddSampleImg(Map<String, Object> paramMap) throws Exception;
 
 }

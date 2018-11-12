@@ -92,4 +92,12 @@
 		SELECT * FROM made_wedding_studios_img
 		WHERE hno = #{hall_hno} AND area = #{hall_area} AND link = #{hall_link} limit 1
 	</select>
+	<update id="hallAddSampleImg">
+		UPDATE made_wedding_halls SET fullName = #{file}
+		WHERE hall_area = #{HallVo.hall_area} AND hall_link = #{HallVo.hall_link}
+	</update>
+	<update id="studioAddSampleImg">
+		UPDATE made_wedding_studios SET fullName = #{file}
+		WHERE hall_area = #{StudioVo.hall_area} AND hall_link = #{StudioVo.hall_link}
+	</update>
 </mapper>
