@@ -100,4 +100,32 @@
 		UPDATE made_wedding_studios SET fullName = #{file}
 		WHERE hall_area = #{StudioVo.hall_area} AND hall_link = #{StudioVo.hall_link}
 	</update>
+	<update id="editHallAttachSample">
+		UPDATE made_wedding_halls SET fullName = #{file}
+		WHERE hall_area = #{HallVo.hall_area} AND hall_link = #{HallVo.hall_link}
+	</update>
+	<update id="editStudioAttachSample">
+		UPDATE made_wedding_studios SET fullName = #{file}
+		WHERE hall_area = #{StudioVo.hall_area} AND hall_link = #{StudioVo.hall_link}
+	</update>
+	<update id="editHallAttach">
+		UPDATE made_wedding_halls_img SET fullName = #{file}
+		WHERE area = #{HallVo.hall_area} AND link = #{HallVo.hall_link} AND ino = #{HallVo.ino}
+	</update>
+	<update id="editStudioAttach">
+		UPDATE made_wedding_studios_img SET fullName = #{file}
+		WHERE area = #{StudioVo.hall_area} AND link = #{StudioVo.hall_link} AND ino = #{StudioVo.ino}
+	</update>
+	<delete id="DeleteHallImg">
+		UPDATE made_wedding_halls SET fullName = "" WHERE fullName = #{fileName}
+	</delete>
+	<delete id="DeleteStudioImg">
+		UPDATE made_wedding_studios SET fullName = "" WHERE fullName = #{fileName}
+	</delete>
+	<update id="DeleteHallImgSample">
+		UPDATE made_wedding_halls SET fullName = "" WHERE fullName = #{fileName}
+	</update>
+	<update id="DeleteStudioImgSample">
+		UPDATE made_wedding_studios SET fullName = "" WHERE fullName = #{fileName}
+	</update>
 </mapper>

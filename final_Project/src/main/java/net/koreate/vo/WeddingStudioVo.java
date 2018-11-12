@@ -13,6 +13,7 @@ public class WeddingStudioVo {
 	private String studio_link;
 	private int studio_area;
 	private String fullName;
+	private int ino;
 
 	private String[] files;
 
@@ -96,6 +97,14 @@ public class WeddingStudioVo {
 		this.fullName = fullName;
 	}
 
+	public int getIno() {
+		return ino;
+	}
+
+	public void setIno(int ino) {
+		this.ino = ino;
+	}
+
 	public String[] getFiles() {
 		return files;
 	}
@@ -109,8 +118,8 @@ public class WeddingStudioVo {
 		return "WeddingStudioVo [studio_hno=" + studio_hno + ", studio_name=" + studio_name + ", studio_location="
 				+ studio_location + ", studio_person=" + studio_person + ", studio_price=" + studio_price
 				+ ", studio_thema=" + studio_thema + ", studio_contents=" + studio_contents + ", studio_link="
-				+ studio_link + ", studio_area=" + studio_area + ", fullName=" + fullName + ", files="
+				+ studio_link + ", studio_area=" + studio_area + ", fullName=" + fullName + ", ino=" + ino + ", files="
 				+ Arrays.toString(files) + "]";
 	}
-
+	
 }

@@ -11,7 +11,7 @@
 				<a class="product-tiles-grid-item-link" href="/wedding/hall/area1/${halls.hall_link}">
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
-							<img alt="이미지입니다." sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px"
+							<img alt="이미지입니다." style="width: 100%; height: auto;"
 								src="/management/displayFile?fileName=${halls.fullName}">
 						</div>
 					</div>

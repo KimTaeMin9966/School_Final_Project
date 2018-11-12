@@ -55,4 +55,20 @@ public interface WeddingHallDao {
 
 	void studioAddSampleImg(Map<String, Object> paramMap) throws Exception;
 
+	void editHallAttachSample(Map<String, Object> paramMap) throws Exception;
+
+	void editHallAttach(Map<String, Object> paramMap2) throws Exception;
+
+	void editStudioAttachSample(Map<String, Object> paramMap) throws Exception;
+
+	void editStudioAttach(Map<String, Object> paramMap2) throws Exception;
+
+	void DeleteStudioImg(String fileName) throws Exception;
+
+	void DeleteHallImg(String fileName) throws Exception;
+
+	void DeleteStudioImgSample(String fileName) throws Exception;
+
+	void DeleteHallImgSample(String fileName) throws Exception;
+
 }

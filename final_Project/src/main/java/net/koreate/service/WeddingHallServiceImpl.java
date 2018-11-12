@@ -112,13 +112,19 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
+
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("file", files[0]);
+		paramMap.put("HallVo", vo);
+		
+		dao.editHallAttachSample(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap = new HashMap<>();
-			paramMap.put("file", fullName);
-			paramMap.put("HallVo", vo);
+			Map<String, Object> paramMap2 = new HashMap<>();
+			paramMap2.put("file", fullName);
+			paramMap2.put("HallVo", vo);
 			
-			dao.addHallAttach(paramMap);
+			dao.editHallAttach(paramMap2);
 		}
 	}
 
@@ -131,13 +137,19 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
+
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("file", files[0]);
+		paramMap.put("StudioVo", vo);
+
+		dao.editStudioAttachSample(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap = new HashMap<>();
-			paramMap.put("file", fullName);
-			paramMap.put("StudioVo", vo);
+			Map<String, Object> paramMap2 = new HashMap<>();
+			paramMap2.put("file", fullName);
+			paramMap2.put("StudioVo", vo);
 			
-			dao.addStudioAttach(paramMap);
+			dao.editStudioAttach(paramMap2);
 		}
 	}
 
@@ -177,6 +189,20 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	public List<String> SearchHallImg(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		return dao.SearchHallImg(vo);
+	}
+
+	@Override
+	public void DeleteStudioImg(String fileName) throws Exception {
+		// TODO Auto-generated method stub
+		dao.DeleteStudioImgSample(fileName);
+		dao.DeleteStudioImg(fileName);
+	}
+
+	@Override
+	public void DeleteHallImg(String fileName) throws Exception {
+		// TODO Auto-generated method stub
+		dao.DeleteHallImgSample(fileName);
+		dao.DeleteHallImg(fileName);
 	}
 	
 }
