@@ -50,20 +50,20 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
-
-		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put("file", files[0]);
-		paramMap.put("HallVo", vo);
-		
-		dao.hallAddSampleImg(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap2 = new HashMap<>();
-			paramMap2.put("file", fullName);
-			paramMap2.put("HallVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("HallVo", vo);
 			
-			dao.addHallAttach(paramMap2);
+			dao.addHallAttach(filesMap);
 		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("HallVo", vo);
+		
+		dao.hallAddSampleImg(fileMap);
 	}
 
 	@Override
@@ -75,20 +75,20 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
-
-		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put("file", files[0]);
-		paramMap.put("StudioVo", vo);
-
-		dao.studioAddSampleImg(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap2 = new HashMap<>();
-			paramMap2.put("file", fullName);
-			paramMap2.put("StudioVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("StudioVo", vo);
 			
-			dao.addStudioAttach(paramMap2);
+			dao.addStudioAttach(filesMap);
 		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("StudioVo", vo);
+		
+		dao.studioAddSampleImg(fileMap);
 	}
 
 	@Override
@@ -112,20 +112,20 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
-
-		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put("file", files[0]);
-		paramMap.put("HallVo", vo);
-		
-		dao.editHallAttachSample(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap2 = new HashMap<>();
-			paramMap2.put("file", fullName);
-			paramMap2.put("HallVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("HallVo", vo);
 			
-			dao.editHallAttach(paramMap2);
+			dao.editHallAttach(filesMap);
 		}
+		
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("HallVo", vo);
+		
+		dao.editHallAttachSample(fileMap);
 	}
 
 	@Override
@@ -137,20 +137,20 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
-
-		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put("file", files[0]);
-		paramMap.put("StudioVo", vo);
-
-		dao.editStudioAttachSample(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap2 = new HashMap<>();
-			paramMap2.put("file", fullName);
-			paramMap2.put("StudioVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("StudioVo", vo);
 			
-			dao.editStudioAttach(paramMap2);
+			dao.editStudioAttach(filesMap);
 		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("StudioVo", vo);
+
+		dao.editStudioAttachSample(fileMap);
 	}
 
 	@Override
