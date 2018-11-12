@@ -72,7 +72,7 @@
 					</li>
 					<li class="item-primary flex-item">
 						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/send" data-target="#mm-2" data-di-id="runway_1"></a>
-						<span class="flex-item-content" data-di-id="runway_1">>WEDDING LETTER</span>
+						<span class="flex-item-content" data-di-id="runway_1">WEDDING LETTER</span>
 					</li>
 					<c:choose>
 						<c:when test="${!empty loginYES && loginYES.mwid eq 'master'}">

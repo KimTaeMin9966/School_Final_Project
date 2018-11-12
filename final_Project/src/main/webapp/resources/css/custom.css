@@ -24,3 +24,8 @@
 	background-color: lightslategray;
 	margin: auto;
 }
+
+img {
+	width: 100%;
+	height: auto;
+}
