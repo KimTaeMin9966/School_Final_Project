@@ -9,7 +9,7 @@ import net.koreate.vo.WeddingStudioVo;
 public interface WeddingHallDao {
 
 	// 2018/10/29
-	WeddingHallVo SearchArea(WeddingHallVo vo) throws Exception;
+	List<WeddingHallVo> SearchArea(WeddingHallVo vo) throws Exception;
 
 	// 2018/10/30
 	List<WeddingHallVo> SearchAllhall(WeddingHallVo vo) throws Exception;

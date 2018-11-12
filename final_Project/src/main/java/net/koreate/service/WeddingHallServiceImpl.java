@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
@@ -18,12 +19,14 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	
 	@Inject
 	WeddingHallDao dao;
+	
+	@Resource(name = "uploadPath")
+	String uploadPath;
 
 	@Override
 	public List<WeddingHallVo> SearchArea(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
-		WeddingHallVo list = dao.SearchArea(vo);
-		return null;
+		return dao.SearchArea(vo);
 	}
 
 	@Override

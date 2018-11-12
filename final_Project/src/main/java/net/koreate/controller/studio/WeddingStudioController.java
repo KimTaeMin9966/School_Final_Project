@@ -21,6 +21,7 @@ public class WeddingStudioController {
 	
 	@Inject
 	WeddingStudioService service;
+	
 	@RequestMapping(value = "/area1", method = RequestMethod.GET)
 	public void area1GET(WeddingStudioVo vo, HttpSession session) throws Exception {
 		logger.info("area1GET Called!!!(부산진구)");
