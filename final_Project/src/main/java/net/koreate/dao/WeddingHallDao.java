@@ -28,9 +28,9 @@ public interface WeddingHallDao {
 
 	void studioEdit(WeddingStudioVo vo) throws Exception;
 
-	void hallDeleteByHNO(int hall_hno) throws Exception;
+	void hallDeleteByHNO(Map<String, Object> paramMap) throws Exception;
 
-	void studioDeleteByHNO(int studio_hno) throws Exception;
+	void studioDeleteByHNO(Map<String, Object> paramMap) throws Exception;
 	
 	// 2018/11/06
 	WeddingHallVo SearchAreaHallDetail(WeddingHallVo vo) throws Exception;
@@ -43,5 +43,10 @@ public interface WeddingHallDao {
 	void addHallAttach(Map<String, Object> paramMap) throws Exception;
 
 	void addStudioAttach(Map<String, Object> paramMap) throws Exception;
+
+	// 2018/11/12
+	void hallDeleteImgByHNO(Map<String, Object> paramMap) throws Exception;
+
+	void studioDeleteImgByHNO(Map<String, Object> paramMap) throws Exception;
 
 }

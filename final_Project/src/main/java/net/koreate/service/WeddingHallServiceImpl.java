@@ -88,27 +88,55 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	}
 
 	@Override
+	@Transactional
 	public void hallEdit(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		dao.hallEdit(vo);
+		
+		String[] files = vo.getFiles();
+		
+		if(files == null) return;
+		
+		for(String fullName : files) {
+			Map<String, Object> paramMap = new HashMap<>();
+			paramMap.put("file", fullName);
+			paramMap.put("HallVo", vo);
+			
+			dao.addHallAttach(paramMap);
+		}
 	}
 
 	@Override
+	@Transactional
 	public void studioEdit(WeddingStudioVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		dao.studioEdit(vo);
+		
+		String[] files = vo.getFiles();
+		
+		if(files == null) return;
+		
+		for(String fullName : files) {
+			Map<String, Object> paramMap = new HashMap<>();
+			paramMap.put("file", fullName);
+			paramMap.put("StudioVo", vo);
+			
+			dao.addStudioAttach(paramMap);
+		}
 	}
 
 	@Override
-	public void hallDeleteByHNO(int hall_hno) throws Exception {
+	public void hallDeleteByHNO(Map<String, Object> paramMap) throws Exception {
 		// TODO Auto-generated method stub
-		dao.hallDeleteByHNO(hall_hno);
+		dao.hallDeleteImgByHNO(paramMap);
+		dao.hallDeleteByHNO(paramMap);
 	}
 
 	@Override
-	public void studioDeleteByHNO(int studio_hno) throws Exception {
+	public void studioDeleteByHNO(Map<String, Object> paramMap) throws Exception {
 		// TODO Auto-generated method stub
-		dao.studioDeleteByHNO(studio_hno);
+		dao.studioDeleteImgByHNO(paramMap);
+		dao.studioDeleteByHNO(paramMap);
 	}
 	
 	@Override

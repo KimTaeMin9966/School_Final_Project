@@ -47,10 +47,10 @@
 		studio_area = #{studio_area} WHERE studio_hno = #{studio_hno}
 	</update>
 	<delete id="hallDeleteByHNO">
-		DELETE FROM made_wedding_halls WHERE hall_hno = #{hall_hno}
+		DELETE FROM made_wedding_halls WHERE hall_hno = #{hno}
 	</delete>
 	<delete id="studioDeleteByHNO">
-		DELETE FROM made_wedding_studios WHERE studio_hno = #{studio_hno}
+		DELETE FROM made_wedding_studios WHERE studio_hno = #{hno}
 	</delete>
 	
 	<!-- 2018/11/06 -->
@@ -70,10 +70,18 @@
 	</select>
 	<insert id="addHallAttach">
 		INSERT INTO made_wedding_halls_img(hno, fullName, area, link)
-		VALUES(LAST_INSERT_ID(), #{file}, #{HallVo.hall_area}, #{HallVo.hall_link})
+		VALUES(#{HallVo.hall_hno}, #{file}, #{HallVo.hall_area}, #{HallVo.hall_link})
 	</insert>
 	<insert id="addStudioAttach">
 		INSERT INTO made_wedding_studios_img(hno, fullName, area, link)
-		VALUES(LAST_INSERT_ID(), #{file}, #{StudioVo.studio_area}, #{StudioVo.studio_link})
+		VALUES(#{StudioVo.studio_hno}, #{file}, #{StudioVo.studio_area}, #{StudioVo.studio_link})
 	</insert>
+	
+	<!-- 2018/11/12 -->
+	<delete id="hallDeleteImgByHNO">
+		DELETE FROM made_wedding_halls_img WHERE hno = #{hno} AND area = #{WeddingHallVo.hall_area} AND link = #{WeddingHallVo.hall_link}
+	</delete>
+	<delete id="studioDeleteImgByHNO">
+		DELETE FROM made_wedding_halls_img WHERE hno = #{hno} AND area = #{WeddingStudioVo.studio_area} AND link = #{WeddingStudioVo.studio_link}
+	</delete>
 </mapper>
