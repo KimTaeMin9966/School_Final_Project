@@ -40,4 +40,7 @@ public interface WeddingHallService {
 
 	List<String> getAttachStudioImg(Map<String, Object> paramMap) throws Exception;
 
+	// 2018/11/12
+	List<String> SearchHallImg(WeddingHallVo vo) throws Exception;
+
 }

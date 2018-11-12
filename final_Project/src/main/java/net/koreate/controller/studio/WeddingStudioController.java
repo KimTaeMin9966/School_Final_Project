@@ -27,7 +27,9 @@ public class WeddingStudioController {
 		
 		vo.setStudio_area(1);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
+		List<String> img = service.SearchStudioImg(vo);
 		session.setAttribute("area1", list);
+		session.setAttribute("img1", img);
 	}
 	
 	@RequestMapping(value = "/area2", method = RequestMethod.GET)
@@ -36,8 +38,9 @@ public class WeddingStudioController {
 		
 		vo.setStudio_area(2);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
+		List<String> img = service.SearchStudioImg(vo);
 		session.setAttribute("area2", list);
-		
+		session.setAttribute("img2", img);
 	}
 	
 	@RequestMapping(value = "/area3", method = RequestMethod.GET)
@@ -46,7 +49,9 @@ public class WeddingStudioController {
 		
 		vo.setStudio_area(3);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
+		List<String> img = service.SearchStudioImg(vo);
 		session.setAttribute("area3", list);
+		session.setAttribute("img3", img);
 	}
 	
 	@RequestMapping(value = "/area4", method = RequestMethod.GET)
@@ -55,7 +60,9 @@ public class WeddingStudioController {
 		
 		vo.setStudio_area(4);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
+		List<String> img = service.SearchStudioImg(vo);
 		session.setAttribute("area4", list);
+		session.setAttribute("img4", img);
 	}
 	
 	@RequestMapping(value = "/area5", method = RequestMethod.GET)
@@ -64,7 +71,9 @@ public class WeddingStudioController {
 		
 		vo.setStudio_area(5);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
+		List<String> img = service.SearchStudioImg(vo);
 		session.setAttribute("area5", list);
+		session.setAttribute("img5", img);
 	}
 	
 	@RequestMapping(value = "/area6", method = RequestMethod.GET)
@@ -73,7 +82,9 @@ public class WeddingStudioController {
 		
 		vo.setStudio_area(6);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
+		List<String> img = service.SearchStudioImg(vo);
 		session.setAttribute("area6", list);
+		session.setAttribute("img6", img);
 	}
 	
 	@RequestMapping(value = "/area7", method = RequestMethod.GET)
@@ -82,7 +93,9 @@ public class WeddingStudioController {
 		
 		vo.setStudio_area(7);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
+		List<String> img = service.SearchStudioImg(vo);
 		session.setAttribute("area7", list);
+		session.setAttribute("img7", img);
 	}
 	
 	@RequestMapping(value = "/area8", method = RequestMethod.GET)
@@ -91,7 +104,9 @@ public class WeddingStudioController {
 		
 		vo.setStudio_area(8);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
+		List<String> img = service.SearchStudioImg(vo);
 		session.setAttribute("area8", list);
+		session.setAttribute("img8", img);
 	}
 	
 }

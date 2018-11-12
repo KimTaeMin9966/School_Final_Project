@@ -27,4 +27,10 @@ public class WeddingStudioServiceImpl implements WeddingStudioService {
 		return dao.SearchAreaStudioDetail(vo);
 	}
 
+	@Override
+	public List<String> SearchStudioImg(WeddingStudioVo vo) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.SearchStudioImg(vo);
+	}
+
 }

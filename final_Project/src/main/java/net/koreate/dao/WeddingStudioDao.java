@@ -10,5 +10,7 @@ public interface WeddingStudioDao {
 
 	// 2018/11/06
 	WeddingStudioVo SearchAreaStudioDetail(WeddingStudioVo vo) throws Exception;
+
+	List<String> SearchStudioImg(WeddingStudioVo vo) throws Exception;
 	
 }

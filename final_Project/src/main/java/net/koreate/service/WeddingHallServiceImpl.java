@@ -156,5 +156,11 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		// TODO Auto-generated method stub
 		return dao.getAttachStudioImg(paramMap);
 	}
+
+	@Override
+	public List<String> SearchHallImg(WeddingHallVo vo) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.SearchHallImg(vo);
+	}
 	
 }

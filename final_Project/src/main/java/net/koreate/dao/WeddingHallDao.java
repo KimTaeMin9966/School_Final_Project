@@ -49,4 +49,6 @@ public interface WeddingHallDao {
 
 	void studioDeleteImgByHNO(Map<String, Object> paramMap) throws Exception;
 
+	List<String> SearchHallImg(WeddingHallVo vo) throws Exception;
+
 }
