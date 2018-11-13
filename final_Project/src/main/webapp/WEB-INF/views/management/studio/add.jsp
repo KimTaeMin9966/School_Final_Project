@@ -63,6 +63,10 @@
 							    <option value="6">부산 중구</option>
 							</select>
 						</div>
+						<div class="form-group has-feedback">
+							<label>주소</label>
+							<input type="text" name="studio_address" class="form-control" placeholder="EX) 테이블형태" required />
+						</div>
 						<div class="form-group">
 							<label>FILE DROP HERE</label>
 							<div class="fileDrop"></div>

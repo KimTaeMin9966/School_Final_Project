@@ -25,6 +25,7 @@
 							<th>스튜디오 콘텐츠</th>
 							<th>페이지 전환을 위한 링크</th>
 							<th>지역</th>
+							<th>주소</th>
 							<th colspan="2">기타</th>
 						</tr>
 						<c:forEach var="list" items="${studioList}">
@@ -37,6 +38,7 @@
 								<td>${list.studio_contents}</td>
 								<td>${list.studio_link}</td>
 								<td>${list.studio_area}</td>
+								<td>${list.studio_address}</td>
 								<td>
 									<input type="button" onclick="javascript:studioEdit('${list.studio_hno}')" class="btn btn-primary" value="정보수정 하기" />
 									<input type="button" onclick="javascript:studioDelete('${list.studio_hno}')" class="btn btn-primary" value="정보삭제 하기" />

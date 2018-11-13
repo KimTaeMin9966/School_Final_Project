@@ -17,7 +17,12 @@
 					</div>
 					<p class="online-exclusive-badge" data-component-attr-id="online-exclusive">
 						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">${halls.hall_name}</font>
+							<font style="vertical-align: inherit;">홀 주소 : ${halls.hall_location}</font><br/>
+							<font style="vertical-align: inherit;">홀 수용인원 ${halls.hall_person} 명</font><br/>
+							<font style="vertical-align: inherit;">${halls.hall_price}</font><br/>
+							<font style="vertical-align: inherit;">${halls.hall_thema}</font><br/>
+							<font style="vertical-align: inherit;">${halls.hall_contents}</font><br/>
+							<font style="vertical-align: inherit;">${halls.hall_address}</font><br/>
 						</font>
 					</p>
 				</a>

@@ -1,5 +1,6 @@
 package net.koreate.service;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -50,6 +51,8 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
+		
+		System.out.println(Arrays.toString(files));
 		
 		for(String fullName : files) {
 			Map<String, Object> filesMap = new HashMap<>();

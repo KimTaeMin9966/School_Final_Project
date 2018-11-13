@@ -160,7 +160,7 @@ public class ManagementController {
 	@RequestMapping(value = "/hall/editSubmit", method = RequestMethod.POST)
 	public String halleditSubmitPOST(WeddingHallVo vo) throws Exception {
 		logger.info("halleditSubmitPOST Called!!!");
-		System.out.println(vo);
+
 		hService.hallEdit(vo);
 		return "redirect:/management/hall";
 	}
@@ -176,7 +176,7 @@ public class ManagementController {
 	@RequestMapping(value = "/studio/editSubmit", method = RequestMethod.POST)
 	public String studioeditSubmitPOST(WeddingStudioVo vo) throws Exception {
 		logger.info("studioeditSubmitPOST Called!!!");
-		System.out.println(vo);
+
 		hService.studioEdit(vo);
 		return "redirect:/management/studio";
 	}
@@ -256,7 +256,7 @@ public class ManagementController {
 			@PathVariable("hall_link") String hall_link
 			) throws Exception {
 		logger.info("getAttachHallImgGET Called!!!");
-		System.out.println("hno : " + hno + ", hall_area : " + hall_area + ", hall_link : " + hall_link);
+		
 		Map<String, Object> paramMap = new HashMap<>();
 		paramMap.put("hno", hno);
 		paramMap.put("hall_area", hall_area);
@@ -309,7 +309,7 @@ public class ManagementController {
 			@PathVariable("studio_link") String studio_link
 			) throws Exception {
 		logger.info("getAttachStudioImgGET Called!!!");
-		System.out.println("hno : " + hno + ", studio_area : " + studio_area + ", studio_link : " + studio_link);
+		
 		Map<String, Object> paramMap = new HashMap<>();
 		paramMap.put("hno", hno);
 		paramMap.put("studio_area", studio_area);
@@ -322,7 +322,7 @@ public class ManagementController {
 	@RequestMapping(value = "/displayFile")
 	public ResponseEntity<byte[]> displayFileGET_POST(String fileName) throws Exception {
 		logger.info("displayFileGET & POST Called!!!"); InputStream in = null;
-		ResponseEntity<byte[]> entity = null; System.out.println(fileName);
+		ResponseEntity<byte[]> entity = null;
 		
 		try {
 			String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
@@ -339,7 +339,7 @@ public class ManagementController {
 						+ new String(fileName.getBytes("UTF-8"), "ISO-8859-1") + "\"");
 			}
 			
-			entity = new ResponseEntity<byte[]>(IOUtils.toByteArray(in),headers,HttpStatus.CREATED);
+			entity = new ResponseEntity<byte[]>(IOUtils.toByteArray(in), headers, HttpStatus.CREATED);
 		}
 		catch (Exception e) { e.printStackTrace(); }
 		finally { in.close(); }

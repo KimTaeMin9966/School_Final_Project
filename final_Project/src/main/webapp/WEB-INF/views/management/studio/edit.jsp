@@ -64,6 +64,10 @@
 							    <option value="6" <c:if test="${editStudio.studio_area eq 6}">selected</c:if>>부산 중구</option>
 							</select>
 						</div>
+						<div class="form-group has-feedback">
+							<label>주소</label>
+							<input type="text" id="studio_address" name="studio_address" class="form-control" value="${editStudio.studio_address}" />
+						</div>
 						<div class="form-group">
 							<label>FILE DROP HERE</label>
 							<div class="fileDrop"></div>

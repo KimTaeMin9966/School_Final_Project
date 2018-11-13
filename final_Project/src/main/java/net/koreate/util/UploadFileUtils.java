@@ -43,7 +43,7 @@ public class UploadFileUtils {
 	public static String makeThumnail(String uploadPath, String path, String savedName) throws IOException {
 		BufferedImage fileImage = ImageIO.read(new File(uploadPath + path, savedName));
 
-		BufferedImage sourceImg = Scalr.resize(fileImage, Scalr.Method.AUTOMATIC, Scalr.Mode.FIT_TO_HEIGHT, 100);
+		BufferedImage sourceImg = Scalr.resize(fileImage, Scalr.Method.AUTOMATIC, Scalr.Mode.FIT_TO_HEIGHT, 595);
 
 		String tumnail = uploadPath + path + File.separator + "s_" + savedName;
 		File tumnFile = new File(tumnail);

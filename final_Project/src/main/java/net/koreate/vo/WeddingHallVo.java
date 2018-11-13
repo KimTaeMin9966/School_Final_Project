@@ -14,6 +14,7 @@ public class WeddingHallVo {
 	private int hall_area;
 	private String fullName;
 	private int ino;
+	private String hall_address;
 
 	private String[] files;
 
@@ -105,6 +106,14 @@ public class WeddingHallVo {
 		this.ino = ino;
 	}
 
+	public String getHall_address() {
+		return hall_address;
+	}
+
+	public void setHall_address(String hall_address) {
+		this.hall_address = hall_address;
+	}
+
 	public String[] getFiles() {
 		return files;
 	}
@@ -118,7 +127,8 @@ public class WeddingHallVo {
 		return "WeddingHallVo [hall_hno=" + hall_hno + ", hall_name=" + hall_name + ", hall_location=" + hall_location
 				+ ", hall_person=" + hall_person + ", hall_price=" + hall_price + ", hall_thema=" + hall_thema
 				+ ", hall_contents=" + hall_contents + ", hall_link=" + hall_link + ", hall_area=" + hall_area
-				+ ", fullName=" + fullName + ", ino=" + ino + ", files=" + Arrays.toString(files) + "]";
+				+ ", fullName=" + fullName + ", ino=" + ino + ", hall_address=" + hall_address + ", files="
+				+ Arrays.toString(files) + "]";
 	}
-	
+
 }
