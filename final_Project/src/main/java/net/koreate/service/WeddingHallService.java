@@ -43,4 +43,8 @@ public interface WeddingHallService {
 	// 2018/11/12
 	List<String> SearchHallImg(WeddingHallVo vo) throws Exception;
 
+	void DeleteStudioImg(String fileName) throws Exception;
+
+	void DeleteHallImg(String fileName) throws Exception;
+
 }

@@ -13,6 +13,7 @@ public class WeddingHallVo {
 	private String hall_link;
 	private int hall_area;
 	private String fullName;
+	private int ino;
 
 	private String[] files;
 
@@ -96,6 +97,14 @@ public class WeddingHallVo {
 		this.fullName = fullName;
 	}
 
+	public int getIno() {
+		return ino;
+	}
+
+	public void setIno(int ino) {
+		this.ino = ino;
+	}
+
 	public String[] getFiles() {
 		return files;
 	}
@@ -109,7 +118,7 @@ public class WeddingHallVo {
 		return "WeddingHallVo [hall_hno=" + hall_hno + ", hall_name=" + hall_name + ", hall_location=" + hall_location
 				+ ", hall_person=" + hall_person + ", hall_price=" + hall_price + ", hall_thema=" + hall_thema
 				+ ", hall_contents=" + hall_contents + ", hall_link=" + hall_link + ", hall_area=" + hall_area
-				+ ", fullName=" + fullName + ", files=" + Arrays.toString(files) + "]";
+				+ ", fullName=" + fullName + ", ino=" + ino + ", files=" + Arrays.toString(files) + "]";
 	}
-
+	
 }

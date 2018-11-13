@@ -66,7 +66,7 @@
 	</select>
 	<select id="getAttachStudioImg" resultType="string">
 		SELECT fullName FROM made_wedding_studios_img
-		WHERE hno = #{hno} AND area = #{studio_link} AND link = #{studio_area}
+		WHERE hno = #{hno} AND area = #{studio_area} AND link = #{studio_link}
 	</select>
 	<insert id="addHallAttach">
 		INSERT INTO made_wedding_halls_img(hno, fullName, area, link)
@@ -90,7 +90,7 @@
 	</select>
 	<select id="SearchStudioImg" resultType="WDSVO">
 		SELECT * FROM made_wedding_studios_img
-		WHERE hno = #{hall_hno} AND area = #{hall_area} AND link = #{hall_link} limit 1
+		WHERE hno = #{studio_hno} AND area = #{studio_area} AND link = #{studio_link} limit 1
 	</select>
 	<update id="hallAddSampleImg">
 		UPDATE made_wedding_halls SET fullName = #{file}
@@ -98,6 +98,34 @@
 	</update>
 	<update id="studioAddSampleImg">
 		UPDATE made_wedding_studios SET fullName = #{file}
-		WHERE hall_area = #{StudioVo.hall_area} AND hall_link = #{StudioVo.hall_link}
+		WHERE studio_area = #{StudioVo.studio_area} AND studio_link = #{StudioVo.studio_link}
+	</update>
+	<update id="editHallAttachSample">
+		UPDATE made_wedding_halls SET fullName = #{file}
+		WHERE hall_area = #{HallVo.hall_area} AND hall_link = #{HallVo.hall_link}
+	</update>
+	<update id="editStudioAttachSample">
+		UPDATE made_wedding_studios SET fullName = #{file}
+		WHERE studio_area = #{StudioVo.studio_area} AND studio_link = #{StudioVo.studio_link}
+	</update>
+	<update id="editHallAttach">
+		UPDATE made_wedding_halls_img SET fullName = #{file}
+		WHERE area = #{HallVo.hall_area} AND link = #{HallVo.hall_link}
+	</update>
+	<update id="editStudioAttach">
+		UPDATE made_wedding_studios_img SET fullName = #{file}
+		WHERE area = #{StudioVo.studio_area} AND link = #{StudioVo.studio_link}
+	</update>
+	<delete id="DeleteHallImg">
+		UPDATE made_wedding_halls_img SET fullName = "" WHERE fullName = #{fileName}
+	</delete>
+	<delete id="DeleteStudioImg">
+		UPDATE made_wedding_studios_img SET fullName = "" WHERE fullName = #{fileName}
+	</delete>
+	<update id="DeleteHallImgSample">
+		UPDATE made_wedding_halls SET fullName = "" WHERE fullName = #{fileName}
+	</update>
+	<update id="DeleteStudioImgSample">
+		UPDATE made_wedding_studios SET fullName = "" WHERE fullName = #{fileName}
 	</update>
 </mapper>

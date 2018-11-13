@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
@@ -18,12 +19,14 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	
 	@Inject
 	WeddingHallDao dao;
+	
+	@Resource(name = "uploadPath")
+	String uploadPath;
 
 	@Override
 	public List<WeddingHallVo> SearchArea(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
-		WeddingHallVo list = dao.SearchArea(vo);
-		return null;
+		return dao.SearchArea(vo);
 	}
 
 	@Override
@@ -47,20 +50,20 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
-
-		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put("file", files[0]);
-		paramMap.put("HallVo", vo);
-		
-		dao.hallAddSampleImg(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap2 = new HashMap<>();
-			paramMap2.put("file", fullName);
-			paramMap2.put("HallVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("HallVo", vo);
 			
-			dao.addHallAttach(paramMap2);
+			dao.addHallAttach(filesMap);
 		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("HallVo", vo);
+		
+		dao.hallAddSampleImg(fileMap);
 	}
 
 	@Override
@@ -72,20 +75,20 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		String[] files = vo.getFiles();
 		
 		if(files == null) return;
-
-		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put("file", files[0]);
-		paramMap.put("StudioVo", vo);
-
-		dao.studioAddSampleImg(paramMap);
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap2 = new HashMap<>();
-			paramMap2.put("file", fullName);
-			paramMap2.put("StudioVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("StudioVo", vo);
 			
-			dao.addStudioAttach(paramMap2);
+			dao.addStudioAttach(filesMap);
 		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("StudioVo", vo);
+		
+		dao.studioAddSampleImg(fileMap);
 	}
 
 	@Override
@@ -111,12 +114,18 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		if(files == null) return;
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap = new HashMap<>();
-			paramMap.put("file", fullName);
-			paramMap.put("HallVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("HallVo", vo);
 			
-			dao.addHallAttach(paramMap);
+			dao.editHallAttach(filesMap);
 		}
+		
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("HallVo", vo);
+		
+		dao.editHallAttachSample(fileMap);
 	}
 
 	@Override
@@ -130,12 +139,18 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		if(files == null) return;
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap = new HashMap<>();
-			paramMap.put("file", fullName);
-			paramMap.put("StudioVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("StudioVo", vo);
 			
-			dao.addStudioAttach(paramMap);
+			dao.editStudioAttach(filesMap);
 		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("StudioVo", vo);
+
+		dao.editStudioAttachSample(fileMap);
 	}
 
 	@Override
@@ -174,6 +189,20 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	public List<String> SearchHallImg(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		return dao.SearchHallImg(vo);
+	}
+
+	@Override
+	public void DeleteStudioImg(String fileName) throws Exception {
+		// TODO Auto-generated method stub
+		dao.DeleteStudioImgSample(fileName);
+		dao.DeleteStudioImg(fileName);
+	}
+
+	@Override
+	public void DeleteHallImg(String fileName) throws Exception {
+		// TODO Auto-generated method stub
+		dao.DeleteHallImgSample(fileName);
+		dao.DeleteHallImg(fileName);
 	}
 	
 }

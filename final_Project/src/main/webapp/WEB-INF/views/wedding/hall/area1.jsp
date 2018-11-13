@@ -11,8 +11,8 @@
 				<a class="product-tiles-grid-item-link" href="/wedding/hall/area1/${halls.hall_link}">
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
-							<img alt="" sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px"
-								src="C:/Spring/Upload${halls.fullName}">
+							<img alt="이미지입니다." style="width: 100%; height: auto;"
+								src="/management/displayFile?fileName=${halls.fullName}">
 						</div>
 					</div>
 					<p class="online-exclusive-badge" data-component-attr-id="online-exclusive">
@@ -30,4 +30,10 @@
 		</c:forEach>
 	</div>
 </div>
+<script type="text/javascript">
+	function imgTemplate(fullName) {
+		alert(fullName);
+		//var fileInfo = getFileInfo(fullName);
+	}
+</script>
 <%@include file="../../include/footer.jsp"%>

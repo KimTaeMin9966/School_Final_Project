@@ -228,6 +228,8 @@ public class ManagementController {
 	@RequestMapping(value = "/deleteHallImg", method = RequestMethod.POST)
 	public ResponseEntity<String> deleteHallImgPOST(String fileName) throws Exception {
 		logger.info("deleteHallImgPOST Called!!!");
+		hService.DeleteHallImg(fileName);
+		
 		ResponseEntity<String> entity = null;
 		
 		String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
@@ -279,6 +281,8 @@ public class ManagementController {
 	@RequestMapping(value = "/deleteStudioImg", method = RequestMethod.POST)
 	public ResponseEntity<String> deleteStudioImgPOST(String fileName) throws Exception {
 		logger.info("deleteStudioImgPOST Called!!!");
+		hService.DeleteStudioImg(fileName);
+		
 		ResponseEntity<String> entity = null;
 		
 		String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
