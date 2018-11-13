@@ -21,6 +21,7 @@ public class WeddingStudioController {
 	
 	@Inject
 	WeddingStudioService service;
+	
 	@RequestMapping(value = "/area1", method = RequestMethod.GET)
 	public void area1GET(WeddingStudioVo vo, HttpSession session) throws Exception {
 		logger.info("area1GET Called!!!(부산진구)");
@@ -37,7 +38,6 @@ public class WeddingStudioController {
 		vo.setStudio_area(2);
 		List<WeddingStudioVo> list = service.SearchArea(vo);
 		session.setAttribute("area2", list);
-		
 	}
 	
 	@RequestMapping(value = "/area3", method = RequestMethod.GET)

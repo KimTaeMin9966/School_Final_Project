@@ -157,13 +157,12 @@ public class ManagementController {
 		model.addAttribute("editHall", vo);
 	}
 	
-	@ResponseBody
-	@RequestMapping(value = "/hall/edit", method = RequestMethod.PATCH)
-	public String halleditPATCH(@RequestBody WeddingHallVo vo) throws Exception {
-		logger.info("halleditPATCH Called!!!");
-		System.out.println(vo);
+	@RequestMapping(value = "/hall/editSubmit", method = RequestMethod.POST)
+	public String halleditSubmitPOST(WeddingHallVo vo) throws Exception {
+		logger.info("halleditSubmitPOST Called!!!");
+
 		hService.hallEdit(vo);
-		return "SUCCESS";
+		return "redirect:/management/hall";
 	}
 
 	// 스튜디오 업체 수정
@@ -174,12 +173,12 @@ public class ManagementController {
 		model.addAttribute("editStudio", vo);
 	}
 	
-	@ResponseBody
-	@RequestMapping(value = "/studio/edit", method = RequestMethod.PATCH)
-	public String studioeditPATCH(@RequestBody WeddingStudioVo vo) throws Exception {
-		logger.info("studioeditPATCH Called!!!");
+	@RequestMapping(value = "/studio/editSubmit", method = RequestMethod.POST)
+	public String studioeditSubmitPOST(WeddingStudioVo vo) throws Exception {
+		logger.info("studioeditSubmitPOST Called!!!");
+
 		hService.studioEdit(vo);
-		return "SUCCESS";
+		return "redirect:/management/studio";
 	}
 	
 	
@@ -187,7 +186,14 @@ public class ManagementController {
 	@RequestMapping(value = "/hall/delete", method = RequestMethod.POST)
 	public String halldeletePOST(@RequestParam("hall_hno") int hall_hno) throws Exception {
 		logger.info("halldeletePOST Called!!!");
-		hService.hallDeleteByHNO(hall_hno);
+
+		WeddingHallVo vo = hService.getHallByHNO(hall_hno);
+		
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("hno", hall_hno);
+		paramMap.put("WeddingHallVo", vo);
+		
+		hService.hallDeleteByHNO(paramMap);
 		return "redirect:/management/hall";
 	}
 
@@ -195,7 +201,14 @@ public class ManagementController {
 	@RequestMapping(value = "/studio/delete", method = RequestMethod.POST)
 	public String studiodeletePOST(@RequestParam("studio_hno") int studio_hno) throws Exception {
 		logger.info("studiodeletePOST Called!!!");
-		hService.studioDeleteByHNO(studio_hno);
+		
+		WeddingStudioVo vo = hService.getStudioByHNO(studio_hno);
+		
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("hno", studio_hno);
+		paramMap.put("WeddingStudioVo", vo);
+		
+		hService.studioDeleteByHNO(paramMap);
 		return "redirect:/management/studio";
 	}
 	
@@ -215,6 +228,8 @@ public class ManagementController {
 	@RequestMapping(value = "/deleteHallImg", method = RequestMethod.POST)
 	public ResponseEntity<String> deleteHallImgPOST(String fileName) throws Exception {
 		logger.info("deleteHallImgPOST Called!!!");
+		hService.DeleteHallImg(fileName);
+		
 		ResponseEntity<String> entity = null;
 		
 		String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
@@ -234,17 +249,18 @@ public class ManagementController {
 	
 	// 홀 이미지 불러오기
 	@ResponseBody
-	@RequestMapping(value = "/getAttachHallImg/{hno}/{hall_link}/{hall_area}", method = RequestMethod.GET)
+	@RequestMapping(value = "/getAttachHallImg/{hno}/{hall_area}/{hall_link}", method = RequestMethod.GET)
 	public List<String> getAttachHallImgGET(
 			@PathVariable("hno") int hno,
-			@PathVariable("hall_link") String hall_link,
-			@PathVariable("hall_area") int hall_area
+			@PathVariable("hall_area") int hall_area,
+			@PathVariable("hall_link") String hall_link
 			) throws Exception {
 		logger.info("getAttachHallImgGET Called!!!");
+		
 		Map<String, Object> paramMap = new HashMap<>();
 		paramMap.put("hno", hno);
-		paramMap.put("hall_link", hall_link);
 		paramMap.put("hall_area", hall_area);
+		paramMap.put("hall_link", hall_link);
 		
 		List<String> list = hService.getAttachHallImg(paramMap);
 		return list;
@@ -265,6 +281,8 @@ public class ManagementController {
 	@RequestMapping(value = "/deleteStudioImg", method = RequestMethod.POST)
 	public ResponseEntity<String> deleteStudioImgPOST(String fileName) throws Exception {
 		logger.info("deleteStudioImgPOST Called!!!");
+		hService.DeleteStudioImg(fileName);
+		
 		ResponseEntity<String> entity = null;
 		
 		String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
@@ -284,17 +302,18 @@ public class ManagementController {
 
 	// 스튜디오 이미지 불러오기
 	@ResponseBody
-	@RequestMapping(value = "/getAttachStudioImg/{hno}/{studio_link}/{studio_area}", method = RequestMethod.GET)
+	@RequestMapping(value = "/getAttachStudioImg/{hno}/{studio_area}/{studio_link}", method = RequestMethod.GET)
 	public List<String> getAttachStudioImgGET(
 			@PathVariable("hno") int hno,
-			@PathVariable("studio_link") String studio_link,
-			@PathVariable("studio_area") int studio_area
+			@PathVariable("studio_area") int studio_area,
+			@PathVariable("studio_link") String studio_link
 			) throws Exception {
 		logger.info("getAttachStudioImgGET Called!!!");
+		
 		Map<String, Object> paramMap = new HashMap<>();
 		paramMap.put("hno", hno);
-		paramMap.put("studio_link", studio_link);
 		paramMap.put("studio_area", studio_area);
+		paramMap.put("studio_link", studio_link);
 		
 		List<String> list = hService.getAttachStudioImg(paramMap);
 		return list;
@@ -303,7 +322,7 @@ public class ManagementController {
 	@RequestMapping(value = "/displayFile")
 	public ResponseEntity<byte[]> displayFileGET_POST(String fileName) throws Exception {
 		logger.info("displayFileGET & POST Called!!!"); InputStream in = null;
-		ResponseEntity<byte[]> entity = null; System.out.println(fileName);
+		ResponseEntity<byte[]> entity = null;
 		
 		try {
 			String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
@@ -320,7 +339,7 @@ public class ManagementController {
 						+ new String(fileName.getBytes("UTF-8"), "ISO-8859-1") + "\"");
 			}
 			
-			entity = new ResponseEntity<byte[]>(IOUtils.toByteArray(in),headers,HttpStatus.CREATED);
+			entity = new ResponseEntity<byte[]>(IOUtils.toByteArray(in), headers, HttpStatus.CREATED);
 		}
 		catch (Exception e) { e.printStackTrace(); }
 		finally { in.close(); }

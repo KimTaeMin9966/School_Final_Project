@@ -21,7 +21,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/cstimages/롯웨1.png"/>
+								src="${pageContext.request.contextPath}/resources/images/cstimages/롯데웨딩상세1.png"/>
 							</picture>
 						</div>
 						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
@@ -35,7 +35,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/cstimages/롯웨2.png" />
+								src="${pageContext.request.contextPath}/resources/images/cstimages/롯데웨딩상세2.png" />
 							</picture>
 						</div>
 						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
@@ -49,7 +49,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/더블유웨딩2.png" alt="더블유웨딩" />
+								src="${pageContext.request.contextPath}/resources/images/cstimages/롯데웨딩상세3.png" alt="더블유웨딩" />
 							</picture>
 						</div>
 						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
@@ -63,7 +63,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/더블유웨딩3.png" alt="더블유웨딩" />
+								src="${pageContext.request.contextPath}/resources/images/cstimages/롯데웨딩상세4.png" alt="더블유웨딩" />
 							</picture>
 						</div>
 					</div>
@@ -75,9 +75,10 @@
 				<p class="online-exclusive-badge" data-component-attr-id="online-exclusive">
 					<font style="vertical-align: inherit;">
 						<font style="vertical-align: inherit;">롯데 웨딩홀의 특성</font><br/>
-						<font style="vertical-align: inherit;">메이저 업체의 품격있는 서비스 & 롯데 마일리지 적립</font><br/>
-						<font style="vertical-align: inherit;">12년 경험을 바탕으로한 맞춤형 플래닝 서비스와 정보제공 </font><br/>
-						<font style="vertical-align: inherit;">주소: 부산진구 부산광역시 부산진구 가야대로 772 서면 롯데백화점 </font><br/>
+						<font style="vertical-align: inherit;">1980년 부터 운영되어져 오랜전통과 역사를 자랑 합니다.</font><br/>
+						<font style="vertical-align: inherit;">업계 전문가들을 바탕으로 최고급 서비스와 만족스러운 서비스를 제공합니다.</font><br/>
+						<font style="vertical-align: inherit;"></font><br/>
+						<font style="vertical-align: inherit;">주소: 부산진구 가야대로 772 서면 롯데백화점 </font><br/>
 					</font>
 				</p>
 				<h1 class="product-name product-detail-product-name">
@@ -98,12 +99,11 @@
 					<div class="price-column product-int-style-column">
 						<span class="style-number-title-int">
 							<font style="vertical-align: inherit;">
-								<font style="vertical-align: inherit;">홀컨셉 : ${detail1.hall_thema}</font><br/>
-								<font style="vertical-align: inherit;">홀스타일 : 단독홀(테이블형태)</font><br/>
-								<font style="vertical-align: inherit;">홀수용인원 : 200명 </font><br/>
-								<font style="vertical-align: inherit;">대관료 : 850,000원</font><br/>
-								<font style="vertical-align: inherit;">식비 : 35,000원</font><br/>
-								<font style="vertical-align: inherit;">주차 : 500대 </font><br/>
+								<font style="vertical-align: inherit;">[장점]</font><br/>
+								<font style="vertical-align: inherif:">금액에 따른 "마일리지 적립" </font><br/>
+								<font style="vertical-align: inherit;">상품권증정 , 전점 마일리지 실사용 </font><br/>
+								<font style="vertical-align: inherit;">전문가의 맞춤형 컨설팅 </font><br/>
+								<font style="vertical-align: inherit;">뛰어난 인프라 구축 맞춤형 컨텐츠 제공 </font><br/>
 								<font style="vertical-align: inherit;">예약 전화번호 : 051-711-0177</font>
 							</font>
 						</span>
@@ -146,7 +146,7 @@
 					</div>
 					<div class="product-style-selector">
 						<div class="style-color-material" data-module="styleSelector">
-							<a class="styles-link overlay-open" href="https://www.google.com/maps">
+							<a class="styles-link overlay-open" href="https://www.google.com/maps/place/%EB%A1%AF%EB%8D%B0%EB%B0%B1%ED%99%94%EC%A0%90+%EB%B6%80%EC%82%B0%EB%B3%B8%EC%A0%90/@35.1568571,129.0544218,17z/data=!3m1!4b1!4m5!3m4!1s0x3568eb6e1678f7ff:0x7bc6c334e233bc82!8m2!3d35.1568527!4d129.0566158">
 								<span class="color-material">
 									<img alt="GOOGLE MAP" src="${pageContext.request.contextPath}/resources/images/구글지도이미지1.png" class="_loaded">
 								</span>
@@ -186,12 +186,12 @@
 						<h2 class="accordion-button">
 							<a href="#product-details">
 								<font style="vertical-align: inherit;">
-									<font style="vertical-align: inherit;">홀 컨디션 상세정보</font>
+									<font style="vertical-align: inherit;">HISTORY	 LOTTE</font>
 								</font>
 							</a>
 						</h2>
 						<div class="accordion-drawer" id="product-details" style="">
-							<div class="product-detail columnize-by-2">
+							<div class="product-detail columnize-by-5">
 								<p>Brought back from the 1970s archives, the Double G
 									hardware defines a new line of handbags. The oversize emblem
 									decorates the front of a leather tote, designed with a vintage
@@ -199,18 +199,13 @@
 									collection, revealed in the evocative setting of the Promenade
 									des Alyscamps, an ancient Roman necropolis in the town of
 									Arles, France—which gives the name to the line.</p>
-								<ul>
-									<li>Burgundy leather</li>
-									<li>Viscose lining</li>
-									<li>Gold-toned Double G metal hardware</li>
-									<li>Two gussets</li>
-									<li>Front and back open pockets</li>
-									<li>Interior zip and smartphone pockets</li>
-									<li>Adjustable straps with snap button allow this bag to also be carried as a shoulder bag</li>
-									<li>Strap drop 5.5" when worn as a top handle bag; 13" when carried as a shoulder bag</li>
-									<li>14.5"W x 7.5"H x 3.5"D</li>
-									<li>Made in Italy</li>
-								</ul>
+								
+									<P>Burgundy leather Viscose lining Gold-toned Double G metal hardware
+									Two gussets Front and back open pockets Interior zip and smartphone pockets
+									Adjustable straps with snap button allow this bag to also be carried as a shoulder bag<
+									Strap drop 5.5" when worn as a top handle bag; 13" when carried as a shoulder bag
+									14.5"W x 7.5"H x 3.5" 
+							 <a class="styles-link overlay-open" href="http://store.lotteshopping.com/handler/Wedding-Start"> -THE LOTTE WEDDING-</a></P>
 							</div>
 						</div>
 					</div>

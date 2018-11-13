@@ -64,6 +64,10 @@
 							    <option value="6" <c:if test="${editHall.hall_area eq 6}">selected</c:if>>부산 중구</option>
 							</select>
 						</div>
+						<div class="form-group has-feedback">
+							<label>주소</label>
+							<input type="text" id="hall_contents" name="hall_address" class="form-control" value="${editHall.hall_address}" />
+						</div>
 						<div class="form-group">
 							<label>FILE DROP HERE</label>
 							<div class="fileDrop"></div>
@@ -101,12 +105,12 @@
 	else if (message != null && message == 'FAIL') { alert("정보수정에 실패하셨습니다."); }
 
 	var hno = ${editHall.hall_hno};
-	var hall_link = '${editHall.hall_link}';
 	var hall_area = ${editHall.hall_area};
+	var hall_link = '${editHall.hall_link}';
 
 	var template = Handlebars.compile($("#template").html());
 
-	$.getJSON("/management/getAttachHallImg?hno=" + hno + "&hall_link=" + hall_link + "&hall_area=" + hall_area, function(list) {
+	$.getJSON("/management/getAttachHallImg/"+ hno + "/" + hall_area + "/" + hall_link, function(list) {
 		$(list).each(function() {
 			var fileInfo = getFileInfo(this);
 			var html = template(fileInfo);
@@ -157,16 +161,7 @@
 	});
 	
 	$('#ok').click(function() {
-		var hall_hno = $('#hall_hno').val();
-		var hall_name = $('#hall_name').val();
-		var hall_location = $('#hall_location > option:selected').val();
-		var hall_person = $('#hall_person').val();
-		var hall_price = $('#hall_price').val();
-		var hall_thema = $('#hall_thema').val();
-		var hall_contents = $('#hall_contents').val();
-		var hall_link = $('#hall_link > option:selected').val();
-		var hall_area = $('#hall_area > option:selected').val();
-
+		var str = '';
 		var formObj = $("#editHall");
 		console.log(formObj);
 		
@@ -175,33 +170,8 @@
 		});
 		
 		formObj.append(str);
-		
-		$.ajax({
-			type : 'PATCH',
-			url : '/management/hall/edit',
-			headers : {
-				"Content-Type" : "application/json",
-				"X-HTTP-Method-Override" : "PATCH"
-			},
-			dataType : "text",
-			data : JSON.stringify({
-				hall_hno : hall_hno,
-				hall_name : hall_name,
-				hall_location : hall_location,
-				hall_person : hall_person,
-				hall_price : hall_price,
-				hall_thema : hall_thema,
-				hall_contents : hall_contents,
-				hall_link : hall_link,
-				hall_area : hall_area
-			}),
-			success : function(result) {
-				if (result == "SUCCESS") {
-					alert("처리 완료");
-					location.href = '/management/hall/';
-				}
-			}
-		});
+		formObj.attr('action', '/management/hall/editSubmit');
+		formObj.submit();
 	});
 </script>
 <%@include file="../../include/footer.jsp"%>

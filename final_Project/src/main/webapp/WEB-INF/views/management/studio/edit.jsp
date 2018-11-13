@@ -64,6 +64,10 @@
 							    <option value="6" <c:if test="${editStudio.studio_area eq 6}">selected</c:if>>부산 중구</option>
 							</select>
 						</div>
+						<div class="form-group has-feedback">
+							<label>주소</label>
+							<input type="text" id="studio_address" name="studio_address" class="form-control" value="${editStudio.studio_address}" />
+						</div>
 						<div class="form-group">
 							<label>FILE DROP HERE</label>
 							<div class="fileDrop"></div>
@@ -101,12 +105,12 @@
 	else if (message != null && message == 'FAIL') { alert("정보수정에 실패하셨습니다."); }
 
 	var hno = ${editStudio.studio_hno};
-	var studio_link = '${editStudio.studio_link}';
 	var studio_area = ${editStudio.studio_area};
+	var studio_link = '${editStudio.studio_link}';
 	
 	var template = Handlebars.compile($("#template").html());
 
-	$.getJSON("/management/getAttachStudioImg?hno=" + hno + "&studio_link=" + studio_link + "&studio_area=" + studio_area, function(list) {
+	$.getJSON("/management/getAttachStudioImg/"+ hno + "/" + studio_area + "/" + studio_link, function(list) {
 		$(list).each(function() {
 			var fileInfo = getFileInfo(this);
 			var html = template(fileInfo);
@@ -158,16 +162,7 @@
 	
 	
 	$('#ok').click(function() {
-		var studio_hno = $('#studio_hno').val();
-		var studio_name = $('#studio_name').val();
-		var studio_location = $('#studio_location > option:selected').val();
-		var studio_person = $('#studio_person').val();
-		var studio_price = $('#studio_price').val();
-		var studio_thema = $('#studio_thema').val();
-		var studio_contents = $('#studio_contents').val();
-		var studio_link = $('#studio_link > option:selected').val();
-		var studio_area = $('#studio_area > option:selected').val();
-		
+		var str = '';
 		var formObj = $("#editStudio");
 		console.log(formObj);
 		
@@ -176,33 +171,8 @@
 		});
 		
 		formObj.append(str);
-		
-		$.ajax({
-			type : 'PATCH',
-			url : '/management/studio/edit',
-			headers : {
-				"Content-Type" : "application/json",
-				"X-HTTP-Method-Override" : "PATCH"
-			},
-			dataType : "text",
-			data : JSON.stringify({
-				studio_hno : studio_hno,
-				studio_name : studio_name,
-				studio_location : studio_location,
-				studio_person : studio_person,
-				studio_price : studio_price,
-				studio_thema : studio_thema,
-				studio_contents : studio_contents,
-				studio_link : studio_link,
-				studio_area : studio_area
-			}),
-			success : function(result) {
-				if (result == "SUCCESS") {
-					alert("처리 완료");
-					location.href = '/management/studio/';
-				}
-			}
-		});
+		formObj.attr('action', '/management/studio/editSubmit');
+		formObj.submit();
 	});
 </script>
 <%@include file="../../include/footer.jsp"%>

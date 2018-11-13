@@ -28,9 +28,9 @@ public interface WeddingHallDao {
 
 	void studioEdit(WeddingStudioVo vo) throws Exception;
 
-	void hallDeleteByHNO(int hall_hno) throws Exception;
+	void hallDeleteByHNO(Map<String, Object> paramMap) throws Exception;
 
-	void studioDeleteByHNO(int studio_hno) throws Exception;
+	void studioDeleteByHNO(Map<String, Object> paramMap) throws Exception;
 	
 	// 2018/11/06
 	WeddingHallVo SearchAreaHallDetail(WeddingHallVo vo) throws Exception;
@@ -43,5 +43,32 @@ public interface WeddingHallDao {
 	void addHallAttach(Map<String, Object> paramMap) throws Exception;
 
 	void addStudioAttach(Map<String, Object> paramMap) throws Exception;
+
+	// 2018/11/12
+	void hallDeleteImgByHNO(Map<String, Object> paramMap) throws Exception;
+
+	void studioDeleteImgByHNO(Map<String, Object> paramMap) throws Exception;
+
+	List<String> SearchHallImg(WeddingHallVo vo) throws Exception;
+
+	void hallAddSampleImg(Map<String, Object> paramMap) throws Exception;
+
+	void studioAddSampleImg(Map<String, Object> paramMap) throws Exception;
+
+	void editHallAttachSample(Map<String, Object> paramMap) throws Exception;
+
+	void editHallAttach(Map<String, Object> paramMap2) throws Exception;
+
+	void editStudioAttachSample(Map<String, Object> paramMap) throws Exception;
+
+	void editStudioAttach(Map<String, Object> paramMap2) throws Exception;
+
+	void DeleteStudioImg(String fileName) throws Exception;
+
+	void DeleteHallImg(String fileName) throws Exception;
+
+	void DeleteStudioImgSample(String fileName) throws Exception;
+
+	void DeleteHallImgSample(String fileName) throws Exception;
 
 }

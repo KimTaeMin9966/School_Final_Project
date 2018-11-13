@@ -12,12 +12,17 @@
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
 							<img alt="" sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px"
-								src="">
+								src="/management/displayFile?fileName=${studios.fullName}">
 						</div>
 					</div>
 					<p class="online-exclusive-badge" data-component-attr-id="online-exclusive">
 						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">${studios.studio_name}</font>
+							<font style="vertical-align: inherit;">스튜디오 주소 : ${studios.studio_location}</font><br/>
+							<font style="vertical-align: inherit;">스튜디오 수용인원 ${studios.studio_person} 명</font><br/>
+							<font style="vertical-align: inherit;">${studios.studio_price}</font><br/>
+							<font style="vertical-align: inherit;">${studios.studio_thema}</font><br/>
+							<font style="vertical-align: inherit;">${studios.studio_contents}</font><br/>
+							<font style="vertical-align: inherit;">${studios.studio_address}</font><br/>
 						</font>
 					</p>
 				</a>

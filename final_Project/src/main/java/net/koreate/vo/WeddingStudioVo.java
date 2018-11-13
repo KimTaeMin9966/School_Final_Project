@@ -12,6 +12,9 @@ public class WeddingStudioVo {
 	private String studio_contents;
 	private String studio_link;
 	private int studio_area;
+	private String fullName;
+	private int ino;
+	private String studio_address;
 
 	private String[] files;
 
@@ -87,6 +90,30 @@ public class WeddingStudioVo {
 		this.studio_area = studio_area;
 	}
 
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public int getIno() {
+		return ino;
+	}
+
+	public void setIno(int ino) {
+		this.ino = ino;
+	}
+
+	public String getStudio_address() {
+		return studio_address;
+	}
+
+	public void setStudio_address(String studio_address) {
+		this.studio_address = studio_address;
+	}
+
 	public String[] getFiles() {
 		return files;
 	}
@@ -100,7 +127,8 @@ public class WeddingStudioVo {
 		return "WeddingStudioVo [studio_hno=" + studio_hno + ", studio_name=" + studio_name + ", studio_location="
 				+ studio_location + ", studio_person=" + studio_person + ", studio_price=" + studio_price
 				+ ", studio_thema=" + studio_thema + ", studio_contents=" + studio_contents + ", studio_link="
-				+ studio_link + ", studio_area=" + studio_area + ", files=" + Arrays.toString(files) + "]";
+				+ studio_link + ", studio_area=" + studio_area + ", fullName=" + fullName + ", ino=" + ino
+				+ ", studio_address=" + studio_address + ", files=" + Arrays.toString(files) + "]";
 	}
-
+	
 }

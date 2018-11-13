@@ -30,10 +30,7 @@
 									garden terrace in front of the Italian style wrought iron
 									rotunda. Then, as guests enjoy cocktails and delicious
 									appetizers on the patio, you and your loved one are whisked
-									away for picture-perfect wedding photos. The photo options are
-									endless! Your wedding is day is sure to be&nbsp;unforgettable
-									as you celebrate with your closest friends and family in the
-									gorgeous ballroom reception.</p>
+									away for picture-perfect wedding photos.  </p>
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">
@@ -60,7 +57,7 @@
 									way to the garden terrace. Say your 'I do's' in front of the
 									verdigris wrought iron gazebo or in front of the iron archway.
 									This romantic setting is picture-perfect with plenty of
-									beautiful wedding backdrops throughout the property.</p>
+									beautiful wedding backdrops throughout the </p>
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">
@@ -80,7 +77,7 @@
 								</a>
 							</div>
 							<div class="panel-body">
-								<a href="/wedding/hall/area3"><h3>해운대구 웨딩홀</h3></a>
+								<a href="/wedding/hall/area3"><h3>해운대 웨딩홀</h3></a>
 								<p>Located in the heart of downtown Sacramento, only steps
 									away from the State Capitol and governor's mansion, the
 									Sterling Hotel offers a perfect mix of history, luxury and
@@ -109,7 +106,7 @@
 								</a>
 							</div>
 							<div class="panel-body">
-								<a href="/wedding/hall/area4"><h3>동래구 웨딩홀</h3></a>
+								<a href="/wedding/hall/area4"><h3>동래 웨딩홀</h3></a>
 								<p>All-encompassing of Colorado's most beautiful and
 									gorgeous characteristics, you'll find this 'Great Mountain
 									Resort' the perfect place to create memories to last a
@@ -135,13 +132,13 @@
 								</a>
 							</div>
 							<div class="panel-body">
-								<a href="/wedding/hall/area5"><h3>연제구 웨딩홀</h3></a>
+								<a href="/wedding/hall/area5"><h3>연제 웨딩홀</h3></a>
 								<p>Like a Temecula fine wine, Wedgewood Weddings Galway
 									Downs is beautifully aged and has an elegant taste. So drink it
 									in! In the heart of Temecula Wine Country, this venue will
 									amaze you with its stunning blend of rustic history and modern
 									vibrance complete with century-old oak trees, a modernized
-									barn, and a dressing suite you'll want to sign a lease on.</p>
+									barn, and a dressing suite you'll want to sign  a</p>
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">
@@ -167,8 +164,7 @@
 									lush garden or Monastery beach for the backdrop of your
 									ceremony, you'll be able to capture spectacular photos by the
 									Pacific Ocean. After you say "I do", you and your guests will
-									dance the night away in our stunning Spanish-style clubhouse
-									with views of a natural preserve.</p>
+									dance the night away in our </p>
 								<div class="row">
 									<div class="col-xs-6 col-sm-12 col-md-6"></div>
 									<div class="col-xs-6 col-sm-12 col-md-6">

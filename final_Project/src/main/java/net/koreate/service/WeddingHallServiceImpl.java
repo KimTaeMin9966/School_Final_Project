@@ -1,9 +1,11 @@
 package net.koreate.service;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
@@ -18,6 +20,9 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	
 	@Inject
 	WeddingHallDao dao;
+	
+	@Resource(name = "uploadPath")
+	String uploadPath;
 
 	@Override
 	public List<WeddingHallVo> SearchArea(WeddingHallVo vo) throws Exception {
@@ -47,13 +52,21 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		
 		if(files == null) return;
 		
+		System.out.println(Arrays.toString(files));
+		
 		for(String fullName : files) {
-			Map<String, Object> paramMap = new HashMap<>();
-			paramMap.put("file", fullName);
-			paramMap.put("HallVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("HallVo", vo);
 			
-			dao.addHallAttach(paramMap);
+			dao.addHallAttach(filesMap);
 		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("HallVo", vo);
+		
+		dao.hallAddSampleImg(fileMap);
 	}
 
 	@Override
@@ -67,12 +80,18 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 		if(files == null) return;
 		
 		for(String fullName : files) {
-			Map<String, Object> paramMap = new HashMap<>();
-			paramMap.put("file", fullName);
-			paramMap.put("StudioVo", vo);
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("StudioVo", vo);
 			
-			dao.addStudioAttach(paramMap);
+			dao.addStudioAttach(filesMap);
 		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("StudioVo", vo);
+		
+		dao.studioAddSampleImg(fileMap);
 	}
 
 	@Override
@@ -88,27 +107,67 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	}
 
 	@Override
+	@Transactional
 	public void hallEdit(WeddingHallVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		dao.hallEdit(vo);
+		
+		String[] files = vo.getFiles();
+		
+		if(files == null) return;
+		
+		for(String fullName : files) {
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("HallVo", vo);
+			
+			dao.editHallAttach(filesMap);
+		}
+		
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("HallVo", vo);
+		
+		dao.editHallAttachSample(fileMap);
 	}
 
 	@Override
+	@Transactional
 	public void studioEdit(WeddingStudioVo vo) throws Exception {
 		// TODO Auto-generated method stub
 		dao.studioEdit(vo);
+		
+		String[] files = vo.getFiles();
+		
+		if(files == null) return;
+		
+		for(String fullName : files) {
+			Map<String, Object> filesMap = new HashMap<>();
+			filesMap.put("file", fullName);
+			filesMap.put("StudioVo", vo);
+			
+			dao.editStudioAttach(filesMap);
+		}
+
+		Map<String, Object> fileMap = new HashMap<>();
+		fileMap.put("file", files[0]);
+		fileMap.put("StudioVo", vo);
+
+		dao.editStudioAttachSample(fileMap);
 	}
 
 	@Override
-	public void hallDeleteByHNO(int hall_hno) throws Exception {
+	public void hallDeleteByHNO(Map<String, Object> paramMap) throws Exception {
 		// TODO Auto-generated method stub
-		dao.hallDeleteByHNO(hall_hno);
+		dao.hallDeleteImgByHNO(paramMap);
+		dao.hallDeleteByHNO(paramMap);
 	}
 
 	@Override
-	public void studioDeleteByHNO(int studio_hno) throws Exception {
+	public void studioDeleteByHNO(Map<String, Object> paramMap) throws Exception {
 		// TODO Auto-generated method stub
-		dao.studioDeleteByHNO(studio_hno);
+		dao.studioDeleteImgByHNO(paramMap);
+		dao.studioDeleteByHNO(paramMap);
 	}
 	
 	@Override
@@ -127,6 +186,26 @@ public class WeddingHallServiceImpl implements WeddingHallService {
 	public List<String> getAttachStudioImg(Map<String, Object> paramMap) throws Exception {
 		// TODO Auto-generated method stub
 		return dao.getAttachStudioImg(paramMap);
+	}
+
+	@Override
+	public List<String> SearchHallImg(WeddingHallVo vo) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.SearchHallImg(vo);
+	}
+
+	@Override
+	public void DeleteStudioImg(String fileName) throws Exception {
+		// TODO Auto-generated method stub
+		dao.DeleteStudioImgSample(fileName);
+		dao.DeleteStudioImg(fileName);
+	}
+
+	@Override
+	public void DeleteHallImg(String fileName) throws Exception {
+		// TODO Auto-generated method stub
+		dao.DeleteHallImgSample(fileName);
+		dao.DeleteHallImg(fileName);
 	}
 	
 }
