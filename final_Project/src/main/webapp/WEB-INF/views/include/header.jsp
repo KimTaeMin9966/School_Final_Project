@@ -236,9 +236,9 @@
 							<span data-component-attr-id="subtitle"></span>
 						</h1>
 						 <a data-component-attr-id="url" class="button-gold shop-the-collection"
-							href="#">컨셉으로 찾기</a>
+							href="/wedding/concept">컨셉으로 찾기</a>
 						<a data-component-attr-id="url" class="button-gold shop-the-collection"
-							href="#">금액대로 찾기</a> 
+							href="/wedding/money">금액대로 찾기</a> 
 					</div>
 				</div>
 				<!-- main-header-background-center end -->

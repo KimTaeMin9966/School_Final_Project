@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------table관련CSS시작  */
+.table {
+	width: 1000px;
+	height: 200px;
+	border: 0;
+	margin: 50px auto 0;
+}
+
+.table>tbody>tr>td {
+	border: 0;
+}
+/*--------------------------------------------------------------table관련CSS끝  */
+
+/*--------------------------------------------------------------글자관련CSS시작  */
+#textmoney {
+	font-size: 2.3em;
+	/* font-weight:bold;  */
+}
+/*--------------------------------------------------------------글자관련CSS끝  */
+
+/*--------------------------------------------------------------input type text박스  CSS시작  */
+#moneyvaluemin, #moneyvaluemax {
+	width: 300px;
+	height: 60px;
+	background: #2b303b;
+	border: none;
+	font-size: 1.6em;
+	float: left;
+	color: #63717f;
+	padding-left: 45px;
+	text-align: right;
+}
+
+#moneyvaluemin:hover, #moneyvaluemax:hover {
+	outline: none;
+	background: #ffffff;
+	border: 1px solid #212529;
+}
+
+#moneyvaluemin:focus, #moneyvaluemax:focus {
+	outline: none;
+	background: #ffffff;
+	border: 2px solid #212529;
+}
+
+#moneyvaluemin:active, #moneyvaluemax:active {
+	outline: none;
+	background: #ffffff;
+	border: 1px solid #212529;
+}
+
+/*--------------------------------------------------------------input type text  CSS끝  */
+
+/*--------------------------------------------------------------버튼관련CSS시작  */
+.button {
+	background: #212529;
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 60px;
+	font-size: 1.6em;
+	padding: 0 1em;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+}
+
+.button:hover {
+	background: #fff;
+	color: #212529;
+}
+
+.button:before, button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #212529;
+	transition: 400ms ease all;
+}
+
+.button:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+.button:hover:before, button:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}
+
+/*--------------------------------------------------------------버튼관련CSS끝  */

@@ -1,5 +1,9 @@
 package net.koreate.controller;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
 
@@ -9,9 +13,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import net.koreate.service.CheckListService;
 import net.koreate.vo.MemberVo;
+import net.koreate.vo.WeddingHallVo;
 
 @Controller
 @RequestMapping("/wedding/*")
@@ -76,6 +82,19 @@ public class WeddingController {
 	@RequestMapping(value = "/money", method = RequestMethod.GET)
 	public void moneyGET() throws Exception {
 		logger.info("moneyGET Called!!!");
+	}
+	
+	@RequestMapping(value = "/wedding/moneySearch", method = RequestMethod.POST)
+	public String moneySearchPOST(
+			@RequestParam("moneyvaluemin") int moneyvaluemin,
+			@RequestParam("moneyvaluemax") int moneyvaluemax, Model model) throws Exception {
+			logger.info("moneySearchPOST Called!!!");
+		Map<String, Integer> paramMap = new HashMap<>();
+		paramMap.put("min", moneyvaluemin);
+		paramMap.put("max", moneyvaluemax);
+		List<WeddingHallVo> vo = CLService.SearchMoneyHall(paramMap);
+		model.addAttribute("money", vo);
+		return "/wedding/money";
 	}
 }
 

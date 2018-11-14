@@ -1,5 +1,8 @@
 package net.koreate.service;
 
+import java.util.List;
+import java.util.Map;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
@@ -7,6 +10,7 @@ import org.springframework.stereotype.Service;
 import net.koreate.dao.CheckListDao;
 import net.koreate.vo.ListVo;
 import net.koreate.vo.MemberVo;
+import net.koreate.vo.WeddingHallVo;
 
 @Service
 public class CheckListServiceImpl implements CheckListService {
@@ -86,4 +90,10 @@ public class CheckListServiceImpl implements CheckListService {
 		dao.STEP4Edit(vo);
 	}
 
+	@Override
+	public List<WeddingHallVo> SearchMoneyHall(Map<String, Integer> paramMap) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.SearchMoneyHall(paramMap);
+	}
+	
 }

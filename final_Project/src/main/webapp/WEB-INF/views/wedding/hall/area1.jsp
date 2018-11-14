@@ -35,10 +35,4 @@
 		</c:forEach>
 	</div>
 </div>
-<script type="text/javascript">
-	function imgTemplate(fullName) {
-		alert(fullName);
-		//var fileInfo = getFileInfo(fullName);
-	}
-</script>
 <%@include file="../../include/footer.jsp"%>
