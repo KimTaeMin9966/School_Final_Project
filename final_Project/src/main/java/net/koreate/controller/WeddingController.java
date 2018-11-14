@@ -74,11 +74,6 @@ public class WeddingController {
 		logger.info("sendGET Called!!!");
 	}
 	
-	@RequestMapping(value = "/concept", method = RequestMethod.GET)
-	public void conceptGET() throws Exception {
-		logger.info("conceptGET Called!!!");
-	}
-	
 	@RequestMapping(value = "/money", method = RequestMethod.GET)
 	public void moneyGET() throws Exception {
 		logger.info("moneyGET Called!!!");
@@ -96,6 +91,20 @@ public class WeddingController {
 		model.addAttribute("money", vo);
 		return "/wedding/money";
 	}
+
+	@RequestMapping(value = "/concept", method = RequestMethod.GET)
+	public void conceptGET() throws Exception {
+		logger.info("conceptGET Called!!!");
+	}
+	
+	@RequestMapping(value = "/conceptSearch", method = RequestMethod.GET)
+	public String conceptSearchGET(@RequestParam("c") String concept, Model model) throws Exception {
+		logger.info("conceptSearchGET Called!!!");
+		List<WeddingHallVo> vo = CLService.conceptSearch(concept);
+		model.addAttribute("concept", vo);
+		return "/wedding/concept";
+	}
+	
 }
 
 

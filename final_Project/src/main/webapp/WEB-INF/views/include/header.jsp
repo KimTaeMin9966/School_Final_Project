@@ -45,7 +45,7 @@
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css?ver=20181113001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css?ver=20181113001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css?ver=20181113001">
-	
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/concept.css?ver=20181114008">
 </head>
 <body class="country-INT page-HP-INT-Launch-Cruise-19 pageType-ContentPage template-pages--home-homepage pageLabel-  language-en int nonTransactional hasGiantLookWithManualImage"
 	data-module="keysNavigation,keysNavigationOverlay," data-switchsite="/int/en/ajax/overlay">

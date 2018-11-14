@@ -36,4 +36,6 @@ public interface CheckListDao {
 	// 2018/11/14
 	List<WeddingHallVo> SearchMoneyHall(Map<String, Integer> paramMap) throws Exception;
 
+	List<WeddingHallVo> conceptSearch(String concept) throws Exception;
+
 }

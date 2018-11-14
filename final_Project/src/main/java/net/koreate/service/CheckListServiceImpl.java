@@ -95,5 +95,11 @@ public class CheckListServiceImpl implements CheckListService {
 		// TODO Auto-generated method stub
 		return dao.SearchMoneyHall(paramMap);
 	}
+
+	@Override
+	public List<WeddingHallVo> conceptSearch(String concept) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.conceptSearch(concept);
+	}
 	
 }
