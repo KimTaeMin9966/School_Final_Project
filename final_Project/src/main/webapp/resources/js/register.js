@@ -21,11 +21,25 @@
 */
 
 $(document).ready(function() {
+	// 페이리 로드후 바로 아이디 입력창으로 포커스를 준다
+	$('#mwid').focus();
+	
+	// 영어 대소문자, 숫자포함 4자리 ~ 12자리
 	var regexID = /^[0-9a-zA-Z]{4,12}$/;
+	
+	// 영어 대소문자, 숫자, 특수문자(!, @, #, $, %, ^, *, +, =, -)포함 8자리 ~ 16자리
 	var regexPass = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/;
+	
+	// 한글 2자 ~ 6자
 	var regexName = /^[\uac00-\ud7a3]{2,6}$/;
+	
+	// 하이픈 없이 0 ~ 9까지 3자리 ~ 4자, 0 ~ 9까지 4자
 	var regexPhone = /^[0-9]{3,4}[0-9]{4}$/;
+	
+	// 하이픈 없이 0 ~ 9까지 2자리 ~ 3자, 0 ~ 9까지 3자리 ~ 4자, 0 ~ 9까지 4자
 	var regexMobile = /^[0-9]{2,3}?[0-9]{3,4}?[0-9]{4}$/;
+	
+	// 하이픈 없이 0 ~ 9까지 2자, 0 ~ 9까지 2자, 0 ~ 9까지 2자
 	var regexBirth = /^[0-9]{2}[0-9]{2}[0-9]{2}$/;
 
 	var boolAdmID = false;
@@ -62,10 +76,7 @@ $(document).ready(function() {
 	
 	$("#mwid").on("input", function() {
 		var userID = $("#mwid").val();
-		if (userID == '' || userID == null) {
-			$("#mwid").focus();
-		}
-
+		
 		var message = "올바른 형식의 ID가 아닙니다.";
 		var booleanGet = checkReg('mwid_result', userID, regexID, message);
 		boolAdmID = booleanGet;
@@ -112,11 +123,8 @@ $(document).ready(function() {
 	});
 
 	$('#adm_accept').click(function() {
-		if ($('#adm_accept').is(':checked') == true) {
-			boolAdmAccept = true;
-		} else {
-			boolAdmAccept = false;
-		}
+		if ($('#adm_accept').is(':checked') == true) { boolAdmAccept = true; }
+		else { boolAdmAccept = false; }
 	});
 	
 	$('#CLICK').click(function() {

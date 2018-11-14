@@ -1,7 +1,11 @@
 package net.koreate.dao;
 
+import java.util.List;
+import java.util.Map;
+
 import net.koreate.vo.ListVo;
 import net.koreate.vo.MemberVo;
+import net.koreate.vo.WeddingHallVo;
 
 public interface CheckListDao {
 
@@ -28,5 +32,8 @@ public interface CheckListDao {
 	void STEP3Edit(ListVo vo) throws Exception;
 	
 	void STEP4Edit(ListVo vo) throws Exception;
+
+	// 2018/11/14
+	List<WeddingHallVo> SearchMoneyHall(Map<String, Integer> paramMap) throws Exception;
 
 }
