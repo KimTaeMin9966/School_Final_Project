@@ -122,7 +122,7 @@ Example.Modal.prototype = {
         } else { // 화면 높기 >= 콘텐츠 레이어 높이
             res_height = Math.floor((this.c_height-this.height)/2); // 차이를 빼서 2로 나눔. 그리고 내림.
         }
-        var top = res_height+$(document).scrollTop(); // 화면상의 높이에 스크롤높이를 더한 절대좌표를 top에 저장
+        var top = res_height; // 화면상의 높이에 스크롤높이를 더한 절대좌표를 top에 저장
  
         // css의 top,left 조정
         $("#"+this.hash.id).css("top",top);
