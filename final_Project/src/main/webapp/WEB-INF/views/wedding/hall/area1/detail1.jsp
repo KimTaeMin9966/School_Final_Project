@@ -146,7 +146,7 @@
 					</div>
 					<div class="product-style-selector">
 						<div class="style-color-material" data-module="styleSelector">
-							<a class="styles-link overlay-open" href="https://www.google.com/maps">
+							<a class="styles-link overlay-open" href="https://www.google.com/maps/search/w%EC%9B%A8%EB%94%A9%ED%99%80/@35.1736518,129.0884765,14z/data=!3m1!4b1">
 								<span class="color-material">
 									<img alt="GOOGLE MAP" src="${pageContext.request.contextPath}/resources/images/구글지도이미지1.png" class="_loaded">
 								</span>
