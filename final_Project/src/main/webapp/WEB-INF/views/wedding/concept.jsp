@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="../include/header.jsp"%>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/concept.css?ver=20181114008">
 <div class="content">
 	<div class="row">
 		<div class="col twelve text-center">
@@ -36,10 +37,10 @@
 <div class="content search-result new-4-cols-layout">
 	<div class="product-tiles-grid">
 		<c:choose>
-			<c:when test="${concept != null}">
+			<c:when test="${!empty concept}">
 				<c:forEach var="lists" items="${concept}">
 					<article class="product-tiles-grid-item product-tiles-grid-item-medium product-tiles-grid-item-small hover-link  border-right">
-						<a class="product-tiles-grid-item-link" href="/wedding/hall/area1/${lists.hall_link}">
+						<a class="product-tiles-grid-item-link" href="${lists.hall_link}">
 							<div class="product-tiles-grid-item-image-wrapper">
 								<div class="product-tiles-grid-item-image ">
 									<img alt="이미지입니다." style="width: 100%; height: 595px;"

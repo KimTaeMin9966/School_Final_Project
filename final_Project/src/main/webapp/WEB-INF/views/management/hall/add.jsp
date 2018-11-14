@@ -44,12 +44,70 @@
 						<div class="form-group has-feedback">
 							<label>페이지 전환을 위한 링크</label>
 							<select name="hall_link" class="form-control" required>
-							    <option value="detail1">detail1</option>
-							    <option value="detail2">detail2</option>
-							    <option value="detail3">detail3</option>
-							    <option value="detail4">detail4</option>
-							    <option value="detail5">detail5</option>
-							    <option value="detail6">detail6</option>
+								<optgroup label="area1">
+								    <option value="/wedding/hall/area1/detail1">detail1</option>
+								    <option value="/wedding/hall/area1/detail2">detail2</option>
+								    <option value="/wedding/hall/area1/detail3">detail3</option>
+								    <option value="/wedding/hall/area1/detail4">detail4</option>
+								    <option value="/wedding/hall/area1/detail5">detail5</option>
+								    <option value="/wedding/hall/area1/detail6">detail6</option>
+								</optgroup>
+								<optgroup label="area2">
+								    <option value="/wedding/hall/area2/detail1">detail1</option>
+								    <option value="/wedding/hall/area2/detail2">detail2</option>
+								    <option value="/wedding/hall/area2/detail3">detail3</option>
+								    <option value="/wedding/hall/area2/detail4">detail4</option>
+								    <option value="/wedding/hall/area2/detail5">detail5</option>
+								    <option value="/wedding/hall/area2/detail6">detail6</option>
+								</optgroup>
+								<optgroup label="area3">
+								    <option value="/wedding/hall/area3/detail1">detail1</option>
+								    <option value="/wedding/hall/area3/detail2">detail2</option>
+								    <option value="/wedding/hall/area3/detail3">detail3</option>
+								    <option value="/wedding/hall/area3/detail4">detail4</option>
+								    <option value="/wedding/hall/area3/detail5">detail5</option>
+								    <option value="/wedding/hall/area3/detail6">detail6</option>
+								</optgroup>
+								<optgroup label="area4">
+								    <option value="/wedding/hall/area4/detail1">detail1</option>
+								    <option value="/wedding/hall/area4/detail2">detail2</option>
+								    <option value="/wedding/hall/area4/detail3">detail3</option>
+								    <option value="/wedding/hall/area4/detail4">detail4</option>
+								    <option value="/wedding/hall/area4/detail5">detail5</option>
+								    <option value="/wedding/hall/area4/detail6">detail6</option>
+								</optgroup>
+								<optgroup label="area5">
+								    <option value="/wedding/hall/area5/detail1">detail1</option>
+								    <option value="/wedding/hall/area5/detail2">detail2</option>
+								    <option value="/wedding/hall/area5/detail3">detail3</option>
+								    <option value="/wedding/hall/area5/detail4">detail4</option>
+								    <option value="/wedding/hall/area5/detail5">detail5</option>
+								    <option value="/wedding/hall/area5/detail6">detail6</option>
+								</optgroup>
+								<optgroup label="area6">
+								    <option value="/wedding/hall/area6/detail1">detail1</option>
+								    <option value="/wedding/hall/area6/detail2">detail2</option>
+								    <option value="/wedding/hall/area6/detail3">detail3</option>
+								    <option value="/wedding/hall/area6/detail4">detail4</option>
+								    <option value="/wedding/hall/area6/detail5">detail5</option>
+								    <option value="/wedding/hall/area6/detail6">detail6</option>
+								</optgroup>
+								<optgroup label="area7">
+								    <option value="/wedding/hall/area7/detail1">detail1</option>
+								    <option value="/wedding/hall/area7/detail2">detail2</option>
+								    <option value="/wedding/hall/area7/detail3">detail3</option>
+								    <option value="/wedding/hall/area7/detail4">detail4</option>
+								    <option value="/wedding/hall/area7/detail5">detail5</option>
+								    <option value="/wedding/hall/area7/detail6">detail6</option>
+								</optgroup>
+								<optgroup label="area8">
+								    <option value="/wedding/hall/area8/detail1">detail1</option>
+								    <option value="/wedding/hall/area8/detail2">detail2</option>
+								    <option value="/wedding/hall/area8/detail3">detail3</option>
+								    <option value="/wedding/hall/area8/detail4">detail4</option>
+								    <option value="/wedding/hall/area8/detail5">detail5</option>
+								    <option value="/wedding/hall/area8/detail6">detail6</option>
+								</optgroup>
 							</select>
 						</div>
 						<div class="form-group has-feedback">
