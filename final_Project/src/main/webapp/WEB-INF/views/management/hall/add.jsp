@@ -65,7 +65,7 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>주소</label>
-							<input type="text" name="hall_ address" class="form-control" placeholder="EX) 테이블형태" required />
+							<input type="text" name="hall_address" class="form-control" placeholder="EX) 테이블형태" required />
 						</div>
 						<div class="form-group">
 							<label>FILE DROP HERE</label>
