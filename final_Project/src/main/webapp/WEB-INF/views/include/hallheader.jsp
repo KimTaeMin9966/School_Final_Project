@@ -72,6 +72,14 @@
 						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/send" data-target="#mm-2" data-di-id="runway_1"></a>
 						<span class="flex-item-content" data-di-id="runway_1">WEDDING LETTER</span>
 					</li>
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/money" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">가격 검색</span>
+					</li>
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/concept" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">컨셉 검색</span>
+					</li>
 					<c:choose>
 						<c:when test="${!empty loginYES && loginYES.mwid eq 'master'}">
 							<li class="item-primary flex-item">
@@ -230,8 +238,8 @@
 				<!-- main-header-background-img start -->
 				<div class="hero-background-image-large-wrapper">
 					<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
-					<img width="100%" height="auto" tabindex="-1" data-video-bg-id="5851827842001" 
-					 	alt="메인 이미지입니다." src="${pageContext.request.contextPath}/resources/images/헤드웨딩홀메인.jpg">
+					<img width="100%" height="auto" alt="메인 이미지입니다."
+						src="${pageContext.request.contextPath}/resources/images/헤드웨딩홀메인.jpg">
 					<picture data-image-type="picture"></picture>
 				</div>
 				<!-- main-header-background-img end -->

@@ -6,6 +6,7 @@ import java.util.Map;
 import net.koreate.vo.ListVo;
 import net.koreate.vo.MemberVo;
 import net.koreate.vo.WeddingHallVo;
+import net.koreate.vo.WeddingStudioVo;
 
 public interface CheckListService {
 
@@ -36,6 +37,11 @@ public interface CheckListService {
 	// 2018/11/14
 	List<WeddingHallVo> SearchMoneyHall(Map<String, Integer> paramMap) throws Exception;
 
-	List<WeddingHallVo> conceptSearch(String concept) throws Exception;
+	List<WeddingHallVo> conceptHallSearch(String concept) throws Exception;
+
+	// 2018/11/15
+	List<WeddingStudioVo> conceptStudioSearch(String concept) throws Exception;
+
+	List<WeddingStudioVo> SearchMoneyStudio(Map<String, Integer> paramMap) throws Exception;
 
 }

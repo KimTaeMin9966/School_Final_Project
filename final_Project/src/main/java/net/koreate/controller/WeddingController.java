@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import net.koreate.service.CheckListService;
 import net.koreate.vo.MemberVo;
 import net.koreate.vo.WeddingHallVo;
+import net.koreate.vo.WeddingStudioVo;
 
 @Controller
 @RequestMapping("/wedding/*")
@@ -87,8 +88,10 @@ public class WeddingController {
 		Map<String, Integer> paramMap = new HashMap<>();
 		paramMap.put("min", moneyvaluemin);
 		paramMap.put("max", moneyvaluemax);
-		List<WeddingHallVo> vo = CLService.SearchMoneyHall(paramMap);
-		model.addAttribute("money", vo);
+		List<WeddingHallVo> hallVo = CLService.SearchMoneyHall(paramMap);
+		List<WeddingStudioVo> studioVo = CLService.SearchMoneyStudio(paramMap);
+		model.addAttribute("moneyHall", hallVo);
+		model.addAttribute("moneyStudio", studioVo);
 		return "/wedding/money";
 	}
 
@@ -100,8 +103,10 @@ public class WeddingController {
 	@RequestMapping(value = "/conceptSearch", method = RequestMethod.GET)
 	public String conceptSearchGET(@RequestParam("c") String concept, Model model) throws Exception {
 		logger.info("conceptSearchGET Called!!!");
-		List<WeddingHallVo> vo = CLService.conceptSearch(concept);
-		model.addAttribute("concept", vo);
+		List<WeddingHallVo> hallVo = CLService.conceptHallSearch(concept);
+		List<WeddingStudioVo> studioVo = CLService.conceptStudioSearch(concept);
+		model.addAttribute("conceptHall", hallVo);
+		model.addAttribute("conceptStudio", studioVo);
 		return "/wedding/concept";
 	}
 	

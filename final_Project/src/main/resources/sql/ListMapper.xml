@@ -61,13 +61,19 @@
 	
 	<!-- 2018/11/14 -->
 	<select id="SearchMoneyHall" resultType="WDHVO">
-		 <![CDATA[
-			SELECT * FROM made_wedding_halls
-			WHERE hall_price BETWEEN #{min} AND #{max}
-		]]>
+		SELECT * FROM made_wedding_halls
+		WHERE hall_price BETWEEN #{min} AND #{max}
 	</select>
-	<select id="conceptSearch" resultType="WDHVO">
+	<select id="SearchMoneyStudio" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_price BETWEEN #{min} AND #{max}
+	</select>
+	<select id="conceptHallSearch" resultType="WDHVO">
 		SELECT * FROM made_wedding_halls
 		WHERE hall_thema = #{concept}
+	</select>
+	<select id="conceptStudioSearch" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_thema = #{concept}
 	</select>
 </mapper>

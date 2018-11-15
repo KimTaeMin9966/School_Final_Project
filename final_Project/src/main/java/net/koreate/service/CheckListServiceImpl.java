@@ -11,6 +11,7 @@ import net.koreate.dao.CheckListDao;
 import net.koreate.vo.ListVo;
 import net.koreate.vo.MemberVo;
 import net.koreate.vo.WeddingHallVo;
+import net.koreate.vo.WeddingStudioVo;
 
 @Service
 public class CheckListServiceImpl implements CheckListService {
@@ -97,9 +98,21 @@ public class CheckListServiceImpl implements CheckListService {
 	}
 
 	@Override
-	public List<WeddingHallVo> conceptSearch(String concept) throws Exception {
+	public List<WeddingHallVo> conceptHallSearch(String concept) throws Exception {
 		// TODO Auto-generated method stub
-		return dao.conceptSearch(concept);
+		return dao.conceptHallSearch(concept);
+	}
+
+	@Override
+	public List<WeddingStudioVo> conceptStudioSearch(String concept) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.conceptStudioSearch(concept);
+	}
+
+	@Override
+	public List<WeddingStudioVo> SearchMoneyStudio(Map<String, Integer> paramMap) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.SearchMoneyStudio(paramMap);
 	}
 	
 }
