@@ -8,7 +8,7 @@
 	<div class="product-tiles-grid">
 		<c:forEach var="studios" items="${area3}">
 			<article class="product-tiles-grid-item product-tiles-grid-item-medium product-tiles-grid-item-small hover-link  border-right">
-				<a class="product-tiles-grid-item-link" href="/wedding/studio/area3/${studios.studio_link}">
+				<a class="product-tiles-grid-item-link" href="${studios.studio_link}">
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
 							<img alt="" sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px"

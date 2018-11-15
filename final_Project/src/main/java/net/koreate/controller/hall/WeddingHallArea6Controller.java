@@ -24,7 +24,7 @@ public class WeddingHallArea6Controller {
 	public void detail1GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail1GET Called!!!");
 		
-		vo.setHall_area(6); vo.setHall_link("detail1");
+		vo.setHall_area(6); vo.setHall_link("/wedding/hall/area6/detail1");
 		WeddingHallVo list = service.SearchAreaHallDetail(vo);
 		model.addAttribute("detail1", list);
 	}
@@ -33,7 +33,7 @@ public class WeddingHallArea6Controller {
 	public void detail2GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail2GET Called!!!");
 		
-		vo.setHall_area(6); vo.setHall_link("detail2");
+		vo.setHall_area(6); vo.setHall_link("/wedding/hall/area6/detail2");
 		WeddingHallVo list = service.SearchAreaHallDetail(vo);
 		model.addAttribute("detail2", list);
 	}
@@ -42,7 +42,7 @@ public class WeddingHallArea6Controller {
 	public void detail3GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail3GET Called!!!");
 		
-		vo.setHall_area(6); vo.setHall_link("detail3");
+		vo.setHall_area(6); vo.setHall_link("/wedding/hall/area6/detail3");
 		WeddingHallVo list = service.SearchAreaHallDetail(vo);
 		model.addAttribute("detail3", list);
 	}
@@ -51,7 +51,7 @@ public class WeddingHallArea6Controller {
 	public void detail4GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail4GET Called!!!");
 		
-		vo.setHall_area(6); vo.setHall_link("detail4");
+		vo.setHall_area(6); vo.setHall_link("/wedding/hall/area6/detail4");
 		WeddingHallVo list = service.SearchAreaHallDetail(vo);
 		model.addAttribute("detail4", list);
 	}
@@ -60,7 +60,7 @@ public class WeddingHallArea6Controller {
 	public void detail5GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail5GET Called!!!");
 		
-		vo.setHall_area(6); vo.setHall_link("detail5");
+		vo.setHall_area(6); vo.setHall_link("/wedding/hall/area6/detail5");
 		WeddingHallVo list = service.SearchAreaHallDetail(vo);
 		model.addAttribute("detail5", list);
 	}
@@ -69,7 +69,7 @@ public class WeddingHallArea6Controller {
 	public void detail6GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail6GET Called!!!");
 		
-		vo.setHall_area(6); vo.setHall_link("detail6");
+		vo.setHall_area(6); vo.setHall_link("/wedding/hall/area6/detail6");
 		WeddingHallVo list = service.SearchAreaHallDetail(vo);
 		model.addAttribute("detail6", list);
 	}
@@ -78,7 +78,7 @@ public class WeddingHallArea6Controller {
 	public void detail7GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail7GET Called!!!");
 		
-		vo.setHall_area(6); vo.setHall_link("detail7");
+		vo.setHall_area(6); vo.setHall_link("/wedding/hall/area6/detail7");
 		WeddingHallVo list = service.SearchAreaHallDetail(vo);
 		model.addAttribute("detail7", list);
 	}
@@ -87,7 +87,7 @@ public class WeddingHallArea6Controller {
 	public void detail8GET(WeddingHallVo vo, Model model) throws Exception {
 		logger.info("detail8GET Called!!!");
 		
-		vo.setHall_area(6); vo.setHall_link("detail8");
+		vo.setHall_area(6); vo.setHall_link("/wedding/hall/area6/detail8");
 		WeddingHallVo list = service.SearchAreaHallDetail(vo);
 		model.addAttribute("detail8", list);
 	}
