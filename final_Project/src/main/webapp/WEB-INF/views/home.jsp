@@ -9,8 +9,11 @@
 				<header class="style-news-header">
 					<p class="eyebrow"></p>
 					<h2 class="title">
-						<font style="vertical-align: inherit;"><font
-							style="vertical-align: inherit;">PAGE NEWS</font></font>
+						<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">PAGE NEWS</font><br/>
+						<font style="vertical-align: inherit;">The main page of Made Wedding.</font>	
+							
+					</font>
 					</h2>
 					<p class="eyebrow"></p>
 				</header>
@@ -42,12 +45,17 @@
 								<div class="link">
 									<a data-story-link=""
 										href="/wedding/consulting"
-										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;">부산 대표컨설팅</font></font></a>
+										target="_top"><font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">부산 대표컨설팅</font><br/>
+										<font style="vertical-align: inherit:">Due to the nature of consulting, various products exist</font> <br/>
+										<font style="vertical-align: inherit:">That's why many consumers do not know what to choose.</font>
+										<font style="vertical-align: inherit:"> Therefore, we have prepared only the largest</font> <br/>
+										</font></a>
 								</div>
 							</div>
 
 						</div>
+						<br/>
 						<!-- Homepage Style and News (Video) - 1st -->
 						<div class="style-news-item normal-item odd">
 							<div class="item-inner-wrapper">
@@ -60,15 +68,20 @@
 									</a>
 								</div>
 								<h3 class="title">
-									<font style="vertical-align: inherit;"><font
-										style="vertical-align: inherit;">CHECKLIST</font></font>
+									<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">CHECKLIST</font>
+									 </font>
 								</h3>
 
 								<div class="link">
 									<a data-story-link=""
 										href="/wedding/list"
-										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;">체크리스트</font></font></a>
+										target="_top"><font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">체크리스트</font><br/>
+									<font style="vertical-align: inherit;">You can save your wedding related content.</font>
+									<font style="vertical-align: inherit;">So our homepages give you time to remember</font>
+									<font style="vertical-align: inherit;">little longer wedding memories with us?</font>
+											</font></a>
 								</div>
 							</div>
 
@@ -86,15 +99,20 @@
 									</div>
 								</div>
 								<h3 data-attribute-id="title" class="title">
-									<font style="vertical-align: inherit;"><font
-										style="vertical-align: inherit;">BUSAN WEDDING HALL </font></font>
-								</h3>
+									<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">BUSAN WEDDING HALL </font><br/>
+									 </font>
+									 </h3>
 
 								<div class="link">
 									<a data-story-link=""
 										href="/wedding/hall"
-										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;">웨딩홀  </font></font></a>
+										target="_top"><font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">웨딩홀  </font><br/>
+									<font style="vertical-align: inherit;">We will recommend you a nice hall in Busan.</font>
+									<font style="vertical-align: inherit;">Various concepts and information are provided.</font>
+									<font style="vertical-align: inherit;">Let's enjoy the diversity of the hall♥</font>
+											</font></a>
 								</div>
 							</div>
 						</div>
@@ -110,15 +128,20 @@
 									</a>
 								</div>
 								<h3 class="title">
-									<font style="vertical-align: inherit;"><font
-										style="vertical-align: inherit;">BUSAN WEDDING STUDIO</font></font>
+									<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">BUSAN WEDDING STUDIO</font>
+									 </font>
 								</h3>
 
 								<div class="link">
 									<a data-story-link=""
 										href="/wedding/studio"
-										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;">웨딩스튜디오 </font></font></a>
+										target="_top"><font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">웨딩스튜디오 </font><br/>
+									<font style="vertical-align: inherit;">We will recommend you a wonderful studio.</font>
+									<font style="vertical-align: inherit;">Concept and various information.I hope</font>
+									<font style="vertical-align: inherit;">Meet a variety of concept studios^^*</font>
+										</font></a>
 								</div>
 							</div>
 
@@ -135,15 +158,21 @@
 									</a>
 								</div>
 								<h3 class="title">
-									<font style="vertical-align: inherit;"><font
-										style="vertical-align: inherit;">WEDDING LETTER</font></font>
+									<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">WEDDING LETTER</font></font>
+										
 								</h3>
 
 								<div class="link">
 									<a data-story-link=""
 										href="/wedding/send"
-										target="_top"><font style="vertical-align: inherit;"><font
-											style="vertical-align: inherit;"> 온라인 청첩장 </font></font></a>
+										target="_top"><font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">온라인 청첩장 </font><br/>
+									<font style="vertical-align: inherit;">The ability to send online invitations.</font>
+									<font style="vertical-align: inherit;">Fill in your name, address (phone number)</font>
+									<font style="vertical-align: inherit;">and send it with your desired message</font>
+									<font style="vertical-align: inherit;">I hope to be a very useful feature.</font>
+											</font></a>
 								</div>
 							</div>
 

@@ -15,7 +15,7 @@
 	<!-- Site Metas -->
 	<title>Made Wedding - MW</title>
 	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta name="description" content="Made Wedding - MW Ver 2.1입니다">
 	<meta name="author" content="">
 	
 	<!-- Site Icons -->
@@ -36,16 +36,15 @@
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js?ver=20181113001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/modal.js?ver=20181113001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/upload.js?ver=20181113001"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181113001"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181116001"></script>
 	
 	<!-- Offline CSS -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181113001">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181116001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css?ver=20181113001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/magnific-popup.css?ver=20181113001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css?ver=20181113001">
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css?ver=20181113001">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css?ver=20181116001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css?ver=20181113001">
-	
 </head>
 <body class="country-INT page-HP-INT-Launch-Cruise-19 pageType-ContentPage template-pages--home-homepage pageLabel-  language-en int nonTransactional hasGiantLookWithManualImage"
 	data-module="keysNavigation,keysNavigationOverlay," data-switchsite="/int/en/ajax/overlay">
@@ -72,6 +71,14 @@
 					<li class="item-primary flex-item">
 						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/send" data-target="#mm-2" data-di-id="runway_1"></a>
 						<span class="flex-item-content" data-di-id="runway_1">WEDDING LETTER</span>
+					</li>
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/money" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">가격 검색</span>
+					</li>
+					<li class="item-primary flex-item">
+						<a class="mm-next mm-fullsubopen _gaMenuTracking" href="/wedding/concept" data-target="#mm-2" data-di-id="runway_1"></a>
+						<span class="flex-item-content" data-di-id="runway_1">컨셉 검색</span>
 					</li>
 					<c:choose>
 						<c:when test="${!empty loginYES && loginYES.mwid eq 'master'}">

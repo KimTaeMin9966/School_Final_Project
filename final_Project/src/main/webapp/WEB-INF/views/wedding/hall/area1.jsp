@@ -8,7 +8,7 @@
 	<div class="product-tiles-grid">
 		<c:forEach var="halls" items="${area1}">
 			<article class="product-tiles-grid-item product-tiles-grid-item-medium product-tiles-grid-item-small hover-link  border-right">
-				<a class="product-tiles-grid-item-link" href="/wedding/hall/area1/${halls.hall_link}">
+				<a class="product-tiles-grid-item-link" href="${halls.hall_link}">
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
 							<img alt="이미지입니다." style="width: 100%; height: 595px;"
@@ -35,10 +35,4 @@
 		</c:forEach>
 	</div>
 </div>
-<script type="text/javascript">
-	function imgTemplate(fullName) {
-		alert(fullName);
-		//var fileInfo = getFileInfo(fullName);
-	}
-</script>
 <%@include file="../../include/footer.jsp"%>

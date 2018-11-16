@@ -58,4 +58,22 @@
 		list_week = #{list_week}, list_area = #{list_area},
 		list_etc = #{list_etc} WHERE memberID = #{memberID}
 	</update>
+	
+	<!-- 2018/11/14 -->
+	<select id="SearchMoneyHall" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_price BETWEEN #{min} AND #{max}
+	</select>
+	<select id="SearchMoneyStudio" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_price BETWEEN #{min} AND #{max}
+	</select>
+	<select id="conceptHallSearch" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_thema = #{concept}
+	</select>
+	<select id="conceptStudioSearch" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_thema = #{concept}
+	</select>
 </mapper>

@@ -249,18 +249,22 @@ public class ManagementController {
 	
 	// 홀 이미지 불러오기
 	@ResponseBody
-	@RequestMapping(value = "/getAttachHallImg/{hno}/{hall_area}/{hall_link}", method = RequestMethod.GET)
+	@RequestMapping(value = "/getAttachHallImg/{hno}/{area}/{link1}/{link2}/{link3}/{link4}", method = RequestMethod.GET)
 	public List<String> getAttachHallImgGET(
 			@PathVariable("hno") int hno,
-			@PathVariable("hall_area") int hall_area,
-			@PathVariable("hall_link") String hall_link
+			@PathVariable("area") int area,
+			@PathVariable("link1") String link1, @PathVariable("link2") String link2,
+			@PathVariable("link3") String link3, @PathVariable("link4") String link4
 			) throws Exception {
 		logger.info("getAttachHallImgGET Called!!!");
+		String fullLink = "/" + link1 + "/" + link2 + "/" + link3 + "/" + link4;
+		
+		System.out.println(fullLink);
 		
 		Map<String, Object> paramMap = new HashMap<>();
 		paramMap.put("hno", hno);
-		paramMap.put("hall_area", hall_area);
-		paramMap.put("hall_link", hall_link);
+		paramMap.put("hall_area", area);
+		paramMap.put("hall_link", fullLink);
 		
 		List<String> list = hService.getAttachHallImg(paramMap);
 		return list;
@@ -302,18 +306,22 @@ public class ManagementController {
 
 	// 스튜디오 이미지 불러오기
 	@ResponseBody
-	@RequestMapping(value = "/getAttachStudioImg/{hno}/{studio_area}/{studio_link}", method = RequestMethod.GET)
+	@RequestMapping(value = "/getAttachStudioImg/{hno}/{area}/{link1}/{link2}/{link3}/{link4}", method = RequestMethod.GET)
 	public List<String> getAttachStudioImgGET(
 			@PathVariable("hno") int hno,
-			@PathVariable("studio_area") int studio_area,
-			@PathVariable("studio_link") String studio_link
+			@PathVariable("area") int area,
+			@PathVariable("link1") String link1, @PathVariable("link2") String link2,
+			@PathVariable("link3") String link3, @PathVariable("link4") String link4
 			) throws Exception {
 		logger.info("getAttachStudioImgGET Called!!!");
+		String fullLink = "/" + link1 + "/" + link2 + "/" + link3 + "/" + link4;
+		
+		System.out.println(fullLink);
 		
 		Map<String, Object> paramMap = new HashMap<>();
 		paramMap.put("hno", hno);
-		paramMap.put("studio_area", studio_area);
-		paramMap.put("studio_link", studio_link);
+		paramMap.put("studio_area", area);
+		paramMap.put("studio_link", fullLink);
 		
 		List<String> list = hService.getAttachStudioImg(paramMap);
 		return list;

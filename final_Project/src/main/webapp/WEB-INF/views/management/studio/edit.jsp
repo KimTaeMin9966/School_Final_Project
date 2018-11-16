@@ -45,12 +45,70 @@
 						<div class="form-group has-feedback">
 							<label>페이지 전환을 위한 링크</label>
 							<select id="studio_link" name="studio_link" class="form-control" required>
-							    <option value="detail1" <c:if test="${editStudio.studio_link eq 'detail1'}">selected</c:if>>detail1</option>
-							    <option value="detail2" <c:if test="${editStudio.studio_link eq 'detail2'}">selected</c:if>>detail2</option>
-							    <option value="detail3" <c:if test="${editStudio.studio_link eq 'detail3'}">selected</c:if>>detail3</option>
-							    <option value="detail4" <c:if test="${editStudio.studio_link eq 'detail4'}">selected</c:if>>detail4</option>
-							    <option value="detail5" <c:if test="${editStudio.studio_link eq 'detail5'}">selected</c:if>>detail5</option>
-							    <option value="detail6" <c:if test="${editStudio.studio_link eq 'detail6'}">selected</c:if>>detail6</option>
+								<optgroup label="area1">
+								    <option value="/wedding/studio/area1/detail1" <c:if test="${editStudio.studio_link eq '/wedding/studio/area1/detail1'}">selected</c:if>>detail1</option>
+								    <option value="/wedding/studio/area1/detail2" <c:if test="${editStudio.studio_link eq '/wedding/studio/area1/detail2'}">selected</c:if>>detail2</option>
+								    <option value="/wedding/studio/area1/detail3" <c:if test="${editStudio.studio_link eq '/wedding/studio/area1/detail3'}">selected</c:if>>detail3</option>
+								    <option value="/wedding/studio/area1/detail4" <c:if test="${editStudio.studio_link eq '/wedding/studio/area1/detail4'}">selected</c:if>>detail4</option>
+								    <option value="/wedding/studio/area1/detail5" <c:if test="${editStudio.studio_link eq '/wedding/studio/area1/detail5'}">selected</c:if>>detail5</option>
+								    <option value="/wedding/studio/area1/detail6" <c:if test="${editStudio.studio_link eq '/wedding/studio/area1/detail6'}">selected</c:if>>detail6</option>
+								</optgroup>
+								<optgroup label="area2">
+								    <option value="/wedding/studio/area2/detail1" <c:if test="${editStudio.studio_link eq '/wedding/studio/area2/detail1'}">selected</c:if>>detail1</option>
+								    <option value="/wedding/studio/area2/detail2" <c:if test="${editStudio.studio_link eq '/wedding/studio/area2/detail2'}">selected</c:if>>detail2</option>
+								    <option value="/wedding/studio/area2/detail3" <c:if test="${editStudio.studio_link eq '/wedding/studio/area2/detail3'}">selected</c:if>>detail3</option>
+								    <option value="/wedding/studio/area2/detail4" <c:if test="${editStudio.studio_link eq '/wedding/studio/area2/detail4'}">selected</c:if>>detail4</option>
+								    <option value="/wedding/studio/area2/detail5" <c:if test="${editStudio.studio_link eq '/wedding/studio/area2/detail5'}">selected</c:if>>detail5</option>
+								    <option value="/wedding/studio/area2/detail6" <c:if test="${editStudio.studio_link eq '/wedding/studio/area2/detail6'}">selected</c:if>>detail6</option>
+								</optgroup>
+								<optgroup label="area3">
+								    <option value="/wedding/studio/area3/detail1" <c:if test="${editStudio.studio_link eq '/wedding/studio/area3/detail1'}">selected</c:if>>detail1</option>
+								    <option value="/wedding/studio/area3/detail2" <c:if test="${editStudio.studio_link eq '/wedding/studio/area3/detail2'}">selected</c:if>>detail2</option>
+								    <option value="/wedding/studio/area3/detail3" <c:if test="${editStudio.studio_link eq '/wedding/studio/area3/detail3'}">selected</c:if>>detail3</option>
+								    <option value="/wedding/studio/area3/detail4" <c:if test="${editStudio.studio_link eq '/wedding/studio/area3/detail4'}">selected</c:if>>detail4</option>
+								    <option value="/wedding/studio/area3/detail5" <c:if test="${editStudio.studio_link eq '/wedding/studio/area3/detail5'}">selected</c:if>>detail5</option>
+								    <option value="/wedding/studio/area3/detail6" <c:if test="${editStudio.studio_link eq '/wedding/studio/area3/detail6'}">selected</c:if>>detail6</option>
+								</optgroup>
+								<optgroup label="area4">
+								    <option value="/wedding/studio/area4/detail1" <c:if test="${editStudio.studio_link eq '/wedding/studio/area4/detail1'}">selected</c:if>>detail1</option>
+								    <option value="/wedding/studio/area4/detail2" <c:if test="${editStudio.studio_link eq '/wedding/studio/area4/detail2'}">selected</c:if>>detail2</option>
+								    <option value="/wedding/studio/area4/detail3" <c:if test="${editStudio.studio_link eq '/wedding/studio/area4/detail3'}">selected</c:if>>detail3</option>
+								    <option value="/wedding/studio/area4/detail4" <c:if test="${editStudio.studio_link eq '/wedding/studio/area4/detail4'}">selected</c:if>>detail4</option>
+								    <option value="/wedding/studio/area4/detail5" <c:if test="${editStudio.studio_link eq '/wedding/studio/area4/detail5'}">selected</c:if>>detail5</option>
+								    <option value="/wedding/studio/area4/detail6" <c:if test="${editStudio.studio_link eq '/wedding/studio/area4/detail6'}">selected</c:if>>detail6</option>
+								</optgroup>
+								<optgroup label="area5">
+								    <option value="/wedding/studio/area5/detail1" <c:if test="${editStudio.studio_link eq '/wedding/studio/area5/detail1'}">selected</c:if>>detail1</option>
+								    <option value="/wedding/studio/area5/detail2" <c:if test="${editStudio.studio_link eq '/wedding/studio/area5/detail2'}">selected</c:if>>detail2</option>
+								    <option value="/wedding/studio/area5/detail3" <c:if test="${editStudio.studio_link eq '/wedding/studio/area5/detail3'}">selected</c:if>>detail3</option>
+								    <option value="/wedding/studio/area5/detail4" <c:if test="${editStudio.studio_link eq '/wedding/studio/area5/detail4'}">selected</c:if>>detail4</option>
+								    <option value="/wedding/studio/area5/detail5" <c:if test="${editStudio.studio_link eq '/wedding/studio/area5/detail5'}">selected</c:if>>detail5</option>
+								    <option value="/wedding/studio/area5/detail6" <c:if test="${editStudio.studio_link eq '/wedding/studio/area5/detail6'}">selected</c:if>>detail6</option>
+								</optgroup>
+								<optgroup label="area6">
+								    <option value="/wedding/studio/area6/detail1" <c:if test="${editStudio.studio_link eq '/wedding/studio/area6/detail1'}">selected</c:if>>detail1</option>
+								    <option value="/wedding/studio/area6/detail2" <c:if test="${editStudio.studio_link eq '/wedding/studio/area6/detail2'}">selected</c:if>>detail2</option>
+								    <option value="/wedding/studio/area6/detail3" <c:if test="${editStudio.studio_link eq '/wedding/studio/area6/detail3'}">selected</c:if>>detail3</option>
+								    <option value="/wedding/studio/area6/detail4" <c:if test="${editStudio.studio_link eq '/wedding/studio/area6/detail4'}">selected</c:if>>detail4</option>
+								    <option value="/wedding/studio/area6/detail5" <c:if test="${editStudio.studio_link eq '/wedding/studio/area6/detail5'}">selected</c:if>>detail5</option>
+								    <option value="/wedding/studio/area6/detail6" <c:if test="${editStudio.studio_link eq '/wedding/studio/area6/detail6'}">selected</c:if>>detail6</option>
+								</optgroup>
+								<optgroup label="area7">
+								    <option value="/wedding/studio/area7/detail1" <c:if test="${editStudio.studio_link eq '/wedding/studio/area7/detail1'}">selected</c:if>>detail1</option>
+								    <option value="/wedding/studio/area7/detail2" <c:if test="${editStudio.studio_link eq '/wedding/studio/area7/detail2'}">selected</c:if>>detail2</option>
+								    <option value="/wedding/studio/area7/detail3" <c:if test="${editStudio.studio_link eq '/wedding/studio/area7/detail3'}">selected</c:if>>detail3</option>
+								    <option value="/wedding/studio/area7/detail4" <c:if test="${editStudio.studio_link eq '/wedding/studio/area7/detail4'}">selected</c:if>>detail4</option>
+								    <option value="/wedding/studio/area7/detail5" <c:if test="${editStudio.studio_link eq '/wedding/studio/area7/detail5'}">selected</c:if>>detail5</option>
+								    <option value="/wedding/studio/area7/detail6" <c:if test="${editStudio.studio_link eq '/wedding/studio/area7/detail6'}">selected</c:if>>detail6</option>
+								</optgroup>
+								<optgroup label="area8">
+								    <option value="/wedding/studio/area8/detail1" <c:if test="${editStudio.studio_link eq '/wedding/studio/area8/detail1'}">selected</c:if>>detail1</option>
+								    <option value="/wedding/studio/area8/detail2" <c:if test="${editStudio.studio_link eq '/wedding/studio/area8/detail2'}">selected</c:if>>detail2</option>
+								    <option value="/wedding/studio/area8/detail3" <c:if test="${editStudio.studio_link eq '/wedding/studio/area8/detail3'}">selected</c:if>>detail3</option>
+								    <option value="/wedding/studio/area8/detail4" <c:if test="${editStudio.studio_link eq '/wedding/studio/area8/detail4'}">selected</c:if>>detail4</option>
+								    <option value="/wedding/studio/area8/detail5" <c:if test="${editStudio.studio_link eq '/wedding/studio/area8/detail5'}">selected</c:if>>detail5</option>
+								    <option value="/wedding/studio/area8/detail6" <c:if test="${editStudio.studio_link eq '/wedding/studio/area8/detail6'}">selected</c:if>>detail6</option>
+								</optgroup>
 							</select>
 						</div>
 						<div class="form-group has-feedback">
@@ -110,7 +168,7 @@
 	
 	var template = Handlebars.compile($("#template").html());
 
-	$.getJSON("/management/getAttachStudioImg/"+ hno + "/" + studio_area + "/" + studio_link, function(list) {
+	$.getJSON("/management/getAttachStudioImg/"+ hno + "/" + studio_area + studio_link, function(list) {
 		$(list).each(function() {
 			var fileInfo = getFileInfo(this);
 			var html = template(fileInfo);
