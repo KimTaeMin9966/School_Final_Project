@@ -15,7 +15,7 @@
 	<!-- Site Metas -->
 	<title>Made Wedding - MW</title>
 	<meta name="keywords" content="">
-	<meta name="description" content="Made Wedding - MW Ver 2.0입니다">
+	<meta name="description" content="Made Wedding - MW Ver 2.1입니다">
 	<meta name="author" content="">
 	
 	<!-- Site Icons -->
@@ -39,11 +39,11 @@
 	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181116001"></script>
 	
 	<!-- Offline CSS -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181113001">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181116001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css?ver=20181113001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/magnific-popup.css?ver=20181113001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css?ver=20181113001">
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css?ver=20181113001">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css?ver=20181116001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css?ver=20181113001">
 </head>
 <body class="country-INT page-HP-INT-Launch-Cruise-19 pageType-ContentPage template-pages--home-homepage pageLabel-  language-en int nonTransactional hasGiantLookWithManualImage"

@@ -4,7 +4,6 @@ $(document).ready(function() {
 	var n = 0;
 	
 	var imgs = new Array(
-			"/resources/images/imagechange/메인1.png",
 			"/resources/images/imagechange/메인2.png",
 			"/resources/images/imagechange/메인3.png",
 			"/resources/images/imagechange/메인4.png",
