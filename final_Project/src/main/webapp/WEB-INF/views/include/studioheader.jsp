@@ -1,4 +1,5 @@
-﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 <!DOCTYPE html>
@@ -238,8 +239,7 @@
 				<!-- main-header-background-img start -->
 				<div class="hero-background-image-large-wrapper">
 					<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
-					<img width="100%" height="80%" tabindex="-1" data-video-bg-id="5851827842001" 
-					 	alt="메인 이미지입니다." src="${pageContext.request.contextPath}/resources/images/드레스.png">
+					<img alt="메인 이미지입니다." src="${pageContext.request.contextPath}/resources/images/드레스.png">
 					<picture data-image-type="picture"></picture>
 				</div>
 				<!-- main-header-background-img end -->

@@ -19,6 +19,7 @@ $(document).ready(function() {
 	
 	function rotate() {
 		if (navigator.appName == "Netscape" && document.getElementById) { document.getElementById("slide").src = imgs[n]; }
+		else { clearInterval(Time); }
 		if (n == (imgs.length - 1)) { clearInterval(Time); } else { n++; }
 	}
 	

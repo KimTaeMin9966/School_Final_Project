@@ -238,8 +238,7 @@
 				<!-- main-header-background-img start -->
 				<div class="hero-background-image-large-wrapper">
 					<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
-					<img style="width: 100%; height: auto;" tabindex="-1" data-video-bg-id="5851827842001" 
-					 	alt="메인 이미지입니다." src="${pageContext.request.contextPath}/resources/images/헤더컨설팅2.jpg">
+					<img alt="메인 이미지입니다." src="${pageContext.request.contextPath}/resources/images/헤더컨설팅2.jpg">
 					<picture data-image-type="picture"></picture>
 				</div>
 				<!-- main-header-background-img end -->
