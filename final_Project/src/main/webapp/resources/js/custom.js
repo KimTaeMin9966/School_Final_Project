@@ -1,4 +1,28 @@
 $(document).ready(function() {
+	var Time = setInterval(rotate, 1000);
+	
+	var n = 0;
+	
+	var imgs = new Array(
+			"/resources/images/imagechange/메인1.png",
+			"/resources/images/imagechange/메인2.png",
+			"/resources/images/imagechange/메인3.png",
+			"/resources/images/imagechange/메인4.png",
+			"/resources/images/imagechange/메인5.png",
+			"/resources/images/imagechange/메인6.png",
+			"/resources/images/imagechange/메인7.png",
+			"/resources/images/imagechange/메인8.png",
+			"/resources/images/imagechange/메인9.png",
+			"/resources/images/imagechange/메인10.png",
+			"/resources/images/imagechange/메인11.png",
+			"/resources/images/imagechange/메인12.png"
+			);
+	
+	function rotate() {
+		if (navigator.appName == "Netscape" && document.getElementById) { document.getElementById("slide").src = imgs[n]; }
+		if (n == (imgs.length - 1)) { clearInterval(Time); } else { n++; }
+	}
+	
 	function autoSize() {
 		var dw = $(document).width();
 		
@@ -50,7 +74,7 @@ $(document).ready(function() {
 	Loader 
     ................................................. */
 	
-	$(window).on('load', function() { 
+	$(window).on('load', function() {
 		autoSize();
 		CheckingUseragent();
 		

@@ -15,7 +15,7 @@
 	<!-- Site Metas -->
 	<title>Made Wedding - MW</title>
 	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta name="description" content="Made Wedding - MW Ver 2.0입니다">
 	<meta name="author" content="">
 	
 	<!-- Site Icons -->
@@ -36,7 +36,7 @@
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js?ver=20181113001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/modal.js?ver=20181113001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/upload.js?ver=20181113001"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181113001"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181116001"></script>
 	
 	<!-- Offline CSS -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181113001">
