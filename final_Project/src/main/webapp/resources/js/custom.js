@@ -17,8 +17,10 @@ $(document).ready(function() {
 			"/resources/images/imagechange/메인12.png"
 			);
 	
+	var target = document.getElementById("slide");
+	
 	function rotate() {
-		if (navigator.appName == "Netscape" && document.getElementById) { document.getElementById("slide").src = imgs[n]; }
+		if (navigator.appName == "Netscape" && target) { target.src = imgs[n]; }
 		else { clearInterval(Time); }
 		if (n == (imgs.length - 1)) { clearInterval(Time); } else { n++; }
 	}

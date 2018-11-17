@@ -36,7 +36,7 @@
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js?ver=20181113001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/modal.js?ver=20181117001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/upload.js?ver=20181117001"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181117001"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181117002"></script>
 	
 	<!-- Offline CSS -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181117001">
@@ -253,8 +253,7 @@
 				<!-- main-header-background-img start -->
 				<div class="hero-background-image-large-wrapper">
 					<div class="opacity20 loop-opacity-layer BLACK" style="display: none;">&nbsp;</div>
-					<img onload="rotate();" alt="메인 이미지입니다." id="slide"
-						src="${pageContext.request.contextPath}/resources/images/imagechange/메인1.png">
+					<img alt="메인 이미지입니다." id="slide" src="${pageContext.request.contextPath}/resources/images/imagechange/메인1.png">
 					<picture data-image-type="picture"></picture>
 				</div>
 				<!-- main-header-background-img end -->
