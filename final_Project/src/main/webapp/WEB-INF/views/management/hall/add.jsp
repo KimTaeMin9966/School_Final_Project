@@ -51,6 +51,8 @@
 								    <option value="/wedding/hall/area1/detail4">detail4</option>
 								    <option value="/wedding/hall/area1/detail5">detail5</option>
 								    <option value="/wedding/hall/area1/detail6">detail6</option>
+								    <option value="/wedding/hall/area1/detail7">detail7</option>
+								    <option value="/wedding/hall/area1/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area2">
 								    <option value="/wedding/hall/area2/detail1">detail1</option>
@@ -59,6 +61,8 @@
 								    <option value="/wedding/hall/area2/detail4">detail4</option>
 								    <option value="/wedding/hall/area2/detail5">detail5</option>
 								    <option value="/wedding/hall/area2/detail6">detail6</option>
+								    <option value="/wedding/hall/area2/detail7">detail7</option>
+								    <option value="/wedding/hall/area2/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area3">
 								    <option value="/wedding/hall/area3/detail1">detail1</option>
@@ -67,6 +71,8 @@
 								    <option value="/wedding/hall/area3/detail4">detail4</option>
 								    <option value="/wedding/hall/area3/detail5">detail5</option>
 								    <option value="/wedding/hall/area3/detail6">detail6</option>
+								    <option value="/wedding/hall/area3/detail7">detail7</option>
+								    <option value="/wedding/hall/area3/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area4">
 								    <option value="/wedding/hall/area4/detail1">detail1</option>
@@ -75,6 +81,8 @@
 								    <option value="/wedding/hall/area4/detail4">detail4</option>
 								    <option value="/wedding/hall/area4/detail5">detail5</option>
 								    <option value="/wedding/hall/area4/detail6">detail6</option>
+								    <option value="/wedding/hall/area4/detail7">detail7</option>
+								    <option value="/wedding/hall/area4/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area5">
 								    <option value="/wedding/hall/area5/detail1">detail1</option>
@@ -83,6 +91,8 @@
 								    <option value="/wedding/hall/area5/detail4">detail4</option>
 								    <option value="/wedding/hall/area5/detail5">detail5</option>
 								    <option value="/wedding/hall/area5/detail6">detail6</option>
+								    <option value="/wedding/hall/area5/detail7">detail7</option>
+								    <option value="/wedding/hall/area5/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area6">
 								    <option value="/wedding/hall/area6/detail1">detail1</option>
@@ -91,6 +101,8 @@
 								    <option value="/wedding/hall/area6/detail4">detail4</option>
 								    <option value="/wedding/hall/area6/detail5">detail5</option>
 								    <option value="/wedding/hall/area6/detail6">detail6</option>
+								    <option value="/wedding/hall/area6/detail7">detail7</option>
+								    <option value="/wedding/hall/area6/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area7">
 								    <option value="/wedding/hall/area7/detail1">detail1</option>
@@ -99,6 +111,8 @@
 								    <option value="/wedding/hall/area7/detail4">detail4</option>
 								    <option value="/wedding/hall/area7/detail5">detail5</option>
 								    <option value="/wedding/hall/area7/detail6">detail6</option>
+								    <option value="/wedding/hall/area7/detail7">detail7</option>
+								    <option value="/wedding/hall/area7/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area8">
 								    <option value="/wedding/hall/area8/detail1">detail1</option>
@@ -107,6 +121,8 @@
 								    <option value="/wedding/hall/area8/detail4">detail4</option>
 								    <option value="/wedding/hall/area8/detail5">detail5</option>
 								    <option value="/wedding/hall/area8/detail6">detail6</option>
+								    <option value="/wedding/hall/area8/detail7">detail7</option>
+								    <option value="/wedding/hall/area8/detail8">detail8</option>
 								</optgroup>
 							</select>
 						</div>

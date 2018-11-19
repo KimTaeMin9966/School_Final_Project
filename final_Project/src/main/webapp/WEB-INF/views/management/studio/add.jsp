@@ -43,6 +43,7 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>페이지 전환을 위한 링크</label>
+							<select name="studio_link" class="form-control" required>
 								<optgroup label="area1">
 								    <option value="/wedding/studio/area1/detail1">detail1</option>
 								    <option value="/wedding/studio/area1/detail2">detail2</option>
@@ -50,6 +51,8 @@
 								    <option value="/wedding/studio/area1/detail4">detail4</option>
 								    <option value="/wedding/studio/area1/detail5">detail5</option>
 								    <option value="/wedding/studio/area1/detail6">detail6</option>
+								    <option value="/wedding/studio/area1/detail7">detail7</option>
+								    <option value="/wedding/studio/area1/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area2">
 								    <option value="/wedding/studio/area2/detail1">detail1</option>
@@ -58,6 +61,8 @@
 								    <option value="/wedding/studio/area2/detail4">detail4</option>
 								    <option value="/wedding/studio/area2/detail5">detail5</option>
 								    <option value="/wedding/studio/area2/detail6">detail6</option>
+								    <option value="/wedding/studio/area2/detail7">detail7</option>
+								    <option value="/wedding/studio/area2/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area3">
 								    <option value="/wedding/studio/area3/detail1">detail1</option>
@@ -66,6 +71,8 @@
 								    <option value="/wedding/studio/area3/detail4">detail4</option>
 								    <option value="/wedding/studio/area3/detail5">detail5</option>
 								    <option value="/wedding/studio/area3/detail6">detail6</option>
+								    <option value="/wedding/studio/area3/detail7">detail7</option>
+								    <option value="/wedding/studio/area3/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area4">
 								    <option value="/wedding/studio/area4/detail1">detail1</option>
@@ -74,6 +81,8 @@
 								    <option value="/wedding/studio/area4/detail4">detail4</option>
 								    <option value="/wedding/studio/area4/detail5">detail5</option>
 								    <option value="/wedding/studio/area4/detail6">detail6</option>
+								    <option value="/wedding/studio/area4/detail7">detail7</option>
+								    <option value="/wedding/studio/area4/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area5">
 								    <option value="/wedding/studio/area5/detail1">detail1</option>
@@ -82,6 +91,8 @@
 								    <option value="/wedding/studio/area5/detail4">detail4</option>
 								    <option value="/wedding/studio/area5/detail5">detail5</option>
 								    <option value="/wedding/studio/area5/detail6">detail6</option>
+								    <option value="/wedding/studio/area5/detail7">detail7</option>
+								    <option value="/wedding/studio/area5/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area6">
 								    <option value="/wedding/studio/area6/detail1">detail1</option>
@@ -90,6 +101,8 @@
 								    <option value="/wedding/studio/area6/detail4">detail4</option>
 								    <option value="/wedding/studio/area6/detail5">detail5</option>
 								    <option value="/wedding/studio/area6/detail6">detail6</option>
+								    <option value="/wedding/studio/area6/detail7">detail7</option>
+								    <option value="/wedding/studio/area6/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area7">
 								    <option value="/wedding/studio/area7/detail1">detail1</option>
@@ -98,6 +111,8 @@
 								    <option value="/wedding/studio/area7/detail4">detail4</option>
 								    <option value="/wedding/studio/area7/detail5">detail5</option>
 								    <option value="/wedding/studio/area7/detail6">detail6</option>
+								    <option value="/wedding/studio/area7/detail7">detail7</option>
+								    <option value="/wedding/studio/area7/detail8">detail8</option>
 								</optgroup>
 								<optgroup label="area8">
 								    <option value="/wedding/studio/area8/detail1">detail1</option>
@@ -106,6 +121,8 @@
 								    <option value="/wedding/studio/area8/detail4">detail4</option>
 								    <option value="/wedding/studio/area8/detail5">detail5</option>
 								    <option value="/wedding/studio/area8/detail6">detail6</option>
+								    <option value="/wedding/studio/area8/detail7">detail7</option>
+								    <option value="/wedding/studio/area8/detail8">detail8</option>
 								</optgroup>
 							</select>
 						</div>

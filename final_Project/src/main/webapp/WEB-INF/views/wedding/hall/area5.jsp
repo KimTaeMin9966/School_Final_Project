@@ -11,11 +11,11 @@
 				<a class="product-tiles-grid-item-link" href="${halls.hall_link}">
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
-							<img alt="" sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px"
+							<img alt="이미지입니다." style="width: 100%; height: 595px;"
 								src="/management/displayFile?fileName=${halls.fullName}">
 						</div>
 					</div>
-					<p class="online-exclusive-badge" data-component-attr-id="online-exclusive">
+					<p class="online-exclusive-badge text-left" data-component-attr-id="online-exclusive">
 						<font style="vertical-align: inherit;">
 							<font style="vertical-align: inherit;">홀 주소 : ${halls.hall_location}</font><br/>
 							<font style="vertical-align: inherit;">홀 수용인원 ${halls.hall_person} 명</font><br/>
