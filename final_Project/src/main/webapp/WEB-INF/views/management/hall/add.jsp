@@ -213,7 +213,6 @@
 		});
 		
 		target.append(str);
-		target.get(0).submit();
 	});
 	
 	
