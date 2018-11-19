@@ -47,9 +47,9 @@
 										href="/wedding/consulting"
 										target="_top"><font style="vertical-align: inherit;">
 										<font style="vertical-align: inherit;">부산 대표컨설팅</font><br/>
-										<font style="vertical-align: inherit:">Due to the nature of consulting, various products exist</font> <br/>
+										<font style="vertical-align: inherit:">Due to the nature of consulting, various products exist</font>
 										<font style="vertical-align: inherit:">That's why many consumers do not know what to choose.</font>
-										<font style="vertical-align: inherit:"> Therefore, we have prepared only the largest</font> <br/>
+										<font style="vertical-align: inherit:"> Therefore, we have prepared only the largest★</font>
 										</font></a>
 								</div>
 							</div>
