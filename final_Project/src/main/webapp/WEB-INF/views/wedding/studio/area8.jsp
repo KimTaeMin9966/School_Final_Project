@@ -11,11 +11,11 @@
 				<a class="product-tiles-grid-item-link" href="${studios.studio_link}">
 					<div class="product-tiles-grid-item-image-wrapper">
 						<div class="product-tiles-grid-item-image ">
-							<img alt="" sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px"
+							<img alt="이미지입니다." style="width: 100%; height: 595px;"
 								src="/management/displayFile?fileName=${studios.fullName}">
 						</div>
 					</div>
-					<p class="online-exclusive-badge" data-component-attr-id="online-exclusive">
+					<p class="online-exclusive-badge text-left" data-component-attr-id="online-exclusive">
 						<font style="vertical-align: inherit;">
 							<font style="vertical-align: inherit;">스튜디오 주소 : ${studios.studio_location}</font><br/>
 							<font style="vertical-align: inherit;">스튜디오 수용인원 ${studios.studio_person} 명</font><br/>
