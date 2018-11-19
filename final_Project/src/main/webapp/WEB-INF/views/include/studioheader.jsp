@@ -40,7 +40,7 @@
 	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181117002"></script>
 	
 	<!-- Offline CSS -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181119001">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181119004">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css?ver=20181117001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/magnific-popup.css?ver=20181113001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css?ver=20181117001">
