@@ -80,6 +80,10 @@ $(document).ready(function() {
 		autoSize();
 		CheckingUseragent();
 		
+		var doc = document.documentElement;
+		doc.setAttribute('data-browser-name', bowser.name);
+		doc.setAttribute('data-browser-version', bowser.version);
+		
 		$('.preloader').fadeOut(); 
 		$('#preloader').delay(550).fadeOut('slow'); 
 		$('body').delay(450).css({'overflow':'visible'});

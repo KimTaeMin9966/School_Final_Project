@@ -2,9 +2,26 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 <!DOCTYPE html>
-<html class="js gt-ie9 gt-ie8 gt-ie7 gt-ie6  applicationcache geolocation history svg hashchange audio canvas canvastext video cssgradients multiplebgs opacity rgba inlinesvg hsla supports svgclippaths fontface generatedcontent textshadow cssanimations backgroundsize borderimage borderradius boxshadow csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox flexboxlegacy cssreflections csstransforms csstransforms3d csstransitions objectfit object-fit no-touchevents no-touch no-android noFlash chrome windows no-ios no-playsinline desktop"
-	lang="ko" dir="ltr" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema" style=""
-	data-browser-name="Chrome" data-browser-version="70.0">
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 " lang="ko" dir="ltr" xmlns:fb="http://www.facebook.com/2008/fbml"
+		xmlns:og="http://opengraphprotocol.org/schema" >
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie10 lt-ie9 lt-ie8 gt-ie6" lang="ko" xmlns:fb="http://www.facebook.com/2008/fbml"
+		xmlns:og="http://opengraphprotocol.org/schema" >
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie10 lt-ie9 gt-ie7 gt-ie6" lang="ko" xmlns:fb="http://www.facebook.com/2008/fbml"
+		xmlns:og="http://opengraphprotocol.org/schema" >
+<![endif]-->
+<!--[if IE 9]>
+	<html class="no-js lt-ie10 gt-ie8 gt-ie7 gt-ie6" lang="ko" xmlns:fb="http://www.facebook.com/2008/fbml"
+		xmlns:og="http://opengraphprotocol.org/schema" >
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js gt-ie9 gt-ie8 gt-ie7 gt-ie6 " lang="ko" dir="ltr" xmlns:fb="http://www.facebook.com/2008/fbml"
+	xmlns:og="http://opengraphprotocol.org/schema">
+<!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,11 +49,13 @@
 	
 	<!-- Offline JS -->
 	<script src="${pageContext.request.contextPath}/resources/plugins/jQuery/jQuery-2.1.4.min.js?ver=20181113001"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/modernizr-3.6.0.min.js?ver=20481122001"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bowser.js?ver=20481122001"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181117002"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js?ver=20181113001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js?ver=20181113001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/modal.js?ver=20181117001"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/upload.js?ver=20181117001"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/custom.js?ver=20181117002"></script>
 	
 	<!-- Offline CSS -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181119004">
@@ -46,8 +65,8 @@
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css?ver=20181117001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icomoon.css?ver=20181117001">
 </head>
-<body class="country-INT page-HP-INT-Launch-Cruise-19 pageType-ContentPage template-pages--home-homepage pageLabel-  language-en int nonTransactional hasGiantLookWithManualImage"
-	data-module="keysNavigation,keysNavigationOverlay," data-switchsite="/int/en/ajax/overlay">
+<body class="country-KR page-HP-KR-21-NOV pageType-ContentPage template-pages--home-homepage   language-ko kr hasGiantLookWithManualImage"
+	data-module="keysNavigation,keysNavigationOverlay,overlaySwitchsite" data-switchsite="/kr/ko/ajax/overlay" >
 	<div id="mobile-menu" class="mm-menu mm-fullscreen mm-multiline mm-offcanvas mm-top mm-front mm-hasnavbar-top-1 primary-menu-opened mm-current mm-opened">
 		<div class="mm-panels">
 			<div class="mm-panel mm-opened mm-current">
