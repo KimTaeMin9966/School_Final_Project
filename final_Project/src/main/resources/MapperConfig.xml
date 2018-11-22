@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC
+	"-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="MBVO" type="net.koreate.vo.MemberVo" />
+		<typeAlias alias="WDHVO" type="net.koreate.vo.WeddingHallVo" />
+		<typeAlias alias="WDSVO" type="net.koreate.vo.WeddingStudioVo" />
+		<typeAlias alias="WDLVO" type="net.koreate.vo.ListVo" />
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="sql/memberMapper.xml" />
+		<mapper resource="sql/hallsMapper.xml" />
+		<mapper resource="sql/studiosMapper.xml" />
+		<mapper resource="sql/ListMapper.xml" />
+	</mappers>
+</configuration>

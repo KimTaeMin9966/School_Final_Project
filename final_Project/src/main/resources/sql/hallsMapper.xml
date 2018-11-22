@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.koreate.dao.WeddingHallDao">
+	<select id="SearchArea" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_area = #{hall_area}
+	</select>
+	<select id="SearchAllhall" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+	</select>
+	<select id="SearchAllstudio" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+	</select>
+	
+	<!-- 2018/10/30 -->
+	<insert id="hallAdd">
+		INSERT INTO made_wedding_halls(hall_name, hall_location, hall_person, hall_price, hall_thema, hall_contents, hall_link, hall_area, hall_address)
+		VALUES (#{hall_name}, #{hall_location}, #{hall_person}, #{hall_price}, #{hall_thema}, #{hall_contents}, #{hall_link}, #{hall_area}, #{hall_address})
+	</insert>
+	<insert id="studioAdd">
+		INSERT INTO made_wedding_studios(studio_name, studio_location, studio_person, studio_price, studio_thema, studio_contents, studio_link, studio_area, studio_address)
+		VALUES (#{studio_name}, #{studio_location}, #{studio_person}, #{studio_price}, #{studio_thema}, #{studio_contents}, #{studio_link}, #{studio_area}, #{studio_address})
+	</insert>
+	<select id="getHallByHNO" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_hno = #{hall_hno}
+	</select>
+	<select id="getStudioByHNO" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_hno = #{studio_hno}
+	</select>
+	<update id="hallEdit">
+		UPDATE made_wedding_halls SET hall_name = #{hall_name},
+		hall_location = #{hall_location}, hall_person = #{hall_person},
+		hall_price = #{hall_price}, hall_thema = #{hall_thema},
+		hall_contents = #{hall_contents}, hall_link = #{hall_link},
+		hall_area = #{hall_area}, hall_address = #{hall_address} WHERE hall_hno = #{hall_hno}
+	</update>
+	<update id="studioEdit">
+		UPDATE made_wedding_studios SET studio_name = #{studio_name},
+		studio_location = #{studio_location}, studio_person = #{studio_person},
+		studio_price = #{studio_price}, studio_thema = #{studio_thema},
+		studio_contents = #{studio_contents}, studio_link = #{studio_link},
+		studio_area = #{studio_area}, studio_address = #{studio_address} WHERE studio_hno = #{studio_hno}
+	</update>
+	<delete id="hallDeleteByHNO">
+		DELETE FROM made_wedding_halls WHERE hall_hno = #{hno}
+	</delete>
+	<delete id="studioDeleteByHNO">
+		DELETE FROM made_wedding_studios WHERE studio_hno = #{hno}
+	</delete>
+	
+	<!-- 2018/11/06 -->
+	<select id="SearchAreaHallDetail" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_area = #{hall_area} AND hall_link = #{hall_link}
+	</select>
+	
+	<!-- 2018/11/07 -->
+	<select id="getAttachHallImg" resultType="string">
+		SELECT fullName FROM made_wedding_halls_img
+		WHERE hno = #{hno} AND area = #{hall_area} AND link = #{hall_link}
+	</select>
+	<select id="getAttachStudioImg" resultType="string">
+		SELECT fullName FROM made_wedding_studios_img
+		WHERE hno = #{hno} AND area = #{studio_area} AND link = #{studio_link}
+	</select>
+	<insert id="addHallAttach">
+		INSERT INTO made_wedding_halls_img(hno, fullName, area, link)
+		VALUES(LAST_INSERT_ID(), #{file}, #{HallVo.hall_area}, #{HallVo.hall_link})
+	</insert>
+	<insert id="addStudioAttach">
+		INSERT INTO made_wedding_studios_img(hno, fullName, area, link)
+		VALUES(LAST_INSERT_ID(), #{file}, #{StudioVo.studio_area}, #{StudioVo.studio_link})
+	</insert>
+	
+	<!-- 2018/11/12 -->
+	<delete id="hallDeleteImgByHNO">
+		DELETE FROM made_wedding_halls_img WHERE hno = #{hno} AND area = #{WeddingHallVo.hall_area} AND link = #{WeddingHallVo.hall_link}
+	</delete>
+	<delete id="studioDeleteImgByHNO">
+		DELETE FROM made_wedding_studios_img WHERE hno = #{hno} AND area = #{WeddingStudioVo.studio_area} AND link = #{WeddingStudioVo.studio_link}
+	</delete>
+	<select id="SearchHallImg" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls_img
+		WHERE hno = #{hall_hno} AND area = #{hall_area} AND link = #{hall_link} limit 1
+	</select>
+	<select id="SearchStudioImg" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios_img
+		WHERE hno = #{studio_hno} AND area = #{studio_area} AND link = #{studio_link} limit 1
+	</select>
+	<update id="hallAddSampleImg">
+		UPDATE made_wedding_halls SET fullName = #{file}
+		WHERE hall_area = #{HallVo.hall_area} AND hall_link = #{HallVo.hall_link}
+	</update>
+	<update id="studioAddSampleImg">
+		UPDATE made_wedding_studios SET fullName = #{file}
+		WHERE studio_area = #{StudioVo.studio_area} AND studio_link = #{StudioVo.studio_link}
+	</update>
+	<update id="editHallAttachSample">
+		UPDATE made_wedding_halls SET fullName = #{file}
+		WHERE hall_area = #{HallVo.hall_area} AND hall_link = #{HallVo.hall_link}
+	</update>
+	<update id="editStudioAttachSample">
+		UPDATE made_wedding_studios SET fullName = #{file}
+		WHERE studio_area = #{StudioVo.studio_area} AND studio_link = #{StudioVo.studio_link}
+	</update>
+	<update id="editHallAttach">
+		UPDATE made_wedding_halls_img SET fullName = #{file}
+		WHERE area = #{HallVo.hall_area} AND link = #{HallVo.hall_link}
+	</update>
+	<update id="editStudioAttach">
+		UPDATE made_wedding_studios_img SET fullName = #{file}
+		WHERE area = #{StudioVo.studio_area} AND link = #{StudioVo.studio_link}
+	</update>
+	<delete id="DeleteHallImg">
+		UPDATE made_wedding_halls_img SET fullName = "" WHERE fullName = #{fileName}
+	</delete>
+	<delete id="DeleteStudioImg">
+		UPDATE made_wedding_studios_img SET fullName = "" WHERE fullName = #{fileName}
+	</delete>
+	<update id="DeleteHallImgSample">
+		UPDATE made_wedding_halls SET fullName = "" WHERE fullName = #{fileName}
+	</update>
+	<update id="DeleteStudioImgSample">
+		UPDATE made_wedding_studios SET fullName = "" WHERE fullName = #{fileName}
+	</update>
+</mapper>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.koreate.dao.CheckListDao">
+	<select id="STEP1Search" resultType="WDLVO">
+		SELECT list_day, list_week, list_area, list_etc FROM made_wedding_step1
+		WHERE memberID = #{mwid}
+	</select>
+	<select id="STEP2Search" resultType="WDLVO">
+		SELECT list_day, list_week, list_area, list_etc FROM made_wedding_step2
+		WHERE memberID = #{mwid}
+	</select>
+	<select id="STEP3Search" resultType="WDLVO">
+		SELECT list_day, list_week, list_area, list_etc FROM made_wedding_step3
+		WHERE memberID = #{mwid}
+	</select>
+	<select id="STEP4Search" resultType="WDLVO">
+		SELECT list_day, list_week, list_area, list_etc FROM made_wedding_step4
+		WHERE memberID = #{mwid}
+	</select>
+	
+	<insert id="STEP1Save">
+		INSERT INTO made_wedding_step1
+		VALUES(#{memberID}, #{list_day}, #{list_week}, #{list_area}, #{list_etc})
+	</insert>
+	<insert id="STEP2Save">
+		INSERT INTO made_wedding_step2
+		VALUES(#{memberID}, #{list_day}, #{list_week}, #{list_area}, #{list_etc})
+	</insert>
+	<insert id="STEP3Save">
+		INSERT INTO made_wedding_step3
+		VALUES(#{memberID}, #{list_day}, #{list_week}, #{list_area}, #{list_etc})
+	</insert>
+	<insert id="STEP4Save">
+		INSERT INTO made_wedding_step4
+		VALUES(#{memberID}, #{list_day}, #{list_week}, #{list_area}, #{list_etc})
+	</insert>
+	
+	<update id="STEP1Edit">
+		UPDATE made_wedding_step1 SET list_day = #{list_day},
+		list_week = #{list_week}, list_area = #{list_area},
+		list_etc = #{list_etc} WHERE memberID = #{memberID}
+	</update>
+	<update id="STEP2Edit">
+		UPDATE made_wedding_step2 SET list_day = #{list_day},
+		list_week = #{list_week}, list_area = #{list_area},
+		list_etc = #{list_etc} WHERE memberID = #{memberID}
+	</update>
+	<update id="STEP3Edit">
+		UPDATE made_wedding_step3 SET list_day = #{list_day},
+		list_week = #{list_week}, list_area = #{list_area},
+		list_etc = #{list_etc} WHERE memberID = #{memberID}
+	</update>
+	<update id="STEP4Edit">
+		UPDATE made_wedding_step4 SET list_day = #{list_day},
+		list_week = #{list_week}, list_area = #{list_area},
+		list_etc = #{list_etc} WHERE memberID = #{memberID}
+	</update>
+	
+	<!-- 2018/11/14 -->
+	<select id="SearchMoneyHall" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_price BETWEEN #{min} AND #{max}
+	</select>
+	<select id="SearchMoneyStudio" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_price BETWEEN #{min} AND #{max}
+	</select>
+	<select id="conceptHallSearch" resultType="WDHVO">
+		SELECT * FROM made_wedding_halls
+		WHERE hall_thema = #{concept}
+	</select>
+	<select id="conceptStudioSearch" resultType="WDSVO">
+		SELECT * FROM made_wedding_studios
+		WHERE studio_thema = #{concept}
+	</select>
+</mapper>

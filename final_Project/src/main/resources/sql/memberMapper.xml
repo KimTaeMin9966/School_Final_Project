@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.koreate.dao.MemberDao">
+	<select id="registerBefor" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+		WHERE mwid = #{mwid}
+	</select>
+	<insert id="register">
+		INSERT INTO made_wedding_member(mwid, mwpw, mwname, mwmobile, mwbirth)
+		VALUES (#{mwid}, #{mwpw}, #{mwname}, #{mwmobile}, #{mwbirth})
+	</insert>
+	<select id="login" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+		WHERE mwid = #{mwid}
+	</select>
+	<select id="getUserByID" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+		WHERE mwid = #{mwid}
+	</select>
+	<select id="signIn" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<select id="getUserByUNO" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+		WHERE mwid = #{mwid}
+	</select>
+	<!-- 2018/10/26 -->
+	<select id="loginDto" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<select id="memberSearch" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<!-- 2018/10/30 -->
+	<update id="editInfo">
+		UPDATE made_wedding_member
+		SET mwpw = #{mwpw}, mwname = #{mwname},
+		mwmobile = #{mwmobile}, mwbirth = #{mwbirth}
+		WHERE mwid = #{mwid}
+	</update>
+	<select id="getUserByVO" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</select>
+	<select id="memberAllSearch" resultType="MBVO">
+		SELECT * FROM made_wedding_member
+	</select>
+	<delete id="infoDeleteByID">
+		DELETE FROM made_wedding_member WHERE mwid = #{mwid}
+	</delete>
+	<update id="infoUpdateByVO">
+		UPDATE made_wedding_member
+		SET mwpw = #{mwpw}, mwname = #{mwname},
+		mwmobile = #{mwmobile}, mwbirth = #{mwbirth}
+		WHERE mwid = #{mwid}
+	</update>
+	<select id="searchByNO" resultType="MBVO">
+		SELECT * FROM made_wedding_member WHERE mwno = #{mwno}
+	</select>
+	<!-- 2018/11/02 -->
+	<select id="isMasterSearch" resultType="int">
+		SELECT * FROM made_wedding_member WHERE mwno = 1
+	</select>
+	
+	<!-- 2018/11/06 -->
+	<select id="searchID" resultType="MBVO">
+		SELECT mwid FROM made_wedding_member
+	</select>
+	<!-- <select id="getMember" resultType="MBVO">
+		SELECT * FROM made_wedding_member WHERE mwid = #{mwid}
+	</select> -->
+</mapper>
