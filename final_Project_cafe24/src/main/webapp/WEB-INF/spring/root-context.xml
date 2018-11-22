@@ -44,7 +44,7 @@
 	</bean>
 	
 	<bean id="uploadPath" class="java.lang.String">
-		<constructor-arg value="C:\\Spring\\Upload" />
+		<constructor-arg value="/ktm06069/tomcat/webapps/ROOT/resources/UPLOAD/" />
 	</bean>
 	
 	<context:component-scan base-package="net.koreate" />
