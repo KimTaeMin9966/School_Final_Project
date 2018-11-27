@@ -72,7 +72,7 @@
 						MADE WEDDING - MW<br>
 						부산광역시 동래구 충렬대로 84 영남빌딩 9층 901호<br>
 						Tel : +82) 051-714-5709&nbsp;&nbsp;/&nbsp;&nbsp;Fax : +82) 051-1234-5678<br>
-						이메일 문의&nbsp;:&nbsp;<a style="color: inherit; text-decoration: none; outline: 0 none;" href="mailto: webmaster@master.com">webmaster@master.com</a><br>
+						이메일 문의&nbsp;:&nbsp;<a style="color: inherit; text-decoration: none; outline: 0 none;" href="mailto: 2018.web.programmer.kimtaemin@gmail.com">2018.web.programmer.kimtaemin@gmail.com</a><br>
 						호스팅 서비스&nbsp;:&nbsp;<a style="color: inherit; text-decoration: none; outline: 0 none;" href="https://www.cafe24.com/">www.cafe24.com</a>
 					</p>
 					<c:choose>
