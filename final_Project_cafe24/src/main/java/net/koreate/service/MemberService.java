@@ -15,7 +15,7 @@ public interface MemberService {
 
 	MemberVo signIn(LoginDto dto) throws Exception;
 
-	MemberVo getUserByID(String uid) throws Exception;
+	MemberVo getUserByID(String mwid) throws Exception;
 
 	// 2018/10/26
 	MemberVo loginDto(LoginDto dto) throws Exception;
@@ -41,6 +41,9 @@ public interface MemberService {
 
 	// 2018/11/06
 	List<MemberVo> searchID() throws Exception;
+
+	// 2018/12/02
+	void deleteInfo(MemberVo obj) throws Exception;
 
 	/*Object getMember(MemberVo mvo) throws Exception;*/
 	

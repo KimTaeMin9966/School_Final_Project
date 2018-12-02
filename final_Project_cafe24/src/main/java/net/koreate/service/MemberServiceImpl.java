@@ -49,8 +49,8 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public MemberVo getUserByID(String uid) throws Exception {
-		return dao.getUserByID(uid);
+	public MemberVo getUserByID(String mwid) throws Exception {
+		return dao.getUserByID(mwid);
 	}
 
 	// 2018/10/26
@@ -107,6 +107,13 @@ public class MemberServiceImpl implements MemberService {
 	public List<MemberVo> searchID() throws Exception {
 		// TODO Auto-generated method stub
 		return dao.searchID();
+	}
+	
+	// 2018/12/02
+	@Override
+	public void deleteInfo(MemberVo obj) throws Exception {
+		// TODO Auto-generated method stub
+		dao.deleteInfo(obj);
 	}
 
 	/*@Override

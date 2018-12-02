@@ -13,6 +13,7 @@
 						<div class="form-group has-feedback">
 							<label>ID 입력 해주세요</label>
 							<input type="text" id="mwid" name="mwid" class="form-control" placeholder="USER ID" />
+							<input type="button" id="dbCheck" class="btn btn-primary btn-block btn-flat" value="중복체크" />
 							<div id="mwid_result" class="form-control"></div>
 						</div>
 						<div class="form-group has-feedback">

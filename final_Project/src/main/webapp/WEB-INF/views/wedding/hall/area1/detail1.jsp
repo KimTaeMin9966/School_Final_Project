@@ -21,20 +21,6 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/더블유웨딩.png" alt="더블유웨딩" />
-							</picture>
-						</div>
-						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
-							aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide00">
-							<div class="wrapper-move-down" style="display: none;">
-								<span class="arrow-move-down">
-									<font style="vertical-align: inherit;">
-										<font style="vertical-align: inherit;">아래로 이동</font>
-									</font>
-								</span>
-							</div>
-							<picture>
-								<img class="item-content product-detail-carousel-image zoom-item"
 								src="${pageContext.request.contextPath}/resources/images/더블유웨딩1.png" alt="더블유웨딩" />
 							</picture>
 						</div>

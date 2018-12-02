@@ -10,6 +10,7 @@ public class MemberVo {
 	private String mwmobile;
 	private String mwbirth;
 	private Date mwregdate;
+	private Boolean isOut;
 
 	public int getMwno() {
 		return mwno;
@@ -67,10 +68,18 @@ public class MemberVo {
 		this.mwregdate = mwregdate;
 	}
 
+	public Boolean getIsOut() {
+		return isOut;
+	}
+
+	public void setIsOut(Boolean isOut) {
+		this.isOut = isOut;
+	}
+
 	@Override
 	public String toString() {
 		return "MemberVo [mwno=" + mwno + ", mwid=" + mwid + ", mwpw=" + mwpw + ", mwname=" + mwname + ", mwmobile="
-				+ mwmobile + ", mwbirth=" + mwbirth + ", mwregdate=" + mwregdate + "]";
+				+ mwmobile + ", mwbirth=" + mwbirth + ", mwregdate=" + mwregdate + ", isOut=" + isOut + "]";
 	}
 
 }

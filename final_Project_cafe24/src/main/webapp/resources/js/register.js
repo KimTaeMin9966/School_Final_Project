@@ -74,12 +74,21 @@ $(document).ready(function() {
 	
 	// ---------------------------------------------------------
 	
-	$("#mwid").on("input", function() {
+	$("#dbCheck").on("click", function() {
 		var userID = $("#mwid").val();
 		
-		var message = "올바른 형식의 ID가 아닙니다.";
-		var booleanGet = checkReg('mwid_result', userID, regexID, message);
-		boolAdmID = booleanGet;
+		$.ajax({
+			type : 'POST',
+			url : '/member/registerCheck',
+			dataType : "text",
+			data : JSON.stringify({
+				mwid : userID
+			}),
+			success : function(result) {
+				if (result == "SUCCESS") { showSuccessMessage('mwid_result', "사용 가능한 아이디 입니다"); $('#mwid').setAttribute('readonly', ''); boolAdmID = true; }
+				else { showErroMessage('mwid_result', "사용 불가능한 아이디 입니다"); $("#mwid").val(""); $('#mwid').focus(); }
+			}
+		});
 	});
 	
 	$("#mwpw").on("input", function() {

@@ -37,6 +37,7 @@
 							<c:choose>
 								<c:when test="${!empty loginYES && !(loginYES.mwname eq 'master' || loginYES.mwname eq '마스터') }">
 									<input type="button" id="edit" class="btn btn-primary btn-block btn-flat" value="정보수정 하러가기" />
+									<input type="button" id="delete" class="btn btn-primary btn-block btn-flat" value="탈퇴 하러가기" />
 								</c:when>
 							</c:choose>
 							<input type="button" id="calcel" class="btn btn-primary btn-block btn-flat" value="확인" />
@@ -55,6 +56,10 @@
 	
 	$('#edit').click(function() {
 		location.href = '/member/editInfo';
+	});
+	
+	$('#delete').click(function() {
+		location.href = '/member/deleteInfo';
 	});
 	
 	$('#calcel').click(function() {

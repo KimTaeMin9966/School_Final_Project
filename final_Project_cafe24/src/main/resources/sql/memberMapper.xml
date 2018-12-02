@@ -6,7 +6,7 @@
 <mapper namespace="net.koreate.dao.MemberDao">
 	<select id="registerBefor" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid}
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw} AND isOut = 0
 	</select>
 	<insert id="register">
 		INSERT INTO made_wedding_member(mwid, mwpw, mwname, mwmobile, mwbirth)
@@ -14,7 +14,7 @@
 	</insert>
 	<select id="login" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid}
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw} AND isOut = 0
 	</select>
 	<select id="getUserByID" resultType="MBVO">
 		SELECT * FROM made_wedding_member
@@ -22,7 +22,7 @@
 	</select>
 	<select id="signIn" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw} AND isOut = 0
 	</select>
 	<select id="getUserByUNO" resultType="MBVO">
 		SELECT * FROM made_wedding_member
@@ -31,11 +31,11 @@
 	<!-- 2018/10/26 -->
 	<select id="loginDto" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw} AND isOut = 0
 	</select>
 	<select id="memberSearch" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw} AND isOut = 0
 	</select>
 	<!-- 2018/10/30 -->
 	<update id="editInfo">
@@ -46,13 +46,13 @@
 	</update>
 	<select id="getUserByVO" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw} AND isOut = 0
 	</select>
 	<select id="memberAllSearch" resultType="MBVO">
 		SELECT * FROM made_wedding_member
 	</select>
 	<delete id="infoDeleteByID">
-		DELETE FROM made_wedding_member WHERE mwid = #{mwid}
+		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
 	</delete>
 	<update id="infoUpdateByVO">
 		UPDATE made_wedding_member
@@ -72,6 +72,10 @@
 	<select id="searchID" resultType="MBVO">
 		SELECT mwid FROM made_wedding_member
 	</select>
+	
+	<delete id="deleteInfo">
+		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</delete>
 	<!-- <select id="getMember" resultType="MBVO">
 		SELECT * FROM made_wedding_member WHERE mwid = #{mwid}
 	</select> -->
