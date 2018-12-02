@@ -85,7 +85,7 @@ $(document).ready(function() {
 				mwid : userID
 			}),
 			success : function(result) {
-				if (result == "SUCCESS") { showSuccessMessage('mwid_result', "사용 가능한 아이디 입니다"); $('#mwid').setAttribute('readonly', ''); boolAdmID = true; }
+				if (result == "SUCCESS") { showSuccessMessage('mwid_result', "사용 가능한 아이디 입니다"); $('#mwid').attr('readonly', ''); boolAdmID = true; }
 				else { showErroMessage('mwid_result', "사용 불가능한 아이디 입니다"); $("#mwid").val(""); $('#mwid').focus(); }
 			}
 		});
