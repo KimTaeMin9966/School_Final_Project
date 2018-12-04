@@ -6,7 +6,7 @@
 <mapper namespace="net.koreate.dao.MemberDao">
 	<select id="registerBefor" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid} AND mwpw = #{mwpw} AND isOut = 0
+		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
 	</select>
 	<insert id="register">
 		INSERT INTO made_wedding_member(mwid, mwpw, mwname, mwmobile, mwbirth)
@@ -18,7 +18,7 @@
 	</select>
 	<select id="getUserByID" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid}
+		WHERE mwid = #{mwid} AND isOut = 0
 	</select>
 	<select id="signIn" resultType="MBVO">
 		SELECT * FROM made_wedding_member
@@ -73,9 +73,15 @@
 		SELECT mwid FROM made_wedding_member
 	</select>
 	
+	<!-- 2018/12/02 -->
 	<delete id="deleteInfo">
 		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
 	</delete>
+	
+	<!-- 201/12/05 -->
+	<update id="updateRegister">
+		UPDATE made_wedding_member SET isOut = 0 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+	</update>
 	<!-- <select id="getMember" resultType="MBVO">
 		SELECT * FROM made_wedding_member WHERE mwid = #{mwid}
 	</select> -->

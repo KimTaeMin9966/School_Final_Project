@@ -47,6 +47,9 @@ public interface MemberDao {
 	// 2018/12/02
 	void deleteInfo(MemberVo obj) throws Exception;
 
+	// 2018/12/05
+	void updateRegister(MemberVo vo) throws Exception;
+
 	/*Object getMember(MemberVo mvo) throws Exception;*/
 
 }

@@ -55,7 +55,7 @@ public class MemberController {
 		logger.info("registerCheckPOST Called!!!");
 		MemberVo vo = service.getUserByID(mwid);
 		
-		if (vo != null) { return "FAIL"; }
+		if (vo.getMwid().equals(mwid)) { return "FAIL"; }
 		else { return "SUCCESS"; }
 	}
 	

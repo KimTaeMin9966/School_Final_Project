@@ -20,9 +20,12 @@ public class MemberServiceImpl implements MemberService {
 	public String register(MemberVo vo) throws Exception {
 		String result = "FAIL";
 		
+		final String memberID = vo.getMwid();
+		
 		MemberVo voBefor = dao.registerBefor(vo);
 		
-		if(voBefor == null || (!voBefor.getMwid().equals(vo.getMwid()))) { dao.register(vo); result = "SUCCESS"; }
+		if(voBefor == null || !voBefor.getMwid().equals(memberID)) { dao.register(vo); result = "SUCCESS"; }
+		else { dao.updateRegister(vo); result = "SUCCESS"; }
 		
 		return result;
 	}
