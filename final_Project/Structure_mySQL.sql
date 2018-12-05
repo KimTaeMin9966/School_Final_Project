@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS `mydata`.`made_wedding_member` (
   `mwmobile` VARCHAR(11) NOT NULL,
   `mwbirth` VARCHAR(6) NOT NULL,
   `mwregdate` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `isOut` INT(1) NULL DEFAULT '1',
+  `isOut` INT(1) NULL DEFAULT '0',
   PRIMARY KEY (`mwno`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;

@@ -10,9 +10,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.util.WebUtils;
@@ -51,12 +51,17 @@ public class MemberController {
 	
 	@ResponseBody
 	@RequestMapping(value = "/registerCheck", method = RequestMethod.POST)
-	public String registerCheckPOST(@RequestBody String mwid) throws Exception {
+	public String registerCheckPOST(@RequestParam(value = "mwid") String mwid) throws Exception {
 		logger.info("registerCheckPOST Called!!!");
+		
+		System.out.println(mwid);
+		
 		MemberVo vo = service.getUserByID(mwid);
 		
-		if (vo.getMwid().equals(mwid)) { return "FAIL"; }
-		else { return "SUCCESS"; }
+		System.out.println(vo);
+		
+		if (vo != null && vo.getMwid().equals(mwid)) { System.out.println("해당 계정 존재"); return "FAIL"; }
+		else { System.out.println("해당 계정 존재X"); return "SUCCESS"; }
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)

@@ -6,7 +6,7 @@
 <mapper namespace="net.koreate.dao.MemberDao">
 	<select id="registerBefor" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+		WHERE mwid = #{mwid}
 	</select>
 	<insert id="register">
 		INSERT INTO made_wedding_member(mwid, mwpw, mwname, mwmobile, mwbirth)
@@ -18,7 +18,7 @@
 	</select>
 	<select id="getUserByID" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid} AND isOut = 0
+		WHERE mwid = #{mwid}
 	</select>
 	<select id="signIn" resultType="MBVO">
 		SELECT * FROM made_wedding_member
@@ -46,14 +46,14 @@
 	</update>
 	<select id="getUserByVO" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid} AND mwpw = #{mwpw} AND isOut = 0
+		WHERE mwid = #{mwid}
 	</select>
 	<select id="memberAllSearch" resultType="MBVO">
-		SELECT * FROM made_wedding_member
+		SELECT * FROM made_wedding_member WHERE isOut = 0
 	</select>
-	<delete id="infoDeleteByID">
+	<update id="infoDeleteByID">
 		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
-	</delete>
+	</update>
 	<update id="infoUpdateByVO">
 		UPDATE made_wedding_member
 		SET mwpw = #{mwpw}, mwname = #{mwname},
@@ -74,9 +74,9 @@
 	</select>
 	
 	<!-- 2018/12/02 -->
-	<delete id="deleteInfo">
+	<update id="deleteInfo">
 		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
-	</delete>
+	</update>
 	
 	<!-- 201/12/05 -->
 	<update id="updateRegister">

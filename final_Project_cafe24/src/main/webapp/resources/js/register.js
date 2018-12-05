@@ -81,12 +81,14 @@ $(document).ready(function() {
 			type : 'POST',
 			url : '/member/registerCheck',
 			dataType : "text",
-			data : JSON.stringify({
-				mwid : userID
-			}),
+			data : { mwid : userID },
 			success : function(result) {
 				if (result == "SUCCESS") { showSuccessMessage('mwid_result', "사용 가능한 아이디 입니다"); $('#mwid').attr('readonly', ''); boolAdmID = true; }
 				else { showErroMessage('mwid_result', "사용 불가능한 아이디 입니다"); $("#mwid").val(""); $('#mwid').focus(); }
+				boolAdmID = true;
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+				alert("에러 발생 \n" + textStatus + " : " + errorThrown);
 			}
 		});
 	});
