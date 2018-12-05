@@ -18,7 +18,7 @@
 	</select>
 	<select id="getUserByID" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid}
+		WHERE mwid = #{mwid} AND isOut = 0
 	</select>
 	<select id="signIn" resultType="MBVO">
 		SELECT * FROM made_wedding_member
@@ -26,7 +26,7 @@
 	</select>
 	<select id="getUserByUNO" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid}
+		WHERE mwid = #{mwid} AND isOut = 0
 	</select>
 	<!-- 2018/10/26 -->
 	<select id="loginDto" resultType="MBVO">
@@ -42,26 +42,26 @@
 		UPDATE made_wedding_member
 		SET mwpw = #{mwpw}, mwname = #{mwname},
 		mwmobile = #{mwmobile}, mwbirth = #{mwbirth}
-		WHERE mwid = #{mwid}
+		WHERE mwid = #{mwid} AND isOut = 0
 	</update>
 	<select id="getUserByVO" resultType="MBVO">
 		SELECT * FROM made_wedding_member
-		WHERE mwid = #{mwid}
+		WHERE mwid = #{mwid} AND isOut = 0
 	</select>
 	<select id="memberAllSearch" resultType="MBVO">
 		SELECT * FROM made_wedding_member WHERE isOut = 0
 	</select>
 	<update id="infoDeleteByID">
-		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid}
 	</update>
 	<update id="infoUpdateByVO">
 		UPDATE made_wedding_member
 		SET mwpw = #{mwpw}, mwname = #{mwname},
 		mwmobile = #{mwmobile}, mwbirth = #{mwbirth}
-		WHERE mwid = #{mwid}
+		WHERE mwid = #{mwid} AND isOut = 0
 	</update>
 	<select id="searchByNO" resultType="MBVO">
-		SELECT * FROM made_wedding_member WHERE mwno = #{mwno}
+		SELECT * FROM made_wedding_member WHERE mwno = #{mwno} AND isOut = 0
 	</select>
 	<!-- 2018/11/02 -->
 	<select id="isMasterSearch" resultType="int">
@@ -69,18 +69,22 @@
 	</select>
 	
 	<!-- 2018/11/06 -->
-	<select id="searchID" resultType="MBVO">
-		SELECT mwid FROM made_wedding_member
+	<select id="searchID" resultType="string">
+		SELECT mwid FROM made_wedding_member AND isOut = 0
 	</select>
 	
 	<!-- 2018/12/02 -->
 	<update id="deleteInfo">
-		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+		UPDATE made_wedding_member SET isOut = 1 WHERE mwid = #{mwid}
 	</update>
 	
 	<!-- 201/12/05 -->
 	<update id="updateRegister">
-		UPDATE made_wedding_member SET isOut = 0 WHERE mwid = #{mwid} AND mwpw = #{mwpw}
+		UPDATE made_wedding_member
+		SET mwpw = #{mwpw}, mwname = #{mwname},
+		mwmobile = #{mwmobile}, mwbirth = #{mwbirth},
+		isOut = 0
+		WHERE mwid = #{mwid}
 	</update>
 	<!-- <select id="getMember" resultType="MBVO">
 		SELECT * FROM made_wedding_member WHERE mwid = #{mwid}
