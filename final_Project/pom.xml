@@ -180,6 +180,13 @@
 		    <artifactId>mariadb-java-client</artifactId>
 		    <version>2.3.0</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/de.svenkubiak/jBCrypt -->
+		<dependency>
+		    <groupId>de.svenkubiak</groupId>
+		    <artifactId>jBCrypt</artifactId>
+		    <version>0.4.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
