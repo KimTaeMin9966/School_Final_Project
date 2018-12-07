@@ -10,7 +10,7 @@
 						<a class="product-tiles-grid-item-link" href="${studios.studio_link}">
 							<div class="product-tiles-grid-item-image-wrapper">
 								<div class="product-tiles-grid-item-image ">
-									<img alt="이미지입니다." style="width: 100%; height: 595px;"
+									<img alt="이미지입니다." style="width: 100%; height: -webkit-fill-available;"
 										src="/management/displayFile?fileName=${studios.fullName}">
 								</div>
 							</div>
