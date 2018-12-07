@@ -64,26 +64,19 @@ public class MemberController {
 		else { System.out.println("해당 계정 존재X"); return "SUCCESS"; }
 	}
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public void loginGET() throws Exception {
-		logger.info("loginGET Called!!!");
-	}
-	
 	@RequestMapping(value = "/registerPost", method = RequestMethod.POST)
-	public String registerPost(MemberVo vo, HttpServletRequest request, Model model) throws Exception {
+	public String registerPost(MemberVo vo, Model model) throws Exception {
 		logger.info("registerPost Called!!!");
 		
 		service.register(vo);
 		
-		String result = (String) request.getAttribute("result");
-		
-		if (result.equals("FAIL")) {
-			model.addAttribute("message", "해당 아이디는 존재합니다.");
-			return "redirect:/member/register";
-		} else {
-			model.addAttribute("message", "회원가입에 성공하셨습니다");
-			return "redirect:/member/login";
-		}
+		model.addAttribute("message", "회원가입에 성공하셨습니다");
+		return "redirect:/member/login";
+	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public void loginGET() throws Exception {
+		logger.info("loginGET Called!!!");
 	}
 	
 	@RequestMapping(value = "/loginPost", method = RequestMethod.POST)

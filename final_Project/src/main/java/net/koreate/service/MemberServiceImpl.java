@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
 import net.koreate.dao.MemberDao;
@@ -19,10 +20,17 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public String register(MemberVo vo) throws Exception {
 		String result = "FAIL";
-		
+
 		final String memberID = vo.getMwid();
+		final String memberPW = vo.getMwpw();
 		
-		MemberVo voBefor = dao.registerBefor(vo);
+		final String hash = memberID + "/" + memberPW;
+		
+		final String passwordHash = BCrypt.hashpw(hash, BCrypt.gensalt(15));
+		
+		vo.setMwpw(passwordHash);
+		
+		final MemberVo voBefor = dao.registerBefor(vo);
 		
 		if(voBefor == null || !voBefor.getMwid().equals(memberID)) { dao.register(vo); result = "SUCCESS"; }
 		else { dao.updateRegister(vo); result = "SUCCESS"; }
