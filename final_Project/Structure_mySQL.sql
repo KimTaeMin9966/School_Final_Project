@@ -68,7 +68,7 @@ DROP TABLE IF EXISTS `mydata`.`made_wedding_member` ;
 CREATE TABLE IF NOT EXISTS `mydata`.`made_wedding_member` (
   `mwno` INT(11) NOT NULL AUTO_INCREMENT,
   `mwid` VARCHAR(20) NOT NULL,
-  `mwpw` VARCHAR(50) NOT NULL,
+  `mwpw` VARCHAR(500) NOT NULL,
   `mwname` VARCHAR(20) NOT NULL,
   `mwmobile` VARCHAR(11) NOT NULL,
   `mwbirth` VARCHAR(6) NOT NULL,

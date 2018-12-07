@@ -80,7 +80,7 @@ DROP TABLE IF EXISTS `made_wedding_member`;
 CREATE TABLE IF NOT EXISTS `made_wedding_member` (
   `mwno` int(11) NOT NULL,
   `mwid` varchar(20) NOT NULL,
-  `mwpw` varchar(50) NOT NULL,
+  `mwpw` varchar(500) NOT NULL,
   `mwname` varchar(20) NOT NULL,
   `mwmobile` varchar(11) NOT NULL,
   `mwbirth` varchar(6) NOT NULL,
@@ -640,11 +640,12 @@ INSERT INTO `made_wedding_halls_img` (`fullName`, `hno`, `area`, `link`) VALUES
 ('/2018/11/19/s_c7b46eb0-fa3b-4b1e-8828-b6aa565c611c_빈티지1.png', 16, 2, '/wedding/hall/area2/detail8');
 
 INSERT INTO `made_wedding_member` (`mwid`, `mwpw`, `mwname`, `mwmobile`, `mwbirth`) VALUES
-('master', 'master', '마스터', '01000000000', '990101'),
-('id001', 'id001', 'DR.STRANGE', '01011111111', '990101'),
-('id002', 'id002', 'IRON MAN', '01022222222', '990101'),
-('id003', 'id003', 'THOR', '01033333333', '990101'),
-('id004', 'id004', 'ANT MAN', '01044444444', '990101');
+('master', '$2a$15$p756vpSloAikPa9W4ls7OuaezElphsokwWn4zinjQtFHsvwhNlGuG', '마스터', '01000000000', '990101'),
+('id001', '$2a$15$/5/V4URFdQqPZfga7dXtYexFuVrrwvF75pJcnjY2JQch5mbv32egi', 'DR.STRANGE', '01011111111', '990101'),
+('id002', '$2a$15$brQuyDLl3cp82v1.hdbiuOYioC3zRAS4NUz6nDItlrVKI4xuWfQ66', 'IRON MAN', '01022222222', '990101'),
+('id003', '$2a$15$XPuQILEZUc4d.3tubYQlHOxeOQmQKoZgfSv0ZZ.35mKW9yPMEmWSC', 'THOR', '01033333333', '990101'),
+('id004', '$2a$15$4R3BruC0iQXGJ9hti2AtQ.d4QGY.ZSfkurkPcI1/oofRqc5V4G5Eu', 'ANT MAN', '01044444444', '990101');
+('ktm06069', '$2a$15$SDRjQYAQS5EBiNcC2nfEqO8hQ0mnHWGCbJ/OtHdEe1Hfls573lK.W', '김태민', '01026389052', '990606');
 
 INSERT INTO `made_wedding_studios` (`studio_name`, `studio_location`, `studio_person`, `studio_price`, `studio_thema`, `studio_contents`, `studio_link`, `studio_area`, `fullName`, `studio_address`) VALUES
 ('M웨딩스튜디오', '부산 진구', 300, 1200000, 'dark', '다크한 느낌의 컨셉으로 웨딩에 어울리지않을듯한 느낌이지만 실제로 많은 분들이 컨셉에 좋은평가를 줍니다. 모노톤의 아련함과, 유니크한 느낌을 담을수있습니다.', '/wedding/studio/area1/detail1', 1, '/2018/11/19/s_79c20b9c-b236-4342-8ddd-0c6bd98f2ca6_다크(2).jpg', '부산광역시 부산진구 전포대로 227'),

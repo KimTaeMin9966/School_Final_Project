@@ -77,7 +77,22 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public void editInfo(MemberVo vo) throws Exception {
-		dao.editInfo(vo);
+		final String memberID = vo.getMwid();
+		final String memberPW = vo.getMwpw();
+		
+		final String hash = memberID + "/" + memberPW;
+		
+		if (memberPW != null) {
+			final String passwordHash = BCrypt.hashpw(hash, BCrypt.gensalt(15));
+			
+			vo.setMwpw(passwordHash);
+			dao.editInfo(vo);
+		} else {
+			final String passwordHash = this.getPasswordHashByID(memberID);
+			
+			vo.setMwpw(passwordHash);
+			dao.editInfo(vo);
+		}
 	}
 
 	@Override
@@ -97,7 +112,22 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public void infoUpdateByVO(MemberVo vo) throws Exception {
-		dao.infoUpdateByVO(vo);
+		final String memberID = vo.getMwid();
+		final String memberPW = vo.getMwpw();
+		
+		final String hash = memberID + "/" + memberPW;
+		
+		if (memberPW != null && !memberPW.equals("")) {
+			final String passwordHash = BCrypt.hashpw(hash, BCrypt.gensalt(15));
+			
+			vo.setMwpw(passwordHash);
+			dao.infoUpdateByVO(vo);
+		} else {
+			final String passwordHash = this.getPasswordHashByID(memberID);
+			
+			vo.setMwpw(passwordHash);
+			dao.infoUpdateByVO(vo);
+		}
 	}
 
 	// 2018/11/01
@@ -125,6 +155,13 @@ public class MemberServiceImpl implements MemberService {
 	public void deleteInfo(MemberVo obj) throws Exception {
 		// TODO Auto-generated method stub
 		dao.deleteInfo(obj);
+	}
+
+	// 2018/12/08
+	@Override
+	public String getPasswordHashByID(String memberID) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.getPasswordHashByID(memberID);
 	}
 
 	/*@Override

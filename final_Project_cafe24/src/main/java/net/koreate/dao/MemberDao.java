@@ -50,6 +50,9 @@ public interface MemberDao {
 	// 2018/12/05
 	void updateRegister(MemberVo vo) throws Exception;
 
+	// 2018/12/08
+	String getPasswordHashByID(String memberID) throws Exception;
+
 	/*Object getMember(MemberVo mvo) throws Exception;*/
 
 }

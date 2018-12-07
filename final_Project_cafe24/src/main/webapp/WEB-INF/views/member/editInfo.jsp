@@ -18,7 +18,7 @@
 						</div>
 						<div class="form-group has-feedback">
 							<label>USER PW</label>
-							<input type="text" name="mwpw" class="form-control" value="${memberInfo.mwpw}"  />
+							<input type="text" name="mwpw" class="form-control" placeholder="DB에 암호화 되어있어 표시할수 없습니다. 변경시 입력 해주세요." />
 						</div>
 						<div class="form-group has-feedback">
 							<label>USER NAME</label>

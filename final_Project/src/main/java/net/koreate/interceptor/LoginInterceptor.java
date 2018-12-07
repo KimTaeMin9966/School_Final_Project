@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
@@ -36,9 +37,18 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 		ModelMap obj = modelAndView.getModelMap();
 		LoginDto dto = (LoginDto)obj.get("loginDto");
 		
+		final String memberID = dto.getMwid();
+		final String memberPW = dto.getMwpw();
+		
+		final String hash = memberID + "/" + memberPW;
+		
+		final String passwordHash = service.getPasswordHashByID(memberID);
+		
+		dto.setMwpw(passwordHash);
+		
 		MemberVo vo = service.signIn(dto);
 		
-		if (vo != null) {
+		if (vo != null && BCrypt.checkpw(hash, passwordHash)) {
 			session.setAttribute("loginYES", vo);
 			
 			if(dto.isUseCookie()) {
