@@ -2,26 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-	<html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 " lang="ko" dir="ltr" xmlns:fb="http://www.facebook.com/2008/fbml"
-		xmlns:og="http://opengraphprotocol.org/schema" >
-<![endif]-->
-<!--[if IE 7]>
-	<html class="no-js lt-ie10 lt-ie9 lt-ie8 gt-ie6" lang="ko" xmlns:fb="http://www.facebook.com/2008/fbml"
-		xmlns:og="http://opengraphprotocol.org/schema" >
-<![endif]-->
-<!--[if IE 8]>
-	<html class="no-js lt-ie10 lt-ie9 gt-ie7 gt-ie6" lang="ko" xmlns:fb="http://www.facebook.com/2008/fbml"
-		xmlns:og="http://opengraphprotocol.org/schema" >
-<![endif]-->
-<!--[if IE 9]>
-	<html class="no-js lt-ie10 gt-ie8 gt-ie7 gt-ie6" lang="ko" xmlns:fb="http://www.facebook.com/2008/fbml"
-		xmlns:og="http://opengraphprotocol.org/schema" >
-<![endif]-->
-<!--[if gt IE 9]><!-->
 <html class="no-js gt-ie9 gt-ie8 gt-ie7 gt-ie6 " lang="ko" dir="ltr" xmlns:fb="http://www.facebook.com/2008/fbml"
 	xmlns:og="http://opengraphprotocol.org/schema">
-<!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,7 +40,7 @@
 	<script src="${pageContext.request.contextPath}/resources/js/upload.js?ver=20181117001"></script>
 	
 	<!-- Offline CSS -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=20181119004">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css?ver=201811207001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css?ver=20181117001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/magnific-popup.css?ver=20181113001">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css?ver=20181117001">
