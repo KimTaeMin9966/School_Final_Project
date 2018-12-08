@@ -41,7 +41,7 @@
 	<update id="editInfo">
 		UPDATE made_wedding_member
 		SET mwpw = #{mwpw}, mwname = #{mwname},
-		mwmobile = #{mwmobile}, mwbirth = #{mwbirth}
+		mwmobile = #{mwmobile}, mwbirth = #{mwbirth}, mwregdate = NOW()
 		WHERE mwid = #{mwid} AND isOut = 0
 	</update>
 	<select id="getUserByVO" resultType="MBVO">
@@ -57,7 +57,7 @@
 	<update id="infoUpdateByVO">
 		UPDATE made_wedding_member
 		SET mwpw = #{mwpw}, mwname = #{mwname},
-		mwmobile = #{mwmobile}, mwbirth = #{mwbirth}
+		mwmobile = #{mwmobile}, mwbirth = #{mwbirth}, mwregdate = NOW()
 		WHERE mwid = #{mwid} AND isOut = 0
 	</update>
 	<select id="searchByNO" resultType="MBVO">
@@ -83,9 +83,15 @@
 		UPDATE made_wedding_member
 		SET mwpw = #{mwpw}, mwname = #{mwname},
 		mwmobile = #{mwmobile}, mwbirth = #{mwbirth},
-		isOut = 0
+		isOut = 0, mwregdate = NOW()
 		WHERE mwid = #{mwid}
 	</update>
+	
+	<!-- 2018/12/08 -->
+	<select id="getPasswordHashByID" resultType="string">
+		SELECT mwpw FROM made_wedding_member
+		WHERE mwid = #{memberID} AND isOut = 0
+	</select>
 	<!-- <select id="getMember" resultType="MBVO">
 		SELECT * FROM made_wedding_member WHERE mwid = #{mwid}
 	</select> -->
