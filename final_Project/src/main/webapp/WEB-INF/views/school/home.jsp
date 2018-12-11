@@ -1,12 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>School Home</title>
-</head>
-<body>
-
-</body>
-</html>
+<%@include file="./include/header.jsp"%>
+	<!-- main content start -->
+	<article class="main content ">
+		본문입니다
+	</article>
+	<!-- main content end -->
+<%@include file="./include/footer.jsp"%>

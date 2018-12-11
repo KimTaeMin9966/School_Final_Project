@@ -18,12 +18,12 @@ public class HomeController {
 	public String home() { logger.info("Welcome home!"); return "home"; }
 	
 	@RequestMapping(value = "/wedding", method = RequestMethod.GET)
-	public String weddingHome() { logger.info("wedding home!"); return "home"; }
+	public String weddingHome() { logger.info("wedding home!"); return "wedding/home"; }
 	
 	@RequestMapping(value = "/member", method = RequestMethod.GET)
-	public String memberHome() { logger.info("member home!"); return "home"; }
+	public String memberHome() { logger.info("member home!"); return "member/home"; }
 	
 	@RequestMapping(value = "/school", method = RequestMethod.GET)
-	public String schoolHome() { logger.info("school home!"); return "home"; }
+	public String schoolHome() { logger.info("school home!"); return "school/home"; }
 	
 }

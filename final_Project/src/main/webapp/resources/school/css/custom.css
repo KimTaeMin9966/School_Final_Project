@@ -1,0 +1,26 @@
+/** ADD YOUR AWESOME CODES HERE **/
+.modal-custom {
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 50px;
+	left: 100px;
+	padding: 10px;
+	border: 2px solid #E2E2E2;
+	z-Index: 9999;
+	width: auto;
+	display: none;
+}
+
+.btn-custom {
+    color: #fff;
+    background-color: #efbdc6;
+    border-color: #efbdc6;
+}
+
+.fileDrop {
+	width: 80%;
+	height: 100px;
+	border: 1px solid gray;
+	background-color: lightslategray;
+	margin: auto;
+}
