@@ -13,14 +13,16 @@ ul, li { list-style: none }
 a, a:hover, a:focus, a:active { text-decoration: none; color: white !important }
 body { background-color: #E6E6E6 !important; margin: 5px !important }
 .main { padding: 5px; font-size: 17px; background: white }
-
-
-
 .header { width: 100%; text-align: center; background: #007BFF; float: left }
 .header .header-left { width: 25%; height: 339px; float: left }
 .header .header-center { width: 50%; height: 339px; float: left }
 .header .header-center > .header-image { font-size: 0 }
 .header .header-right { width: 25%; height: 339px; float: left }
+
+
+
+
+
 
 
 .content { float: left; width: 100% }

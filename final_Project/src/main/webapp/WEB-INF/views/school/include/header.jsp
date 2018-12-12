@@ -44,10 +44,16 @@
 <body>
 	<!-- main header start -->
 	<header class="main header ">
-		<div class="header-left"></div>
-		<div class="header-center">
-			<a href="/school"><img class="header-image" alt="학교 메인 페이지로 이동" src="${pageContext.request.contextPath}/resources/school/images/logo.png"></a>
+		<div class="header-left">
+			<a href="/school">
+				<img class="header-image" alt="학교 메인 페이지로 이동" src="${pageContext.request.contextPath}/resources/school/images/logo.png">
+			</a>
 		</div>
-		<div class="header-right"></div>
+		<div class="header-center">
+			
+		</div>
+		<div class="header-right">
+			
+		</div>
 	</header>
 	<!-- main header end -->
