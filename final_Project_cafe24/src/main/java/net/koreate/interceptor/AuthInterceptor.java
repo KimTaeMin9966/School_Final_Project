@@ -36,7 +36,7 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 			if (requestInfo.equals("/wedding/list")) { return true; }
 			
 			if (mwno == isMasterNO) { System.out.println("마스터 입니다"); return true; } // 로그인된 정보와 마스터의 번호가 같을때 
-			else { System.out.println("마스터가 아닙니다"); response.sendRedirect("/"); return false; } // 다를때
+			else { System.out.println("마스터가 아닙니다"); response.sendRedirect("/wedding"); return false; } // 다를때
 		}
 	}
 	

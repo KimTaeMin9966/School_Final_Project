@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../include/studioheader.jsp"%>
+<%@include file="./include/studioheader.jsp"%>
 <div data-component-container="categoryThreeSmallImageComponent" class="category-product-grid category-product-grid-three">
 	<div class="category-product-grid-wrapper">
 		<section class="style-news">
@@ -19,7 +19,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/studio/area1">
-									<img class="img-responsive" src="/resources/images/스튜디오메인1.png" />
+									<img class="img-responsive" src="/resources/wedding/images/스튜디오메인1.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -47,7 +47,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/studio/area2">
-									<img class="img-responsive" src="/resources/images/스튜디오메인2.png" />
+									<img class="img-responsive" src="/resources/wedding/images/스튜디오메인2.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -74,7 +74,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/studio/area3">
-									<img class="img-responsive" src="/resources/images/스튜디오메인3.png" />
+									<img class="img-responsive" src="/resources/wedding/images/스튜디오메인3.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -103,7 +103,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/studio/area4">
-									<img class="img-responsive" src="/resources/images/스튜디오메인4.png" />
+									<img class="img-responsive" src="/resources/wedding/images/스튜디오메인4.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -130,7 +130,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/studio/area5">
-									<img class="img-responsive" src="/resources/images/스튜디오메인5.png">
+									<img class="img-responsive" src="/resources/wedding/images/스튜디오메인5.png">
 								</a>
 							</div>
 							<div class="panel-body">
@@ -157,7 +157,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/studio/area6">
-									<img class="img-responsive" src="/resources/images/스튜디오메인6.png" />
+									<img class="img-responsive" src="/resources/wedding/images/스튜디오메인6.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -185,4 +185,4 @@
 		</section>
 	</div>
 </div>
-<%@include file="../include/footer.jsp"%>
+<%@include file="./include/footer.jsp"%>

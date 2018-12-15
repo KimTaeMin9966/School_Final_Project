@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../include/hallheader.jsp"%>
+<%@include file="./include/hallheader.jsp"%>
 <div data-component-container="categoryThreeSmallImageComponent" class="category-product-grid category-product-grid-three">
 	<div class="category-product-grid-wrapper">
 		<section class="style-news">
@@ -19,7 +19,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/hall/area1">
-									<img class="img-responsive" src="/resources/images/홀메인1.png" />
+									<img class="img-responsive" src="/resources/wedding/images/홀메인1.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -46,7 +46,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/hall/area2">
-									<img class="img-responsive" src="/resources/images/홀메인2.png" />
+									<img class="img-responsive" src="/resources/wedding/images/홀메인2.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -73,7 +73,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/hall/area3">
-									<img class="img-responsive" src="/resources/images/홀메인3.png" />
+									<img class="img-responsive" src="/resources/wedding/images/홀메인3.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -102,7 +102,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/hall/area4">
-									<img class="img-responsive" src="/resources/images/홀메인4.png" />
+									<img class="img-responsive" src="/resources/wedding/images/홀메인4.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -128,7 +128,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/hall/area5">
-									<img class="img-responsive" src="/resources/images/홀메인5.png" />
+									<img class="img-responsive" src="/resources/wedding/images/홀메인5.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -154,7 +154,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/hall/area6">
-									<img class="img-responsive" src="/resources/images/홀메인6.png" />
+									<img class="img-responsive" src="/resources/wedding/images/홀메인6.png" />
 								</a>
 							</div>
 							<div class="panel-body">
@@ -181,4 +181,4 @@
 		</section>
 	</div>
 </div>
-<%@include file="../include/footer.jsp"%>
+<%@include file="./include/footer.jsp"%>

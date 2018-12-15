@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@include file="../include/listheader.jsp"%>
+<%@include file="./include/listheader.jsp"%>
 <section class="content">
 	<div class="row">
 		<div class="col-md-12">
@@ -16,7 +16,7 @@
 							<div class="col-md-offset-1 col-md-10">
 								<div class="media">
 									<div class="media-left media-middle">
-										<img src=/resources/images/체크리스트이미지.jpg />
+										<img src=/resources/wedding/images/체크리스트이미지.jpg />
 									</div>
 									<div class="media-body media-middle">
 										<blockquote>
@@ -377,4 +377,4 @@
 		step4_modal.hide();
 	});
 </script>
-<%@include file="../include/footer.jsp"%>
+<%@include file="./include/footer.jsp"%>

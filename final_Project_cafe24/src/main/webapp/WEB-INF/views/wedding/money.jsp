@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@include file="../include/header.jsp"%>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/money.css?ver=20181115004">
+<%@include file="./include/header.jsp"%>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/wedding/css/money.css?ver=20181115004">
 <div class="content">
 	<form id="searchFrom" method="post">
 		<table class="table">
@@ -143,5 +143,5 @@
 		</div>
 	</div>
 </div>
-<%@include file="../include/footer.jsp"%>
+<%@include file="./include/footer.jsp"%>
 

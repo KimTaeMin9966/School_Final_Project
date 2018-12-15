@@ -20,9 +20,6 @@ public class HomeController {
 	@RequestMapping(value = "/wedding", method = RequestMethod.GET)
 	public String weddingHome() { logger.info("wedding home!"); return "wedding/home"; }
 	
-	@RequestMapping(value = "/member", method = RequestMethod.GET)
-	public String memberHome() { logger.info("member home!"); return "member/home"; }
-	
 	@RequestMapping(value = "/school", method = RequestMethod.GET)
 	public String schoolHome() { logger.info("school home!"); return "school/home"; }
 	

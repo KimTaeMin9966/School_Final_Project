@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../include/consultingheader.jsp"%>
+<%@include file="./include/consultingheader.jsp"%>
 <div data-component-container="categoryThreeImageComponent" class="category-product-grid category-product-grid-three-left">
 	<div class="category-product-grid-wrapper">
 		<section class="style-news">
@@ -20,7 +20,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="/wedding/consulting/detail1">
-									<img src="/resources/images/롯데웨딩1.png">
+									<img src="/resources/wedding/images/롯데웨딩1.png">
 								</a>
 							</div>
 							<div class="panel-body">
@@ -49,7 +49,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="#">
-									<img src="/resources/images/소노마플랜마.png">
+									<img src="/resources/wedding/images/소노마플랜마.png">
 								</a>
 							</div>
 							<div class="panel-body">
@@ -78,7 +78,7 @@
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
 								<a href="#">
-									<img src="/resources/images/더아르마크.png"></a>
+									<img src="/resources/wedding/images/더아르마크.png"></a>
 							</div>
 							<div class="panel-body">
 								<a href="#"><h3>THE ARTE</h3></a>
@@ -105,7 +105,7 @@
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
-								<a href="#"><img src="/resources/images/BWC마2.png"></a>
+								<a href="#"><img src="/resources/wedding/images/BWC마2.png"></a>
 							</div>
 							<div class="panel-body">
 								<a href="#"><h3>BWC</h3></a>
@@ -129,7 +129,7 @@
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
-								<a href="#"><img src="/resources/images/오렌지웨딩마크.png"></a>
+								<a href="#"><img src="/resources/wedding/images/오렌지웨딩마크.png"></a>
 							</div>
 							<div class="panel-body">
 								<a href="#"><h3>ORANGE WEDDING </h3></a>
@@ -153,7 +153,7 @@
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
 							<div class="panel-heading">
-								<a href="#"><img src="/resources/images/웨딩채널마.png"></a>
+								<a href="#"><img src="/resources/wedding/images/웨딩채널마.png"></a>
 							</div>
 							<div class="panel-body">
 								<a href="#"><h3>WEDDING CHANNER</h3></a>
@@ -178,4 +178,4 @@
 			</section>
  		</div>
 	</div>
-<%@include file="../include/footer.jsp"%>
+<%@include file="./include/footer.jsp"%>

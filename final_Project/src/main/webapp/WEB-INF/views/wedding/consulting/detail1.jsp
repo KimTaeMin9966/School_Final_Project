@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../../include/header.jsp"%>
+<%@include file="../include/header.jsp"%>
 <div class="content">
 	<div class="product-detail-wrap">
 		<div class="product-detail-column">
@@ -21,7 +21,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/cstimages/롯데웨딩상세1.png"/>
+								src="${pageContext.request.contextPath}/resources/wedding/images/cstimages/롯데웨딩상세1.png"/>
 							</picture>
 						</div>
 						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
@@ -35,7 +35,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/cstimages/롯데웨딩상세2.png" />
+								src="${pageContext.request.contextPath}/resources/wedding/images/cstimages/롯데웨딩상세2.png" />
 							</picture>
 						</div>
 						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
@@ -49,7 +49,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/cstimages/롯데웨딩상세3.png" alt="더블유웨딩" />
+								src="${pageContext.request.contextPath}/resources/wedding/images/cstimages/롯데웨딩상세3.png" alt="더블유웨딩" />
 							</picture>
 						</div>
 						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
@@ -63,7 +63,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/cstimages/롯데웨딩상세4.png" alt="더블유웨딩" />
+								src="${pageContext.request.contextPath}/resources/wedding/images/cstimages/롯데웨딩상세4.png" alt="더블유웨딩" />
 							</picture>
 						</div>
 					</div>
@@ -148,7 +148,7 @@
 						<div class="style-color-material" data-module="styleSelector">
 							<a class="styles-link overlay-open" href="https://www.google.com/maps/place/%EB%A1%AF%EB%8D%B0%EB%B0%B1%ED%99%94%EC%A0%90+%EB%B6%80%EC%82%B0%EB%B3%B8%EC%A0%90/@35.1568571,129.0544218,17z/data=!3m1!4b1!4m5!3m4!1s0x3568eb6e1678f7ff:0x7bc6c334e233bc82!8m2!3d35.1568527!4d129.0566158">
 								<span class="color-material">
-									<img alt="GOOGLE MAP" src="${pageContext.request.contextPath}/resources/images/구글지도이미지1.png" class="_loaded">
+									<img alt="GOOGLE MAP" src="${pageContext.request.contextPath}/resources/wedding/images/구글지도이미지1.png" class="_loaded">
 								</span>
 								<span class="color-material-name">
 									<font style="vertical-align: inherit;">
@@ -214,4 +214,4 @@
 		</div>
 	</div>
 </div>
-<%@include file="../../include/footer.jsp"%>
+<%@include file="../include/footer.jsp"%>

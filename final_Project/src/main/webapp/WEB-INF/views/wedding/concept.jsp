@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../include/header.jsp"%>
+<%@include file="./include/header.jsp"%>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/concept.css?ver=20181114008">
 <div class="content">
 	<div class="row">
@@ -146,4 +146,4 @@
 		</div>
 	</div>
 </div>
-<%@include file="../include/footer.jsp"%>
+<%@include file="./include/footer.jsp"%>

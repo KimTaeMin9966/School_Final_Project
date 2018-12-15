@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../../include/header.jsp"%>
+<%@include file="../include/header.jsp"%>
 <div class="content search-result new-4-cols-layout">
 	<div class="product-tiles-grid">
 		<c:choose>
@@ -57,4 +57,4 @@
 		</c:choose>
 	</div>
 </div>
-<%@include file="../../include/footer.jsp"%>
+<%@include file="../include/footer.jsp"%>

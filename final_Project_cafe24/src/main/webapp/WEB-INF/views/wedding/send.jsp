@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../include/sendheader.jsp"%>
+<%@include file="./include/sendheader.jsp"%>
 <div class="content">
 	<section class="product-push homepage"
 		data-module="productpush, view360">
@@ -26,7 +26,7 @@
 								<div class="col-lg-4 col-md-6 col-sm-12">
 									<div class="about-img">
 										<img class="img-fluid rounded"
-											src="${pageContext.request.contextPath}/resources/images/about-img-01.jpg"
+											src="${pageContext.request.contextPath}/resources/wedding/images/about-img-01.jpg"
 											alt="" />
 									</div>
 								</div>
@@ -35,7 +35,7 @@
 								<div class="col-lg-4 col-md-6 col-sm-12">
 									<div class="about-img">
 										<img class="img-fluid rounded"
-											src="${pageContext.request.contextPath}/resources/images/about-img-02.jpg"
+											src="${pageContext.request.contextPath}/resources/wedding/images/about-img-02.jpg"
 											alt="" />
 									</div>
 								</div>
@@ -73,7 +73,7 @@
 						<div class="single-team-member">
 							<div class="family-img">
 								<img class="img-fluid"
-									src="${pageContext.request.contextPath}/resources/images/family-01.jpg"
+									src="${pageContext.request.contextPath}/resources/wedding/images/family-01.jpg"
 									alt="" />
 							</div>
 							<div class="family-info">
@@ -86,7 +86,7 @@
 						<div class="single-team-member">
 							<div class="family-img">
 								<img class="img-fluid"
-									src="${pageContext.request.contextPath}/resources/images/family-02.jpg"
+									src="${pageContext.request.contextPath}/resources/wedding/images/family-02.jpg"
 									alt="" />
 							</div>
 							<div class="family-info">
@@ -99,7 +99,7 @@
 						<div class="single-team-member">
 							<div class="family-img">
 								<img class="img-fluid"
-									src="${pageContext.request.contextPath}/resources/images/family-04.jpg"
+									src="${pageContext.request.contextPath}/resources/wedding/images/family-04.jpg"
 									alt="" />
 							</div>
 							<div class="family-info">
@@ -126,34 +126,34 @@
 				<div class="row">
 					<ul class="popup-gallery clearfix">
 						<li><a
-							href="${pageContext.request.contextPath}/resources/images/gallery-01.jpg">
+							href="${pageContext.request.contextPath}/resources/wedding/images/gallery-01.jpg">
 								<img class="img-fluid"
-								src="${pageContext.request.contextPath}/resources/images/gallery-01.jpg"
+								src="${pageContext.request.contextPath}/resources/wedding/images/gallery-01.jpg"
 								alt="single image"> <span class="overlay"> <i
 									class="fa fa-heart-o" aria-hidden="true"></i>
 							</span>
 						</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/resources/images/gallery-02.jpg">
+							href="${pageContext.request.contextPath}/resources/wedding/images/gallery-02.jpg">
 								<img class="img-fluid"
-								src="${pageContext.request.contextPath}/resources/images/gallery-02.jpg"
+								src="${pageContext.request.contextPath}/resources/wedding/images/gallery-02.jpg"
 								alt="single image"> <span class="overlay"> <i
 									class="fa fa-heart-o" aria-hidden="true"></i>
 							</span>
 						</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/resources/images/gallery-03.jpg">
+							href="${pageContext.request.contextPath}/resources/wedding/images/gallery-03.jpg">
 								<img class="img-fluid"
-								src="${pageContext.request.contextPath}/resources/images/gallery-03.jpg"
+								src="${pageContext.request.contextPath}/resources/wedding/images/gallery-03.jpg"
 								alt="single image"> <span class="overlay"> <i
 									class="fa fa-heart-o" aria-hidden="true"></i>
 							</span>
 					
 						</a></li>
 							<li><a
-							href="${pageContext.request.contextPath}/resources/images/gallery-08.jpg">
+							href="${pageContext.request.contextPath}/resources/wedding/images/gallery-08.jpg">
 								<img class="img-fluid"
-								src="${pageContext.request.contextPath}/resources/images/gallery-08.jpg"
+								src="${pageContext.request.contextPath}/resources/wedding/images/gallery-08.jpg"
 								alt="single image"> <span class="overlay"> <i
 									class="fa fa-heart-o" aria-hidden="true"></i>
 							</span>
@@ -231,4 +231,4 @@
 		<!-- End Contact -->
 	</section>
 </div>
-<%@include file="../include/footer.jsp"%>
+<%@include file="./include/footer.jsp"%>

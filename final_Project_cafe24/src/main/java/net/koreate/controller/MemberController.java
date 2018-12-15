@@ -84,7 +84,7 @@ public class MemberController {
 		logger.info("loginPost Called!!!");
 		
 		model.addAttribute("loginDto", dto);
-		return "home";
+		return "wedding/home";
 	}
 	
 	@RequestMapping("/logOut")
@@ -102,7 +102,7 @@ public class MemberController {
 				response.addCookie(loginCookie);
 			}
 		}
-		return "redirect:/";
+		return "redirect:/wedding";
 	}
 	
 	@RequestMapping(value = "/myInfo", method = RequestMethod.GET)
@@ -156,7 +156,7 @@ public class MemberController {
 				response.addCookie(loginCookie);
 			}
 		}
-		return "redirect:/";
+		return "redirect:/wedding";
 	}
 	
 }

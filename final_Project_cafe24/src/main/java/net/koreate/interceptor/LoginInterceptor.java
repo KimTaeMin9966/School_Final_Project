@@ -63,7 +63,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 				
 				Object dest = session.getAttribute("dest");
 				modelAndView.addObject("message", "로그인에 성공 하셨습니다.");
-				response.sendRedirect(dest != null ? (String)dest : "/");
+				response.sendRedirect(dest != null ? (String)dest : "/wedding");
 			}
 		} else { modelAndView.addObject("message", "로그인에 실패 하셨습니다."); modelAndView.setViewName("/member/login"); }
 	}

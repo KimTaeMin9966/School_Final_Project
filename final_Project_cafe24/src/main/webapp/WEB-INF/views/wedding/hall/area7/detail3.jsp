@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="../../../include/header.jsp"%>
+<%@include file="../../include/header.jsp"%>
 <div class="content">
 	<div class="product-detail-wrap">
 		<div class="product-detail-column">
@@ -21,7 +21,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/더블유웨딩1.png" alt="더블유웨딩" />
+								src="${pageContext.request.contextPath}/resources/wedding/images/더블유웨딩1.png" alt="더블유웨딩" />
 							</picture>
 						</div>
 						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
@@ -35,7 +35,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/더블유웨딩2.png" alt="더블유웨딩" />
+								src="${pageContext.request.contextPath}/resources/wedding/images/더블유웨딩2.png" alt="더블유웨딩" />
 							</picture>
 						</div>
 						<div class="js--zoomcarousel-opener item product-detail-image-slide zoom-in _item-loaded active _active-item-icon _active _active-slide"
@@ -49,7 +49,7 @@
 							</div>
 							<picture>
 								<img class="item-content product-detail-carousel-image zoom-item"
-								src="${pageContext.request.contextPath}/resources/images/더블유웨딩3.png" alt="더블유웨딩" />
+								src="${pageContext.request.contextPath}/resources/wedding/images/더블유웨딩3.png" alt="더블유웨딩" />
 							</picture>
 						</div>
 					</div>
@@ -134,7 +134,7 @@
 						<div class="style-color-material" data-module="styleSelector">
 							<a class="styles-link overlay-open" href="https://www.google.com/maps/search/w%EC%9B%A8%EB%94%A9%ED%99%80/@35.1736518,129.0884765,14z/data=!3m1!4b1">
 								<span class="color-material">
-									<img alt="GOOGLE MAP" src="${pageContext.request.contextPath}/resources/images/구글지도이미지1.png" class="_loaded">
+									<img alt="GOOGLE MAP" src="${pageContext.request.contextPath}/resources/wedding/images/구글지도이미지1.png" class="_loaded">
 								</span>
 								<span class="color-material-name">
 									<font style="vertical-align: inherit;">
@@ -205,4 +205,4 @@
 		</div>
 	</div>
 </div>
-<%@include file="../../../include/footer.jsp"%>
+<%@include file="../../include/footer.jsp"%>
