@@ -5,9 +5,56 @@
 <head>
 <meta charset="UTF-8">
 <title>INDEX</title>
+<script src="${pageContext.request.contextPath}/resources/jquery/jquery.min.js?ver=20181215001"></script>
+<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js?ver=20181215001"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css?ver=20181215001">
 </head>
-<body>
-	<a href="/wedding">WEDDING PAGE</a>
-	<a href="/school">SCHOOL PAGE</a>
+<body style="background: #777">
+	<div class="container">
+		<div class="row" style="margin: 20% 0">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="servicebox text-center">
+					<div class="service-icon">
+						<div class="dm-icon-effect-1" data-effect="slide-left">
+							<a class="btn btn-danger" target="_blank" href="/wedding"><i class="glyphicon glyphicon-globe"></i> WEDDING PAGE</a>
+						</div>
+						<h3>한국기술교육직업전문학교에서 팀으로 구성하여 만든 웨딩홀입니다.</h3>
+						<h3>목적 과 주요내용 : 한눈에 알아보는 웨딩정보, 홍보 역할, 가격과 컨셉별 찾기</h3>
+						<h3>조원 : 이은영, 박준현, 김태민</h3>
+						<p>담당업무 : 이은영 = </p>
+						<p>담당업무 : 박준현 = </p>
+						<p>담당업무 : 김태민 = </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin: 20% 0">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="servicebox text-center">
+					<div class="service-icon">
+						<div class="dm-icon-effect-1" data-effect="slide-bottom">
+							<a class="btn btn-danger" target="_blank" href="/school"><i class="glyphicon glyphicon-globe"></i> SCHOOL PAGE</a>
+						</div>
+						<h3>개인으로 진행 하였고 교육 수료후 페이지를 작성중입니다</h3>
+						<h3>목적 과 주요내용 : 학교 홈피 최신화, 투표기능</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin: 20% 0">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="servicebox text-center">
+					<div class="service-icon">
+						<div class="dm-icon-effect-1" data-effect="slide-right">
+							<a class="btn btn-danger" target="_blank" href="/shop"><i class="glyphicon glyphicon-globe"></i> SHOP PAGE</a>
+						</div>
+						<h3>개인으로 진행 하였고 교육 수료후 페이지를 작성중입니다(재작의뢰?)</h3>
+						<h3>목적 과 주요내용 : 쇼핑몰</h3>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
