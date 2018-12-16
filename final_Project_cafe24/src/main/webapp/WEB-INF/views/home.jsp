@@ -8,10 +8,17 @@
 <script src="${pageContext.request.contextPath}/resources/jquery/jquery.min.js?ver=20181215001"></script>
 <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js?ver=20181215001"></script>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css?ver=20181215001">
+<style type="text/css">
+.css {
+	margin: 2.5% 0;
+	padding: 2% 0;
+	background: white;
+};
+</style>
 </head>
 <body style="background: #777">
 	<div class="container">
-		<div class="row" style="margin: 20% 0">
+		<div class="row css">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="servicebox text-center">
 					<div class="service-icon">
@@ -20,15 +27,11 @@
 						</div>
 						<h3>한국기술교육직업전문학교에서 팀으로 구성하여 만든 웨딩홀입니다.</h3>
 						<h3>목적 과 주요내용 : 한눈에 알아보는 웨딩정보, 홍보 역할, 가격과 컨셉별 찾기</h3>
-						<h3>조원 : 이은영, 박준현, 김태민</h3>
-						<p>담당업무 : 이은영 = </p>
-						<p>담당업무 : 박준현 = </p>
-						<p>담당업무 : 김태민 = </p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row" style="margin: 20% 0">
+		<div class="row css">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="servicebox text-center">
 					<div class="service-icon">
@@ -41,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row" style="margin: 20% 0">
+		<div class="row css">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="servicebox text-center">
 					<div class="service-icon">
