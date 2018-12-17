@@ -103,6 +103,12 @@
 							<ul id="jetmenu" class="jetmenu blue">
 								<li class="active"><a href="/school">Home</a></li>
 								<li>
+									<a href="#">투표</a>
+									<ul class="dropdown">
+										<li><a href="/school/vote">학생회장선거</a></li>
+									</ul>
+								</li>
+								<li>
 									<a href="#">학교소개</a>
 									<ul class="dropdown">
 										<li><a href="#">학교장인사말</a></li>

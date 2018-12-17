@@ -15,5 +15,6 @@
 		<mapper resource="sql/hallsMapper.xml" />
 		<mapper resource="sql/studiosMapper.xml" />
 		<mapper resource="sql/ListMapper.xml" />
+		<mapper resource="sql/schoolMapper.xml" />
 	</mappers>
 </configuration>
