@@ -1,8 +1,5 @@
 package net.koreate.vo;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -91,15 +88,6 @@ public class PageMaker {
 				.queryParam("perPageNum", cri.getPerPageNum())
 				.build();
 		return uc.toString();
-	}
-	
-	private String encoding(String keyword) {
-		if(keyword == null || keyword.trim().length() == 0 ) {
-			return "";
-		}
-		try {
-			return URLEncoder.encode(keyword, "UTF-8");
-		} catch (UnsupportedEncodingException e) { e.printStackTrace(); return ""; }
 	}
 	
 	@Override
