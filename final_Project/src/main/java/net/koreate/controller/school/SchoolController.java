@@ -41,7 +41,7 @@ public class SchoolController {
 	public void voteGET(@ModelAttribute("cri") Criteria cri, Model model) throws Exception {
 		logger.info("voteGET Called!!!");
 		
-		/*PageMaker pageMaker = service.getPageMaker(cri);
-		model.addAttribute(pageMaker);*/
+		PageMaker pageMaker = service.getPageMaker(cri);
+		model.addAttribute(pageMaker);
 	}
 }

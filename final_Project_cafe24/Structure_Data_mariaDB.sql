@@ -644,7 +644,7 @@ INSERT INTO `made_wedding_member` (`mwid`, `mwpw`, `mwname`, `mwmobile`, `mwbirt
 ('id001', '$2a$15$/5/V4URFdQqPZfga7dXtYexFuVrrwvF75pJcnjY2JQch5mbv32egi', 'DR.STRANGE', '01011111111', '990101'),
 ('id002', '$2a$15$brQuyDLl3cp82v1.hdbiuOYioC3zRAS4NUz6nDItlrVKI4xuWfQ66', 'IRON MAN', '01022222222', '990101'),
 ('id003', '$2a$15$XPuQILEZUc4d.3tubYQlHOxeOQmQKoZgfSv0ZZ.35mKW9yPMEmWSC', 'THOR', '01033333333', '990101'),
-('id004', '$2a$15$4R3BruC0iQXGJ9hti2AtQ.d4QGY.ZSfkurkPcI1/oofRqc5V4G5Eu', 'ANT MAN', '01044444444', '990101');
+('id004', '$2a$15$4R3BruC0iQXGJ9hti2AtQ.d4QGY.ZSfkurkPcI1/oofRqc5V4G5Eu', 'ANT MAN', '01044444444', '990101'),
 ('ktm06069', '$2a$15$SDRjQYAQS5EBiNcC2nfEqO8hQ0mnHWGCbJ/OtHdEe1Hfls573lK.W', '김태민', '01026389052', '990606');
 
 INSERT INTO `made_wedding_studios` (`studio_name`, `studio_location`, `studio_person`, `studio_price`, `studio_thema`, `studio_contents`, `studio_link`, `studio_area`, `fullName`, `studio_address`) VALUES

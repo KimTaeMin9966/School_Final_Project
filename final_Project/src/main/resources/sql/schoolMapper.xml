@@ -5,6 +5,6 @@
 
 <mapper namespace="net.koreate.dao.school.SchoolDao">
 	<select id="voteCount" resultType="int">
-		SELECT COUNT(*) FORM AAA
+		SELECT COUNT(*) FROM vote
 	</select>
 </mapper>

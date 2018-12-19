@@ -13,7 +13,7 @@ public class PageMaker {
 	int endPage; // 마지막 페이지
 	boolean prev; // 이전페이지 존재 여부
 	boolean next; // 다음페이지 존재 여부
-	int displayPageNum = 10; // 한번에 보여줄 페이지 개수
+	int displayPageNum = 5; // 한번에 보여줄 페이지 개수
 	Criteria cri; // 페이지 정보
 
 	public void calData() {

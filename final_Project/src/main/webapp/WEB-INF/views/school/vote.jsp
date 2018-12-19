@@ -31,17 +31,17 @@
 	 <ul class="pagination">
 		<c:if test="${pageMaker.prev}">
 			<li>
-				<a href="vote${pageMaker.makeSearch(pageMaker.startPage - 1)}">&laquo;</a>
+				<a href="vote${pageMaker.makeQuery(pageMaker.startPage - 1)}">&laquo;</a>
 			</li>
 		</c:if>
 		<c:forEach var="i" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
 			<li <c:out value="${pageMaker.cri.page == i ?'class=active':''}"/>>
-				<a href="vote${pageMaker.makeSearch(i)}">${i}</a>
+				<a href="vote${pageMaker.makeQuery(i)}">${i}</a>
 			</li>
 		</c:forEach>
 		<c:if test="${pageMaker.next}">
 			<li>
-				<a href="vote${pageMaker.makeSearch(pageMaker.endPage + 1)}">&raquo;</a>
+				<a href="vote${pageMaker.makeQuery(pageMaker.endPage + 1)}">&raquo;</a>
 			</li>
 		</c:if>
 	 </ul>
