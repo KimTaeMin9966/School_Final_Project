@@ -18,6 +18,27 @@ DROP SCHEMA IF EXISTS `ktm06069` ;
 CREATE SCHEMA IF NOT EXISTS `ktm06069` DEFAULT CHARACTER SET utf8 ;
 USE `ktm06069` ;
 
+DROP TABLE IF EXISTS `schoolmember`;
+CREATE TABLE IF NOT EXISTS `schoolmember` (
+  `sNo` int(11) NOT NULL AUTO_INCREMENT,
+  `sNumber` int(5) NOT NULL,
+  `sName` varchar(45) NOT NULL,
+  PRIMARY KEY (`sNo`,`sNumber`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `vote`;
+CREATE TABLE IF NOT EXISTS `vote` (
+  `vNo` int(11) NOT NULL AUTO_INCREMENT,
+  `vNumber` int(5) NOT NULL,
+  `vName` varchar(45) NOT NULL,
+  `vTitle` varchar(45) NOT NULL,
+  `vStart` datetime NOT NULL,
+  `vEnd` datetime NOT NULL,
+  `vContent` varchar(500) NOT NULL,
+  PRIMARY KEY (`vNo`,`vNumber`),
+  UNIQUE KEY `vName_UNIQUE` (`vName`),
+  CONSTRAINT `fk_vote_member` FOREIGN KEY (`vNo`, `vNumber`) REFERENCES `schoolmember` (`sno`, `snumber`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 -- -----------------------------------------------------
 -- Table `ktm06069`.`made_wedding_halls`
 -- -----------------------------------------------------

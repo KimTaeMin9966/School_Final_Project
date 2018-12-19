@@ -16,16 +16,34 @@
 </section>
 
 <section class="section2">
-	<div class="container">
-		<div class="message text-center">
-			<h2 class="big-title">
-				Your <span>portfolio</span> should standout!
-			</h2>
-			<p class="small-title">Lorem Ipsum is simply dummy text of the printing and typesetting industy has been the industry"s standard.</p>
-			<a class="button large" href="#">ABOUT OUR SERVICES</a>
-			<a class=" dmbutton large" href="#">CONTACT US TODAY</a>
-		</div>
-	</div>
+	<c:choose>
+		<c:when test="${!empty votes}">
+			<c:forEach var="vote" items="${votes}">
+				<div class="container">
+					<div class="message text-center">
+						<h2 class="big-title">
+							Your <span>portfolio</span> should standout!
+						</h2>
+						<p class="small-title">Lorem Ipsum is simply dummy text of the printing and typesetting industy has been the industry"s standard.</p>
+						<a class="button large" href="#">ABOUT OUR SERVICES</a>
+						<a class=" dmbutton large" href="#">CONTACT US TODAY</a>
+					</div>
+				</div>
+			</c:forEach>
+		</c:when>
+		<c:otherwise>
+			<div class="container">
+				<div class="message text-center">
+					<h2 class="big-title">
+						현재 <span>전교회장 선거 </span> 내용이 없습니다
+					</h2>
+					<p class="small-title">현재 진행중인 선거가 없습니다</p>
+					<a class="button large" href="#">투표하러가기</a>
+					<a class=" dmbutton large" href="#">결과확인</a>
+				</div>
+			</div>
+		</c:otherwise>
+	</c:choose>
 </section>
 <div class=" text-center">
 	 <ul class="pagination">
