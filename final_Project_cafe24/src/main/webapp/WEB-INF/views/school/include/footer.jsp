@@ -27,10 +27,10 @@
 			<div class="widget col-lg-3 col-md-3 col-sm-12">
 				<h4 class="title">Get In Touch</h4>
 				<ul class="contact_details">
-					<li><i class="fa fa-envelope-o"></i> info@yoursite.com</li>
-					<li><i class="fa fa-phone-square"></i> +34 5565 6555</li>
-					<li><i class="fa fa-home"></i> Some Fine Address, 887, Madrid, Spain.</li>
-					<li><a href="#"><i class="fa fa-map-marker"></i> View large map</a></li>
+					<li><a href="mailto: 2018.web.programmer.kimtaemin@gmail.com" title="문의사항이 있을경우 보네주시기 바랍니다."><i class="fa fa-envelope-o"></i> 2018.web.programmer.kimtaemin</a></li>
+					<li><i class="fa fa-phone-square"></i> 010-2638-9052</li>
+					<!-- <li><i class="fa fa-home"></i> Some Fine Address, 887, Madrid, Spain.</li> -->
+					<!-- <li><a href="#"><i class="fa fa-map-marker"></i> View large map</a></li> -->
 				</ul>
 				<!-- contact_details -->
 			</div>

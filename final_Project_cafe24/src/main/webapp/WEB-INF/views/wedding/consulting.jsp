@@ -14,19 +14,12 @@
 					</h2>
 					<p class="eyebrow"></p>
 				</header>
-
 				<div class="row">
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
-							<div class="panel-heading">
-								<a href="/wedding/consulting/detail1">
-									<img src="/resources/wedding/images/롯데웨딩1.png">
-								</a>
-							</div>
+							<div class="panel-heading"><a href="/wedding/consulting/detail1"><img src="/resources/wedding/images/롯데웨딩1.png"></a></div>
 							<div class="panel-body">
-								<a href="#">
-									<h3>LOTTE WEDDING</h3>
-								</a>
+								<a href="#"><h3>LOTTE WEDDING</h3></a>
 								<p>As you drive through the palm tree lined entrance, you
 									quickly see why this is a remarkable treasure of Northern
 									California. Featuring all-new enhancements, say "I do" in the
@@ -47,15 +40,9 @@
 					</div>
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
-							<div class="panel-heading">
-								<a href="#">
-									<img src="/resources/wedding/images/소노마플랜마.png">
-								</a>
-							</div>
+							<div class="panel-heading"><a href="#"><img src="/resources/wedding/images/소노마플랜마.png"></a></div>
 							<div class="panel-body">
-								<a href="#">
-									<h3>SONOMA PLAN</h3>
-								</a>
+								<a href="#"><h3>SONOMA PLAN</h3></a>
 								<p>Exuding rustic charm and elegance of New England, you'll
 									adore your wedding day experience at Wedgewood Weddings Granite
 									Rose. Surrounded by the flowing ivy and trees, you'll make your
@@ -76,10 +63,7 @@
 					</div>
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
-							<div class="panel-heading">
-								<a href="#">
-									<img src="/resources/wedding/images/더아르마크.png"></a>
-							</div>
+							<div class="panel-heading"><a href="#"><img src="/resources/wedding/images/더아르마크.png"></a></div>
 							<div class="panel-body">
 								<a href="#"><h3>THE ARTE</h3></a>
 								<p>Located in the heart of downtown Sacramento, only steps
@@ -104,9 +88,7 @@
 				<div class="row">
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
-							<div class="panel-heading">
-								<a href="#"><img src="/resources/wedding/images/BWC마2.png"></a>
-							</div>
+							<div class="panel-heading"><a href="#"><img src="/resources/wedding/images/BWC마2.png"></a></div>
 							<div class="panel-body">
 								<a href="#"><h3>BWC</h3></a>
 								<p>All-encompassing of Colorado's most beautiful and
@@ -128,9 +110,7 @@
 					</div>
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
-							<div class="panel-heading">
-								<a href="#"><img src="/resources/wedding/images/오렌지웨딩마크.png"></a>
-							</div>
+							<div class="panel-heading"><a href="#"><img src="/resources/wedding/images/오렌지웨딩마크.png"></a></div>
 							<div class="panel-body">
 								<a href="#"><h3>ORANGE WEDDING </h3></a>
 								<p>Like a Temecula fine wine, Wedgewood Weddings Galway
@@ -152,9 +132,7 @@
 					</div>
 					<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 						<div class="panel panel-default panel-front">
-							<div class="panel-heading">
-								<a href="#"><img src="/resources/wedding/images/웨딩채널마.png"></a>
-							</div>
+							<div class="panel-heading"><a href="#"><img src="/resources/wedding/images/웨딩채널마.png"></a></div>
 							<div class="panel-body">
 								<a href="#"><h3>WEDDING CHANNER</h3></a>
 								<p>Experience one of the most dramatic coastlines in
@@ -175,7 +153,8 @@
 						</div>
 					</div>
 				</div>
-			</section>
- 		</div>
+			</div>
+		</section>
 	</div>
+</div>
 <%@include file="./include/footer.jsp"%>

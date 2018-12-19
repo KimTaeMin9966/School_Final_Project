@@ -89,84 +89,128 @@
 	<header class="header">
 		<div class="container">
 			<div class="site-header clearfix">
-				<div class="col-lg-3 col-md-3 col-sm-12 title-area">
+				<div class="col-lg-12 col-md-12 col-sm-12 title-area">
 					<div class="site-title" id="title">
 						<a href="/school" title="학교 홈피 메인으로 이동">
-							<h4>MAXI<span>BIZ</span></h4>
+							<h4>대진전자통신<span>고등학교</span></h4>
 						</a>
 					</div>
 				</div>
 				<!-- title area -->
-				<div class="col-lg-9 col-md-12 col-sm-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div id="nav" class="right">
 						<div class="container clearfix">
 							<ul id="jetmenu" class="jetmenu blue">
 								<li class="active"><a href="/school">Home</a></li>
 								<li>
-									<a href="#">Pages</a>
+									<a href="#">투표</a>
 									<ul class="dropdown">
-										<li><a href="about.html">About Us</a></li>
-										<li><a href="services.html">Services</a></li>
-										<li><a href="team-members.html">Team Members</a></li>
-										<li><a href="testimonials.html">Testimonials</a></li>
-										<li><a href="404.html">404 Error</a></li>
-										<li><a href="faq.html">FAQ Page</a></li>
-										<li><a href="left-sidebar.html">Left Sidebar</a></li>
-										<li><a href="right-sidebar.html">Right Sidebar</a></li>
-										<li><a href="fullwidth.html">Full Width</a></li>
-										<li><a href="login.html">Login</a></li>
-										<li><a href="register.html">Register</a></li>
-										<li><a href="contact.html">Contact</a></li>
+										<li><a href="/school/vote">학생회장선거</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="#">Shop</a>
+									<a href="#">학교소개</a>
 									<ul class="dropdown">
-										<li><a href="digital-download.html">Products Page</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="checkout.html">Checkout</a></li>
-										<li><a href="account.html">Account Page</a></li>
-										<li><a href="support.html">Support Center</a></li>
+										<li><a href="#">학교장인사말</a></li>
+										<li><a href="#">학교연혁</a></li>
+										<li><a href="#">학교현황</a></li>
+										<li><a href="#">교육목표</a></li>
+										<li><a href="#">교훈 및 학교상징</a></li>
+										<li><a href="#">교직원소개</a></li>
+										<li><a href="#">찾아오시는길</a></li>
+										<li><a href="#">학교관련언론보도</a></li>
+										<li><a href="#">학교소개 동영상</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="#">Portfolio</a>
+									<a href="#">신학과소개</a>
 									<ul class="dropdown">
-										<li><a href="single-portfolio-1.html">Single Portfolio 1</a></li>
-										<li><a href="single-portfolio-2.html">Single Portfolio 2</a></li>
-										<li><a href="portfolio-2.html">Portfolio (2 Columns)</a></li>
-										<li><a href="portfolio-3.html">Portfolio (3 Columns)</a></li>
-										<li><a href="gallery-portfolio.html">Gallery</a></li>
-										<li><a href="masonry-grid-portfolio.html">Masonry Grid Style</a></li>
+										<li><a href="#">전자과</a></li>
+										<li><a href="#">컴퓨터소프트웨어과</a></li>
+										<li><a href="#">정보통신과</a></li>
+										<li><a href="#">산업디자인과</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="#">Blog</a>
+									<a href="#">입학안내</a>
 									<ul class="dropdown">
-										<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-										<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-										<li><a href="single-with-sidebar.html">Single with Sidebar</a></li>
+										<li><a href="#">입학관련자료실</a></li>
+										<li><a href="#">학교소개 동영상</a></li>
+										<li><a href="#">학교안내ppt</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">알림마당</a>
+									<ul class="dropdown">
+										<li><a href="#">공지사항</a></li>
+										<li><a href="#">포토갤러리</a></li>
+										<li><a href="#">자유게시판</a></li>
+										<li><a href="#">가정통신문</a></li>
+										<li><a href="#">건의함</a></li>
+										<li><a href="#">학교교육계획서</a></li>
+										<li><a href="#">학사일정</a></li>
+										<li><a href="#">금식(영양상담)게시판</a></li>
+										<li><a href="#">월간식단</a></li>
+										<li><a href="#">학부모회</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">학생마당</a>
+									<ul class="dropdown">
+										<li><a href="#">학습자료실</a></li>
+										<li><a href="#">기출문제</a></li>
+										<li><a href="#">봉사활동</a></li>
+										<li><a href="#">학생생활규정</a></li>
+										<li><a href="#">방과후 학교</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">교사마당</a>
+									<ul class="dropdown">
+										<li><a href="#">부서별전달사항</a></li>
+										<li><a href="#">교수학습자료실</a></li>
+										<li><a href="#">실습실기자재119</a></li>
+										<li><a href="#">시설, 교단선전화119</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">정보공개방</a>
+									<ul class="dropdown">
+										<li><a href="#">정보공개게시판</a></li>
+										<li><a href="#">학교법인 정보공개</a></li>
+										<li><a href="#">학교 정보공개</a></li>
+										<li><a href="#">정보공개청구</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">진로정보</a>
+									<ul class="dropdown">
+										<li><a href="#">진로정보</a></li>
+										<li><a href="#">취업정보(현장실습요청)</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">구학과소개</a>
+									<ul class="dropdown">
+										<li><a href="#">로봇전자과</a></li>
+										<li><a href="#">컴퓨터정보통신과</a></li>
+										<li><a href="#">인터넷정보통신과</a></li>
+										<li><a href="#">멀티미디어디자인과</a></li>
 									</ul>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<!-- nav -->
 				</div>
-				<!-- title area -->
 			</div>
-			<!-- site header -->
 		</div>
-		<!-- end container -->
 	</header>
-	<!-- end header -->
-	
 	<section id="intro">
 		<div class="container">
 			<div class="ror">
 				<div class="col-md-8 col-md-offset-2">
-					<h1>TITLE</h1>
-					<p>SUB TITLE</p>
+					<h1>접속하신걸 환영합니다</h1>
+					<p></p>
 				</div>
 			</div>
 		</div>

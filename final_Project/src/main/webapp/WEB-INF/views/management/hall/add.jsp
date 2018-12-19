@@ -2,8 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@include file="../include/header.jsp"%>
 <section class="content">
-	<div class="row">
-		<div class="col-md-12">
+	<div class="container">
+		<div class="col-lg-12 col-md-12 col-sm-6">
 			<div class="box">
 				<div class="box-header with-border">
 					<h3>관리자 페이지(웨딩홀 업체 추가)</h3>

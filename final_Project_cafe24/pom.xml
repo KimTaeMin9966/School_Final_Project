@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.koreate</groupId>
 	<artifactId>controller</artifactId>
-	<name>final_Web_cafe24</name>
+	<name>final_Project_cafe24</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
