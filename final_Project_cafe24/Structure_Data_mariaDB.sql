@@ -34,15 +34,12 @@ CREATE TABLE IF NOT EXISTS `schoolmember` (
 DROP TABLE IF EXISTS `vote`;
 CREATE TABLE IF NOT EXISTS `vote` (
   `vNo` int(11) NOT NULL AUTO_INCREMENT,
-  `vNumber` int(5) NOT NULL,
-  `vName` varchar(45) NOT NULL,
   `vTitle` varchar(45) NOT NULL,
   `vStart` datetime NOT NULL,
   `vEnd` datetime NOT NULL,
   `vContent` varchar(500) NOT NULL,
-  PRIMARY KEY (`vNo`,`vNumber`),
-  UNIQUE KEY `vName_UNIQUE` (`vName`),
-  CONSTRAINT `fk_vote_member` FOREIGN KEY (`vNo`, `vNumber`) REFERENCES `schoolmember` (`sno`, `snumber`)
+  `isYes` int(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`vNo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --
 -- 테이블 구조 `hibernate_sequence`

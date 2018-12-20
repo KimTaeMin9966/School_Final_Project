@@ -8,6 +8,7 @@
 		<typeAlias alias="WDHVO" type="net.koreate.vo.WeddingHallVo" />
 		<typeAlias alias="WDSVO" type="net.koreate.vo.WeddingStudioVo" />
 		<typeAlias alias="WDLVO" type="net.koreate.vo.ListVo" />
+		<typeAlias alias="Vote" type="net.koreate.vo.Vote" />
 	</typeAliases>
 	
 	<mappers>

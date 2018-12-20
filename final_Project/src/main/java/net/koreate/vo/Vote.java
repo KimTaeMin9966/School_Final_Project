@@ -4,12 +4,11 @@ import java.util.Date;
 
 public class Vote {
 	private int vNo;
-	private int vNumber;
-	private String vName;
 	private String vTitle;
 	private Date vStart;
 	private Date vEnd;
 	private String vContent;
+	private boolean isYse;
 
 	public int getvNo() {
 		return vNo;
@@ -17,22 +16,6 @@ public class Vote {
 
 	public void setvNo(int vNo) {
 		this.vNo = vNo;
-	}
-
-	public int getvNumber() {
-		return vNumber;
-	}
-
-	public void setvNumber(int vNumber) {
-		this.vNumber = vNumber;
-	}
-
-	public String getvName() {
-		return vName;
-	}
-
-	public void setvName(String vName) {
-		this.vName = vName;
 	}
 
 	public String getvTitle() {
@@ -67,10 +50,18 @@ public class Vote {
 		this.vContent = vContent;
 	}
 
+	public boolean isYse() {
+		return isYse;
+	}
+
+	public void setYse(boolean isYse) {
+		this.isYse = isYse;
+	}
+
 	@Override
 	public String toString() {
-		return "Vote [vNo=" + vNo + ", vNumber=" + vNumber + ", vName=" + vName + ", vTitle=" + vTitle + ", vStart="
-				+ vStart + ", vEnd=" + vEnd + ", vContent=" + vContent + "]";
+		return "Vote [vNo=" + vNo + ", vTitle=" + vTitle + ", vStart=" + vStart + ", vEnd=" + vEnd + ", vContent="
+				+ vContent + ", isYse=" + isYse + "]";
 	}
 
 }
