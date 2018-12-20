@@ -19,7 +19,7 @@ function getFileInfo(fullName) {
 		var end = fullName.substr(14);
 		getLink = "/management/displayFile?fileName=" + front + end;
 	} else {
-		imgsrc = "/resources/images/upload/file.png";
+		imgsrc = "/resources/school/img/upload.png";
 		fileLink = fullName.substr(12);
 		getLink = "/management/displayFile?fileName=" + fullName;
 	}

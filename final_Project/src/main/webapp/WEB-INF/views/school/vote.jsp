@@ -6,7 +6,9 @@
 		<div class="message">
 			<div class="col-lg-9 col-md-9 col-sm-9">
 				<h3>Grab the attention of your customers!</h3>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s..</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and
+					typesetting industry. Lorem Ipsum has been the industry"s standard
+					dummy text ever since..</p>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-12">
 				<a class="dmbutton button large pull-right" href="#"><i class="fa fa-download"></i> GET A QUOTE</a>
@@ -38,12 +40,64 @@
 						현재 <span>전교회장 선거 </span> 내용이 없습니다
 					</h2>
 					<p class="small-title">현재 진행중인 선거가 없습니다</p>
-					<a class="button large" href="#">투표하러가기</a>
-					<a class=" dmbutton large" href="#">결과확인</a>
+					<!-- <a class="button large" href="#">투표하러가기</a>
+					<a class=" dmbutton large" href="#">결과확인</a> -->
 				</div>
 			</div>
 		</c:otherwise>
 	</c:choose>
+</section>
+<section class="section1">
+	<div class="container">
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<div class="servicebox text-center">
+				<div class="service-icon">
+					<div class="dm-icon-effect-1" data-effect="slide-left">
+						<a href="#" class=""><i class="active dm-icon fa fa-bars fa-3x"></i></a>
+					</div>
+					<div class="servicetitle">
+						<h4>Responsive Layout</h4>
+						<hr>
+					</div>
+					<p>Lorem Ipsum is simply dummy text of the printing and
+						typesetting industry. Lorem Ipsum has been the industry"s standard
+						dummy text ever since..</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<div class="servicebox text-center">
+				<div class="service-icon">
+					<div class="dm-icon-effect-1" data-effect="slide-bottom">
+						<a href="#" class=""><i class="active dm-icon fa fa-laptop fa-3x"></i></a>
+					</div>
+					<div class="servicetitle">
+						<h4>Creative Design</h4>
+						<hr>
+					</div>
+					<p>Lorem Ipsum is simply dummy text of the printing and
+						typesetting industry. Lorem Ipsum has been the industry"s standard
+						dummy text ever since..</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<div class="servicebox text-center">
+				<div class="service-icon">
+					<div class="dm-icon-effect-1" data-effect="slide-right">
+						<a href="#" class=""><i class="active dm-icon fa fa-book fa-3x"></i></a>
+					</div>
+					<div class="servicetitle">
+						<h4>Easy to Setup</h4>
+						<hr>
+					</div>
+					<p>Lorem Ipsum is simply dummy text of the printing and
+						typesetting industry. Lorem Ipsum has been the industry"s standard
+						dummy text ever since..</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <div class=" text-center">
 	 <ul class="pagination">
