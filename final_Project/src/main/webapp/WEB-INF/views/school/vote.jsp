@@ -49,56 +49,47 @@
 </section>
 <section class="section1">
 	<div class="container">
-		<div class="col-lg-4 col-md-4 col-sm-4">
-			<div class="servicebox text-center">
-				<div class="service-icon">
-					<div class="dm-icon-effect-1" data-effect="slide-left">
-						<a href="#" class=""><i class="active dm-icon fa fa-bars fa-3x"></i></a>
+		<c:choose>
+			<c:when test="${!empty votes_history}">
+				<c:forEach var="vote_history" items="${votes_history}">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="servicebox text-center">
+							<div class="service-icon">
+								<div class="dm-icon-effect-1" data-effect="slide-top">
+									<a href="#" class="" title="클릭시 당회차 득표율을 볼수 있습니다."><i class="active dm-icon fa fa-book fa-3x"></i></a>
+								</div>
+								<div class="servicetitle">
+									<h4>Responsive Layout</h4>
+									<hr>
+								</div>
+								<p>Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the industry"s standard
+									dummy text ever since..</p>
+							</div>
+						</div>
 					</div>
-					<div class="servicetitle">
-						<h4>Responsive Layout</h4>
-						<hr>
+				</c:forEach>
+			</c:when>
+			<c:otherwise>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<div class="servicebox text-center">
+						<div class="service-icon">
+							<div class="dm-icon-effect-1" data-effect="slide-top">
+								<a href="#" class="" title="클릭시 당회차 득표율을 볼수 있습니다."><i class="active dm-icon fa fa-book fa-3x"></i></a>
+							</div>
+							<div class="servicetitle">
+								<h4>선거기록이 없습니다</h4>
+								<hr>
+							</div>
+							<p>선거기간이 지난후 당선이된 친구의 이름과 공약이 표시됩니다</p>
+						</div>
 					</div>
-					<p>Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the industry"s standard
-						dummy text ever since..</p>
 				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4">
-			<div class="servicebox text-center">
-				<div class="service-icon">
-					<div class="dm-icon-effect-1" data-effect="slide-bottom">
-						<a href="#" class=""><i class="active dm-icon fa fa-laptop fa-3x"></i></a>
-					</div>
-					<div class="servicetitle">
-						<h4>Creative Design</h4>
-						<hr>
-					</div>
-					<p>Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the industry"s standard
-						dummy text ever since..</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4">
-			<div class="servicebox text-center">
-				<div class="service-icon">
-					<div class="dm-icon-effect-1" data-effect="slide-right">
-						<a href="#" class=""><i class="active dm-icon fa fa-book fa-3x"></i></a>
-					</div>
-					<div class="servicetitle">
-						<h4>Easy to Setup</h4>
-						<hr>
-					</div>
-					<p>Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the industry"s standard
-						dummy text ever since..</p>
-				</div>
-			</div>
-		</div>
+			</c:otherwise>
+		</c:choose>
 	</div>
 </section>
+
 <div class=" text-center">
 	 <ul class="pagination">
 		<c:if test="${pageMaker.prev}">
