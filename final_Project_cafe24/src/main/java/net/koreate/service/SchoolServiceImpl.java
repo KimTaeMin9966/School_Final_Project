@@ -1,4 +1,4 @@
-package net.koreate.service.school;
+package net.koreate.service;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
-import net.koreate.dao.school.SchoolDao;
+import net.koreate.dao.SchoolDao;
 import net.koreate.vo.Criteria;
 import net.koreate.vo.PageMaker;
 import net.koreate.vo.Vote;

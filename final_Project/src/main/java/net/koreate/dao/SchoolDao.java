@@ -1,14 +1,13 @@
-package net.koreate.service.school;
+package net.koreate.dao;
 
 import java.util.List;
 
 import net.koreate.vo.Criteria;
-import net.koreate.vo.PageMaker;
 import net.koreate.vo.Vote;
 
-public interface SchoolService {
+public interface SchoolDao {
 
-	PageMaker getPageMaker(Criteria cri) throws Exception;
+	int voteCount(Criteria cri) throws Exception;
 
 	// 진행중인 선거 내용 불러오기 2018/12/20
 	List<Vote> getAllVotes() throws Exception;

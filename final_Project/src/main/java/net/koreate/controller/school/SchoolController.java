@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import net.koreate.service.school.SchoolService;
+import net.koreate.service.SchoolService;
 import net.koreate.vo.Criteria;
 import net.koreate.vo.PageMaker;
 import net.koreate.vo.Vote;
