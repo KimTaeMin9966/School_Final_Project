@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.koreate.dao.school.SchoolDao">
+	<select id="voteCount" resultType="int">
+		SELECT COUNT(*) FROM vote
+	</select>
+	<select id="getAllVotes" resultType="Vote">
+		SELECT * FROM vote WHERE isYes = 0 LIMIT 1
+	</select>
+	<select id="getOldVotes" resultType="Vote">
+		SELECT * FROM vote WHERE isYes = 0 LIMIT #{pageStart}, #{perPageNum}
+	</select>
+</mapper>

@@ -12,7 +12,7 @@
 							<p></p>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-12">
-							<a class="dmbutton button large pull-right" href="/school/create?id=${SchoolLogin.sNumber}"><i class="fa fa-bars"></i> 선거 만들러 가기</a>
+							<a class="dmbutton button large pull-right" href="/school/vote/create?id=${SchoolLogin.sNumber}"><i class="fa fa-bars"></i> 선거 만들러 가기</a>
 						</div>
 					</div>
 				</div>
@@ -31,8 +31,8 @@
 							${v.vTitle}
 						</h2>
 						<p class="small-title"><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${v.vStart}" /> ~ <fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${v.vEnd}" /></p>
-						<a class="button large" href="/school/start?vote=${v.vNo}">투표 하러가기</a>
-						<a class=" dmbutton large" href="/school/search?vote=${v.vNo}">실시간 득표수</a>
+						<a class="button large" href="/school/vote/start?vote=${v.vNo}">투표 하러가기</a>
+						<a class=" dmbutton large" href="/school/vote/search?vote=${v.vNo}">실시간 득표수</a>
 					</div>
 				</div>
 			</c:forEach>
@@ -60,7 +60,7 @@
 						<div class="servicebox text-center">
 							<div class="service-icon">
 								<div class="dm-icon-effect-1" data-effect="slide-top">
-									<a href="/school/history?h=${votes_history.vNo}" class="" title="클릭시 당회차 득표율을 볼수 있습니다."><i class="active dm-icon fa fa-book fa-3x"></i></a>
+									<a href="/school/vote/history?h=${vote_history.vNo}" class="" title="클릭시 당회차 득표율을 볼수 있습니다."><i class="active dm-icon fa fa-book fa-3x"></i></a>
 								</div>
 								<div class="servicetitle">
 									<h4>${vote_history.vTitle}</h4>
