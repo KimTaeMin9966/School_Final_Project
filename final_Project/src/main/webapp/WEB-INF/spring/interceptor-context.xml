@@ -12,6 +12,10 @@
 	<beans:bean id="loginInterceptor" class="net.koreate.interceptor.LoginInterceptor" />
 	<beans:bean id="checkCookieInterceptor" class="net.koreate.interceptor.CheckCookieInterceptor" />
 	
+	<beans:bean id="schoolLoginInterceptor" class="net.koreate.interceptor.SchoolLoginInterceptor" />
+	<beans:bean id="schoolAuthInterceptor" class="net.koreate.interceptor.SchoolAuthInterceptor" />
+	<beans:bean id="schoolCookieInterceptor" class="net.koreate.interceptor.SchoolCookieInterceptor" />
+	
 	<interceptors>
 		<interceptor>
 			<mapping path="/**" />
@@ -20,6 +24,8 @@
 			<exclude-mapping path="/member/login" />
 			<exclude-mapping path="/member/loginPost" />
 			<exclude-mapping path="/member/logOut" />
+			<exclude-mapping path="/school/**" />
+			<exclude-mapping path="/shop/**" />
 			<beans:ref bean="checkCookieInterceptor" />
 		</interceptor>
 		
@@ -38,6 +44,24 @@
 			<mapping path="/wedding/list" />
 			<exclude-mapping path="/management/displayFile" />
 			<beans:ref bean="authInterceptor" />
+		</interceptor>
+		
+		
+		<interceptor>
+			<mapping path="/school/loginPost" />
+			<beans:ref bean="schoolLoginInterceptor" />
+		</interceptor>
+		
+		<interceptor>
+			<mapping path="/school/vote" />
+			<mapping path="/school/vote/*" />
+			<beans:ref bean="schoolAuthInterceptor"/>
+		</interceptor>
+		
+		<interceptor>
+			<mapping path="/school/login" />
+			<mapping path="/school/loginPost" />
+			<beans:ref bean="schoolCookieInterceptor"/>
 		</interceptor>
 	</interceptors>
 	

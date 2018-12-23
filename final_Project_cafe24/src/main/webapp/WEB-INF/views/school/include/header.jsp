@@ -62,8 +62,13 @@
 	<!-- main header start -->
 	<div class="topbar clearfix">
 		<div class="container">
-			<div class="col-lg-12 text-right">
-				<div class="social_buttons">
+			<div class="col-lg-12">
+				<div class="col-md-6 col-sm-6 text-left social_buttons">
+					<a href="/school/login" data-toggle="tooltip" data-placement="bottom" title="로그인하러 가기">
+						<i class="fa fa-user"></i><!-- fa fa-sign-out -->
+					</a>
+				</div>
+				<div class="col-md-6 col-sm-6 text-right social_buttons">
 					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook">
 						<i class="fa fa-facebook"></i>
 					</a>
@@ -92,7 +97,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 title-area">
 					<div class="site-title" id="title">
 						<a href="/school" title="학교 홈피 메인으로 이동">
-							<h4>대진전자통신<span>고등학교</span></h4>
+							<h4>○○○<span>○등학교</span></h4>
 						</a>
 					</div>
 				</div>
