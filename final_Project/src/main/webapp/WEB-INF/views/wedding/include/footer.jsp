@@ -91,7 +91,7 @@
 												<div class="txt" id="progressBar"></div>
 											</div>
 										</div>
-										<div class="inspection_time_txt">2018년 11월 08일 오전 00시 00분 00초 ~ 2019년 02월 07일 오후 11시 59분 59초</div>
+										<div class="inspection_time_txt">2018년 11월 08일 오전 00시 00분 00초 ~ 2019년 03월 07일 오후 11시 59분 59초</div>
 									</article>
 								</div>
 							</div>
@@ -150,7 +150,7 @@
 				function Update() {
 					var nowDate = new Date();
 					var startTime = new Date("11/08/2018 00:00:00 AM").getTime();
-					var endTime = new Date("2/07/2019 11:59:59 PM").getTime();
+					var endTime = new Date("3/07/2019 11:59:59 PM").getTime();
 			
 					var percent = Math.floor(((nowDate.getTime() - startTime) / (endTime - startTime)) * 100);
 					percent = percent > 100 ? 100 : percent;
