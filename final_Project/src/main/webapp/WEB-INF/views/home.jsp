@@ -65,8 +65,7 @@
 							<a class="btn btn-danger" target="_blank" href="http://xxcompany.cafe24.com"><i class="glyphicon glyphicon-globe"></i> COMPANY PAGE</a>
 						</div>
 						<h3>2차 교육을 받으면서 재작을 한 회사 홈페이지입니다.</h3>
-						<h3>목적 과 주요내용 : 회사에 필요한 부분들을 웹에서 간단하게 보여주기위함 입니다.
-						</h3>
+						<h3>목적 과 주요내용 : 회사에 필요한 부분들을 웹에서 간단하게 보여주기위함 입니다.</h3>
 					</div>
 				</div>
 			</div>
