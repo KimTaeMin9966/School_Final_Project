@@ -53,7 +53,19 @@
 						</div>
 						<h3>개인으로 진행 하였고 교육 수료후 페이지를 작성중입니다(재작의뢰?)</h3>
 						<h3>목적 과 주요내용 : 쇼핑몰</h3>
-						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row css">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="servicebox text-center">
+					<div class="service-icon">
+						<div class="dm-icon-effect-1" data-effect="slide-right">
+							<a class="btn btn-danger" target="_blank" href="http://xxcompany.cafe24.com"><i class="glyphicon glyphicon-globe"></i> COMPANY PAGE</a>
+						</div>
+						<h3>2차 교육을 받으면서 재작을 한 회사 홈페이지입니다.</h3>
+						<h3>목적 과 주요내용 : 회사에 필요한 부분들을 웹에서 간단하게 보여주기위함 입니다.</h3>
 					</div>
 				</div>
 			</div>
